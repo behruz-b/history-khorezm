@@ -631,7 +631,7 @@ li{
     background-color:#ffffff; 
     background-position:center center; 
     background-repeat:no-repeat; 
-    background-image:url(../images/icon/preloader.gif);
+    background-image:url(../images/icon/bx_loader.gif);
 }
 .preloader.style-two {
     background-image: url(../images/icon/preloader-1.gif);
