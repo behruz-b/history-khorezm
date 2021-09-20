@@ -6,16 +6,55 @@ organization := "com.example"
 
 version := "1.0"
 
-lazy val root = (project in file(".")).enablePlugins(PlayScala)
+lazy val `history-khorezm` = (project in file(".")).aggregate(common.jvm, common.js, `server`, `scala-js-client`)
+
+lazy val projectSettings = Seq(
+  version := "1.0",
+  scalaVersion := "2.12.12",
+  sources in (Compile, doc) := Seq.empty,
+  publishArtifact in (Compile, packageDoc) := false
+)
+
+def baseProject(name: String): Project = (
+  Project(name, file(name))
+    settings (projectSettings: _*)
+  )
+
+lazy val `server` = baseProject("server")
+  .settings(
+    scalaJSProjects := Seq(`scala-js-client`),
+    Assets / pipelineStages := Seq(scalaJSPipeline),
+    pipelineStages := Seq(digest, gzip),
+    Compile / compile := ((Compile / compile) dependsOn scalaJSPipeline).value,
+  )
+  .settings(libraryDependencies ++= Dependencies.rootDependencies ++ Seq(guice))
+  .enablePlugins(PlayScala)
+  .enablePlugins(SbtWeb)
+  .dependsOn(common.jvm)
+
+lazy val `scala-js-client` = project
+  .settings(
+    scalaJSUseMainModuleInitializer := true,
+    resolvers += Resolver.sonatypeRepo("releases"),
+    libraryDependencies ++= Seq(
+      "org.scala-js" %%% "scalajs-dom" % "1.1.0",
+      "org.querki" %%% "jquery-facade" % "2.0"
+    ),
+    jsDependencies += "org.webjars" % "jquery" % "3.1.0" / "3.1.0/jquery.js" minified "jquery.min.js"
+  )
+  .enablePlugins(ScalaJSPlugin, ScalaJSWeb, JSDependenciesPlugin)
+  .dependsOn(common.js)
+
+lazy val common = crossProject(JSPlatform, JVMPlatform)
+  .crossType(CrossType.Pure)
+  .in(file("common"))
+  .jsConfigure(_.enablePlugins(ScalaJSWeb))
+  .settings (projectSettings: _*)
+  .settings(libraryDependencies ++= Dependencies.rootDependencies)
 
 resolvers += "Akka Snapshot Repository" at "https://repo.akka.io/snapshots/"
 
 scalaVersion := "2.12.12"
-
-lazy val scala212v              = "2.12.8"
-lazy val scala213v              = "2.13.4"
-lazy val supportedScalaVersions = List(scala212v, scala213v)
-run / fork := true
 
 scalacOptions ++= CompilerOptions.cOptions
 
@@ -29,8 +68,7 @@ resolvers ++= Seq(
   Resolver.sonatypeRepo("releases"),
   Resolver.sonatypeRepo("snapshots"))
 
-libraryDependencies ++= rootDependencies ++ Seq(jdbc, ehcache, ws, specs2 % Test, guice)
-
+Global / onLoad := (Global / onLoad).value.andThen(state => "project server" :: state)
 
 // Adds additional packages into Twirl
 //TwirlKeys.templateImports += "com.example.controllers._"
