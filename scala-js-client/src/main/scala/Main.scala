@@ -4,10 +4,18 @@ import org.scalajs.dom.raw._
 
 
 object Main extends App {
-  dom.document.getElementById("menuHome").asInstanceOf[HTMLLinkElement].innerText = "Home"
+  val elements = Map(
+    "menuHome" -> Array("Home", "Главное", "Bosh")
+  )
+  dom.document.getElementById("menuHome").asInstanceOf[HTMLLinkElement].innerText = elements("menuHome")(0)
   @JSExportTopLevel("contentTranslate")
-  def contentTranslate(): Unit = {
-    dom.document.getElementById("menuHome").asInstanceOf[HTMLLinkElement].innerText = "Bosh"
+  def contentTranslate(languange: String): Unit = {
+    val lang = languange match {
+      case "en" => 0
+      case "ru" => 1
+      case "uz" => 2
+    }
+    dom.document.getElementById("menuHome").asInstanceOf[HTMLLinkElement].innerText = elements("menuHome")(lang)
   }
 
 }

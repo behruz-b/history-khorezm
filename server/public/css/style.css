@@ -2870,15 +2870,17 @@ select:focus {
 }
 .footer-bottom-left{
     position: relative;
+    width: 50%;
     display: block;
 }
 .footer-bottom-left .text{
     position: relative;
+    text-align: justify;
     display: block;    
 }
 .footer-bottom-left .text p{
     color: #ffffff;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 30px;
     font-weight: 400;
     margin: 0;
