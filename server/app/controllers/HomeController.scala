@@ -20,4 +20,8 @@ class HomeController @Inject()(val controllerComponents: ControllerComponents) e
   def index() = Action {
     Ok(views.html.index())
   }
+
+  def antiquePeriod() = Action {
+    Ok(views.html.antique_period())
+  }
 }
