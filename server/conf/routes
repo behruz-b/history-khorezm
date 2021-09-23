@@ -9,6 +9,7 @@ GET     /                           controllers.HomeController.index()
 #About Khorezm navbar
 GET     /antique-period             controllers.HomeController.antiquePeriod()
 GET     /ancient-period             controllers.HomeController.ancientPeriod()
+GET     /cities                     controllers.HomeController.cities()
 
 
 

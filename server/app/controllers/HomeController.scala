@@ -28,4 +28,8 @@ class HomeController @Inject()(val controllerComponents: ControllerComponents) e
   def ancientPeriod() = Action {
     Ok(views.html.ancient_period())
   }
+
+  def cities() = Action {
+    Ok(views.html.cities())
+  }
 }
