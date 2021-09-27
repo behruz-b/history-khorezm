@@ -5,7 +5,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>History of Khorezm</title>
+        <title id="siteTitle"></title>
 
             <!-- responsive meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -29,9 +29,9 @@
             <!-- Fixing Internet Explorer-->
             <!--[if lt IE 9]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <script src="@routes.Assets.versioned("js/html5shiv.js)")">
+        <script src=" @routes.Assets.versioned("js/html5shiv.js)")
+            ">
             <![endif]-->
-
 
     </head>
 
@@ -49,9 +49,9 @@
                                 <!--Top Left-->
                             <div class="header-top-left float-left">
                                 <ul>
-                                    <li><a href="#" onclick="contentTranslate('en')">en</a></li>
-                                    <li><a href="#" onclick="contentTranslate('ru')">ru</a></li>
-                                    <li><a href="#" onclick="contentTranslate('uz')">uz</a></li>
+                                    <li><a href="#" onclick="contentTranslate('en')">En</a></li>
+                                    <li><a href="#" onclick="contentTranslate('ru')">Ru</a></li>
+                                    <li><a href="#" onclick="contentTranslate('uz')">Uz</a></li>
                                 </ul>
                             </div>
                                 <!--Top Right-->
@@ -90,28 +90,28 @@
                                         <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
                                             <ul class="navigation clearfix">
                                                 <li><a href="/" id="menuHome"></a></li>
-                                                <li><a href="about.html">News</a></li>
-                                                <li class="dropdown"><a href="#">About Khorezm</a>
+                                                <li><a href="about.html" id="menuNews"></a></li>
+                                                <li class="dropdown"><a href="#" id="menuAboutKhorezm"></a>
                                                     <ul>
-                                                        <li class="dropdown"><a href="art.html">History of Khorezm</a>
+                                                        <li class="dropdown"><a href="art.html" id="subMenuHistoryOfKhorezm"></a>
                                                             <ul>
-                                                                <li><a href="antique-period">Khorezm in the antique period</a></li>
-                                                                <li><a href="ancient-period">Khorezm in ancient period</a></li>
-                                                                <li><a href="#">Khorezm in the early Middle Ages</a></li>
-                                                                <li><a href="#">Khorezm in IX-XV centuries</a></li>
-                                                                <li><a href="#">Khorezm in the XVI-XX centuries</a></li>
-                                                                <li><a href="#">Khorezm in the independence  time</a></li>
+                                                                <li><a href="antique-period" id="dropMenuAntiquePeriod"></a></li>
+                                                                <li><a href="ancient-period" id="dropMenuAncientPeriod"></a></li>
+                                                                <li><a href="#" id="dropMenuMiddleAges"></a></li>
+                                                                <li><a href="#" id="dropMenuNinthFifteenth"></a></li>
+                                                                <li><a href="#" id="dropMenuSixteenthTwentieth"></a></li>
+                                                                <li><a href="#" id="dropMenuIndependenceTime"></a></li>
                                                             </ul>
                                                         </li>
-                                                        <li><a href="cities">Khorezm cities</a></li>
-                                                        <li><a href="tickets.html">Khorezm's cultural heritage monuments</a></li>
-                                                        <li><a href="tickets.html">Art works of Khorezm</a></li>
+                                                        <li><a href="cities" id="subMenuKhorezmCities"></a></li>
+                                                        <li><a href="tickets.html" id="subMenuKhorezmCultures"></a></li>
+                                                        <li><a href="tickets.html" id="subMenuArtOfKhorezm"></a></li>
                                                     </ul>
                                                 </li>
-                                                <li><a href="gallery.html">Interactive services</a></li>
-                                                <li><a href="#">Mediateka</a></li>
-                                                <li><a href="contact.html">Open Data</a></li>
-                                                <li><a href="contact.html">Forum</a></li>
+                                                <li><a href="gallery.html" id="menuInteractiveServices"></a></li>
+                                                <li><a href="#" id="menuMultimedia"></a></li>
+                                                <li><a href="contact.html" id="menuOpenData"></a></li>
+                                                <li><a href="contact.html" id="menuForum"></a></li>
                                             </ul>
                                         </div>
                                     </nav>
@@ -146,7 +146,7 @@
                         <div class="clearfix">
                                 <!--Logo-->
                             <div class="logo float-left">
-                                <a href="index.html" class="img-responsive"><img src="@routes.Assets.versioned("images/resources/logo.png")"alt="" title=""></a>
+                                <a href="index.html" class="img-responsive"><img src="@routes.Assets.versioned("images/resources/logo.png")" alt="" title=""></a>
                             </div>
                                 <!--Right Col-->
                             <div class="right-col float-right">
@@ -154,39 +154,40 @@
                                 <nav class="main-menu navbar-expand-lg">
                                     <div class="navbar-collapse collapse clearfix">
                                         <ul class="navigation clearfix">
-                                            <li><a href="#">Home</a></li>
-                                            <li><a href="about.html">News</a></li>
-                                            <li class="dropdown"><a href="#">About Khorezm</a>
+                                            <li><a href="#" id="menuStickyHome"></a></li>
+                                            <li><a href="about.html" id="menuStickyNews"></a></li>
+                                            <li class="dropdown"><a href="#" id="menuStickyAboutKhorezm"></a>
                                                 <ul>
-                                                    <li class="dropdown"><a href="art.html">History of Khorezm</a>
+                                                    <li class="dropdown"><a href="art.html" id="subMenuStickyHistoryOfKhorezm"></a>
                                                         <ul>
-                                                            <li><a href="antique-period">Khorezm in the antique period</a></li>
-                                                            <li><a href="ancient-period">Khorezm in ancient period</a></li>
-                                                            <li><a href="#">Khorezm in the early Middle Ages</a></li>
-                                                            <li><a href="#">Khorezm in IX-XV centuries</a></li>
-                                                            <li><a href="#">Khorezm in the XVI-XX centuries</a></li>
-                                                            <li><a href="#">Khorezm in the independence  time</a></li>
+                                                            <li><a href="antique-period" id="dropMenuStickyAntiquePeriod"></a></li>
+                                                            <li><a href="ancient-period" id="dropMenuStickyAncientPeriod"></a></li>
+                                                            <li><a href="#" id="dropMenuStickyMiddleAges"></a></li>
+                                                            <li><a href="#" id="dropMenuStickyNinthFifteenth"></a></li>
+                                                            <li><a href="#" id="dropMenuStickySixteenthTwentieth"></a></li>
+                                                            <li><a href="#" id="dropMenuStickyIndependenceTime"></a></li>
                                                         </ul>
                                                     </li>
-                                                    <li><a href="cities">Khorezm cities</a></li>
-                                                    <li><a href="tickets.html">Khorezm's cultural heritage monuments</a></li>
-                                                    <li><a href="tickets.html">Art works of Khorezm</a></li>
+                                                    <li><a href="cities" id="subMenuStickyKhorezmCities"></a></li>
+                                                    <li><a href="tickets.html" id="subMenuStickyKhorezmCultures"></a></li>
+                                                    <li><a href="tickets.html" id="subMenuStickyArtOfKhorezm"></a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="gallery.html">Interactive services</a></li>
-                                            <li><a href="#">Mediateka</a></li>
-                                            <li><a href="contact.html">Open Data</a></li>
-                                            <li><a href="contact.html">Forum</a></li>
+                                            <li><a href="gallery.html" id="menuStickyInteractiveServices"></a></li>
+                                            <li><a href="#" id="menuStickyMultimedia"></a></li>
+                                            <li><a href="contact.html" id="menuStickyOpenData"></a></li>
+                                            <li><a href="contact.html" id="menuStickyForum"></a></li>
                                         </ul>
                                     </div>
-                                </nav><!-- Main Menu End-->
+                                </nav>
+                                    <!-- Main Menu End-->
                             </div>
                         </div>
                     </div>
                 </div>
                     <!--End Sticky Header-->
             </header>
-        @content
+            @content
                 <!--Start footer area-->
             <footer class="footer-area">
                 <div class="footer">
@@ -224,7 +225,7 @@
                                         <h3>Contacts</h3>
                                     </div>
                                     <div class="contact-us">
-                                        <!--<p>2270 S Real Camino Lake<br> California, US 90967</p>
+                                            <!--<p>2270 S Real Camino Lake<br> California, US 90967</p>
                                         <div class="phone-num">
                                             <a href="tel:1800-123-4659">1 (623) 456-9400</a>
                                         </div>-->
@@ -268,12 +269,13 @@
                         <div class="outer-box">
                             <div class="footer-bottom-left">
                                 <div class="text">
-                                    <p>Mazkur veb sahifa O‘zbekiston Respublikasi Innovasion rivojlanish vazirligining I-FA-2019-25 shifrli “XORAZM SHAHARLARINING TARIXI, MADANIY MEROSLARI, OBIDALARI VA SAN’AT ASARLARINING TADQIQOTLARI ASOSIDA SMART TEXNOLOGIYALARINI YARATISH” mavzusidagi loyihasi doirasida yaratilgan.</p>
+                                    <p id="footerAboutWebSite"></p>
                                 </div>
                             </div>
                             <div class="footer-bottom-right">
                                 <div class="copyright-text">
-                                    <p>© 2021 / All Rights Reserved</p>
+                                    <p>© <script>document.write(new Date().getFullYear())</script>
+                                        . <span id="allRightReserved"></span></p>
                                 </div>
                             </div>
                         </div>
@@ -327,8 +329,6 @@
             <!-- thm custom script -->
         <script src="@routes.Assets.versioned("js/custom.js")"></script>
         @findScripts("scala-js-client-opt/main.js", "scala-js-client-fastopt/main.js")
-
-
 
     </body>
 </html>
