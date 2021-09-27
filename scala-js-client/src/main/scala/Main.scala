@@ -24,6 +24,24 @@ object Main extends App {
     "menuMultimedia" -> Array("Multimedia", "Мультимедиа", "Multimediya"),
     "menuOpenData" -> Array("Open Data", "Открытые данные", "Ochiq ma\'lumotlar"),
     "menuForum" -> Array("Forum", "Форум", "Forum"),
+    //    Sticky nav
+    "menuStickyHome" -> Array("Home", "Главное", "Bosh sahifa"),
+    "menuStickyNews" -> Array("News", "Новости", "Yangiliklar"),
+    "menuStickyAboutKhorezm" -> Array("About Khorezm", "О Хорезме", "Xorazm haqida"),
+    "subMenuStickyHistoryOfKhorezm" -> Array("History of Khorezm", "История Хорезма", "Xorazm tarixi"),
+    "dropMenuStickyAntiquePeriod" -> Array("Khorezm in the antique period", "Хорезм в античный периода", "Antik davrda Xorazm"),
+    "dropMenuStickyAncientPeriod" -> Array("Khorezm in ancient period", "Хорезм в древний период", "Qadimgi davrda Xorazm"),
+    "dropMenuStickyMiddleAges" -> Array("Khorezm in the early Middle Ages", "Хорезм в раннем средневековье", "O\'rta asr boshlarida Xorazm"),
+    "dropMenuStickyNinthFifteenth" -> Array("Khorezm in IX-XV centuries", "Хорезм в IX-XV вв", "IX-XV asrlarda Xorazm"),
+    "dropMenuStickySixteenthTwentieth" -> Array("Khorezm in the XVI-XX centuries", "Хорезм в XVI-XX веках", "XVI-XX asrlarda Xorazm"),
+    "dropMenuStickyIndependenceTime" -> Array("Khorezm in the independence time", "Хорезм во времена Независимости", "Xorazm Mustaqillik davrida"),
+    "subMenuStickyKhorezmCities" -> Array("Khorezm cities", "Города Хорезма", "Xorazm shaharlari"),
+    "subMenuStickyKhorezmCultures" -> Array("Khorezm's cultural heritage monuments", "Памятники культурного наследия Хорезма", "Xorazm madaniy merosi yodgorliklari"),
+    "subMenuStickyArtOfKhorezm" -> Array("Art works of Khorezm", "Произведения искусства Хорезма", "Xorazm san'at asarlari"),
+    "menuStickyInteractiveServices" -> Array("Interactive services", "Интерактивные сервисы", "Interaktiv xizmatlar"),
+    "menuStickyMultimedia" -> Array("Multimedia", "Мультимедиа", "Multimediya"),
+    "menuStickyOpenData" -> Array("Open Data", "Открытые данные", "Ochiq ma\'lumotlar"),
+    "menuStickyForum" -> Array("Forum", "Форум", "Forum"),
     "footerAboutWebSite" -> Array(
       "This website is owned by the Ministry of Innovation Development of the Republic of Uzbekistan I-FA-2019-25 code “HISTORY, CULTURAL HERITAGE, MONUMENTS OF KHOREZM CITIES AND CREATION OF SMART TECHNOLOGIES ON THE BASIS OF RESEARCH OF WORKS OF ART ” created as part of a project on the subject.",
       "Этот сайт принадлежит Министерству инновационного развития Республики Узбекистан. Код I-FA-2019-25 «ИСТОРИЯ, КУЛЬТУРНОЕ НАСЛЕДИЕ, ПАМЯТНИКИ ГОРОДА ХОРЕЗМА. И СОЗДАНИЕ УМНЫХ ТЕХНОЛОГИЙ НА ОСНОВЕ ИССЛЕДОВАНИЯ ХУДОЖЕСТВЕННЫХ ПРОИЗВОДСТВ » создан как часть проекта по данной теме.",
@@ -33,6 +51,7 @@ object Main extends App {
   elements.keys.foreach(
     menu => dom.document.getElementById(menu).asInstanceOf[HTMLLinkElement].innerText = elements(menu)(0)
   )
+
   @JSExportTopLevel("contentTranslate")
   def contentTranslate(language: String): Unit = {
     val lang = language match {
