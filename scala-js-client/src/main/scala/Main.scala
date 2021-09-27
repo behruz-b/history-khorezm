@@ -31,21 +31,17 @@ object Main extends App {
     "allRightReserved" -> Array("All Rights Reserved", "Все права защищены", "Barcha huquqlar himoyalangan")
   )
   elements.keys.foreach(
-    menu => {
-      dom.document.getElementById(menu).asInstanceOf[HTMLLinkElement].innerText = elements(menu)(0)
-    }
+    menu => dom.document.getElementById(menu).asInstanceOf[HTMLLinkElement].innerText = elements(menu)(0)
   )
   @JSExportTopLevel("contentTranslate")
-  def contentTranslate(languange: String): Unit = {
-    val lang = languange match {
+  def contentTranslate(language: String): Unit = {
+    val lang = language match {
       case "en" => 0
       case "ru" => 1
       case "uz" => 2
     }
     elements.keys.foreach(
-      menu => {
-        dom.document.getElementById(menu).asInstanceOf[HTMLLinkElement].innerText = elements(menu)(lang)
-      }
+      menu => dom.document.getElementById(menu).asInstanceOf[HTMLLinkElement].innerText = elements(menu)(lang)
     )
   }
 }
