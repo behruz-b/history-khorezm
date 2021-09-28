@@ -29,6 +29,10 @@ class HomeController @Inject()(val controllerComponents: ControllerComponents) e
     Ok(views.html.ancient_period())
   }
 
+  def earlyMiddleAges() = Action {
+    Ok(views.html.early_middle_ages())
+  }
+
   def cities() = Action {
     Ok(views.html.cities())
   }
