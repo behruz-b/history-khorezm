@@ -154,46 +154,46 @@ object Main extends App {
   val eventNameList = List("eventName", "eventName3", "eventName5")
   val eventNameEvenList = List("eventName2", "eventName4", "eventName6")
   learnMoreList.map(
-    item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = learnMore("learnMore")(0)
+    item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = learnMore("learnMore")(2)
   )
   readMoreList.map(
-    item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = readMore("readMore")(0)
+    item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = readMore("readMore")(2)
   )
   modernArtList.map(
-    item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = modernArt("modernArt")(0)
+    item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = modernArt("modernArt")(2)
   )
   findMoreList.map(
-    item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = findMore("findMore")(0)
+    item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = findMore("findMore")(2)
   )
   exhibitionList.map(
-    item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = exhibition("exhibition")(0)
+    item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = exhibition("exhibition")(2)
   )
   monthDecList.map(
-    item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = monthDec("month")(0)
+    item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = monthDec("month")(2)
   )
   monthNovList.map(
-    item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = monthNov("month")(0)
+    item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = monthNov("month")(2)
   )
   weekdaySatList.map(
-    item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = weekdaySat("weekday")(0)
+    item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = weekdaySat("weekday")(2)
   )
   eventDateList.map(
-    item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = eventDateMap("eventDate")(0)
+    item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = eventDateMap("eventDate")(2)
   )
   eventLinkList.map(
-    item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = eventLinkMap("eventLink")(0)
+    item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = eventLinkMap("eventLink")(2)
   )
   eventLinkEvenList.map(
-    item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = eventLinkEvenMap("eventLink")(0)
+    item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = eventLinkEvenMap("eventLink")(2)
   )
   eventNameList.map(
-    item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = eventNameMap("eventName")(0)
+    item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = eventNameMap("eventName")(2)
   )
   eventNameEvenList.map(
-    item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = eventNameEvenMap("eventName")(0)
+    item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = eventNameEvenMap("eventName")(2)
   )
   elements.keys.foreach(
-    menu => dom.document.getElementById(menu).asInstanceOf[HTMLLinkElement].innerText = elements(menu)(0)
+    menu => dom.document.getElementById(menu).asInstanceOf[HTMLLinkElement].innerText = elements(menu)(2)
   )
 
   @JSExportTopLevel("contentTranslate")
