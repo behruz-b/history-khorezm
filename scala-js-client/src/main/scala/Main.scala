@@ -103,7 +103,7 @@ object Main extends App {
     "multimediaExhibitions" -> Array("Multi media Exhibitions with a Guide", "Мультимедийные выставки с гидом", "Qo'llanmali multimedia ko\'rgazmalari"),
     "ourTicketsSold" -> Array("Tickets Sold by our Organization", "Билеты продаются нашими Организация", "Bizning tashkilot tomonidan sotilgan chiptalar"),
     "newsLetter" -> Array("News Letter Now", "Новостное письмо сейчас", "Hoziroq bog\'lanish"),
-    "newsLetterInfo" -> Array("Receive e-mail updates on our exhibitions, events, and more........", "Получайте по электронной почте новости о наших выставках, мероприятиях и многом другом ........", "Bizning ko\'rgazmalarimiz, tadbirlarimiz va boshqalar haqida elektron pochta xabarlarini oling ........h"),
+    "newsLetterInfo" -> Array("Receive e-mail updates on our exhibitions, events, and more........", "Получайте по электронной почте новости о наших выставках, мероприятиях и многом другом ........", "Bizning ko\'rgazmalarimiz, tadbirlarimiz va boshqalar haqida elektron pochta xabarlarini oling ........"),
     "subscribe" -> Array("Subscribe", "Подписывайся", "Obuna bo\'lish")
   )
 //  Index Page ids
