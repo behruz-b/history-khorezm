@@ -6,284 +6,35 @@
     <head>
         <meta charset="UTF-8">
         <title id="siteTitle"></title>
-
             <!-- responsive meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
             <!-- For IE -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
 
         <link rel="stylesheet" href="@routes.Assets.versioned("css/aos.css")">
         <link rel="stylesheet" href="@routes.Assets.versioned("css/imp.css")">
         <link rel="stylesheet" href="@routes.Assets.versioned("css/bootstrap.min.css")">
         <link rel="stylesheet" href="@routes.Assets.versioned("css/custom-animate.css")">
         <link rel="stylesheet" href="@routes.Assets.versioned("css/font-awesome.min.css")">
-
         <link rel="stylesheet" href="@routes.Assets.versioned("css/style.css")">
         <link rel="stylesheet" href="@routes.Assets.versioned("css/responsive.css")">
             <!-- Favicon -->
         <link rel="apple-touch-icon" sizes="180x180" href="@routes.Assets.versioned("images/favicon/apple-touch-icon.png")">
         <link rel="icon" type="image/png" href="@routes.Assets.versioned("images/favicon/favicon-32x32.png")" sizes="32x32">
         <link rel="icon" type="image/png" href="@routes.Assets.versioned("images/favicon/favicon-16x16.png")" sizes="16x16">
-
             <!-- Fixing Internet Explorer-->
             <!--[if lt IE 9]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <script src=" @routes.Assets.versioned("js/html5shiv.js)")
-            ">
+        <script src=" @routes.Assets.versioned("js/html5shiv.js)")">
             <![endif]-->
-
     </head>
 
     <body>
         <div class="boxed_wrapper">
-
             <div class="preloader"></div>
-
-                <!-- main header -->
-            <header class="main-header">
-                    <!--Start header top -->
-                <div class="header-top">
-                    <div class="container">
-                        <div class="outer-box clearfix">
-                                <!--Top Left-->
-                            <div class="header-top-left float-left">
-                                <ul>
-                                    <li><a href="#" onclick="contentTranslate('en')">En</a></li>
-                                    <li><a href="#" onclick="contentTranslate('ru')">Ru</a></li>
-                                    <li><a href="#" onclick="contentTranslate('uz')">Uz</a></li>
-                                </ul>
-                            </div>
-                                <!--Top Right-->
-                                <!--<div class="header-top-right float-right">
-              <div class="phone-num">
-                <a href="tel:1800-123-4659">Phone: 1800 123 4659</a>
-              </div>
-            </div>-->
-                        </div>
-                    </div>
-                </div>
-                    <!--End header top -->
-
-                    <!--Start Header upper -->
-                <div class="header-upper">
-                    <div class="container clearfix">
-                        <div class="outer-box clearfix">
-                            <div class="header-upper-left clearfix float-left">
-                                <div class="logo">
-                                    <a href="/"><img src="@routes.Assets.versioned("images/resources/logo.png")" alt="Awesome Logo" title=""></a>
-                                </div>
-                            </div>
-                            <div class="header-upper-right float-right clearfix">
-                                <div class="nav-outer clearfix">
-                                        <!-- Main Menu -->
-                                    <nav class="main-menu navbar-expand-lg">
-                                        <div class="navbar-header">
-                                                <!-- Toggle Button -->
-                                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                                <span class="icon-bar"></span>
-                                                <span class="icon-bar"></span>
-                                                <span class="icon-bar"></span>
-                                            </button>
-                                        </div>
-
-                                        <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
-                                            <ul class="navigation clearfix">
-                                                <li><a href="/" id="menuHome"></a></li>
-                                                <li><a href="about.html" id="menuNews"></a></li>
-                                                <li class="dropdown"><a href="#" id="menuAboutKhorezm"></a>
-                                                    <ul>
-                                                        <li class="dropdown"><a href="art.html" id="subMenuHistoryOfKhorezm"></a>
-                                                            <ul>
-                                                                <li><a href="antique-period" id="dropMenuAntiquePeriod"></a></li>
-                                                                <li><a href="ancient-period" id="dropMenuAncientPeriod"></a></li>
-                                                                <li><a href="early-middle-ages" id="dropMenuMiddleAges"></a></li>
-                                                                <li><a href="#" id="dropMenuNinthFifteenth"></a></li>
-                                                                <li><a href="#" id="dropMenuSixteenthTwentieth"></a></li>
-                                                                <li><a href="#" id="dropMenuIndependenceTime"></a></li>
-                                                            </ul>
-                                                        </li>
-                                                        <li><a href="cities" id="subMenuKhorezmCities"></a></li>
-                                                        <li><a href="tickets.html" id="subMenuKhorezmCultures"></a></li>
-                                                        <li><a href="tickets.html" id="subMenuArtOfKhorezm"></a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="gallery.html" id="menuInteractiveServices"></a></li>
-                                                <li><a href="#" id="menuMultimedia"></a></li>
-                                                <li><a href="contact.html" id="menuOpenData"></a></li>
-                                                <li><a href="contact.html" id="menuForum"></a></li>
-                                            </ul>
-                                        </div>
-                                    </nav>
-                                        <!-- Main Menu End-->
-                                    <div class="menu-right-content">
-                                        <div class="outer-search-box-style1">
-                                            <div class="seach-toggle"><i class="fa fa-search"></i></div>
-                                            <ul class="search-box">
-                                                <li>
-                                                    <form method="post" action="index.html">
-                                                        <div class="form-group">
-                                                            <input type="search" name="search" placeholder="Search Here" required>
-                                                            <button type="submit"><i class="fa fa-search"></i></button>
-                                                        </div>
-                                                    </form>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                    <!--End Header Upper-->
-
-                    <!--Sticky Header-->
-                <div class="sticky-header">
-                    <div class="container">
-                        <div class="clearfix">
-                                <!--Logo-->
-                            <div class="logo float-left">
-                                <a href="index.html" class="img-responsive"><img src="@routes.Assets.versioned("images/resources/logo.png")" alt="" title=""></a>
-                            </div>
-                                <!--Right Col-->
-                            <div class="right-col float-right">
-                                    <!-- Main Menu -->
-                                <nav class="main-menu navbar-expand-lg">
-                                    <div class="navbar-collapse collapse clearfix">
-                                        <ul class="navigation clearfix">
-                                            <li><a href="#" id="menuStickyHome"></a></li>
-                                            <li><a href="about.html" id="menuStickyNews"></a></li>
-                                            <li class="dropdown"><a href="#" id="menuStickyAboutKhorezm"></a>
-                                                <ul>
-                                                    <li class="dropdown"><a href="art.html" id="subMenuStickyHistoryOfKhorezm"></a>
-                                                        <ul>
-                                                            <li><a href="antique-period" id="dropMenuStickyAntiquePeriod"></a></li>
-                                                            <li><a href="ancient-period" id="dropMenuStickyAncientPeriod"></a></li>
-                                                            <li><a href="#" id="dropMenuStickyMiddleAges"></a></li>
-                                                            <li><a href="#" id="dropMenuStickyNinthFifteenth"></a></li>
-                                                            <li><a href="#" id="dropMenuStickySixteenthTwentieth"></a></li>
-                                                            <li><a href="#" id="dropMenuStickyIndependenceTime"></a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li><a href="cities" id="subMenuStickyKhorezmCities"></a></li>
-                                                    <li><a href="tickets.html" id="subMenuStickyKhorezmCultures"></a></li>
-                                                    <li><a href="tickets.html" id="subMenuStickyArtOfKhorezm"></a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="gallery.html" id="menuStickyInteractiveServices"></a></li>
-                                            <li><a href="#" id="menuStickyMultimedia"></a></li>
-                                            <li><a href="contact.html" id="menuStickyOpenData"></a></li>
-                                            <li><a href="contact.html" id="menuStickyForum"></a></li>
-                                        </ul>
-                                    </div>
-                                </nav>
-                                    <!-- Main Menu End-->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                    <!--End Sticky Header-->
-            </header>
+            @common.navbar()
             @content
-                <!--Start footer area-->
-            <footer class="footer-area">
-                <div class="footer">
-                    <div class="container">
-                        <div class="row">
-                                <!--Start single footer widget-->
-                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12 wow fadeInUp" data-wow-delay="100ms">
-                                <div class="single-footer-widget marbtm50">
-                                    <div class="footer-logo">
-                                        <a href="index.html"><img src="@routes.Assets.versioned("images/resources/logo.png")" alt="Footer Logo"></a>
-                                    </div>
-                                </div>
-                            </div>
-                                <!--End single footer widget-->
-                                <!--Start single footer widget-->
-                            <div class="col-xl-2 col-lg-4 col-md-4 col-sm-12 wow fadeInUp" data-wow-delay="100ms">
-                                <div class="single-footer-widget marbtm50">
-                                    <div class="title">
-                                        <h3 id="extras"></h3>
-                                    </div>
-                                    <ul class="social-links">
-                                        <li><a href="#">Twitter</a></li>
-                                        <li><a href="#">YouTube</a></li>
-                                        <li><a href="#">Instagram</a></li>
-                                        <li><a href="#">Telegram</a></li>
-                                        <li><a href="#">Facebook</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                                <!--End single footer widget-->
-                                <!--Start single footer widget-->
-                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12 wow fadeInUp" data-wow-delay="100ms">
-                                <div class="single-footer-widget">
-                                    <div class="title">
-                                        <h3 id="contacts"></h3>
-                                    </div>
-                                    <div class="contact-us">
-                                            <!--<p>2270 S Real Camino Lake<br> California, US 90967</p>
-                                        <div class="phone-num">
-                                            <a href="tel:1800-123-4659">1 (623) 456-9400</a>
-                                        </div>-->
-                                    </div>
-                                </div>
-                            </div>
-                                <!--End single footer widget-->
-                                <!--Start single footer widget-->
-                            <div class="col-xl-2 col-lg-8 col-md-8 col-sm-12 wow fadeInUp" data-wow-delay="100ms">
-                                <div class="single-footer-widget opening-hours-box pdtop50">
-                                    <div class="title">
-                                        <h3 id="openHours"></h3>
-                                    </div>
-                                    <div class="opening-hours">
-                                        <p id="dateOfOpenHours"></p>
-                                    </div>
-                                </div>
-                            </div>
-                                <!--End single footer widget-->
-                                <!--Start single footer widget-->
-                            <div class="col-xl-2 col-lg-4 col-md-4 col-sm-12 wow fadeInUp" data-wow-delay="100ms">
-                                <div class="single-footer-widget pdtop50">
-                                    <div class="title">
-                                        <h3 id="quickLink"></h3>
-                                    </div>
-                                    <ul class="quick-links">
-                                        <li><a href="#" id="homeLink"></a></li>
-                                        <li><a href="#" id="historyLink"></a></li>
-                                        <li><a href="#" id="galleryLink"></a></li>
-                                        <li><a href="#" id="eventsLink"></a></li>
-                                        <li><a href="#" id="contactLink"></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                                <!--End single footer widget-->
-                        </div>
-                    </div>
-                </div>
-                <div class="footer-bottom">
-                    <div class="container">
-                        <div class="outer-box">
-                            <div class="footer-bottom-left">
-                                <div class="text">
-                                    <p id="footerAboutWebSite"></p>
-                                </div>
-                            </div>
-                            <div class="footer-bottom-right">
-                                <div class="copyright-text">
-                                    <p>© <script>document.write(new Date().getFullYear())</script>
-                                        . <span id="allRightReserved"></span></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-                <!--End footer area-->
-
+            @common.footer()
         </div>
 
         <button class="scroll-top scroll-to-target" data-target="html">

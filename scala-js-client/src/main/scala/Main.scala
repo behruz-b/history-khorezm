@@ -22,7 +22,7 @@ object Main extends App {
     "subMenuArtOfKhorezm" -> Array("Art works of Khorezm", "Произведения искусства Хорезма", "Xorazm san'at asarlari"),
     "menuInteractiveServices" -> Array("Interactive services", "Интерактивные сервисы", "Interaktiv xizmatlar"),
     "menuMultimedia" -> Array("Multimedia", "Мультимедиа", "Multimediya"),
-    "menuOpenData" -> Array("Open Data", "Открытые данные", "Ochiq ma\'lumotlar"),
+//    "menuOpenData" -> Array("Open Data", "Открытые данные", "Ochiq ma\'lumotlar"),
     "menuForum" -> Array("Forum", "Форум", "Forum"),
     "extras" -> Array("Extras", "Дополнительно", "Qo\'shimchalar"),
     "contacts" -> Array("Contacts", "Контакты", "Kontaktlar"),
@@ -35,7 +35,7 @@ object Main extends App {
     "eventsLink" -> Array("Events", "События", "Tadbirlar"),
     "contactLink" -> Array("Contact Us", "Связаться с нами", "Biz bilan bog\'lanish"),
     //    Index page
-    "planYourVisit" -> Array("Plan Your Visit", "Спланируйте свой визит", "Tashrifingizni rejalashtiring"),
+//    "planYourVisit" -> Array("Plan Your Visit", "Спланируйте свой визит", "Tashrifingizni rejalashtiring"),
     "smallIntro" -> Array("Small Intro", "Небольшое вступление", "Kichik kirish"),
     "smallIntroText" -> Array(
       "The Khorezm region, one of the first centers of world civilization, is distinguished by its unique cultural traditions, which have their ancient roots. The Khorezm oasis, located in the confluence of the Amu Darya and the Aral Sea, one of the lifebloods of Central Asia, has been the cradle of life for our ancestors since ancient times.",
@@ -43,9 +43,9 @@ object Main extends App {
       "Jahon sivilizatsiyasining birinchi markazlaridan biri bo'lgan Xorazm viloyati o'zining qadimiy ildizlariga ega bo'lgan o'ziga xos madaniy an'analari bilan ajralib turadi. Markaziy Osiyoning qon tomirlaridan biri Amudaryo va Orol dengizining qo'shilish joyida joylashgan Xorazm vohasi qadim zamonlardan buyon ajdodlarimiz uchun hayot beshigi bo'lgan."
     ),
     "moreExplore" -> Array("More Explore", "Больше Исследовать", "Ko'proq o'rganish"),
-    "hours" -> Array("Hours", "Часы", "Soatlar"),
-    "hour" -> Array("Daily 9.30 am–6.00 pm", "Ежедневно с 9.30 до 18.00", "Har kuni 9.30 - 18.00 gacha"),
-    "location" -> Array("Location", "Место нахождения", "Manzil"),
+//    "hours" -> Array("Hours", "Часы", "Soatlar"),
+//    "hour" -> Array("Daily 9.30 am–6.00 pm", "Ежедневно с 9.30 до 18.00", "Har kuni 9.30 - 18.00 gacha"),
+//    "location" -> Array("Location", "Место нахождения", "Manzil"),
     "currentExAndDisplay" -> Array("CURRENT EXHIBITIONS & DISPLAY", "ТЕКУЩИЕ ВЫСТАВКИ И ДИСПЛЕЙ", "Joriy ko'rgazmalar va displey"),
     "whatIsOnAtTheHistorical" -> Array("What’s On At The Historical", "Что происходит в историческом", "Tarixda nima bor"),
     "aboutExhibition" -> Array("Double gate. Khiva. Deshan Castle. Early XX century", "Двойные ворота. Хива. Замок Дешан. Начало XX века", "Qo\'sha darvoza. Xiva. Deshan qal'a. XX asr boshi"),
@@ -64,7 +64,7 @@ object Main extends App {
     "displayText2" -> Array("Sayyid Niyaz Sholikorboy Mosque and Minaret. Khiva. Deshan Castle. The end of the XIX century", "Мечеть и минарет Сайида Нияза Шоликорбоя. Хива. Замок Дешан. Конец XIX века.", "Sayyid Niyoz sholikorboy masjidi va minorasi. Xiva. Deshan qal'a. XIX asr oxiri"),
     "dateOfDisplay2" -> Array("From 6 Sept 2018 until 7 Jan 2021", "С 6 сентября 2018 г. по 7 января 2021 г.", "2018 yil 6 sentyabrdan 2021 yil 7 yanvargacha"),
     "dontMiss" -> Array("DON’T MISS", "НЕ ПРОПУСТИТЕ", "O\'TKAZIB YUBORMANG"),
-    "upcomingEvents" -> Array("Upcoming Events", "Предстоящие События", "Kelgusi tadbirlar"),
+    "upcomingEvents" -> Array("Upcoming Events", "Предстоящие События", "Tarixiy tadbirlar"),
     "ourCollection" -> Array("From Our Collection", "Из нашей коллекции", "Bizning to'plamdan"),
     "viewMore" -> Array("View More", "Посмотреть больше", "Ko\'proq ko\'rish"),
     "castle" -> Array("Castle of Nurullaboy", "Замок Нуруллабой", "Nurullaboy qal\'asi"),
@@ -93,7 +93,7 @@ object Main extends App {
     "subMenuStickyArtOfKhorezm" -> Array("Art works of Khorezm", "Произведения искусства Хорезма", "Xorazm san'at asarlari"),
     "menuStickyInteractiveServices" -> Array("Interactive services", "Интерактивные сервисы", "Interaktiv xizmatlar"),
     "menuStickyMultimedia" -> Array("Multimedia", "Мультимедиа", "Multimediya"),
-    "menuStickyOpenData" -> Array("Open Data", "Открытые данные", "Ochiq ma\'lumotlar"),
+//    "menuStickyOpenData" -> Array("Open Data", "Открытые данные", "Ochiq ma\'lumotlar"),
     "menuStickyForum" -> Array("Forum", "Форум", "Forum"),
     "footerAboutWebSite" -> Array(
       "This website is owned by the Ministry of Innovation Development of the Republic of Uzbekistan I-FA-2019-25 code “HISTORY, CULTURAL HERITAGE, MONUMENTS OF KHOREZM CITIES AND CREATION OF SMART TECHNOLOGIES ON THE BASIS OF RESEARCH OF WORKS OF ART ” created as part of a project on the subject.",
