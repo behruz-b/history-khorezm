@@ -98,7 +98,7 @@ object Main extends App {
     "castle" -> Array("Castle of Nurullaboy", "Замок Нуруллабой", "Nurullaboy qal\'asi"),
     "numericalCounter" -> Array("Everything about our organization in numerical counter view.", "Все о нашей организации в виде цифрового счетчика.", "Bizning tashkilot haqida hamma narsa raqamli hisoblagich ko\'rinishida."),
     "wePerfection" -> Array("We Strive for Perfection Every day", "Мы стремимся к совершенству каждый день.", "Biz har kuni mukammallikka intilamiz."),
-    "overOrganized" -> Array("Over Organized\nExhibitions", "Чрезмерно Организованный\nВыставки", "Tashkil etilgandan ortiq ko\'rgazma"),
+    "overOrganized" -> Array("Number of cultural heritage monuments", "Количество памятников культурного наследия", "Madaniy meros yodgorliklari soni"),
     "uniqueObjects" -> Array("Unique Objects Around the World", "Уникальные объекты вокруг мир", "Dunyodagi noyob obyektlar"),
     "multimediaExhibitions" -> Array("Multi media Exhibitions with a Guide", "Мультимедийные выставки с гидом", "Qo'llanmali multimedia ko\'rgazmalari"),
     "ourTicketsSold" -> Array("Tickets Sold by our Organization", "Билеты продаются нашими Организация", "Bizning tashkilot tomonidan sotilgan chiptalar"),
