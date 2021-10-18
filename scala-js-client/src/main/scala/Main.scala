@@ -8,10 +8,12 @@ object Main extends App {
   //  check Pages
   val isIndexPage = dom.document.getElementById("indexPage").asInstanceOf[HTMLLinkElement]
   val isEventsPage = dom.document.getElementById("eventsPage").asInstanceOf[HTMLLinkElement]
+  val isMediaPage = dom.document.getElementById("mediaPage").asInstanceOf[HTMLLinkElement]
 
   val navbarAndFooter = Map(
     "siteTitle" -> Array("History of Khorezm", "История Хорезма", "Xorazm tarixi"),
     "menuHome" -> Array("Home", "Главное", "Bosh sahifa"),
+    //    "sub-menu-home-for-media" -> Array("Home", "Главное", "Bosh sahifa"),
     "menuNews" -> Array("News", "Новости", "Yangiliklar"),
     "menuAboutKhorezm" -> Array("About Khorezm", "О Хорезме", "Xorazm haqida"),
     "subMenuHistoryOfKhorezm" -> Array("History of Khorezm", "История Хорезма", "Xorazm tarixi"),
@@ -26,6 +28,8 @@ object Main extends App {
     "subMenuArtOfKhorezm" -> Array("Art works of Khorezm", "Произведения искусства Хорезма", "Xorazm san'at asarlari"),
     "menuInteractiveServices" -> Array("Interactive services", "Интерактивные сервисы", "Interaktiv xizmatlar"),
     "menuMultimedia" -> Array("Multimedia", "Мультимедиа", "Multimediya"),
+    //    "multimedia-header" -> Array("Multimedia", "Мультимедиа", "Multimediya"),
+    //    "sub-menu-multimedia" -> Array("Multimedia", "Мультимедиа", "Multimediya"),
     "menuForum" -> Array("Forum", "Форум", "Forum"),
     //    Sticky nav
     "menuStickyHome" -> Array("Home", "Главное", "Bosh sahifa"),
@@ -142,6 +146,20 @@ object Main extends App {
   val modernArt = Map {
     "modernArt" -> Array("Exhibition of Modern Art", "Выставка современного искусства", "Zamonaviy san\'at ko\'rgazmasi")
   }
+  val multimedia = Map(
+    "multimedia-header" -> Array("Multimedia", "Мультимедиа", "Multimediya"),
+    "sub-menu-home-for-media" -> Array("Home", "Главное", "Bosh sahifa"),
+    "sub-menu-multimedia" -> Array("Multimedia", "Мультимедиа", "Multimediya"),
+    "upcomingVideos" -> Array("Multimedia", "Мультимедиа", "Multimediya"),
+    "month-for-video1" -> Array("May", "Май", "May"),
+    "videoName1" -> Array("Dance Magic 2019", "Магия танца 2019", "Raqs Sehri 2019"),
+    "month-for-video2" -> Array("Feb", "Фев", "Fev"),
+    "videoName2" -> Array("\"Visit Holy Places of Khorezm\"", "«Посещение святых мест Хорезма»", "\"Xorazmning muqaddas joylariga tashrif buyuring\""),
+    "month-for-video3" -> Array("Apr", "Апр", "Apr"),
+    "videoName3" -> Array("Tourism Potential of Khorezm in number", "Туристический потенциал Хорезма в цифрах", "Xorazmning sayyohlik sayohati raqamlarda"),
+    "month-for-video4" -> Array("Apr", "Апр", "Apr"),
+    "videoName4" -> Array("Khiva", "Хива", "Xiva")
+  )
   val readMoreList = List("readMore", "readMore2", "readMore3", "readMore4", "readMore5", "readMore6", "readMore7", "readMore8", "readMore9", "readMore10")
   val modernArtList = List("modernArt", "modernArt2", "modernArt3", "modernArt5", "modernArt6", "modernArt7", "modernArt8", "modernArt9", "modernArt10")
   val learnMoreList = List("bigLearnMore", "secondLearnMore", "thirdLearnMore", "learnMore4", "learnMore5", "learnMore6", "learnMore7", "learnMore8", "learnMore9")
@@ -299,6 +317,12 @@ object Main extends App {
       item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = mon("mon")(2)
     )
   }
+  //  Multimedia Pages
+  if (isMediaPage != null) {
+    multimedia.keys.foreach(
+      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = multimedia(item)(2)
+    )
+  }
 
   @JSExportTopLevel("contentTranslate")
   def contentTranslate(language: String): Unit = {
@@ -380,6 +404,12 @@ object Main extends App {
       )
       eventsMonList.foreach(
         item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = mon("mon")(lang)
+      )
+    }
+    //  Multimedia Pages
+    if (isMediaPage != null) {
+      multimedia.keys.foreach(
+        item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = multimedia(item)(lang)
       )
     }
     navbarAndFooter.keys.foreach(

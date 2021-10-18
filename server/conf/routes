@@ -8,6 +8,7 @@ GET     /                           controllers.HomeController.index()
 
 #About Khorezm navbar
 GET     /events                     controllers.HomeController.events()
+GET     /media                      controllers.HomeController.multimedia()
 GET     /antique-period             controllers.HomeController.antiquePeriod()
 GET     /ancient-period             controllers.HomeController.ancientPeriod()
 GET     /early-middle-ages          controllers.HomeController.earlyMiddleAges()
