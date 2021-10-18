@@ -33,4 +33,7 @@ class HomeController @Inject()(val controllerComponents: ControllerComponents) e
   def cities(): Action[AnyContent] = Action {
     Ok(html.cities())
   }
+  def comingSoon(): Action[AnyContent] = Action {
+    Ok(html.common.comingsoon())
+  }
 }

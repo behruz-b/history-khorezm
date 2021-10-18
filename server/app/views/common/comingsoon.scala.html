@@ -1,0 +1,103 @@
+@()
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>historykhorezm.uz</title>
+            <!-- responsive meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <!-- For IE -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <link rel="stylesheet" href="@routes.Assets.versioned("css/bootstrap.min.css")">
+            <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="@routes.Assets.versioned("images/favicon/apple-touch-icon.png")">
+        <link rel="icon" type="image/png" href="@routes.Assets.versioned("images/favicon/favicon-32x32.png")" sizes="32x32">
+        <link rel="icon" type="image/png" href="@routes.Assets.versioned("images/favicon/favicon-16x16.png")" sizes="16x16">
+    </head>
+
+    <body>
+        <head>
+            <title>historykhorezm.uz</title>
+        </head>
+        <link rel="stylesheet" href="@routes.Assets.versioned("css/comingSoon.css")">
+
+        <div class="simpleslide100">
+            <div class="simpleslide100-item bg-img1" style="background-image: url('@routes.Assets.versioned("images/bg03.jpg")')"></div>
+        </div>
+
+        <div class="size1 overlay1">
+            <div class="size1 flex-col-c-m">
+                <h3 class="l1-txt1 text-center pb-2">
+                        Ushbu sahifa tez orada qo`shiladi...
+                    <!-- Coming soon -->
+                </h3>
+
+                <p class="m2-txt1 text-center pb-3">
+                    <!--Our website is under construction, follow us for update now!-->
+                    Bizning websiteda texnik ishlar olib borilmoqda, bizni kuzatib boring!
+                </p>
+
+                <div class="flex-w flex-c-m pb-2">
+                    <div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
+                        <span class="l2-txt1" id="days">35</span>
+                        <span class="s2-txt1">Kun</span>
+                    </div>
+
+                    <div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
+                        <span class="l2-txt1" id="hours">17</span>
+                        <span class="s2-txt1">Soat</span>
+                    </div>
+
+                    <div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
+                        <span class="l2-txt1" id="mins">50</span>
+                        <span class="s2-txt1">Minut</span>
+                    </div>
+
+                    <div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
+                        <span class="l2-txt1" id="secs">39</span>
+                        <span class="s2-txt1">Sekund</span>
+                    </div>
+                </div>
+
+                <form class="w-full flex-w flex-c-m">
+                    <a href="/" class="flex-c-m size3 s2-txt3 how-btn1 trans-04 where1 text-decoration-none">
+                        Bosh sahifa
+                    </a>
+                </form>
+            </div>
+        </div>
+        <script>
+                // The data/time we want to countdown to
+                var countDownDate = new Date("Nov 25, 2021 16:37:52").getTime();
+
+                // Run myfunc every second
+                var myfunc = setInterval(function() {
+
+                    var now = new Date().getTime();
+                    var timeleft = countDownDate - now;
+
+                    // Calculating the days, hours, minutes and seconds left
+                    var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+                    var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
+                    var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+
+                    // Result is output to the specific element
+                    document.getElementById("days").innerHTML = days
+                    document.getElementById("hours").innerHTML = hours
+                    document.getElementById("mins").innerHTML = minutes
+                    document.getElementById("secs").innerHTML = seconds
+
+                    // Display the message when countdown is over
+                    if (timeleft < 0) {
+                        clearInterval(myfunc);
+                        document.getElementById("days").innerHTML = ""
+                        document.getElementById("hours").innerHTML = ""
+                        document.getElementById("mins").innerHTML = ""
+                        document.getElementById("secs").innerHTML = ""
+                        document.getElementById("end").innerHTML = "TIME UP!!";
+                    }
+                }, 1000);
+        </script>
+    </body>
