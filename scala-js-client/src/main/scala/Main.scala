@@ -55,8 +55,7 @@ object Main extends App {
     "quickLink" -> Array("Quick Link", "Прямая ссылка", "Tezkor havola"),
     "homeLink" -> Array("Home", "Главное", "Bosh sahifa"),
     "historyLink" -> Array("History", "История", "Tarix"),
-    "galleryLink" -> Array("Gallery", "Галерея", "Galereya"),
-    "eventsLink" -> Array("Events", "События", "Tadbirlar"),
+    "eventsLink" -> Array("News", "Новости", "Yangiliklar"),
     "contactLink" -> Array("Contact Us", "Связаться с нами", "Biz bilan bog\'lanish"),
     "footerAboutWebSite" -> Array(
       "This website is owned by the Ministry of Innovation Development of the Republic of Uzbekistan I-FA-2019-25 code “HISTORY, CULTURAL HERITAGE, MONUMENTS OF KHOREZM CITIES AND CREATION OF SMART TECHNOLOGIES ON THE BASIS OF RESEARCH OF WORKS OF ART ” created as part of a project on the subject.",
