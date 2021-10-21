@@ -7864,20 +7864,20 @@ select:focus {
 .single-sidebar .popular-tag li a {
     position: relative;
     display: block;
-    background: #ffffff;
-    border: 1px solid #2d353d;
-    color: #2d353d;
+    border: 1px solid #ffffff;
     font-size: 14px;
     font-weight: 400;
     padding: 5px 25px 3px;
     text-transform: capitalize;
     transition: all 500ms ease 0s;
     border-radius: 20px;
+    color: #ffffff;
+    background: #e4b33d;
 }
 .single-sidebar .popular-tag li a:hover{
-    color: #ffffff;
+    background: #ffffff;
+    color: #2d353d;
     border-color: #e4b33d;
-    background: #e4b33d;
 }
 
 
