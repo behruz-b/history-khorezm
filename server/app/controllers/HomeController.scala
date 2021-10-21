@@ -14,8 +14,12 @@ class HomeController @Inject()(val controllerComponents: ControllerComponents) e
   def events(): Action[AnyContent] = Action {
     Ok(html.events())
   }
+
   def multimedia(): Action[AnyContent] = Action {
     Ok(html.multimedia())
+  }
+  def interactiveServices(): Action[AnyContent] = Action {
+    Ok(html.interactive_services())
   }
 
   def antiquePeriod(): Action[AnyContent] = Action {
