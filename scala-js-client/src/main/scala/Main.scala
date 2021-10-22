@@ -9,6 +9,7 @@ object Main extends App {
   val isIndexPage = dom.document.getElementById("indexPage").asInstanceOf[HTMLLinkElement]
   val isEventsPage = dom.document.getElementById("eventsPage").asInstanceOf[HTMLLinkElement]
   val isMediaPage = dom.document.getElementById("mediaPage").asInstanceOf[HTMLLinkElement]
+  val isInteractivePage = dom.document.getElementById("interactivePage").asInstanceOf[HTMLLinkElement]
 
   val navbarAndFooter = Map(
     "siteTitle" -> Array("History of Khorezm", "История Хорезма", "Xorazm tarixi"),
@@ -214,6 +215,11 @@ object Main extends App {
     "news-content12" -> Array("On November 29, President Shavkat Mirziyoyev arrived in Khiva on the Urgench-Khiva train ...", "29 ноября Президент Шавкат Мирзиёев прибыл в Хиву поездом Ургенч-Хива ...", "Prezident Shavkat Mirziyoyev 29 noyabr kuni Urganch - Xiva poyezdida Xiva shahriga ..."),
     "news-content13" -> Array("A group of the Social and Humanitarian Department of the Khorezm Mamun Academy ...", "Группа социально-гуманитарного отделения Хорезмской Академии Мамуна ...", "Xorazm Ma’mun akademiyasi Ijtimoiy-gumanitar bo‘limining bir guruh ..."),
   )
+  val interactive = Map(
+    "interactive-header" -> Array("Interactive services", "Сервисы", "Interaktiv xizmatlar"),
+    "sub-menu-for-interactive-home" -> Array("Home", "Главное", "Bosh sahifa"),
+    "sub-menu-for-interactive" -> Array("Interactive services", "Сервисы", "Interaktiv xizmatlar")
+  )
   val latestNews = Map(
     "latest-news" -> Array("Latest news", "Последние новости", "So`nggi yangiliklar")
   )
@@ -322,6 +328,12 @@ object Main extends App {
       item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = multimedia(item)(2)
     )
   }
+  //  Interactive Services Pages
+  if (isInteractivePage != null) {
+    interactive.keys.foreach(
+      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = interactive(item)(2)
+    )
+  }
 
   @JSExportTopLevel("contentTranslate")
   def contentTranslate(language: String): Unit = {
@@ -409,6 +421,12 @@ object Main extends App {
     if (isMediaPage != null) {
       multimedia.keys.foreach(
         item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = multimedia(item)(lang)
+      )
+    }
+    //  Interactive Services Pages
+    if (isInteractivePage != null) {
+      interactive.keys.foreach(
+        item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = interactive(item)(lang)
       )
     }
     navbarAndFooter.keys.foreach(

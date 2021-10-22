@@ -1,20 +1,24 @@
 @()
 
 @main() {
-
+    <style>
+        iframe {
+            overflow-y: hidden;
+        }
+    </style>
     <!--Start breadcrumb area-->
-    <section class="breadcrumb-area" id="eventsPage" style="background-image: url(@routes.Assets.versioned("./images/1920/1920_2.jpg"));">
+    <section class="breadcrumb-area" id="interactivePage" style="background-image: url(@routes.Assets.versioned("./images/1920/1920_2.jpg"));">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
                     <div class="inner-content clearfix">
                         <div class="title">
-                            <h1 id="news-header"></h1>
+                            <h1 id="interactive-header"></h1>
                         </div>
                         <div class="breadcrumb-menu">
                             <ul class="clearfix">
-                            <li><a href="/" id="sub-menu-home"></a></li>
-                                <li class="active" id="sub-menu-news"></li>
+                            <li><a href="/" id="sub-menu-for-interactive-home"></a></li>
+                                <li class="active" id="sub-menu-for-interactive"></li>
                             </ul>
                         </div>
                     </div>
@@ -25,68 +29,37 @@
 <!--Start Partner Area-->
 <section class="partner-area">
     <div class="container">
+        <div class="row">
+            <div class="col-xl-8">
+                <div class="events-single-text-box">
+                    <h2>Interactive xizmat</h2>
+                    <p>Bu servis Xorazmdagi binolar, tarixiy obidalar, dam olish maskanlar rasmlarini o'z ichiga
+                        oladi. Ya'ni xar bir foydalanuvchi rasm yuklashi mumkin bo'ladi, faqat xaqiqiy rasmlarni
+                        joylashuvi bilan (ya'ni rasm olinganda "location" birga olinga bo'lishi kerak). Bu rasmlar
+                        ma'lumotlar omborida qayta tahlil qilinadi va keyinchalik "Yo'nalish berish uchun kerakli
+                        bir servisga aylanadi". Masalan Jaloladdin Manguberdi bobomizni rasmini yuklansa,
+                        Jaloliddin Manguberdi xaqida qanday tarixiy obidalar bo'lsa xammasini xaritada ko'rsatadi
+                        (Google map, Yandex map). Va bemalol shu obidalarni borib ko'rish, qayerda joylashgani va
+                        qiziqarli ma'lumotlarga ega bo'lish imkonini yaratadi.Nima uchun faqat nomi bilan emas,
+                        balki rasmi bilan topadigan qilmoqchimiz. Chunki biron joyga borishni istagan odam, oldin
+                        uni rasmini ko'radi keyin borishni istaydi, va rasmlarni saqlab qo'yadi. Endi bu tizim
+                        orqali turislarni ko'proq jalp qilishga, Xorazm tarixini yanada qiziqarli qilib o'rgatishga
+                        erishiladi</p>
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="events-single-info-box p-2">
+                    <img src="@routes.Assets.versioned("./images/blog/diagramm.png")" alt="Diagram">
+                </div>
+            </div>
+        </div>
         <div class="sec-title text-center">
             <p>Interaktive servis #1</p>
             <div class="big-title"><h1>Xorazm xaritasini yillar kesimida ko'rsatish</h1></div>
         </div>
     </div>
     <div class="container">
-        <div class="row">
-            <div class="col-xl-12">
-                <div class="testimonial-style1-box" style="background-image:url(images/parallax-background/testimonial-style1-box-bg.jpg);">
-                    <div class="top">
-                        <div class="title">
-                            <h1>Xorazm hududi<br> Qanday o'zgargan?</h1>
-                        </div>
-                    </div>
-                    <div class="botton">
-                        <div class="testimonial-carousel owl-carousel owl-theme owl-nav-style-one">
-                            <!--Start Single testimonial Style1-->
-                            <div class="single-testimonial-style1">
-                                <div class="text">We provide programs for young people that build motivation, so I decided to arrange a party for them Everything went smoothly, and all the kids were very much excited!</div>
-                                <div class="client-info">
-                                    <div class="image-box">
-                                        <img src="images/testimonial/tes-v1-1.png" alt="Awesome Image">
-                                    </div>
-                                    <div class="title-box">
-                                        <h3>Mark Anderson</h3>
-                                        <span>author-name second_font</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--End Single testimonial Style1-->
-                            <!--Start Single testimonial Style1-->
-                            <div class="single-testimonial-style1">
-                                <div class="text">We provide programs for young people that build motivation, so I decided to arrange a party for them Everything went smoothly, and all the kids were very much excited!</div>
-                                <div class="client-info">
-                                    <div class="image-box">
-                                        <img src="images/testimonial/tes-v1-1.png" alt="Awesome Image">
-                                    </div>
-                                    <div class="title-box">
-                                        <h3>Mark Anderson</h3>
-                                        <span>author-name second_font</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--End Single testimonial Style1-->
-
-                        </div>
-                        <br>
-                        <!--Start single-sidebar-->
-                        <div class="single-sidebar last-child">
-                            <ul class="popular-tag">
-                                <li ><a class="active" href="#">Ilk Temir Davr</a></li>
-                                <li><a href="#">Ahavoniylar Davri</a></li>
-                                <li><a href="#">Miloddan avalgi 4-2 asr</a></li>
-                                <li><a href="#">Afrig'iylar davri 3-6 asr</a></li>
-                            </ul>
-                        </div>
-                        <!--End single-sidebar-->
-                    </div>
-
-                </div>
-            </div>
-        </div>
+        <iframe src="@routes.Assets.versioned("Maps.html")" frameborder="0" style="height: 78vh; width: 100%"></iframe>
     </div>
 </section>
 

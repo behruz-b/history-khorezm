@@ -27,6 +27,7 @@
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <script src=" @routes.Assets.versioned("js/html5shiv.js)")">
             <![endif]-->
+
     </head>
 
     <body>
@@ -79,6 +80,11 @@
 
             <!-- thm custom script -->
         <script src="@routes.Assets.versioned("js/custom.js")"></script>
+        <script>
+            $(function () {
+                $("#maps").load("@routes.Assets.versioned("Maps.html")");
+            });
+        </script>
         @findScripts("scala-js-client-opt/main.js", "scala-js-client-fastopt/main.js")
 
     </body>
