@@ -54,10 +54,10 @@
   overflow: hidden;
   z-index: 1;
   position: absolute;
-  left: 22%;
-  top: 50%;
-  width: 40vh;
-  height: 40vh;
+  left: 25%;
+  top: 55%;
+  width: 20vh;
+  height: 20vh;
   border-radius: 50%;
   border: 1px solid rgba(255, 0, 0, 0.37);
   box-shadow: rgba(16, 17, 17, 0.575) 0px 8px 24px;
