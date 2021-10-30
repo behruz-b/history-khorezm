@@ -80,11 +80,6 @@
 
             <!-- thm custom script -->
         <script src="@routes.Assets.versioned("js/custom.js")"></script>
-        <script>
-            $(function () {
-                $("#maps").load("@routes.Assets.versioned("Maps.html")");
-            });
-        </script>
         @findScripts("scala-js-client-opt/main.js", "scala-js-client-fastopt/main.js")
 
     </body>
