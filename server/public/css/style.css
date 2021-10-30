@@ -1385,7 +1385,6 @@ select:focus {
 	font-size: 15px;
 	line-height: 30px;
 	font-weight: 600;
-	text-transform: capitalize;
 	padding: 34px 0px 36px;
 	transition: all 500ms ease;
 	opacity: 1;
@@ -1461,7 +1460,6 @@ select:focus {
 	line-height: 24px;
 	font-weight: 500;
 	text-align: left;
-	text-transform: capitalize;
 	transition: all 500ms ease;
 	font-family: 'Archivo', sans-serif;
 }
@@ -1536,7 +1534,6 @@ select:focus {
 	line-height: 24px;
 	font-weight: 500;
 	text-align: left;
-	text-transform: capitalize;
 	transition: all 500ms ease;
 	-moz-transition: all 500ms ease;
 	-webkit-transition: all 500ms ease;
@@ -6612,7 +6609,6 @@ select:focus {
     font-size: 18px;
     line-height: 30px;
     font-weight: 400;
-    text-transform: capitalize;
     transition: all 500ms ease;
     padding: 0 25px;
     font-family: 'Archivo', sans-serif;
@@ -6635,7 +6631,6 @@ select:focus {
     color: #e5f3ff;
     font-size: 18px;
     font-weight: 400;
-    text-transform: capitalize;
     transition: all 500ms ease;
 }
 .breadcrumb-area .breadcrumb-menu ul li.active{
