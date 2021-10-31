@@ -255,9 +255,9 @@
   vertical-align: top;
   width: 80px;
   height: 50px;
-  font-size: 14px;
+  font-size: 11px;
   color: #000;
-  text-transform: uppercase;
+  text-transform: capitalize;
   background: transparent;
   border: none;
   outline: none;

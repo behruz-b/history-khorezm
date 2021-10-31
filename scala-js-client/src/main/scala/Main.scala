@@ -14,7 +14,6 @@ object Main extends App {
   val navbarAndFooter = Map(
     "siteTitle" -> Array("History of Khorezm", "История Хорезма", "Xorazm tarixi"),
     "menuHome" -> Array("Home", "Главное", "Bosh sahifa"),
-    //    "sub-menu-home-for-media" -> Array("Home", "Главное", "Bosh sahifa"),
     "menuNews" -> Array("News", "Новости", "Yangiliklar"),
     "menuAboutKhorezm" -> Array("About Khorezm", "О Хорезме", "Xorazm haqida"),
     "subMenuHistoryOfKhorezm" -> Array("History of Khorezm", "История Хорезма", "Xorazm tarixi"),
@@ -29,8 +28,6 @@ object Main extends App {
     "subMenuArtOfKhorezm" -> Array("Art works of Khorezm", "Произведения искусства Хорезма", "Xorazm san'at asarlari"),
     "menuInteractiveServices" -> Array("Interactive services", "Интерактивные сервисы", "Interaktiv xizmatlar"),
     "menuMultimedia" -> Array("Multimedia", "Мультимедиа", "Multimediya"),
-    //    "multimedia-header" -> Array("Multimedia", "Мультимедиа", "Multimediya"),
-    //    "sub-menu-multimedia" -> Array("Multimedia", "Мультимедиа", "Multimediya"),
     "menuForum" -> Array("Forum", "Форум", "Forum"),
     //    Sticky nav
     "menuStickyHome" -> Array("Home", "Главное", "Bosh sahifa"),
@@ -51,13 +48,12 @@ object Main extends App {
     "menuStickyForum" -> Array("Forum", "Форум", "Forum"),
     "extras" -> Array("Extras", "Дополнительно", "Qo\'shimchalar"),
     "contacts" -> Array("Contacts", "Контакты", "Kontaktlar"),
-//    "openHours" -> Array("Open Hours", "Открытые часы", "Ochilish soatlari"),
-//    "dateOfOpenHours" -> Array("Daily 9.30 am–6.00 pm Thursday & Holidays: Closed", "Ежедневно с 9:30 до 18:00 \nЧетверг и праздничные дни: выходной.", "Har kuni 9.30 - 18.00 \nPayshanba va dam olish kunlari: yopiq"),
+    "about-site-people" -> Array("Masharib Saydamatovich Abdullayev", "Машариб Сайдаматович Абдуллаев", "Masharib Saydamatovich Abdullayev"),
     "quickLink" -> Array("Quick Link", "Прямая ссылка", "Tezkor havola"),
     "homeLink" -> Array("Home", "Главное", "Bosh sahifa"),
     "historyLink" -> Array("History", "История", "Tarix"),
     "eventsLink" -> Array("News", "Новости", "Yangiliklar"),
-    "contactLink" -> Array("Contact Us", "Связаться с нами", "Biz bilan bog\'lanish"),
+    "contactLink" -> Array("Interactive services", "Интерактивные сервисы", "Interaktiv xizmatlar"),
     "footerAboutWebSite" -> Array(
       "This website is owned by the Ministry of Innovation Development of the Republic of Uzbekistan I-FA-2019-25 code “HISTORY, CULTURAL HERITAGE, MONUMENTS OF KHOREZM CITIES AND CREATION OF SMART TECHNOLOGIES ON THE BASIS OF RESEARCH OF WORKS OF ART ” created as part of a project on the subject.",
       "Этот сайт принадлежит Министерству инновационного развития Республики Узбекистан. Код I-FA-2019-25 «ИСТОРИЯ, КУЛЬТУРНОЕ НАСЛЕДИЕ, ПАМЯТНИКИ ГОРОДА ХОРЕЗМА. И СОЗДАНИЕ УМНЫХ ТЕХНОЛОГИЙ НА ОСНОВЕ ИССЛЕДОВАНИЯ ХУДОЖЕСТВЕННЫХ ПРОИЗВОДСТВ » создан как часть проекта по данной теме.",
@@ -90,8 +86,8 @@ object Main extends App {
     "numericalCounter" -> Array("Everything about our organization in numerical counter view.", "Все о нашей организации в виде цифрового счетчика.", "Bizning tashkilot haqida hamma narsa raqamli hisoblagich ko\'rinishida."),
     "wePerfection" -> Array("We Strive for Perfection Every day", "Мы стремимся к совершенству каждый день.", "Biz har kuni mukammallikka intilamiz."),
     "overOrganized" -> Array("Archaeological monuments", "Археологических памятников", "Arxeologik yodgorliklar"),
-    "uniqueObjects" -> Array("Architectural monuments", "Памятников архитектуры", "Me`moriy obidalar "),
-    "multimediaExhibitions" -> Array("Monumental works of art", "Монументальных произведений искусства", "Monumental san`at asarlari"),
+    "uniqueObjects" -> Array("Architectural monuments", "Памятников архитектуры", "Me'moriy obidalar "),
+    "multimediaExhibitions" -> Array("Monumental works of art", "Монументальных произведений искусства", "Monumental san'at asarlari"),
     "ourTicketsSold" -> Array("Museum expositions", "Mузейных экспозиций", "Muzey ekspozitsiyalari"),
     "newsLetter" -> Array("News Letter Now", "Новостное письмо сейчас", "Hoziroq bog\'lanish"),
     "newsLetterInfo" -> Array("Receive e-mail updates on our exhibitions, events, and more........", "Получайте по электронной почте новости о наших выставках, мероприятиях и многом другом ........", "Bizning ko\'rgazmalarimiz, tadbirlarimiz va boshqalar haqida elektron pochta xabarlarini oling ........"),
@@ -210,10 +206,82 @@ object Main extends App {
   val interactive = Map(
     "interactive-header" -> Array("Interactive services", "Сервисы", "Interaktiv xizmatlar"),
     "sub-menu-for-interactive-home" -> Array("Home", "Главное", "Bosh sahifa"),
-    "sub-menu-for-interactive" -> Array("Interactive services", "Сервисы", "Interaktiv xizmatlar")
+    "sub-menu-for-interactive" -> Array("Interactive services", "Сервисы", "Interaktiv xizmatlar"),
+    "sub-menu-for-interactive" -> Array("Interactive services", "Сервисы", "Interaktiv xizmatlar"),
+    "interactive-title" -> Array("Show map of Khorezm by years", "Показать карту Хорезма по годам", "Xorazm xaritasini yillar kesimida ko'rsatish"),
+    "interactive-ml-title" -> Array("Image recognition and location service", "Служба распознавания изображений и определения местоположения", "Rasmlarni tanib olish va joylashuvini ko'rsatish xizmati"),
+    "interactive-ml-info" -> Array(
+      "This service includes photos of buildings, historical monuments, recreation areas in Khorezm. That is, each user will be " +
+      "able to upload an image only with the location of the actual images (i.e. the \"location\" must be taken together when " +
+      "the image is taken). These images are re-analyzed in the database and then \"converted into a service that needs to be routed.\" " +
+      "For example, if Jalaladdin Manguberdi uploads a picture of our ancestor, he will show all the historical monuments about " +
+      "Jaloliddin Manguberdi on a map (Google map, Yandex map). And it allows you to easily visit these monuments, find out where they " +
+      "are and interesting information. Why do we want to find not only by name, but also by picture. Because a person who wants to go " +
+      "somewhere sees a picture of him first, then wants to go, and saves the pictures. Now, through this system, it is possible to attract " +
+      "more tourists and make the history of Khorezm more interesting",
+      "В этот сервис включены фото зданий, исторических памятников, зон отдыха в Хорезме. То есть каждый пользователь сможет " +
+      "загрузить изображение только с указанием местоположения фактических изображений (т.е. \"местоположение\" должно быть " +
+      "взято вместе, когда изображение будет снято). Эти изображения повторно анализируются в базе данных, а затем «преобразуются " +
+      "в сервис, который необходимо маршрутизировать». Например, если Джалаладдин Мангуберди загрузит фотографию нашего предка, он " +
+      "покажет все исторические памятники о Джалолиддине Мангуберди на карте (карта Google, карта Яндекс). И это позволяет легко " +
+      "посетить эти памятники, узнать, где они находятся, и интересную информацию.Почему мы хотим найти не только по названию, но и " +
+      "по картинке. Потому что человек, который хочет куда-то пойти, сначала видит его фотографию, затем хочет пойти и сохраняет фотографии. " +
+      "Теперь с помощью этой системы можно привлечь больше туристов и сделать историю Хорезма более интересной.",
+      "Bu servis Xorazmdagi binolar, tarixiy obidalar, dam olish maskanlar rasmlarini o'z ichiga oladi. Ya'ni xar bir foydalanuvchi rasm " +
+      "yuklashi mumkin bo'ladi, faqat xaqiqiy rasmlarni joylashuvi bilan (ya'ni rasm olinganda \"location\" birga olinga bo'lishi kerak). " +
+      "Bu rasmlar ma'lumotlar omborida qayta tahlil qilinadi va keyinchalik \"Yo'nalish berish uchun kerakli bir servisga aylanadi\". " +
+      "Masalan Jaloladdin Manguberdi bobomizni rasmini yuklansa, Jaloliddin Manguberdi xaqida qanday tarixiy obidalar bo'lsa xammasini " +
+      "xaritada ko'rsatadi (Google map, Yandex map). Va bemalol shu obidalarni borib ko'rish, qayerda joylashgani va qiziqarli ma'lumotlarga " +
+      "ega bo'lish imkonini yaratadi.Nima uchun faqat nomi bilan emas, balki rasmi bilan topadigan qilmoqchimiz. Chunki biron joyga borishni " +
+      "istagan odam, oldin uni rasmini ko'radi keyin borishni istaydi, va rasmlarni saqlab qo'yadi. Endi bu tizim orqali turislarni ko'proq " +
+      "jalb qilishga, Xorazm tarixini yanada qiziqarli qilib o'rgatishga erishiladi"),
+  "map-info" -> Array(
+    "Khorezm is an ancient civilization with a history of 2700 years of statehood, the territory of which has changed many times in different" +
+      " periods. This map shows the borders of the Khorezm states from the VII century BC to the present day.",
+    "Хорезм - древняя цивилизация с 2700-летней историей государственности, территория которой многократно менялась в разные периоды. " +
+      "На этой карте показаны границы хорезмских государств с VII века до нашей эры до наших дней.",
+    "Xorazm 2700 yillik davlatchilk tarixiga ega qadimiy sivilizatsiya o'chog'i bo'lib, hududi turli davrlarda ko'p marta o'zgargan. " +
+      "Mazkur xaritada miloddan avvalgi VII asrdan hozirgi kungacha bo'lgan davrda Xorazm davlatlari chegaralari ko'rsatilgan."),
+//    Map
+    "temir-one" -> Array("Iron Age", "Железный век", "Temir davri"),
+    "olti-two" -> Array("VI-IV centuries", "VI-IV век", "VI-IV asr"),
+    "tort-three" -> Array("4th-2nd centuries BC", "IV-II вв. До н.э.", "Mil.av. 4-2 asr"),
+    "ikki-four" -> Array("2nd century AD", "2 век нашей эры", "milodiy 2 asr"),
+    "uch-five" -> Array("III - VI centuries", "III - VI век", "III - VI asr"),
+    "yetti-six" -> Array("VI - VII centuries", "VI - VII век", "VI - VII asr"),
+    "sakkiz-seven" -> Array("VIII - IX centuries", "VIII - IX век", "VIII - IX asr"),
+    "on-eight" -> Array("X century", "X век", "X asr"),
+    "asr-1" -> Array("XVI-XVII centuries", "XVI-XVII век", "XVI-XVII asr"),
+    "asr-2" -> Array("The end of the XVIII century", "Конец XVIII века", "XVIII asr oxiri"),
+    "xiva-xon-1" -> Array("Khiva khanate", "Хивинское ханство", "Xiva xonligi"),
+    "xiva-xon-2" -> Array("Khiva khanate", "Хивинское ханство", "Xiva xonligi"),
+    "xiva-xon-3" -> Array("Khiva khanate", "Хивинское ханство", "Xiva xonligi"),
+    "xorazm" -> Array("Khorezm", "Хорезм", "Xorazm"),
+    "map-title-1" -> Array("Early Iron\n Age Asia", "Азия раннего\n железного века", "Ilk Temir \ndavri Osiyo"),
+    "map-title-2" -> Array("Khorezm Achaemenid \nperiod VI - IV centuries", "Хорезмский период \nАхеменидов VI - IV вв.", "Xorazm Ahamoniylar \ndavri VI - IV asr"),
+    "map-title-3" -> Array("Khorezm 4-2 \ncenturies BC", "Хорезм 4-2\n вв. До н.э.", "Xorazm miloddan\n avvalgi 4-2 asr"),
+    "map-title-4" -> Array("Khorezm 2- century AD\n 2nd century AD", "Хорезм 2- век нашей \nэры 2 век нашей эры", "Xorazm mil 2- mil 2 asr"),
+    "map-title-5" -> Array("The period of the \nAfricans III - VI centuries", "Период Aфриканцев\n III - VI вв.", "Afrig'iylar davri\n III - VI asr"),
+    "map-title-6" -> Array("The period of the \nAfricans VI - VII centuries", "Период Aфриканцев\n VI - VII вв.", "Afrig'iylar davri\n VI - VII asr"),
+    "map-title-7" -> Array("Khorezm \nVIII - IX centuries", "Хорезм\n VIII - IX вв.", "Xorazm \nVIII - IX asr"),
+    "map-title-8" -> Array("X century Mamuns", "Мамуны X века", "X asr \nMa'muniylar"),
+    "map-title-9" -> Array("Anushtegin Khorezmshah \n(1097-1231)", "Ануштегин Хорезмшах \n(1097-1231)", "Anushtegin Xorazmshoh \n(1097-1231)"),
+    "map-title-10" -> Array("Khorezmshah Qutbiddin Muhammad \n(1097-1127)", "Хорезмшах Кутбиддин Мухаммад\n (1097-1127)", "Xorazmshoh Qutbiddin Muhammad \n(1097-1127)"),
+    "map-title-11" -> Array("Ostir (1127-1156)", "Остир (1127-1156)", "Ostir (1127-1156)"),
+    "map-title-12" -> Array("El Arslon \n(1156-1172)", "Эль-Арслон \n(1156–1172)", "El Arslon \n(1156-1172)"),
+    "map-title-13" -> Array("Alouddin Takash \n(1172-1200)", "Алоуддин Такаш \n(1172-1200)", "Alouddin Takash \n(1172-1200)"),
+    "map-title-14" -> Array("Alouddin Muhammad \n(1200-1220)", "Алоуддин Мухаммад \n(1200-1220)", "Alouddin Muhammad \n(1200-1220)"),
+    "map-title-15" -> Array("Arabian \nXVI - XVII centuries", "Аравийские \nXVI - XVII вв", "Arabshohiy \nXVI - XVII asr"),
+    "map-title-16" -> Array("Khiva khanate at the \nend of the XVIII century", "Хивинское ханство \nв конце XVIII века", "Xiva xonligi \nXVIII asr oxiri"),
+    "map-title-17" -> Array("Khiva khanate", "Хивинское ханство", "Xiva xonligi"),
+    "map-title-18" -> Array("Khiva khanate (1873-1920)", "Хивинское ханство (1873-1920)", "Xiva xonligi (1873-1920)"),
+    "map-title-19" -> Array("Khiva khanate", "Хивинское ханство", "Xiva xonligi"),
+    "map-title-20" -> Array("Khiva khanate", "Хивинское ханство", "Xiva xonligi"),
+    "map-title-21" -> Array("XXSR 1920-1924", "XXSR 1920-1924 гг.", "XXSR 1920-1924 yillar"),
+    "map-title-22" -> Array("Khorezm region", "Хорезмская обл.", "Xorazm viloyati")
   )
   val latestNews = Map(
-    "latest-news" -> Array("Latest news", "Последние новости", "So`nggi yangiliklar")
+    "latest-news" -> Array("Latest news", "Последние новости", "So'nggi yangiliklar")
   )
   val sep = Map {
     "sep" -> Array("Sep", "Сен", "Sen")
