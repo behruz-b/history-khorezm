@@ -39,6 +39,9 @@ class HomeController @Inject()(val controllerComponents: ControllerComponents) e
   def sixteenTwentiethCenturies(): Action[AnyContent] = Action {
     Ok(html.sixteen_twentieth_centuries())
   }
+  def independencePage(): Action[AnyContent] = Action {
+    Ok(html.independence())
+  }
   def cities(): Action[AnyContent] = Action {
     Ok(html.cities())
   }

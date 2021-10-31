@@ -10,6 +10,7 @@ GET     /ancient-period                 @controllers.HomeController.ancientPerio
 GET     /early-middle-ages              @controllers.HomeController.earlyMiddleAges()
 GET     /nine-fifteenth-centuries       @controllers.HomeController.nineFifteenthCenturies()
 GET     /sixteen-twentieth-centuries    @controllers.HomeController.sixteenTwentiethCenturies()
+GET     /independence                   @controllers.HomeController.independencePage()
 GET     /cities                         @controllers.HomeController.cities()
 GET     /coming-soon                    @controllers.HomeController.comingSoon()
 
