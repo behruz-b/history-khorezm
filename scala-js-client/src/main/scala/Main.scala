@@ -10,6 +10,8 @@ object Main extends App {
   val isEventsPage = dom.document.getElementById("eventsPage").asInstanceOf[HTMLLinkElement]
   val isMediaPage = dom.document.getElementById("mediaPage").asInstanceOf[HTMLLinkElement]
   val isInteractivePage = dom.document.getElementById("interactivePage").asInstanceOf[HTMLLinkElement]
+  //  For About Khorezm page
+  val isAntiquePage = dom.document.getElementById("antiquePage").asInstanceOf[HTMLLinkElement]
 
   val navbarAndFooter = Map(
     "siteTitle" -> Array("History of Khorezm", "История Хорезма", "Xorazm tarixi"),
@@ -212,37 +214,37 @@ object Main extends App {
     "interactive-ml-title" -> Array("Image recognition and location service", "Служба распознавания изображений и определения местоположения", "Rasmlarni tanib olish va joylashuvini ko'rsatish xizmati"),
     "interactive-ml-info" -> Array(
       "This service includes photos of buildings, historical monuments, recreation areas in Khorezm. That is, each user will be " +
-      "able to upload an image only with the location of the actual images (i.e. the \"location\" must be taken together when " +
-      "the image is taken). These images are re-analyzed in the database and then \"converted into a service that needs to be routed.\" " +
-      "For example, if Jalaladdin Manguberdi uploads a picture of our ancestor, he will show all the historical monuments about " +
-      "Jaloliddin Manguberdi on a map (Google map, Yandex map). And it allows you to easily visit these monuments, find out where they " +
-      "are and interesting information. Why do we want to find not only by name, but also by picture. Because a person who wants to go " +
-      "somewhere sees a picture of him first, then wants to go, and saves the pictures. Now, through this system, it is possible to attract " +
-      "more tourists and make the history of Khorezm more interesting",
+        "able to upload an image only with the location of the actual images (i.e. the \"location\" must be taken together when " +
+        "the image is taken). These images are re-analyzed in the database and then \"converted into a service that needs to be routed.\" " +
+        "For example, if Jalaladdin Manguberdi uploads a picture of our ancestor, he will show all the historical monuments about " +
+        "Jaloliddin Manguberdi on a map (Google map, Yandex map). And it allows you to easily visit these monuments, find out where they " +
+        "are and interesting information. Why do we want to find not only by name, but also by picture. Because a person who wants to go " +
+        "somewhere sees a picture of him first, then wants to go, and saves the pictures. Now, through this system, it is possible to attract " +
+        "more tourists and make the history of Khorezm more interesting",
       "В этот сервис включены фото зданий, исторических памятников, зон отдыха в Хорезме. То есть каждый пользователь сможет " +
-      "загрузить изображение только с указанием местоположения фактических изображений (т.е. \"местоположение\" должно быть " +
-      "взято вместе, когда изображение будет снято). Эти изображения повторно анализируются в базе данных, а затем «преобразуются " +
-      "в сервис, который необходимо маршрутизировать». Например, если Джалаладдин Мангуберди загрузит фотографию нашего предка, он " +
-      "покажет все исторические памятники о Джалолиддине Мангуберди на карте (карта Google, карта Яндекс). И это позволяет легко " +
-      "посетить эти памятники, узнать, где они находятся, и интересную информацию.Почему мы хотим найти не только по названию, но и " +
-      "по картинке. Потому что человек, который хочет куда-то пойти, сначала видит его фотографию, затем хочет пойти и сохраняет фотографии. " +
-      "Теперь с помощью этой системы можно привлечь больше туристов и сделать историю Хорезма более интересной.",
+        "загрузить изображение только с указанием местоположения фактических изображений (т.е. \"местоположение\" должно быть " +
+        "взято вместе, когда изображение будет снято). Эти изображения повторно анализируются в базе данных, а затем «преобразуются " +
+        "в сервис, который необходимо маршрутизировать». Например, если Джалаладдин Мангуберди загрузит фотографию нашего предка, он " +
+        "покажет все исторические памятники о Джалолиддине Мангуберди на карте (карта Google, карта Яндекс). И это позволяет легко " +
+        "посетить эти памятники, узнать, где они находятся, и интересную информацию.Почему мы хотим найти не только по названию, но и " +
+        "по картинке. Потому что человек, который хочет куда-то пойти, сначала видит его фотографию, затем хочет пойти и сохраняет фотографии. " +
+        "Теперь с помощью этой системы можно привлечь больше туристов и сделать историю Хорезма более интересной.",
       "Bu servis Xorazmdagi binolar, tarixiy obidalar, dam olish maskanlar rasmlarini o'z ichiga oladi. Ya'ni xar bir foydalanuvchi rasm " +
-      "yuklashi mumkin bo'ladi, faqat xaqiqiy rasmlarni joylashuvi bilan (ya'ni rasm olinganda \"location\" birga olinga bo'lishi kerak). " +
-      "Bu rasmlar ma'lumotlar omborida qayta tahlil qilinadi va keyinchalik \"Yo'nalish berish uchun kerakli bir servisga aylanadi\". " +
-      "Masalan Jaloladdin Manguberdi bobomizni rasmini yuklansa, Jaloliddin Manguberdi xaqida qanday tarixiy obidalar bo'lsa xammasini " +
-      "xaritada ko'rsatadi (Google map, Yandex map). Va bemalol shu obidalarni borib ko'rish, qayerda joylashgani va qiziqarli ma'lumotlarga " +
-      "ega bo'lish imkonini yaratadi.Nima uchun faqat nomi bilan emas, balki rasmi bilan topadigan qilmoqchimiz. Chunki biron joyga borishni " +
-      "istagan odam, oldin uni rasmini ko'radi keyin borishni istaydi, va rasmlarni saqlab qo'yadi. Endi bu tizim orqali turislarni ko'proq " +
-      "jalb qilishga, Xorazm tarixini yanada qiziqarli qilib o'rgatishga erishiladi"),
-  "map-info" -> Array(
-    "Khorezm is an ancient civilization with a history of 2700 years of statehood, the territory of which has changed many times in different" +
-      " periods. This map shows the borders of the Khorezm states from the VII century BC to the present day.",
-    "Хорезм - древняя цивилизация с 2700-летней историей государственности, территория которой многократно менялась в разные периоды. " +
-      "На этой карте показаны границы хорезмских государств с VII века до нашей эры до наших дней.",
-    "Xorazm 2700 yillik davlatchilk tarixiga ega qadimiy sivilizatsiya o'chog'i bo'lib, hududi turli davrlarda ko'p marta o'zgargan. " +
-      "Mazkur xaritada miloddan avvalgi VII asrdan hozirgi kungacha bo'lgan davrda Xorazm davlatlari chegaralari ko'rsatilgan."),
-//    Map
+        "yuklashi mumkin bo'ladi, faqat xaqiqiy rasmlarni joylashuvi bilan (ya'ni rasm olinganda \"location\" birga olinga bo'lishi kerak). " +
+        "Bu rasmlar ma'lumotlar omborida qayta tahlil qilinadi va keyinchalik \"Yo'nalish berish uchun kerakli bir servisga aylanadi\". " +
+        "Masalan Jaloladdin Manguberdi bobomizni rasmini yuklansa, Jaloliddin Manguberdi xaqida qanday tarixiy obidalar bo'lsa xammasini " +
+        "xaritada ko'rsatadi (Google map, Yandex map). Va bemalol shu obidalarni borib ko'rish, qayerda joylashgani va qiziqarli ma'lumotlarga " +
+        "ega bo'lish imkonini yaratadi.Nima uchun faqat nomi bilan emas, balki rasmi bilan topadigan qilmoqchimiz. Chunki biron joyga borishni " +
+        "istagan odam, oldin uni rasmini ko'radi keyin borishni istaydi, va rasmlarni saqlab qo'yadi. Endi bu tizim orqali turislarni ko'proq " +
+        "jalb qilishga, Xorazm tarixini yanada qiziqarli qilib o'rgatishga erishiladi"),
+    "map-info" -> Array(
+      "Khorezm is an ancient civilization with a history of 2700 years of statehood, the territory of which has changed many times in different" +
+        " periods. This map shows the borders of the Khorezm states from the VII century BC to the present day.",
+      "Хорезм - древняя цивилизация с 2700-летней историей государственности, территория которой многократно менялась в разные периоды. " +
+        "На этой карте показаны границы хорезмских государств с VII века до нашей эры до наших дней.",
+      "Xorazm 2700 yillik davlatchilk tarixiga ega qadimiy sivilizatsiya o'chog'i bo'lib, hududi turli davrlarda ko'p marta o'zgargan. " +
+        "Mazkur xaritada miloddan avvalgi VII asrdan hozirgi kungacha bo'lgan davrda Xorazm davlatlari chegaralari ko'rsatilgan."),
+    //    Map
     "temir-one" -> Array("Iron Age", "Железный век", "Temir davri"),
     "olti-two" -> Array("VI-IV centuries", "VI-IV век", "VI-IV asr"),
     "tort-three" -> Array("4th-2nd centuries BC", "IV-II вв. До н.э.", "Mil.av. 4-2 asr"),
@@ -282,6 +284,102 @@ object Main extends App {
   )
   val latestNews = Map(
     "latest-news" -> Array("Latest news", "Последние новости", "So'nggi yangiliklar")
+  )
+  val aboutKhorezmSubMenu = Map(
+    "antik-sub-home" -> Array("Home", "Главное", "Bosh sahifa"),
+    "about-khorezm-menu" -> Array("About Khorezm", "О Хорезме", "Xorazm haqida"),
+    "antique-header-title" -> Array("KHOREZM IN THE ANTIQUE PERIOD", "ХОРЕЗМ В АНТИЧНЫЙ ПЕРИОД", "ANTIK DAVRDA \nXORAZM"),
+    "antique-blog-title" -> Array("KHOREZM IN THE ANTIQUE PERIOD", "ХОРЕЗМ В АНТИЧНЫЙ ПЕРИОД", "ANTIK DAVRDA XORAZM"),
+    "antique-blog-info-1" -> Array("The Khorezm region, one of the first centers of world civilization, is distinguished by " +
+      "its unique cultural traditions, which have their ancient roots. The Khorezm oasis, located in the confluence of the Amu " +
+      "Darya and the Aral Sea, one of the lifebloods of Central Asia, has been the cradle of life for our ancestors since ancient " +
+      "times.One of the medieval scholars, Istakhri, commented on the Amudarya, saying that \"Khorezm is a country that could " +
+      "benefit from the whole of Jaihun.\" This idea is reminiscent of Herodotus' statement about Egypt. Herodotus, the " +
+      "\"father of history\" who lived in the 5th century BC, considered the whole of Egypt to be the \"gift of the Nile.\" " +
+      "Ya.Gulamov “History of irrigation in Khorezm. (From ancient times to the present) ” and speaks of the Amudarya and its " +
+      "delta as very similar to the two great rivers above. Thanks to these rivers, primitive man was able to live within the " +
+      "vast deserts. The lakes formed as a result of the overflow of these rivers and their tributaries, as well as the tugai " +
+      "and changalzars, provided the people with much of what they needed during all periods of social development. For thousands " +
+      "of years, the peoples living in the oases have waged a fierce struggle against the mobile sands and water regime changes " +
+      "that have swept across both rivers. They conquered deserts and rivers and built flourishing oases.",
+      "Хорезмская область, один из первых центров мировой цивилизации, отличается уникальными культурными традициями, имеющими " +
+        "свои древние корни. Хорезмский оазис, расположенный в месте слияния Амударьи и Аральского моря, одного из источников " +
+        "жизненной силы Центральной Азии, с древних времен был колыбелью жизни наших предков. Один из средневековых ученых Истахри " +
+        "так прокомментировал Амударью. , заявив, что «Хорезм - это страна, которая могла бы получить выгоду от всего Джайхуна». " +
+        "Эта идея напоминает высказывание Геродота о Египте. Геродот, «отец истории», живший в V веке до нашей эры, считал весь " +
+        "Египет «даром Нила». Я. Гуламов «История орошения в Хорезме. (С древних времен до наших дней) »и говорит об Амударье и " +
+        "ее дельте, как об очень похожих на две великие реки выше. Благодаря этим рекам первобытный человек смог жить в бескрайних " +
+        "пустынях. Озера, образовавшиеся в результате разлива этих рек и их притоков, а также тугаев и чангалзаров, давали людям " +
+        "многое из того, что им было нужно на протяжении всех периодов общественного развития. На протяжении тысячелетий народы, " +
+        "живущие в оазисах, вели ожесточенную борьбу с подвижными песками и изменениями водного режима, захлестнувшими обе реки. " +
+        "Они покорили пустыни и реки и построили цветущие оазисы.",
+      "Jahon sivilizatsiyasining ilk markazlaridan biri bo‘lgan Xorazm viloyati o‘zining qadimiy ildizlariga ega bo‘lgan o‘ziga " +
+        "xos madaniy an’analari bilan ajralib turadi. Amudaryo va Orol dengizi qo‘shilgan joyda joylashgan, Markaziy Osiyoning qon " +
+        "tomirlaridan biri bo‘lgan Xorazm vohasi qadimdan ajdodlarimizning hayot beshigi bo‘lib kelgan.O‘rta asr allomalaridan biri " +
+        "Istaxriy Amudaryo haqida fikr bildirgan. , “Xorazm butun Jayhundan foyda oladigan davlatdir” degan. Bu fikr Gerodotning " +
+        "Misr haqidagi gapini eslatadi. Miloddan avvalgi V asrda yashagan “tarixning otasi” Gerodot butun Misrni “Nilning tuhfasi” " +
+        "deb hisoblagan. Ya.G‘ulomov “Xorazmda sug‘orish tarixi. (Qadim zamonlardan hozirgi kungacha) ” va Amudaryo va uning deltasi " +
+        "haqida yuqoridagi ikkita katta daryoga juda o'xshashligi haqida gapiradi. Bu daryolar tufayli ibtidoiy odam keng cho'llarda " +
+        "yashashga muvaffaq bo'ldi. Bu daryolar va ularning irmoqlarining toshib ketishi natijasida hosil boʻlgan koʻllar, shuningdek, " +
+        "toʻqay va changalzorlar ijtimoiy taraqqiyotning barcha davrlarida aholiga zarur boʻlgan koʻp narsalarni yetkazib bergan. " +
+        "Ming yillar davomida vohalarda yashovchi xalqlar har ikki daryodan oqib o‘tgan ko‘chma qumlarga, suv rejimining o‘zgarishiga " +
+        "qarshi qattiq kurash olib borgan. Ular choʻl va daryolarni egallab, gullab-yashnayotgan vohalar qurdilar."),
+    "antique-image-title" -> Array("Private collection 2158. Courtesy of the artist.", "Частное собрание 2158. Предоставлено художником.", "Shaxsiy kolleksiya 2158. Rassomning izni bilan."),
+    "antique-blog-info-2" -> Array(
+      "Khorezm is a historical region located between Turan and Iran. Its territory in ancient times stretched from the mouths of the " +
+        "Amudarya to the south to the upper reaches of the Murgab and Tajan rivers. Therefore, this ancient historical region is known " +
+        "in science by two names: Ancient Khorezm and Greater Khorezm. The first information about Khorezm can be found in the books of " +
+        "Avesto, Bihistun by Darius 1, ancient Greek authors (Hecate, Herodotus, Strabo, etc.) and in the works of early medieval Arab geographers.\n" +
+        "In the \"Yasht\" part of the Avesta, Khorezm is praised as \"a river of a thousand streams\", \"a land rich in lakes and meadows\". The " +
+        "territory of ancient Khorezm is naturally divided into 2 regions. In its northern part, in the foothills of the Amu Darya, there are " +
+        "countless wetlands, vast plains to the north and northeast, and in the south, a large part of the valleys of the Murgab and Tajan " +
+        "rivers in the foothills of mountains and hills. fertile lands.\n The Khorezm oasis occupies the plain on the right and left banks " +
+        "of the Amudarya delta. Only the southernmost part of the oasis in Tuyamoy is the middle reaches of the Amudarya. Here is a small " +
+        "Pitnak oasis in the sands of the Karakum Desert, on the left bank of the Arctic.\n Approaching the oasis, there are Karakum hills " +
+        "and barkhan sands that move easily under the influence of wind. The name Karakum, according to VI Masalsky, is not given by the " +
+        "color of the sands, but by their desolate, lifeless appearance. According to Ya. Gulyamov, the name actually means \"evil sands\". " +
+        "The Khorezmians have been passing through these sands since ancient times and have been in constant contact with Khorasan and other " +
+        "parts of Iran.\n The oasis on the right bank is bordered on the northeast by the Southern and Western Kyzylkum. The relief of " +
+        "the Kyzylkum surface is closely related to the tectonics of the Cretaceous rocks that make it up. Kyzylkum and Karakum sands do " +
+        "not differ from each other in terms of their origin and geological formation. They consist mainly of two sands formed by the " +
+        "mainland and alluvially. The first of these, reddish-yellow, or rather reddish-gray, was formed only as a result of the erosion " +
+        "and flight of macteric rocks under the influence of wind. The second type of sand is gray and originates in an alluvial way, i.e., " +
+        "it is formed mainly by the windsweptness of riverbeds and coastal dunes.",
+      "Хорезм - исторический регион, расположенный между Тураном и Ираном. Его территория в древности простиралась от устьев Амударьи на " +
+        "юг до верховий рек Мургаб и Таджан. Поэтому этот древний исторический край известен в науке под двумя названиями: Древний Хорезм и " +
+        "Большой Хорезм. Первые сведения о Хорезме можно найти в книгах Авесто, Бихистун Дария 1, древнегреческих авторов " +
+        "(Геката, Геродот, Страбон и др.) И в трудах раннесредневековых арабских географов.\n В «Яштской» части Авесты Хорезм славится как " +
+        "«река тысячи ручьев», «земля, богатая озерами и лугами». Территория древнего Хорезма естественным образом делится на 2 региона. В " +
+        "его северной части, в предгорьях Амударьи, находятся бесчисленные водно-болотные угодья, обширные равнины на севере и северо-востоке, " +
+        "а на юге большая часть долин рек Мургаб и Таджан в предгорьях гор и холмов. . плодородные земли.\n Хорезмский оазис занимает " +
+        "равнину на правом и левом берегу дельты Амударьи. Только самая южная часть оазиса в Тюямой - это среднее течение Амударьи. Вот " +
+        "небольшой Питнакский оазис в песках пустыни Каракумы, на левом берегу Арктики.\n Приближаясь к оазису, встречаются холмы Каракум " +
+        "и барханные пески, которые легко перемещаются под действием ветра. Название Каракумы, по мнению В.И. Масальского, дано не цветом " +
+        "песков, а их безлюдным, безжизненным видом. По словам Я. Гулямов, собственно название означает «злые пески». Хорезмийцы проходят " +
+        "через эти пески с древних времен и находятся в постоянном контакте с Хорасаном и другими частями Ирана.\n Оазис на правом берегу " +
+        "граничит с северо-востоком с Южным и Западным Кызылкумами. Рельеф поверхности Кызылкумов тесно связан с тектоникой слагающих ее " +
+        "меловых пород. Кызылкумские и Каракумские пески не отличаются друг от друга по своему происхождению и геологическому образованию. " +
+        "Они состоят в основном из двух песков, образованных материком и наносом. Первый из них, красновато-желтый, а точнее красновато-серый, " +
+        "образовался только в результате размыва и разлета макроскопических пород под действием ветра. Второй тип песка - серый и имеет " +
+        "аллювиальное происхождение, т. Е. Образован в основном за счет продуваемости русел рек и прибрежных дюн.",
+      "Xorazm Turon va Eron oraligʻida joylashgan tarixiy hududdir. Uning hududi qadimda Amudaryoning ogʻzidan janubga, Murgʻob va Tojan " +
+        "daryolarining yuqori oqimigacha choʻzilgan. Binobarin, bu qadimiy tarixiy hudud fanda ikki nom bilan mashhur: Qadimgi Xorazm va " +
+        "Katta Xorazm. Xorazm haqidagi ilk maʼlumotlarni “Avesto”, Doro 1-ning “Bihistun” kitoblarida, qadimgi yunon mualliflari (Gekate, " +
+        "Gerodot, Strabon va boshqalar) va ilk oʻrta asr arab geograflari asarlarida uchratish mumkin.\n “Avesto”ning “Yasht” qismida Xorazm" +
+        " “ming soyli daryo”, “koʻl va oʻtloqlarga boy oʻlka” deb maqtalgan. Qadimgi Xorazm hududi tabiiy ravishda 2 rayonga boʻlingan. " +
+        "Uning shimoliy qismida, Amudaryo togʻ etaklarida son-sanoqsiz botqoqliklar, shimol va shimoli-sharqda keng tekisliklar, janubda " +
+        "Murgʻob va Tajan daryolari vodiylarining katta qismi togʻ va adirlar etaklarida joylashgan. . unumdor yerlar.\n Xorazm vohasi Amudaryo " +
+        "deltasining oʻng va chap qirgʻogʻidagi tekislikni egallaydi. Tuyamoydagi vohaning eng janubiy qismigina Amudaryoning oʻrta oqimidir." +
+        " Mana, Arktikaning chap qirg'og'ida, Qoraqum cho'li qumlarida kichik Pitnak vohasi.\n Vohaga yaqinlashganda shamol taʼsirida oson " +
+        "harakatlanadigan Qoraqum adirlari va barxon qumlari bor. Qoraqum nomi, V.I.Masalskiyning fikricha, qumlarning rangi bilan emas, " +
+        "balki ularning kimsasiz, jonsiz ko‘rinishi bilan berilgan. Ya. G‘ulomov, bu ism aslida “yomon qumlar” degan ma’noni anglatadi. " +
+        "Xorazmliklar qadimdan bu qumlardan oʻtib, Xuroson va Eronning boshqa hududlari bilan doimiy aloqada boʻlgan.\n Oʻng qirgʻoqdagi " +
+        "voha shimoli-sharqdan Janubiy va Gʻarbiy Qizilqum bilan chegaradosh. Qizilqum sirtining relyefi uni tashkil etuvchi boʻr davri togʻ " +
+        "jinslarining tektonikasi bilan chambarchas bogʻliq. Qizilqum va Qoraqum qumlari kelib chiqishi va geologik shakllanishi jihatidan " +
+        "bir-biridan farq qilmaydi. Ular asosan materik va allyuvial tomondan hosil boʻlgan ikkita qumdan iborat. Ulardan birinchisi, " +
+        "qizil-sariq, to'g'rirog'i, qizil-kulrang, faqat shamol ta'sirida makterik jinslarning emirilishi va parvozi natijasida hosil bo'lgan. " +
+        "Ikkinchi turdagi qum kulrang bo'lib, allyuvial yo'l bilan paydo bo'ladi, ya'ni u asosan daryo o'zanlari va qirg'oq qumtepalarining " +
+        "shamollaridan hosil bo'ladi."),
   )
   val sep = Map {
     "sep" -> Array("Sep", "Сен", "Sen")
@@ -394,6 +492,11 @@ object Main extends App {
       item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = interactive(item)(2)
     )
   }
+  if (isAntiquePage != null) {
+    aboutKhorezmSubMenu.keys.foreach(
+      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = aboutKhorezmSubMenu(item)(2)
+    )
+  }
 
   @JSExportTopLevel("contentTranslate")
   def contentTranslate(language: String): Unit = {
@@ -487,6 +590,11 @@ object Main extends App {
     if (isInteractivePage != null) {
       interactive.keys.foreach(
         item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = interactive(item)(lang)
+      )
+    }
+    if (isAntiquePage != null) {
+      aboutKhorezmSubMenu.keys.foreach(
+        item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = aboutKhorezmSubMenu(item)(lang)
       )
     }
     navbarAndFooter.keys.foreach(
