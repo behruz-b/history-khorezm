@@ -255,9 +255,9 @@
   vertical-align: top;
   width: 80px;
   height: 50px;
-  font-size: 14px;
+  font-size: 11px;
   color: #000;
-  text-transform: uppercase;
+  text-transform: capitalize;
   background: transparent;
   border: none;
   outline: none;
@@ -683,4 +683,10 @@
   .colorful-switch__off:after {
   transition-timing-function: ease;
   transform: rotate(-45deg) scaleX(0) translateZ(0);
+}
+.maps-info {
+  margin-top: 70%;
+  vertical-align: middle;
+  font-size: 25px;
+  line-height: 1.5;
 }

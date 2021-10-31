@@ -1,22 +1,14 @@
-# Routes
-# This file defines all application routes (Higher priority routes first)
-# https://www.playframework.com/documentation/latest/ScalaRouting
-# ~~~~
 
-# An example controller showing a sample home page
-GET     /                           controllers.HomeController.index()
+GET     /                               @controllers.HomeController.index()
 
 #About Khorezm navbar
-GET     /events                         controllers.HomeController.events()
-GET     /media                          controllers.HomeController.multimedia()
-GET     /interactive-services       controllers.HomeController.interactiveServices()
-GET     /antique-period             controllers.HomeController.antiquePeriod()
-GET     /ancient-period              controllers.HomeController.ancientPeriod()
-GET     /early-middle-ages         controllers.HomeController.earlyMiddleAges()
-GET     /cities                             controllers.HomeController.cities()
-GET     /coming-soon                controllers.HomeController.comingSoon()
+GET     /events                         @controllers.HomeController.events()
+GET     /media                          @controllers.HomeController.multimedia()
+GET     /interactive-services           @controllers.HomeController.interactiveServices()
+GET     /antique-period                 @controllers.HomeController.antiquePeriod()
+GET     /ancient-period                 @controllers.HomeController.ancientPeriod()
+GET     /early-middle-ages              @controllers.HomeController.earlyMiddleAges()
+GET     /cities                         @controllers.HomeController.cities()
+GET     /coming-soon                    @controllers.HomeController.comingSoon()
 
-
-
-# Map static resources from the /public folder to the /assets URL path
-GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
+GET     /assets/*file                   controllers.Assets.versioned(path="/public", file: Asset)
