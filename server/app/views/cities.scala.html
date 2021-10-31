@@ -1,248 +1,71 @@
 @()
 
-@main() {
+    @main() {
 
-<!--Start breadcrumb area-->     
-<section class="breadcrumb-area" style="background-image: url(@routes.Assets.versioned("images/antique-period/_1.jpg"));">
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-12">
-                <div class="inner-content clearfix">
-                    <div class="title">
-                       <h1>KHOREZM CITIES.</h1>
-                    </div>
-                    <div class="breadcrumb-menu">
-                        <ul class="clearfix">
-                            <li><a href="/">Home</a></li>
-                            <li class="active">News Detail</li>
-                        </ul>    
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--End breadcrumb area-->
-
-<!--Start blog single area-->
-<section class="blog-single-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-8 col-lg-7 col-md-12 col-sm-12">
-                <div class="blog-post">
-                    <div class="blog-details-content">
-                        <div class="img-holder">
-                            <img src="@routes.Assets.versioned("images/blog/blog-single-1.jpg")" alt="Awesome Image">
-                        </div>
-                        <div class="text-holder">
-@*                            <ul class="meta-info">*@
-@*                                <li><a href="#">June 16, 2019</a></li>*@
-@*                                <li><a href="#">03 Comments</a></li>*@
-@*                                <li><a href="#">03 Liks</a></li>*@
-@*                            </ul>*@
-                            <h2 class="blog-title">Urgench.</h2>
-                            <div class="text">
-                                <p class="mar-bottom">(New Urgench until 1929)</p>
-                                <p>Urgench - a city in the Khorezm region. The administrative, economic and cultural center of the region. The lower reaches of the Amudarya are on the left bank. The Shavat Canal runs through the center of the city, dividing Urgench into northern and southern parts. In the northern part there are mainly residential buildings, scientific and cultural educational institutions, consumer services enterprises, and in the southern part there are manufacturing enterprises. Both beaches are connected to each other by bridges. The population is 160.3 thousand people, mainly Uzbeks, but also Russians, Tatars, Ukrainians, Koreans, Kazakhs, Turkmens and other nationalities (2020).</p>
+        <!--Start breadcrumb area-->
+        <section class="breadcrumb-area" id="khorezmCitiesPage" style="background-image: url(@routes.Assets.versioned("images/antique-period/_1.jpg"));
+            background-position: center;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="inner-content clearfix">
+                            <div class="title">
+                                <h1 class="text-uppercase" id="cities-header-title-1"></h1>
                             </div>
-                        </div>
-                        <div class="bottom-image-box">
-                            <div class="row">
-                                <div class="col-xl-6">
-                                    <div class="single-image-box">
-                                        <img src="@routes.Assets.versioned("images/370/_1.jpg")" alt="Awesome Image">
-                                    </div>
-                                </div>
-                                <div class="col-xl-6">
-                                    <div class="single-image-box">
-                                        <img src="@routes.Assets.versioned("images/370/_2.jpg")" alt="Awesome Image">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="text text-center">
-                                <p>Private collection 2158. Courtesy of the artist.</p>
-                            </div>
-                        </div>
-                        <div class="bottom-text-box">
-                            <p>The city was founded in 1646 by Khiva khan Abulgazi Bahodirkhan. The city of Gurganj (Old Urgench in Turkmenistan) was left without water after the Amudarya changed its course and began to flow into the Aral Sea. Abulgazi Bahodirkhan Gurganj relocated the people scattered in and around the Wazir fortresses (cities) and settled them in the southern part of the Amu Darya (170 km from Gurganj). gave After that, the name of the ancient city of Gurganj became Old Urgench.</p>
-                            <p>The city of New Urgench (now Urgench) has rapidly become a center of trade and handicrafts due to its location on the Great Silk Road. According to local historians, in the XVII-XVIII centuries, New Urgench was a town surrounded by a fortress of 4-5 meters in height. About 5,000 people lived in the town; many small shops and workshops were operating.</p>
-                            <p>During the years of independence, construction work in the city intensified. In the north-western part of it, the towns of Navruz, Taraqqiyot, and University appeared. A 30 km tram service was launched between Urgench and Khiva (1997), the railway station and Urgench airport were renovated (1997, 2017) and gained an international status.</p>
-                            <p>In Urgench, there are ginneries, excavators, mowers, Urgench oil mills, sawmills, sewing and shoe factories, the Uzbek-Turkish joint venture Nurtop and others. There is a university, a branch of the Tashkent Medical Academy, the Urgench branch of the Tashkent Information Technologies, Urgench State University, 36 general education institutions, 3 music, 2 vocational schools, 8 vocational colleges. There is a regional theater of musical drama and comedy, a museum of modern art, 27 libraries, a park of culture and recreation, a sports complex "Olympia", stadiums, gyms, tennis courts. 1992-2003 "Alley of Great Scholars". "Al-Khwarizmi", "Al-Beruni", "Amir Temur". Memorial complexes “Mirzo Ulugbek”, “Abulgazi Bahodirhon”, “Ogahiy”, “Komiljon Otaniyozov”, “Avaz Otar ogli”, “Jaloliddin Manguberdi”, “Avesto” were built.</p>
-                            <p>Among the architectural monuments are the architectural complex of Doshkinjon Bobo (1827), the House of Salimjanovs (1902), the post office building (1915), the house of Boboohun Salimov (early XX century) and others.</p>
-                        </div>
-                    </div>
-
-                    <div class="blog-details-content">
-                        <div class="img-holder">
-                            <img src="@routes.Assets.versioned("images/blog/blog-single-1.jpg")" alt="Awesome Image">
-                        </div>
-                        <div class="text-holder">
-                            @*                            <ul class="meta-info">*@
-                            @*                                <li><a href="#">June 16, 2019</a></li>*@
-                            @*                                <li><a href="#">03 Comments</a></li>*@
-                            @*                                <li><a href="#">03 Liks</a></li>*@
-                            @*                            </ul>*@
-                            <h2 class="blog-title">Khiva.</h2>
-                            <div class="text">
-                                <p class="mar-bottom">Khiva - is one of the ancient fortress-cities of Khorezm oasis. Its center - 28 km from Urgench, 40 km from the Amudarya. Population 89260 people (2018). Archaeologists in 1984–1993 years did researchs and their results of showed that it was built in the V century BC (M. Mambetullaev, K. Sobirov, F. Khojaniyazov). The first ancient part was built under the name of "Heyvaq" ("Khivaq"). This name used as "Hey-vo" - very sweet (B. Golender), "Khiva" - "space on land, fortress "(Berezin)," Khiva "-" water, fortress between "(S. Jelyabovskiy)," Khiva-uv "-" small sh. "(in Ossetian)," Khiy-vo "-" water well, fortress on the hill, fortress "(K. Nurjanov)," water source "," well "(TV Sereda, M. Matniyozov) and etc.</p>
-                                <p>Ichanqala called as a "Shahristan", was built in a rectangular shape (650x400 m.), Its area is 26 square meters. The surrounded with wall that heights 7-8 m., thickness 5-6 m. The Rabot was built around the castle, is called Dishan Castle (2.5x1.5 km). The inhabitants of Khiva were originally supplied with water from the Amudarya through a canal (now the Polvon Canal) called Heyganiq. During the Qang and Kushan dynasties, Khiva trade caravans entered the city from the beginning of the IV century BC. From 712 year it was part of the Arab Caliphate. According to the famous Arab tourists Al-Istahri (930) and Al-Maqdisi (985), the largest city in the Khorezm oasis.</p>
-
-                            </div>
-                        </div>
-                        <div class="bottom-image-box">
-                            <div class="row">
-                                <div class="col-xl-6">
-                                    <div class="single-image-box">
-                                        <img src="@routes.Assets.versioned("images/370/_1.jpg")" alt="Awesome Image">
-                                    </div>
-                                </div>
-                                <div class="col-xl-6">
-                                    <div class="single-image-box">
-                                        <img src="@routes.Assets.versioned("images/370/_2.jpg")" alt="Awesome Image">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="text text-center">
-                                <p>Private collection 2158. Courtesy of the artist.</p>
-                            </div>
-                        </div>
-                        <div class="bottom-text-box">
-                            <p>The following Persian verses are believed to have been written by Rashiduddin Vatvot:</p>
-                            <p>Samarkand sayqali royi zamin ast,</p>
-                            <p>Bukhara kuvvati islomu din ast,</p>
-                            <p>Hazorasp kalai xub joyi mahkam,</p>
-                            <p>Khiva firdavsil rabbil olamin ast.</p>
-                            <p>According to some sources, Marco Polo, an Italian tourist who traveled to China in the 13th century, was amazed to see woven carpets here when he passed through Khiva. “You know? - wrote the tourist - In this ancient, ancient city, such delicate and elegant, graceful and beautiful carpets are woven that I have never seen such carpets. I have not met anywhere else. They are distinguished not only by their beauty, but also by their maturity and thoroughness stands”.</p>
-                            <p>In 1221 year by mongols and in 1388 occupied by Amir Temur's troops. 1602–1920 years. It was the capital of the Khiva khanate. In 1616 the first brick building - madrasah - was built in Khiva by the order of Arab Muhammad Khan. In 1740 after the invasion of the armies of the Iranian ruler Nadir Shah Afshar, defensive walls were demolished and only 40 buildings survived. The poet Munis wrote about it: "Its ruins were like the hearts of the oppressed."</p>
-                            <p>Uzbeks rebuild the city. Muhammad Amin Inaq (1763–1785), a descendant of the bells, paid attention and built a new madrasah near the Arab Muhammad Khan Madrasah (1616). In 1788 Jummah mosque with 32 m  a new high tower.</p>
-                            <p>In 1806 Muhammad Rahimkhan I 's accession to the throne one of the largest structures - the construction of the Father (Ota) Gate - began. In 1809–1812 Kutlugmurod Inoq madrasah was built. In 1810 the mausoleum of Pahlavon Mahmud was founded. In 1832–1838 years, in the area cleared of buildings in front of the Polvon Gate, a large Caravanserai, Allakulikhon Madrasah and a large Tashhovli Palace with 163 rooms were built. In 1842 a wealthy merchant named Saidboy built a minaret, a mosque and a madrasah near the slave market in front of the Polvon Gate.</p>
-                            <p>In 1842 by Allakulikhan’s order outer - Rabot part 6250 m long and 7-8 m high the new wall was wrapped. By this time Khazorasp (Koydarvoza), Pishkanik, Bogishamol, Bogcha, Qiblatozabog, Yangiariq, Shikhlar, Shohimardon, Doshyak, Gadoylar, Qosh, Gandimiyon gates was founded. In 1852–1853 by the order of Muhammad Aminkhan, a madrasa for 260 students and a minaret (Kalta minor) were built next to it. The madrasa housed a library, a Supreme Sharia court, and a "gas" (111 cm.) its size was set aside in the courtyard to rule on complaints.</p>
-                            <p>In 1873 on May 29, Khiva was occupied by Russian troops. From there 40 years later, the Russian scientist V.I. Massalsky wrote: "The city is where the Polvon ota ary passes, it has a 7-mile-long wall.City  has a population of 20,000. There are 7 palaces, 20 mosques, 38 madrasas, several caravanserais and markets. The most magnificent of the mosques is the Polvon ota mosque, the Muhammad Amin mosque with a madrasah. it is necessary to show the library enriched by Said Muhammad Rahimkhan, who highly valued poetry and art, and the existing lithography of the XIX century.</p>
-                            <p>Founded in 1874, lithography was converted to typography by 1912. Currently the city’s existing architectural monuments were built mainly after the second half of the XVIII century. The oldest surviving monument is the mausoleum of Said Aloviddin, built in the XIV century. Then, Three Saints Mausoleum, Shergozikhan Madrasah, Allaqulikhan Caravanserai and Timi, Kutlugmurad Inaq Madrasah, Pahlavon Mahmud Mausoleum, Tashhovli Palace, Muhammad Amin Inaq Madrasah, Juma Mosque Tower, Islamkhoja Madrasah and Tower, Kaltaminor and others. luxurious buildings have been restored. In 1910–13 years. Asfandiyorkhan’s reception, post-telegraph and hospital buildings were built in Dishon fortress.</p>
-                            <p>In 1920–24 years Khiva was the capital of Khorezm SSR. In 1924 there were 4,029 apartments and 55 mosques. During the Soviet regime, many government offices, industrial enterprises and residential buildings have been built. Including cotton cleaning and brick factories, carpet producing , tailoring  and art goods factories, furniture and bread enterprises, potteies, coppersmith workshops, service houses, power plants, also technical school, pedagogical and medical schools, music and 13 secondary schools, 3 boarding schools, museums of historical local lore and medicine, Avaz Otar, Kamil Khorezmi memorial house-museums, Karakum electricity station, Central Hospital, 2 polyclinics, maternity hospital, children's hospital, SENS, dental clinic, 4 pharmacies, 5 kindergartens, 11 libraries, art palace, 3 cinemas, folk theater, etc., shopping centers was built. 80s. satellite towns - Qosmabad and Fovukkol were built nearby. In 2012 in Khiva there were carpet factories, cotton gins, 5 commercial banks, 12 hotels, 4 colleges, 13 secondary and 2 sports schools, 4 hospitals, 15 museums, a puppet theater.</p>
-                            <p>According to the decision of UNESCO (UN) in 1997.  In Paris in June held a conference dedicated to Khiva’s 2500 years anniversary and it was celebrated in 20-21 October in Uzbekistan.  In 1997 year   around 34 km distance was founded tram line between Urgench and Khiva Urgench and Khiva. The first President of the Republic of Uzbekistan I.A. Karimov in 1997 year in November 11 announced the resolution for reopening “Khorezm Mamun Academy”.  According to this resolution in 1998  thids  large science center began operations. In 2006 year in November   Ma'mun academy celebrated its the 1000th anniversary.</p>
-                            <p>In 2018 on November 30, the railway station opened and the first train arrived. “Ulli yard”, “Nurullaboy summer courtyard “was renovated, and a park and a number of hotels began to be built. This year, the city had a population of about 90,000.</p>
-                        </div>
-                    </div>
-
-                    <div class="blog-details-content">
-                        <div class="img-holder">
-                            <img src="@routes.Assets.versioned("images/blog/blog-single-1.jpg")" alt="Awesome Image">
-                        </div>
-                        <div class="text-holder">
-                            @*                            <ul class="meta-info">*@
-                            @*                                <li><a href="#">June 16, 2019</a></li>*@
-                            @*                                <li><a href="#">03 Comments</a></li>*@
-                            @*                                <li><a href="#">03 Liks</a></li>*@
-                            @*                            </ul>*@
-                            <h2 class="blog-title">KHAZORASP.</h2>
-                            <div class="text">
-                                <p class="mar-bottom">The fortress has existed since the VI century BC. In the center there are the remains of the ancient fortress "Dev Solgan" (340x320 m.). In 1926     from September 29 Khazorasp district’s center, in 1987 a statue of a cavalryman is erected in the square in front of the station. In 1991 the largest "clothing market" ("Kazakh market") was established in the Lower Amudarya basin near the railway station, and it is crowded every day expense an average of 20 million soums. Cotton cleaning factory, printing house and there 3 secondary schools, medical academy, 8 vocational colleges, post, telephone, telegraph, 2 motor depots, oil depot, electricity and gas networks, central hospital, SENS, infectious disease hospital, and a free economic zone. Population - 19283 people (2018). The work is underway to include Khazarasp in the tourist route, open a soda plant and build new housing.</p>
+                            <div class="breadcrumb-menu">
+                                <ul class="clearfix">
+                                    <li><a href="/" id="cities-home-menu"></a></li>
+                                    <li class="active" id="cities-sub-menu"></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            <!--Start sidebar Wrapper-->
-            <div class="col-xl-4 col-lg-5 col-md-9 col-sm-12">
-                <div class="sidebar-wrapper">
-                    <!--Start single sidebar-->
-                    <div class="sidebar-search-box">
-                        <form class="search-form" action="#">
-							<input placeholder="Search" type="text">
-							<button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-						</form>
-                    </div>
-                    <!--End single sidebar-->
-                    <!--Start single sidebar-->
-                   <!-- <div class="single-sidebar">
-                        <div class="title">
-                            <h3>Categories</h3>
-                        </div>
-                        <ul class="categories clearfix">
-                            <li><a href="#">Collections</a></li>
-                            <li><a href="#">Exhibitions</a></li>
-                            <li><a href="#">People</a></li>
-                            <li><a href="#">Press Release</a></li>
-                            <li><a href="#">Programs</a></li>
-                        </ul>
-                    </div>-->
-                    <!--End single sidebar-->
-                    <!--Start single sidebar-->
-                    <div class="single-sidebar">
-                        <div class="title">
-                            <h3>Recent Posts</h3>
-                        </div>
-                        <div class="recent-post">
-                            <div class="recent-post-carousel owl-carousel owl-theme owl-nav-style-one">
-                                <!--Start Single Recent Post -->
-                                <div class="single-recent-post">
-                                    <div class="img-holder">
-                                        <img src="@routes.Assets.versioned("images/sidebar/recent-post-1.jpg")" alt="Awesome Image">
-                                        <div class="overlay-style-one bg1"></div>
-                                    </div>
-                                    <div class="title-holder text-center">
-                                        <p>March 25, 2019</p>
-                                        <h3><a href="#">Scenes from Stepan Hawkin’s World</a></h3>
-                                    </div>    
+        </section>
+            <!--End breadcrumb area-->
+            <!--Start blog single area-->
+        <section class="blog-single-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                        <div class="blog-post">
+                            <div class="blog-details-content">
+                                <div class="img-holder">
+                                    <img src="@routes.Assets.versioned("images/blog/blog-single-1.jpg")" alt="Awesome Image">
                                 </div>
-                                <!--End Single Recent Post -->
-                                <!--Start Single Recent Post -->
-                                <div class="single-recent-post">
-                                    <div class="img-holder">
-                                        <img src="@routes.Assets.versioned("images/sidebar/recent-post-1.jpg")" alt="Awesome Image">
-                                        <div class="overlay-style-one bg1"></div>
+                                <div class="text-holder">
+                                    <h2 class="blog-title text-uppercase" id="cities-blog-title-one-1"></h2>
+                                    <div class="text">
+                                        <p class="mar-bottom" id="cities-blog-info-one-1"></p>
                                     </div>
-                                    <div class="title-holder text-center">
-                                        <p>March 25, 2019</p>
-                                        <h3><a href="#">Scenes from Stepan Hawkin’s World</a></h3>
-                                    </div>    
                                 </div>
-                                <!--End Single Recent Post -->
-                            </div> 
+                                <div class="bottom-image-box">
+                                    <div class="row">
+                                        <div class="col-xl-6">
+                                            <div class="single-image-box">
+                                                <img src="@routes.Assets.versioned("images/370/_1.jpg")" alt="Awesome Image">
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="single-image-box">
+                                                <img src="@routes.Assets.versioned("images/370/_2.jpg")" alt="Awesome Image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text text-center">
+                                        <p id="cities-image-title"></p>
+                                    </div>
+                                </div>
+                                <p class="bottom-text-box">
+                            <p id="cities-blog-info-one-2"></p>
+                            </div>
                         </div>
                     </div>
-                    <!--End single sidebar-->
-                    
-                    <!--Start single sidebar-->
-                    <!--<div class="single-sidebar">
-                        <div class="title">
-                            <h3>Archives</h3>
-                        </div>
-                        <ul class="archives clearfix">
-                            <li><a href="#">January 2020</a></li>
-                            <li><a href="#">December 2019</a></li>
-                            <li><a href="#">November 2019</a></li>
-                            <li><a href="#">October 2019</a></li>
-                        </ul>
-                    </div>-->
-                    <!--End single sidebar-->
-                    
-                    <!--Start single-sidebar-->
-                    <!--<div class="single-sidebar last-child">
-                        <div class="title">
-                            <h3>Tags</h3>
-                        </div>
-                        <ul class="popular-tag">
-                            <li><a href="#">Art</a></li>
-                            <li><a href="#">Artist</a></li>
-                            <li><a href="#">Magazin</a></li>
-                            <li><a href="#">Author</a></li>
-                            <li><a href="#">Gallery</a></li>
-                            <li><a href="#">Collection</a></li>
-                            <li><a href="#">Publication</a></li>
-                        </ul>      
-                    </div> -->
-                    <!--End single-sidebar-->
-                  
-                </div>    
+                </div>
             </div>
-            <!--End Sidebar Wrapper-->
-            
-        </div>
-    </div>
-</section> 
-<!--End blog single area-->
+        </section>
+            <!--End blog single area-->
 
-}
+
+    }
