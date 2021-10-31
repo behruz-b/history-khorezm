@@ -8,6 +8,7 @@ GET     /interactive-services           @controllers.HomeController.interactiveS
 GET     /antique-period                 @controllers.HomeController.antiquePeriod()
 GET     /ancient-period                 @controllers.HomeController.ancientPeriod()
 GET     /early-middle-ages              @controllers.HomeController.earlyMiddleAges()
+GET     /nine-fifteenth-centuries       @controllers.HomeController.nineFifteenthCenturies()
 GET     /cities                         @controllers.HomeController.cities()
 GET     /coming-soon                    @controllers.HomeController.comingSoon()
 

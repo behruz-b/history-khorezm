@@ -33,6 +33,9 @@ class HomeController @Inject()(val controllerComponents: ControllerComponents) e
   def earlyMiddleAges(): Action[AnyContent] = Action {
     Ok(html.early_middle_ages())
   }
+  def nineFifteenthCenturies(): Action[AnyContent] = Action {
+    Ok(html.nine_fifteenth_centuries())
+  }
 
   def cities(): Action[AnyContent] = Action {
     Ok(html.cities())
