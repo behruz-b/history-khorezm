@@ -1,8 +1,11 @@
 @(lang: String)
 
   @main(lang) {
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@@7.12.15/dist/sweetalert2.min.css">
+    <style>
 
-    <!--Start breadcrumb area-->
+    </style>
+        <!--Start breadcrumb area-->
     <section class="breadcrumb-area" id="forumPage" style="background-image: url(@routes.Assets.versioned("images/antique-period/_1.jpg"));
       background-position: center;">
       <div class="container">
@@ -70,7 +73,7 @@
                     <div class="col-xl-12">
                       <div class="button-box text-center">
                         <input id="form_botcheck" name="form_botcheck" class="form-control" type="hidden" value="">
-                        <button type="submit" id="forum-btn-text"></button>
+                        <button class="third" type="submit" id="forum-btn-text"></button>
                       </div>
                     </div>
                   </div>
@@ -83,5 +86,25 @@
       </div>
     </section>
       <!--End Contact Form Section-->
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@@10.10.1/dist/sweetalert2.all.min.js"></script>
+    <script >
+            document.querySelector(".third").addEventListener('click', function () {
+                if (document.querySelector("#name-placeholder").value !== '' &&
+                        document.querySelector("#email-placeholder").value !== '' &&
+                        document.querySelector("#textarea-placeholder").value !== '') {
+                    if (document.querySelector("#forum-home-menu").textContent.startsWith("Home")) {
+                        Swal.fire("Success!", "Your message has been sent successfully!", "success");
+                    } else if (document.querySelector("#forum-home-menu").textContent.startsWith("Bosh")) {
+                        Swal.fire("Muvaffaqiyatli!", "Sizning xabar muvaffaqiyatli jo'natildi!", "success");
+                    } else {
+                        Swal.fire("Успешный!", "Ваше сообщение было отправлено успешно!", "success");
+                    }
+                    document.querySelector("#name-placeholder").value = '';
+                    document.querySelector("#email-placeholder").value = '';
+                    document.querySelector("#phone-placeholder").value = '';
+                    document.querySelector("#subject-placeholder").value = '';
+                    document.querySelector("#textarea-placeholder").value = '';
+                }
+            });
+    </script>
   }
