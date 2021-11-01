@@ -19,6 +19,7 @@ object Main extends App {
   val isIndependencePage = dom.document.getElementById("independencePage").asInstanceOf[HTMLLinkElement]
   val isCitiesPage = dom.document.getElementById("khorezmCitiesPage").asInstanceOf[HTMLLinkElement]
   val isMonumentsPage = dom.document.getElementById("monumentsPage").asInstanceOf[HTMLLinkElement]
+  val isForumPage = dom.document.getElementById("forumPage").asInstanceOf[HTMLLinkElement]
 
   val navbarAndFooter = Map(
     "siteTitle" -> Array("History of Khorezm", "История Хорезма", "Xorazm tarixi"),
@@ -581,6 +582,17 @@ object Main extends App {
   val sep = Map {
     "sep" -> Array("Sep", "Сен", "Sen")
   }
+  val forumPageContent = Map(
+    "forum-header-title" -> Array("Contact Us", "Связаться с нами", "Biz bilan bog'lanish"),
+    "forum-home-menu" -> Array("Home", "Главное", "Bosh sahifa"),
+    "forum-sub-menu" -> Array("Forum", "Форум", "Forum"),
+    "forum-header" -> Array("Get in Touch", "Связаться", "Aloqa qiling"),
+    "forum-header-info" -> Array(
+      "Feel free to get in touch with us. we alwasy open to discussing now projects, createive ideas\n or opportunities to be part of your visions",
+      "Не стесняйтесь связаться с нами. мы всегда открыты для обсуждения новых проектов, творческих идей или возможностей стать частью вашего видения",
+      "Biz bilan bemalol bog'laning. biz har doim yangi loyihalar, ijodiy g'oyalar yoki \ntasavvurlaringizning bir qismi bo'lish imkoniyatlarini muhokama qilish uchun ochiqmiz"),
+    "forum-btn-text" -> Array("Send Message", "Отправить сообщение", "Xabar yuborish"),
+  )
   val aug = Map {
     "aug" -> Array("Aug", "Авг", "Avg")
   }
@@ -730,6 +742,11 @@ object Main extends App {
       item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = monumentsPageContent(item)(2)
     )
   }
+  if (isForumPage != null) {
+    forumPageContent.keys.foreach(
+      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = forumPageContent(item)(2)
+    )
+  }
 
   @JSExportTopLevel("contentTranslate")
   def contentTranslate(language: String): Unit = {
@@ -864,6 +881,11 @@ object Main extends App {
     if (isMonumentsPage != null) {
       monumentsPageContent.keys.foreach(
         item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = monumentsPageContent(item)(lang)
+      )
+    }
+    if (isForumPage != null) {
+      forumPageContent.keys.foreach(
+        item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = forumPageContent(item)(lang)
       )
     }
     navbarAndFooter.keys.foreach(

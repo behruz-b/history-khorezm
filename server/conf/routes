@@ -13,6 +13,7 @@ GET     /sixteen-twentieth-centuries    @controllers.HomeController.sixteenTwent
 GET     /independence                   @controllers.HomeController.independencePage()
 GET     /monuments                      @controllers.HomeController.monumentsPage()
 GET     /cities                         @controllers.HomeController.cities()
+GET     /forum                          @controllers.HomeController.forum()
 GET     /coming-soon                    @controllers.HomeController.comingSoon()
 
 GET     /assets/*file                   controllers.Assets.versioned(path="/public", file: Asset)
