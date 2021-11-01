@@ -1,5 +1,6 @@
 import org.scalajs.dom
 import org.scalajs.dom.raw._
+import org.scalajs.dom.window
 
 import scala.scalajs.js.annotation.JSExportTopLevel
 
@@ -802,9 +803,8 @@ object Main extends App {
     )
   }
 
-  @JSExportTopLevel("contentTranslate")
-  def contentTranslate(language: String): Unit = {
-    val lang = language match {
+
+    val lang = dom.document.body.lang match {
       case "en" => 0
       case "ru" => 1
       case "uz" => 2
@@ -953,5 +953,11 @@ object Main extends App {
     navbarAndFooter.keys.foreach(
       menu => dom.document.getElementById(menu).asInstanceOf[HTMLLinkElement].innerText = navbarAndFooter(menu)(lang)
     )
+
+  @JSExportTopLevel("contentTranslate")
+  def contentTranslate(language: String): Unit = {
+    val origin = window.location.origin
+    val path = window.location.pathname
+    window.location.href = origin + path + "?l=" + language
   }
 }

@@ -1,133 +1,133 @@
-@()
+@(lang: String)
 
-@main() {
+  @main(lang) {
     <!--Start breadcrumb area-->
     <section class="breadcrumb-area" id="mediaPage" style="background-image: url(@routes.Assets.versioned("./images/1920/1920_2.jpg"));">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="inner-content clearfix">
-                        <div class="title">
-                            <h1 id="multimedia-header"></h1>
-                        </div>
-                        <div class="breadcrumb-menu">
-                            <ul class="clearfix">
-                                <li><a href="/" id="sub-menu-home-for-media"></a></li>
-                                <li class="active" id="sub-menu-multimedia"></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12">
+            <div class="inner-content clearfix">
+              <div class="title">
+                <h1 id="multimedia-header"></h1>
+              </div>
+              <div class="breadcrumb-menu">
+                <ul class="clearfix">
+                  <li><a href="/" id="sub-menu-home-for-media"></a></li>
+                  <li class="active" id="sub-menu-multimedia"></li>
+                </ul>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
-        <!--End breadcrumb area-->
-        <!--Start Events Area-->
+      <!--End breadcrumb area-->
+      <!--Start Events Area-->
     <section class="events-area">
-        <div class="container">
-            <div class="sec-title">
-                <div class="big-title"><h1 id="upcomingVideos"></h1></div>
-            </div>
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="event-carousel owl-carousel owl-theme owl-dot-style1">
-                            <!--Start Single event Box-->
-                        <div class="single-event-box">
-                            <div class="img-holder">
-                                <div class="inner">
-                                    <img src="@routes.Assets.versioned("./images/video/video4Cover.jpg")" alt="Awesome Image">
-                                    <div class="overlay-style-one bg2"></div>
-                                </div>
-                                <div class="date-box">
-                                    <div class="left">31</div>
-                                    <div class="right">
-                                        <h6 id="month-for-video1"></h6>
-                                        <h3>2019</h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="title-holder">
-                                <div class="inner">
-                                    <h3><a href="https://www.youtube.com/watch?v=5ylwB0yUa-w" id="videoName1">
-                                    </a><i class="fa fa-angle-double-right" aria-hidden="true"></i></h3>
-                                </div>
-                            </div>
-                        </div>
-                            <!--End Single event Box-->
-                            <!--Start Single event Box-->
-                        <div class="single-event-box">
-                            <div class="img-holder">
-                                <div class="inner">
-                                    <img src="@routes.Assets.versioned("./images/video/video2Cover.jpg")" alt="Awesome Image">
-                                    <div class="overlay-style-one bg2"></div>
-                                </div>
-                                <div class="date-box">
-                                    <div class="left">24</div>
-                                    <div class="right">
-                                        <h6 id="month-for-video2"></h6>
-                                        <h3>2019</h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="title-holder">
-                                <div class="inner">
-                                    <h3><a href="https://www.youtube.com/watch?v=at8wZZQ9ZdI" id="videoName2">
-                                    </a><i class="fa fa-angle-double-right" aria-hidden="true"></i></h3>
-                                </div>
-                            </div>
-                        </div>
-                            <!--End Single event Box-->
-                            <!--Start Single event Box-->
-                        <div class="single-event-box">
-                            <div class="img-holder">
-                                <div class="inner">
-                                    <img src="@routes.Assets.versioned("./images/video/video3Cover.jpg")" alt="Awesome Image">
-                                    <div class="overlay-style-one bg2"></div>
-                                </div>
-                                <div class="date-box">
-                                    <div class="left">30</div>
-                                    <div class="right">
-                                        <h6 id="month-for-video3"></h6>
-                                        <h3>2019</h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="title-holder">
-                                <div class="inner">
-                                    <h3><a href="https://www.youtube.com/watch?v=sJsz0hl-Ba4" id="videoName3">
-                                    </a><i class="fa fa-angle-double-right" aria-hidden="true"></i></h3>
-                                </div>
-                            </div>
-                        </div>
-                            <!--End Single event Box-->
-                            <!--Start Single event Box-->
-                        <div class="single-event-box">
-                            <div class="img-holder">
-                                <div class="inner">
-                                    <img src="@routes.Assets.versioned("./images/video/video1Cover.jpg")" alt="Awesome Image">
-                                    <div class="overlay-style-one bg2"></div>
-                                </div>
-                                <div class="date-box">
-                                    <div class="left">30</div>
-                                    <div class="right">
-                                        <h6 id="month-for-video4"></h6>
-                                        <h3>2019</h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="title-holder">
-                                <div class="inner">
-                                    <h3><a href="https://www.youtube.com/watch?v=5ylwB0yUa-w" id="videoName4">
-                                    </a><i class="fa fa-angle-double-right" aria-hidden="true"></i></h3>
-                                </div>
-                            </div>
-                        </div>
-                            <!--End Single event Box-->
-                    </div>
-                </div>
-            </div>
-
+      <div class="container">
+        <div class="sec-title">
+          <div class="big-title"><h1 id="upcomingVideos"></h1></div>
         </div>
+        <div class="row">
+          <div class="col-xl-12">
+            <div class="event-carousel owl-carousel owl-theme owl-dot-style1">
+                <!--Start Single event Box-->
+              <div class="single-event-box">
+                <div class="img-holder">
+                  <div class="inner">
+                    <img src="@routes.Assets.versioned("./images/video/video4Cover.jpg")" alt="Awesome Image">
+                    <div class="overlay-style-one bg2"></div>
+                  </div>
+                  <div class="date-box">
+                    <div class="left">31</div>
+                    <div class="right">
+                      <h6 id="month-for-video1"></h6>
+                      <h3>2019</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="title-holder">
+                  <div class="inner">
+                    <h3><a href="https://www.youtube.com/watch?v=5ylwB0yUa-w" id="videoName1">
+                    </a><i class="fa fa-angle-double-right" aria-hidden="true"></i></h3>
+                  </div>
+                </div>
+              </div>
+                <!--End Single event Box-->
+                <!--Start Single event Box-->
+              <div class="single-event-box">
+                <div class="img-holder">
+                  <div class="inner">
+                    <img src="@routes.Assets.versioned("./images/video/video2Cover.jpg")" alt="Awesome Image">
+                    <div class="overlay-style-one bg2"></div>
+                  </div>
+                  <div class="date-box">
+                    <div class="left">24</div>
+                    <div class="right">
+                      <h6 id="month-for-video2"></h6>
+                      <h3>2019</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="title-holder">
+                  <div class="inner">
+                    <h3><a href="https://www.youtube.com/watch?v=at8wZZQ9ZdI" id="videoName2">
+                    </a><i class="fa fa-angle-double-right" aria-hidden="true"></i></h3>
+                  </div>
+                </div>
+              </div>
+                <!--End Single event Box-->
+                <!--Start Single event Box-->
+              <div class="single-event-box">
+                <div class="img-holder">
+                  <div class="inner">
+                    <img src="@routes.Assets.versioned("./images/video/video3Cover.jpg")" alt="Awesome Image">
+                    <div class="overlay-style-one bg2"></div>
+                  </div>
+                  <div class="date-box">
+                    <div class="left">30</div>
+                    <div class="right">
+                      <h6 id="month-for-video3"></h6>
+                      <h3>2019</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="title-holder">
+                  <div class="inner">
+                    <h3><a href="https://www.youtube.com/watch?v=sJsz0hl-Ba4" id="videoName3">
+                    </a><i class="fa fa-angle-double-right" aria-hidden="true"></i></h3>
+                  </div>
+                </div>
+              </div>
+                <!--End Single event Box-->
+                <!--Start Single event Box-->
+              <div class="single-event-box">
+                <div class="img-holder">
+                  <div class="inner">
+                    <img src="@routes.Assets.versioned("./images/video/video1Cover.jpg")" alt="Awesome Image">
+                    <div class="overlay-style-one bg2"></div>
+                  </div>
+                  <div class="date-box">
+                    <div class="left">30</div>
+                    <div class="right">
+                      <h6 id="month-for-video4"></h6>
+                      <h3>2019</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="title-holder">
+                  <div class="inner">
+                    <h3><a href="https://www.youtube.com/watch?v=5ylwB0yUa-w" id="videoName4">
+                    </a><i class="fa fa-angle-double-right" aria-hidden="true"></i></h3>
+                  </div>
+                </div>
+              </div>
+                <!--End Single event Box-->
+            </div>
+          </div>
+        </div>
+
+      </div>
     </section>
-        <!--End Events Area-->
-}
+      <!--End Events Area-->
+  }

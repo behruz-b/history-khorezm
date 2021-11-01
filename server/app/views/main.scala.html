@@ -1,5 +1,5 @@
 @import controllers.routes
-@()(content: Html)
+@(lang: String)(content: Html)
 
 <!DOCTYPE html>
 <html lang="en">
@@ -30,12 +30,12 @@
 
     </head>
 
-    <body>
+    <body lang="@lang">
         <div class="boxed_wrapper">
             <div class="preloader"></div>
-            @common.navbar()
+            @common.navbar(lang)
             @content
-            @common.footer()
+            @common.footer(lang)
         </div>
 
         <button class="scroll-top scroll-to-target" data-target="html">

@@ -1,140 +1,170 @@
-@()
+@(lang: String)
 <!-- main header -->
 <header class="main-header">
-        <!--Start header top -->
-    <div class="header-top">
-        <div class="container">
-            <div class="outer-box clearfix">
-                    <!--Top Left-->
-                <div class="header-top-left float-left">
+    <!--Start header top -->
+  <div class="header-top">
+    <div class="container">
+      <div class="outer-box clearfix">
+          <!--Top Left-->
+        <div class="header-top-left float-left">
+          <ul>
+            <li><a href="#" onclick="contentTranslate('uz')">Uz</a></li>
+            <li><a href="#" onclick="contentTranslate('ru')">Ru</a></li>
+            <li><a href="#" onclick="contentTranslate('en')">En</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!--End header top -->
+    <!--Start Header upper -->
+  <div class="header-upper">
+    <div class="container clearfix">
+      <div class="outer-box clearfix">
+        <div class="header-upper-left clearfix float-left">
+          <div class="logo">
+            <a href="/@{
+              if(lang != "uz") "?l=" + lang
+            }"><img src="@routes.Assets.versioned("images/resources/logo.png")" alt="Awesome Logo" title=""></a>
+          </div>
+        </div>
+        <div class="header-upper-right float-right clearfix">
+          <div class="nav-outer clearfix">
+              <!-- Main Menu -->
+            <nav class="main-menu navbar-expand-lg">
+              <div class="navbar-header">
+                  <!-- Toggle Button -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div>
+
+              <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
+                <ul class="navigation clearfix">
+                  <li><a href="/@{
+                    if(lang != "uz") "?l=" + lang
+                  }" id="menuHome"></a></li>
+                  <li><a href="/events@{
+                    if(lang != "uz") "?l=" + lang
+                  }" id="menuNews"></a></li>
+                  <li class="dropdown"><a href="#" id="menuAboutKhorezm"></a>
                     <ul>
-                        <li><a href="#" onclick="contentTranslate('uz')">Uz</a></li>
-                        <li><a href="#" onclick="contentTranslate('ru')">Ru</a></li>
-                        <li><a href="#" onclick="contentTranslate('en')">En</a></li>
+                      <li class="dropdown"><a href="#" id="subMenuHistoryOfKhorezm"></a>
+                        <ul>
+                          <li><a href="/sixteen-twentieth-centuries@{
+                            if(lang != "uz") "?l=" + lang
+                          }" id="dropMenuSixteenthTwentieth"></a></li>
+                          <li><a href="/independence@{
+                            if(lang != "uz") "?l=" + lang
+                          }" id="dropMenuIndependenceTime"></a></li>
+                          <li><a href="/antique-period@{
+                            if(lang != "uz") "?l=" + lang
+                          }" id="dropMenuAntiquePeriod"></a></li>
+                          <li><a href="/ancient-period@{
+                            if(lang != "uz") "?l=" + lang
+                          }" id="dropMenuAncientPeriod"></a></li>
+                          <li><a href="/early-middle-ages@{
+                            if(lang != "uz") "?l=" + lang
+                          }" id="dropMenuMiddleAges"></a></li>
+                          <li><a href="/nine-fifteenth-centuries@{
+                            if(lang != "uz") "?l=" + lang
+                          }" id="dropMenuNinthFifteenth"></a></li>
+                        </ul>
+                      </li>
+                      <li><a href="/cities@{
+                        if(lang != "uz") "?l=" + lang
+                      }" id="subMenuKhorezmCities"></a></li>
+                      <li><a href="/monuments@{
+                        if(lang != "uz") "?l=" + lang
+                      }" id="subMenuKhorezmCultures"></a></li>
+                      <li><a href="/art@{
+                        if(lang != "uz") "?l=" + lang
+                      }" id="subMenuArtOfKhorezm"></a></li>
                     </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-        <!--End header top -->
-        <!--Start Header upper -->
-    <div class="header-upper">
-        <div class="container clearfix">
-            <div class="outer-box clearfix">
-                <div class="header-upper-left clearfix float-left">
-                    <div class="logo">
-                        <a href="/"><img src="@routes.Assets.versioned("images/resources/logo.png")" alt="Awesome Logo" title=""></a>
-                    </div>
-                </div>
-                <div class="header-upper-right float-right clearfix">
-                    <div class="nav-outer clearfix">
-                            <!-- Main Menu -->
-                        <nav class="main-menu navbar-expand-lg">
-                            <div class="navbar-header">
-                                    <!-- Toggle Button -->
-                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                </button>
-                            </div>
-
-                            <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
-                                <ul class="navigation clearfix">
-                                    <li><a href="/" id="menuHome"></a></li>
-                                    <li><a href="/events" id="menuNews"></a></li>
-                                    <li class="dropdown"><a href="#" id="menuAboutKhorezm"></a>
-                                        <ul>
-                                            <li class="dropdown"><a href="#" id="subMenuHistoryOfKhorezm"></a>
-                                                <ul>
-                                                    <li><a href="/sixteen-twentieth-centuries" id="dropMenuSixteenthTwentieth"></a></li>
-                                                    <li><a href="/independence" id="dropMenuIndependenceTime"></a></li>
-                                                    <li><a href="/antique-period" id="dropMenuAntiquePeriod"></a></li>
-                                                    <li><a href="/ancient-period" id="dropMenuAncientPeriod"></a></li>
-                                                    <li><a href="/early-middle-ages" id="dropMenuMiddleAges"></a></li>
-                                                    <li><a href="/nine-fifteenth-centuries" id="dropMenuNinthFifteenth"></a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="/cities" id="subMenuKhorezmCities"></a></li>
-                                            <li><a href="/monuments" id="subMenuKhorezmCultures"></a></li>
-                                            <li><a href="/art" id="subMenuArtOfKhorezm"></a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="/interactive-services" id="menuInteractiveServices"></a></li>
-                                    <li><a href="/media" id="menuMultimedia"></a></li>
-                                    <li><a href="/forum" id="menuForum"></a></li>
-                                </ul>
-                            </div>
-                        </nav>
-                            <!-- Main Menu End-->
-                        <div class="menu-right-content">
-                            <div class="outer-search-box-style1">
-                                <div class="seach-toggle"><i class="fa fa-search"></i></div>
-                                <ul class="search-box">
-                                    <li>
-                                        <form method="post">
-                                            <div class="form-group">
-                                                <input type="search" name="search" required>
-                                                <button type="submit"><i class="fa fa-search"></i></button>
-                                            </div>
-                                        </form>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
+                  </li>
+                  <li><a href="/interactive-services@{
+                    if(lang != "uz") "?l=" + lang
+                  }" id="menuInteractiveServices"></a></li>
+                  <li><a href="/media@{
+                    if(lang != "uz") "?l=" + lang
+                  }" id="menuMultimedia"></a></li>
+                  <li><a href="/forum@{
+                    if(lang != "uz") "?l=" + lang
+                  }" id="menuForum"></a></li>
+                </ul>
+              </div>
+            </nav>
+              <!-- Main Menu End-->
+            <div class="menu-right-content">
+              <div class="outer-search-box-style1">
+                <div class="seach-toggle"><i class="fa fa-search"></i></div>
+                <ul class="search-box">
+                  <li>
+                    <form method="post">
+                      <div class="form-group">
+                        <input type="search" name="search" required>
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                      </div>
+                    </form>
+                  </li>
+                </ul>
+              </div>
             </div>
 
+          </div>
         </div>
-    </div>
-        <!--End Header Upper-->
+      </div>
 
-        <!--Sticky Header-->
-    <div class="sticky-header">
-        <div class="container">
-            <div class="clearfix">
-                    <!--Logo-->
-                <div class="logo float-left">
-                    <a href="/" class="img-responsive"><img src="@routes.Assets.versioned("images/resources/logo.png")" alt="" title=""></a>
-                </div>
-                    <!--Right Col-->
-                <div class="right-col float-right">
-                        <!-- Main Menu -->
-                    <nav class="main-menu navbar-expand-lg">
-                        <div class="navbar-collapse collapse clearfix">
-                            <ul class="navigation clearfix">
-                                <li><a href="/" id="menuStickyHome"></a></li>
-                                <li><a href="/events" id="menuStickyNews"></a></li>
-                                <li class="dropdown"><a href="#" id="menuStickyAboutKhorezm"></a>
-                                    <ul>
-                                        <li class="dropdown"><a href="#" id="subMenuStickyHistoryOfKhorezm"></a>
-                                            <ul>
-                                                <li><a href="/sixteen-twentieth-centuries" id="dropMenuStickySixteenthTwentieth"></a></li>
-                                                <li><a href="/independence" id="dropMenuStickyIndependenceTime"></a></li>
-                                                <li><a href="/antique-period" id="dropMenuStickyAntiquePeriod"></a></li>
-                                                <li><a href="/ancient-period" id="dropMenuStickyAncientPeriod"></a></li>
-                                                <li><a href="/early-middle-ages" id="dropMenuStickyMiddleAges"></a></li>
-                                                <li><a href="/nine-fifteenth-centuries" id="dropMenuStickyNinthFifteenth"></a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="/cities" id="subMenuStickyKhorezmCities"></a></li>
-                                        <li><a href="/monuments" id="subMenuStickyKhorezmCultures"></a></li>
-                                        <li><a href="/art" id="subMenuStickyArtOfKhorezm"></a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="/interactive-services" id="menuStickyInteractiveServices"></a></li>
-                                <li><a href="/media" id="menuStickyMultimedia"></a></li>
-                                    <!--<li><a href="contact.html" id="menuStickyOpenData"></a></li>-->
-                                <li><a href="/forum" id="menuStickyForum"></a></li>
-                            </ul>
-                        </div>
-                    </nav>
-                        <!-- Main Menu End-->
-                </div>
-            </div>
-        </div>
     </div>
-        <!--End Sticky Header-->
+  </div>
+    <!--End Header Upper-->
+
+    <!--Sticky Header-->
+  <div class="sticky-header">
+    <div class="container">
+      <div class="clearfix">
+          <!--Logo-->
+        <div class="logo float-left">
+          <a href="/" class="img-responsive"><img src="@routes.Assets.versioned("images/resources/logo.png")" alt="" title=""></a>
+        </div>
+          <!--Right Col-->
+        <div class="right-col float-right">
+            <!-- Main Menu -->
+          <nav class="main-menu navbar-expand-lg">
+            <div class="navbar-collapse collapse clearfix">
+              <ul class="navigation clearfix">
+                <li><a href="/" id="menuStickyHome"></a></li>
+                <li><a href="/events" id="menuStickyNews"></a></li>
+                <li class="dropdown"><a href="#" id="menuStickyAboutKhorezm"></a>
+                  <ul>
+                    <li class="dropdown"><a href="#" id="subMenuStickyHistoryOfKhorezm"></a>
+                      <ul>
+                        <li><a href="/sixteen-twentieth-centuries" id="dropMenuStickySixteenthTwentieth"></a></li>
+                        <li><a href="/independence" id="dropMenuStickyIndependenceTime"></a></li>
+                        <li><a href="/antique-period" id="dropMenuStickyAntiquePeriod"></a></li>
+                        <li><a href="/ancient-period" id="dropMenuStickyAncientPeriod"></a></li>
+                        <li><a href="/early-middle-ages" id="dropMenuStickyMiddleAges"></a></li>
+                        <li><a href="/nine-fifteenth-centuries" id="dropMenuStickyNinthFifteenth"></a></li>
+                      </ul>
+                    </li>
+                    <li><a href="/cities" id="subMenuStickyKhorezmCities"></a></li>
+                    <li><a href="/monuments" id="subMenuStickyKhorezmCultures"></a></li>
+                    <li><a href="/art" id="subMenuStickyArtOfKhorezm"></a></li>
+                  </ul>
+                </li>
+                <li><a href="/interactive-services" id="menuStickyInteractiveServices"></a></li>
+                <li><a href="/media" id="menuStickyMultimedia"></a></li>
+                  <!--<li><a href="contact.html" id="menuStickyOpenData"></a></li>-->
+                <li><a href="/forum" id="menuStickyForum"></a></li>
+              </ul>
+            </div>
+          </nav>
+            <!-- Main Menu End-->
+        </div>
+      </div>
+    </div>
+  </div>
+    <!--End Sticky Header-->
 </header>

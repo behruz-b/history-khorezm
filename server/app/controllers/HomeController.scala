@@ -7,52 +7,52 @@ import views._
 @Singleton
 class HomeController @Inject()(val controllerComponents: ControllerComponents) extends BaseController {
 
-  def index(): Action[AnyContent] = Action {
-    Ok(html.index())
+  def index(lang: String): Action[AnyContent] = Action {
+    Ok(html.index(lang))
   }
 
-  def events(): Action[AnyContent] = Action {
-    Ok(html.events())
+  def events(lang: String): Action[AnyContent] = Action {
+    Ok(html.events(lang))
   }
 
-  def multimedia(): Action[AnyContent] = Action {
-    Ok(html.multimedia())
+  def multimedia(lang: String): Action[AnyContent] = Action {
+    Ok(html.multimedia(lang))
   }
-  def interactiveServices(): Action[AnyContent] = Action {
-    Ok(html.interactive_services())
-  }
-
-  def antiquePeriod(): Action[AnyContent] = Action {
-    Ok(html.antique_period())
+  def interactiveServices(lang: String): Action[AnyContent] = Action {
+    Ok(html.interactive_services(lang))
   }
 
-  def ancientPeriod(): Action[AnyContent] = Action {
-    Ok(html.ancient_period())
+  def antiquePeriod(lang: String): Action[AnyContent] = Action {
+    Ok(html.antique_period(lang))
   }
 
-  def earlyMiddleAges(): Action[AnyContent] = Action {
-    Ok(html.early_middle_ages())
+  def ancientPeriod(lang: String): Action[AnyContent] = Action {
+    Ok(html.ancient_period(lang))
   }
-  def nineFifteenthCenturies(): Action[AnyContent] = Action {
-    Ok(html.nine_fifteenth_centuries())
+
+  def earlyMiddleAges(lang: String): Action[AnyContent] = Action {
+    Ok(html.early_middle_ages(lang))
   }
-  def sixteenTwentiethCenturies(): Action[AnyContent] = Action {
-    Ok(html.sixteen_twentieth_centuries())
+  def nineFifteenthCenturies(lang: String): Action[AnyContent] = Action {
+    Ok(html.nine_fifteenth_centuries(lang))
   }
-  def independencePage(): Action[AnyContent] = Action {
-    Ok(html.independence())
+  def sixteenTwentiethCenturies(lang: String): Action[AnyContent] = Action {
+    Ok(html.sixteen_twentieth_centuries(lang))
   }
-  def cities(): Action[AnyContent] = Action {
-    Ok(html.cities())
+  def independencePage(lang: String): Action[AnyContent] = Action {
+    Ok(html.independence(lang))
   }
-  def monumentsPage(): Action[AnyContent] = Action {
-    Ok(html.monuments())
+  def cities(lang: String): Action[AnyContent] = Action {
+    Ok(html.cities(lang))
   }
-  def art(): Action[AnyContent] = Action {
-    Ok(html.art())
+  def monumentsPage(lang: String): Action[AnyContent] = Action {
+    Ok(html.monuments(lang))
   }
-  def forum(): Action[AnyContent] = Action {
-    Ok(html.forum())
+  def art(lang: String): Action[AnyContent] = Action {
+    Ok(html.art(lang))
+  }
+  def forum(lang: String): Action[AnyContent] = Action {
+    Ok(html.forum(lang))
   }
   def comingSoon(): Action[AnyContent] = Action {
     Ok(html.common.comingsoon())

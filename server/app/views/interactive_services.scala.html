@@ -1,588 +1,588 @@
-@()
+@(lang: String)
 
-@main() {
+  @main(lang) {
     <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/style.css")">
-    <!--Start breadcrumb area-->
+      <!--Start breadcrumb area-->
     <section class="breadcrumb-area" id="interactivePage" style="background-image: url(@routes.Assets.versioned("./images/1920/1920_2.jpg"));">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="inner-content clearfix">
-                        <div class="title">
-                            <h1 id="interactive-header"></h1>
-                        </div>
-                        <div class="breadcrumb-menu">
-                            <ul class="clearfix">
-                            <li><a href="/" id="sub-menu-for-interactive-home"></a></li>
-                                <li class="active" id="sub-menu-for-interactive"></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12">
+            <div class="inner-content clearfix">
+              <div class="title">
+                <h1 id="interactive-header"></h1>
+              </div>
+              <div class="breadcrumb-menu">
+                <ul class="clearfix">
+                  <li><a href="/" id="sub-menu-for-interactive-home"></a></li>
+                  <li class="active" id="sub-menu-for-interactive"></li>
+                </ul>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
-<!--Start Partner Area-->
-<section class="partner-area">
-    <div class="container">
+      <!--Start Partner Area-->
+    <section class="partner-area">
+      <div class="container">
         <div class="sec-title text-center">
-            <div class="big-title"><h1 id="interactive-title"></h1></div>
+          <div class="big-title"><h1 id="interactive-title"></h1></div>
         </div>
         <div class="container-fluid m-0 p-0">
-            <div class="demo-cont">
-                <!-- slider start -->
-                <div class="fnc-slider example-slider">
-                    <div class="fnc-slider__slides">
-                        <!-- slide start -->
-                        <div class="fnc-slide m--blend-green m--active-slide">
-                            <div class="fnc-slide__inner">
-                                <div class="fnc-slide__mask">
-                                    <div class="fnc-slide__mask-inner"></div>
-                                </div>
-                                <div class="fnc-slide__content">
-                                    <h2 class="fnc-slide__heading">
-                                        <div class="fnc-slide__heading-line">
-                                            <span id="map-title-1"></span>
-                                        </div>
-                                    </h2>
-                                    <button type="button" class="fnc-slide__action-btn">
-                                        Ko'proq o'qish
-                                        <span data-text="Ko'proq o'qish">Ko'proq o'qish</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- slide end -->
-                        <!-- slide start -->
-                        <div class="fnc-slide m--blend-dark">
-                            <div class="fnc-slide__inner">
-                                <div class="fnc-slide__mask">
-                                    <div class="fnc-slide__mask-inner"></div>
-                                </div>
-                                <div class="fnc-slide__content">
-                                    <h2 class="fnc-slide__heading">
-                                        <div class="fnc-slide__heading-line">
-                                            <span id="map-title-2"></span>
-                                        </div>
-                                    </h2>
-                                    <button type="button" class="fnc-slide__action-btn">
-                                        Ko'proq o'qish
-                                        <span data-text="Ko'proq o'qish">Ko'proq o'qish</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- slide end -->
-                        <!-- slide start -->
-                        <div class="fnc-slide m--blend-red">
-                            <div class="fnc-slide__inner">
-                                <div class="fnc-slide__mask">
-                                    <div class="fnc-slide__mask-inner"></div>
-                                </div>
-                                <div class="fnc-slide__content">
-                                    <h2 class="fnc-slide__heading">
-                                        <div class="fnc-slide__heading-line">
-                                            <span id="map-title-3"></span>
-                                        </div>
-                                    </h2>
-                                    <button type="button" class="fnc-slide__action-btn">
-                                        Ko'proq o'qish
-                                        <span data-text="Ko'proq o'qish">Ko'proq o'qish</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- slide end -->
-                        <!-- slide start -->
-                        <div class="fnc-slide m--blend-blue">
-                            <div class="fnc-slide__inner">
-                                <div class="fnc-slide__mask">
-                                    <div class="fnc-slide__mask-inner"></div>
-                                </div>
-                                <div class="fnc-slide__content">
-                                    <h2 class="fnc-slide__heading">
-                                        <div class="fnc-slide__heading-line">
-                                            <span id="map-title-4"></span>
-                                        </div>
-                                    </h2>
-                                    <button type="button" class="fnc-slide__action-btn">
-                                        Ko'proq o'qish
-                                        <span data-text="Ko'proq o'qish">Ko'proq o'qish</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- slide end -->
-                        <!-- slide start -->
-                        <div class="fnc-slide m--blend-blue">
-                            <div class="fnc-slide__inner">
-                                <div class="fnc-slide__mask">
-                                    <div class="fnc-slide__mask-inner"></div>
-                                </div>
-                                <div class="fnc-slide__content">
-                                    <h2 class="fnc-slide__heading">
-                                        <div class="fnc-slide__heading-line">
-                                            <span id="map-title-5"></span>
-                                        </div>
-                                    </h2>
-                                    <button type="button" class="fnc-slide__action-btn">
-                                        Ko'proq o'qish
-                                        <span data-text="Ko'proq o'qish">Ko'proq o'qish</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- slide end -->
-                        <!-- slide start -->
-                        <div class="fnc-slide m--blend-blue">
-                            <div class="fnc-slide__inner">
-                                <div class="fnc-slide__mask">
-                                    <div class="fnc-slide__mask-inner"></div>
-                                </div>
-                                <div class="fnc-slide__content">
-                                    <h2 class="fnc-slide__heading">
-                                        <div class="fnc-slide__heading-line">
-                                            <span id="map-title-6"></span>
-                                        </div>
-                                    </h2>
-                                    <button type="button" class="fnc-slide__action-btn">
-                                        Ko'proq o'qish
-                                        <span data-text="Ko'proq o'qish">Ko'proq o'qish</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- slide end -->
-                        <!-- slide start -->
-                        <div class="fnc-slide m--blend-blue">
-                            <div class="fnc-slide__inner">
-                                <div class="fnc-slide__mask">
-                                    <div class="fnc-slide__mask-inner"></div>
-                                </div>
-                                <div class="fnc-slide__content">
-                                    <h2 class="fnc-slide__heading">
-                                        <div class="fnc-slide__heading-line">
-                                            <span id="map-title-7"></span>
-                                        </div>
-                                    </h2>
-                                    <button type="button" class="fnc-slide__action-btn">
-                                        Ko'proq o'qish
-                                        <span data-text="Ko'proq o'qish">Ko'proq o'qish</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- slide end -->
-                        <!-- slide start -->
-                        <div class="fnc-slide m--blend-blue">
-                            <div class="fnc-slide__inner">
-                                <div class="fnc-slide__mask">
-                                    <div class="fnc-slide__mask-inner"></div>
-                                </div>
-                                <div class="fnc-slide__content">
-                                    <h2 class="fnc-slide__heading">
-                                        <div class="fnc-slide__heading-line">
-                                            <span id="map-title-8"></span>
-                                        </div>
-                                    </h2>
-                                    <button type="button" class="fnc-slide__action-btn">
-                                        Ko'proq o'qish
-                                        <span data-text="Ko'proq o'qish">Ko'proq o'qish</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- slide end -->
-                        <!-- slide start -->
-                        <div class="fnc-slide m--blend-blue">
-                            <div class="fnc-slide__inner">
-                                <div class="fnc-slide__mask">
-                                    <div class="fnc-slide__mask-inner"></div>
-                                </div>
-                                <div class="fnc-slide__content">
-                                    <h2 class="fnc-slide__heading">
-                                        <div class="fnc-slide__heading-line">
-                                            <span id="map-title-9"></span>
-                                        </div>
-                                    </h2>
-                                    <button type="button" class="fnc-slide__action-btn">
-                                        Ko'proq o'qish
-                                        <span data-text="Ko'proq o'qish">Ko'proq o'qish</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- slide end -->
-                        <!-- slide start -->
-                        <div class="fnc-slide m--blend-blue">
-                            <div class="fnc-slide__inner">
-                                <div class="fnc-slide__mask">
-                                    <div class="fnc-slide__mask-inner"></div>
-                                </div>
-                                <div class="fnc-slide__content">
-                                    <h2 class="fnc-slide__heading">
-                                        <div class="fnc-slide__heading-line">
-                                            <span id="map-title-10"></span>
-                                        </div>
-                                    </h2>
-                                    <button type="button" class="fnc-slide__action-btn">
-                                        Ko'proq o'qish
-                                        <span data-text="Ko'proq o'qish">Ko'proq o'qish</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- slide end -->
-                        <!-- slide start -->
-                        <div class="fnc-slide m--blend-blue">
-                            <div class="fnc-slide__inner">
-                                <div class="fnc-slide__mask">
-                                    <div class="fnc-slide__mask-inner"></div>
-                                </div>
-                                <div class="fnc-slide__content">
-                                    <h2 class="fnc-slide__heading">
-                                        <div class="fnc-slide__heading-line">
-                                            <span id="map-title-11"></span>
-                                        </div>
-                                    </h2>
-                                    <button type="button" class="fnc-slide__action-btn">
-                                        Ko'proq o'qish
-                                        <span data-text="Ko'proq o'qish">Ko'proq o'qish</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- slide end -->
-                        <!-- slide start -->
-                        <div class="fnc-slide m--blend-blue">
-                            <div class="fnc-slide__inner">
-                                <div class="fnc-slide__mask">
-                                    <div class="fnc-slide__mask-inner"></div>
-                                </div>
-                                <div class="fnc-slide__content">
-                                    <h2 class="fnc-slide__heading">
-                                        <div class="fnc-slide__heading-line">
-                                            <span id="map-title-12"></span>
-                                        </div>
-                                    </h2>
-                                    <button type="button" class="fnc-slide__action-btn">
-                                        Ko'proq o'qish
-                                        <span data-text="Ko'proq o'qish">Ko'proq o'qish</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- slide end -->
-                        <!-- slide start -->
-                        <div class="fnc-slide m--blend-blue">
-                            <div class="fnc-slide__inner">
-                                <div class="fnc-slide__mask">
-                                    <div class="fnc-slide__mask-inner"></div>
-                                </div>
-                                <div class="fnc-slide__content">
-                                    <h2 class="fnc-slide__heading">
-                                        <div class="fnc-slide__heading-line">
-                                            <span id="map-title-13"></span>
-                                        </div>
-                                    </h2>
-                                    <button type="button" class="fnc-slide__action-btn">
-                                        Ko'proq o'qish
-                                        <span data-text="Ko'proq o'qish">Ko'proq o'qish</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- slide end -->
-                        <!-- slide start -->
-                        <div class="fnc-slide m--blend-blue">
-                            <div class="fnc-slide__inner">
-                                <div class="fnc-slide__mask">
-                                    <div class="fnc-slide__mask-inner"></div>
-                                </div>
-                                <div class="fnc-slide__content">
-                                    <h2 class="fnc-slide__heading">
-                                        <div class="fnc-slide__heading-line">
-                                            <span id="map-title-14"></span>
-                                        </div>
-                                    </h2>
-                                    <button type="button" class="fnc-slide__action-btn">
-                                        Ko'proq o'qish
-                                        <span data-text="Ko'proq o'qish">Ko'proq o'qish</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- slide end -->
-                        <!-- slide start -->
-                        <div class="fnc-slide m--blend-blue">
-                            <div class="fnc-slide__inner">
-                                <div class="fnc-slide__mask">
-                                    <div class="fnc-slide__mask-inner"></div>
-                                </div>
-                                <div class="fnc-slide__content">
-                                    <h2 class="fnc-slide__heading">
-                                        <div class="fnc-slide__heading-line">
-                                            <span id="map-title-15"></span>
-                                        </div>
-                                    </h2>
-                                    <button type="button" class="fnc-slide__action-btn">
-                                        Ko'proq o'qish
-                                        <span data-text="Ko'proq o'qish">Ko'proq o'qish</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- slide end -->
-                        <!-- slide start -->
-                        <div class="fnc-slide m--blend-blue">
-                            <div class="fnc-slide__inner">
-                                <div class="fnc-slide__mask">
-                                    <div class="fnc-slide__mask-inner"></div>
-                                </div>
-                                <div class="fnc-slide__content">
-                                    <h2 class="fnc-slide__heading">
-                                        <div class="fnc-slide__heading-line">
-                                            <span id="map-title-16"></span>
-                                        </div>
-                                    </h2>
-                                    <button type="button" class="fnc-slide__action-btn">
-                                        Ko'proq o'qish
-                                        <span data-text="Ko'proq o'qish">Ko'proq o'qish</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- slide end -->
-                        <!-- slide start -->
-                        <div class="fnc-slide m--blend-blue">
-                            <div class="fnc-slide__inner">
-                                <div class="fnc-slide__mask">
-                                    <div class="fnc-slide__mask-inner"></div>
-                                </div>
-                                <div class="fnc-slide__content">
-                                    <h2 class="fnc-slide__heading">
-                                        <div class="fnc-slide__heading-line">
-                                            <span id="map-title-17"></span>
-                                        </div>
-                                    </h2>
-                                    <button type="button" class="fnc-slide__action-btn">
-                                        Ko'proq o'qish
-                                        <span data-text="Ko'proq o'qish">Ko'proq o'qish</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- slide end -->
-                        <!-- slide start -->
-                        <div class="fnc-slide m--blend-blue">
-                            <div class="fnc-slide__inner">
-                                <div class="fnc-slide__mask">
-                                    <div class="fnc-slide__mask-inner"></div>
-                                </div>
-                                <div class="fnc-slide__content">
-                                    <h2 class="fnc-slide__heading">
-                                        <div class="fnc-slide__heading-line">
-                                            <span id="map-title-18"></span>
-                                        </div>
-                                    </h2>
-                                    <button type="button" class="fnc-slide__action-btn">
-                                        Ko'proq o'qish
-                                        <span data-text="Ko'proq o'qish">Ko'proq o'qish</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- slide end -->
-                        <!-- slide start -->
-                        <div class="fnc-slide m--blend-blue">
-                            <div class="fnc-slide__inner">
-                                <div class="fnc-slide__mask">
-                                    <div class="fnc-slide__mask-inner"></div>
-                                </div>
-                                <div class="fnc-slide__content">
-                                    <h2 class="fnc-slide__heading">
-                                        <div class="fnc-slide__heading-line">
-                                            <span id="map-title-19"></span>
-                                        </div>
-                                    </h2>
-                                    <button type="button" class="fnc-slide__action-btn">
-                                        Ko'proq o'qish
-                                        <span data-text="Ko'proq o'qish">Ko'proq o'qish</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- slide end -->
-                        <!-- slide start -->
-                        <div class="fnc-slide m--blend-blue">
-                            <div class="fnc-slide__inner">
-                                <div class="fnc-slide__mask">
-                                    <div class="fnc-slide__mask-inner"></div>
-                                </div>
-                                <div class="fnc-slide__content">
-                                    <h2 class="fnc-slide__heading">
-                                        <div class="fnc-slide__heading-line">
-                                            <span id="map-title-20"></span>
-                                        </div>
-                                    </h2>
-                                    <button type="button" class="fnc-slide__action-btn">
-                                        Ko'proq o'qish
-                                        <span data-text="Ko'proq o'qish">Ko'proq o'qish</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- slide end -->
-                        <!-- slide start -->
-                        <div class="fnc-slide m--blend-blue">
-                            <div class="fnc-slide__inner">
-                                <div class="fnc-slide__mask">
-                                    <div class="fnc-slide__mask-inner"></div>
-                                </div>
-                                <div class="fnc-slide__content">
-                                    <h2 class="fnc-slide__heading">
-                                        <div class="fnc-slide__heading-line">
-                                            <span id="map-title-21"></span>
-                                        </div>
-                                    </h2>
-                                    <button type="button" class="fnc-slide__action-btn">
-                                        Ko'proq o'qish
-                                        <span data-text="Ko'proq o'qish">Ko'proq o'qish</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- slide end -->
-                        <!-- slide start -->
-                        <div class="fnc-slide m--blend-blue">
-                            <div class="fnc-slide__inner">
-                                <div class="fnc-slide__mask">
-                                    <div class="fnc-slide__mask-inner"></div>
-                                </div>
-                                <div class="fnc-slide__content">
-                                    <h2 class="fnc-slide__heading">
-                                        <div class="fnc-slide__heading-line">
-                                            <span id="map-title-22"></span>
-                                        </div>
-                                    </h2>
-                                    <button type="button" class="fnc-slide__action-btn">
-                                        Ko'proq o'qish
-                                        <span data-text="Ko'proq o'qish">Ko'proq o'qish</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- slide end -->
+          <div class="demo-cont">
+              <!-- slider start -->
+            <div class="fnc-slider example-slider">
+              <div class="fnc-slider__slides">
+                  <!-- slide start -->
+                <div class="fnc-slide m--blend-green m--active-slide">
+                  <div class="fnc-slide__inner">
+                    <div class="fnc-slide__mask">
+                      <div class="fnc-slide__mask-inner"></div>
                     </div>
-                    <nav class="fnc-nav">
-                        <div class="fnc-nav__bgs">
-                            <div class="fnc-nav__bg m--active-nav-bg"></div>
-                            <div class="fnc-nav__bg"></div>
-                            <div class="fnc-nav__bg"></div>
-                            <div class="fnc-nav__bg"></div>
-                            <div class="fnc-nav__bg"></div>
-                            <div class="fnc-nav__bg"></div>
-                            <div class="fnc-nav__bg"></div>
-                            <div class="fnc-nav__bg"></div>
-                            <div class="fnc-nav__bg"></div>
-                            <div class="fnc-nav__bg"></div>
-                            <div class="fnc-nav__bg"></div>
-                            <div class="fnc-nav__bg"></div>
-                            <div class="fnc-nav__bg"></div>
-                            <div class="fnc-nav__bg"></div>
-                            <div class="fnc-nav__bg"></div>
-                            <div class="fnc-nav__bg"></div>
-                            <div class="fnc-nav__bg"></div>
-                            <div class="fnc-nav__bg"></div>
-                            <div class="fnc-nav__bg"></div>
-                            <div class="fnc-nav__bg"></div>
-                            <div class="fnc-nav__bg"></div>
-                            <div class="fnc-nav__bg"></div>
+                    <div class="fnc-slide__content">
+                      <h2 class="fnc-slide__heading">
+                        <div class="fnc-slide__heading-line">
+                          <span id="map-title-1"></span>
                         </div>
-                        <div class="fnc-nav__controls">
-                            <button class="fnc-nav__control" id="temir-one">
-                                <span class="fnc-nav__control-progress"></span>
-                            </button>
-                            <button class="fnc-nav__control" id="olti-two">
-                                <span class="fnc-nav__control-progress"></span>
-                            </button>
-                            <button class="fnc-nav__control" id="tort-three">
-                                <span class="fnc-nav__control-progress"></span>
-                            </button>
-                            <button class="fnc-nav__control" id="ikki-four">
-                                <span class="fnc-nav__control-progress"></span>
-                            </button>
-                            <button class="fnc-nav__control" id="uch-five">
-                                <span class="fnc-nav__control-progress"></span>
-                            </button>
-                            <button class="fnc-nav__control" id="yetti-six">
-                                <span class="fnc-nav__control-progress"></span>
-                            </button>
-                            <button class="fnc-nav__control" id="sakkiz-seven">
-                                <span class="fnc-nav__control-progress"></span>
-                            </button>
-                            <button class="fnc-nav__control" id="on-eight">
-                                <span class="fnc-nav__control-progress"></span>
-                            </button>
-                            <button class="fnc-nav__control">
-                                1097 - 1231
-                                <span class="fnc-nav__control-progress"></span>
-                            </button>
-                            <button class="fnc-nav__control">
-                                1097 - 1127
-                                <span class="fnc-nav__control-progress"></span>
-                            </button>
-                            <button class="fnc-nav__control">
-                                1127 - 1156
-                                <span class="fnc-nav__control-progress"></span>
-                            </button>
-                            <button class="fnc-nav__control">
-                                1156 - 1172
-                                <span class="fnc-nav__control-progress"></span>
-                            </button>
-                            <button class="fnc-nav__control">
-                                1172 - 1200
-                                <span class="fnc-nav__control-progress"></span>
-                            </button>
-                            <button class="fnc-nav__control">
-                                1200 - 1220
-                                <span class="fnc-nav__control-progress"></span>
-                            </button>
-                            <button class="fnc-nav__control" id="asr-1">
-                                <span class="fnc-nav__control-progress"></span>
-                            </button>
-                            <button class="fnc-nav__control" id="asr-2">
-                                <span class="fnc-nav__control-progress"></span>
-                            </button>
-                            <button class="fnc-nav__control" id="xiva-xon-1">
-                                <span class="fnc-nav__control-progress"></span>
-                            </button>
-                            <button class="fnc-nav__control">
-                                1873 - 1920
-                                <span class="fnc-nav__control-progress"></span>
-                            </button>
-                            <button class="fnc-nav__control" id="xiva-xon-2">
-                                <span class="fnc-nav__control-progress"></span>
-                            </button>
-                            <button class="fnc-nav__control" id="xiva-xon-3">
-                                <span class="fnc-nav__control-progress"></span>
-                            </button>
-                            <button class="fnc-nav__control">
-                                1920 - 1924
-                                <span class="fnc-nav__control-progress"></span>
-                            </button>
-                            <button class="fnc-nav__control" id="xorazm">
-                                <span class="fnc-nav__control-progress"></span>
-                            </button>
+                      </h2>
+                      <button type="button" class="fnc-slide__action-btn">
+                        Ko'proq o'qish
+                        <span data-text="Ko'proq o'qish">Ko'proq o'qish</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                  <!-- slide end -->
+                  <!-- slide start -->
+                <div class="fnc-slide m--blend-dark">
+                  <div class="fnc-slide__inner">
+                    <div class="fnc-slide__mask">
+                      <div class="fnc-slide__mask-inner"></div>
+                    </div>
+                    <div class="fnc-slide__content">
+                      <h2 class="fnc-slide__heading">
+                        <div class="fnc-slide__heading-line">
+                          <span id="map-title-2"></span>
                         </div>
-                    </nav>
+                      </h2>
+                      <button type="button" class="fnc-slide__action-btn">
+                        Ko'proq o'qish
+                        <span data-text="Ko'proq o'qish">Ko'proq o'qish</span>
+                      </button>
+                    </div>
+                  </div>
                 </div>
-                <!-- slider end -->
-                <div class="demo-cont__credits">
-                    <div class="demo-cont__credits-close"></div>
-                    <p class="text-justify maps-info" id="map-info"></p>
+                  <!-- slide end -->
+                  <!-- slide start -->
+                <div class="fnc-slide m--blend-red">
+                  <div class="fnc-slide__inner">
+                    <div class="fnc-slide__mask">
+                      <div class="fnc-slide__mask-inner"></div>
+                    </div>
+                    <div class="fnc-slide__content">
+                      <h2 class="fnc-slide__heading">
+                        <div class="fnc-slide__heading-line">
+                          <span id="map-title-3"></span>
+                        </div>
+                      </h2>
+                      <button type="button" class="fnc-slide__action-btn">
+                        Ko'proq o'qish
+                        <span data-text="Ko'proq o'qish">Ko'proq o'qish</span>
+                      </button>
+                    </div>
+                  </div>
                 </div>
+                  <!-- slide end -->
+                  <!-- slide start -->
+                <div class="fnc-slide m--blend-blue">
+                  <div class="fnc-slide__inner">
+                    <div class="fnc-slide__mask">
+                      <div class="fnc-slide__mask-inner"></div>
+                    </div>
+                    <div class="fnc-slide__content">
+                      <h2 class="fnc-slide__heading">
+                        <div class="fnc-slide__heading-line">
+                          <span id="map-title-4"></span>
+                        </div>
+                      </h2>
+                      <button type="button" class="fnc-slide__action-btn">
+                        Ko'proq o'qish
+                        <span data-text="Ko'proq o'qish">Ko'proq o'qish</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                  <!-- slide end -->
+                  <!-- slide start -->
+                <div class="fnc-slide m--blend-blue">
+                  <div class="fnc-slide__inner">
+                    <div class="fnc-slide__mask">
+                      <div class="fnc-slide__mask-inner"></div>
+                    </div>
+                    <div class="fnc-slide__content">
+                      <h2 class="fnc-slide__heading">
+                        <div class="fnc-slide__heading-line">
+                          <span id="map-title-5"></span>
+                        </div>
+                      </h2>
+                      <button type="button" class="fnc-slide__action-btn">
+                        Ko'proq o'qish
+                        <span data-text="Ko'proq o'qish">Ko'proq o'qish</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                  <!-- slide end -->
+                  <!-- slide start -->
+                <div class="fnc-slide m--blend-blue">
+                  <div class="fnc-slide__inner">
+                    <div class="fnc-slide__mask">
+                      <div class="fnc-slide__mask-inner"></div>
+                    </div>
+                    <div class="fnc-slide__content">
+                      <h2 class="fnc-slide__heading">
+                        <div class="fnc-slide__heading-line">
+                          <span id="map-title-6"></span>
+                        </div>
+                      </h2>
+                      <button type="button" class="fnc-slide__action-btn">
+                        Ko'proq o'qish
+                        <span data-text="Ko'proq o'qish">Ko'proq o'qish</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                  <!-- slide end -->
+                  <!-- slide start -->
+                <div class="fnc-slide m--blend-blue">
+                  <div class="fnc-slide__inner">
+                    <div class="fnc-slide__mask">
+                      <div class="fnc-slide__mask-inner"></div>
+                    </div>
+                    <div class="fnc-slide__content">
+                      <h2 class="fnc-slide__heading">
+                        <div class="fnc-slide__heading-line">
+                          <span id="map-title-7"></span>
+                        </div>
+                      </h2>
+                      <button type="button" class="fnc-slide__action-btn">
+                        Ko'proq o'qish
+                        <span data-text="Ko'proq o'qish">Ko'proq o'qish</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                  <!-- slide end -->
+                  <!-- slide start -->
+                <div class="fnc-slide m--blend-blue">
+                  <div class="fnc-slide__inner">
+                    <div class="fnc-slide__mask">
+                      <div class="fnc-slide__mask-inner"></div>
+                    </div>
+                    <div class="fnc-slide__content">
+                      <h2 class="fnc-slide__heading">
+                        <div class="fnc-slide__heading-line">
+                          <span id="map-title-8"></span>
+                        </div>
+                      </h2>
+                      <button type="button" class="fnc-slide__action-btn">
+                        Ko'proq o'qish
+                        <span data-text="Ko'proq o'qish">Ko'proq o'qish</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                  <!-- slide end -->
+                  <!-- slide start -->
+                <div class="fnc-slide m--blend-blue">
+                  <div class="fnc-slide__inner">
+                    <div class="fnc-slide__mask">
+                      <div class="fnc-slide__mask-inner"></div>
+                    </div>
+                    <div class="fnc-slide__content">
+                      <h2 class="fnc-slide__heading">
+                        <div class="fnc-slide__heading-line">
+                          <span id="map-title-9"></span>
+                        </div>
+                      </h2>
+                      <button type="button" class="fnc-slide__action-btn">
+                        Ko'proq o'qish
+                        <span data-text="Ko'proq o'qish">Ko'proq o'qish</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                  <!-- slide end -->
+                  <!-- slide start -->
+                <div class="fnc-slide m--blend-blue">
+                  <div class="fnc-slide__inner">
+                    <div class="fnc-slide__mask">
+                      <div class="fnc-slide__mask-inner"></div>
+                    </div>
+                    <div class="fnc-slide__content">
+                      <h2 class="fnc-slide__heading">
+                        <div class="fnc-slide__heading-line">
+                          <span id="map-title-10"></span>
+                        </div>
+                      </h2>
+                      <button type="button" class="fnc-slide__action-btn">
+                        Ko'proq o'qish
+                        <span data-text="Ko'proq o'qish">Ko'proq o'qish</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                  <!-- slide end -->
+                  <!-- slide start -->
+                <div class="fnc-slide m--blend-blue">
+                  <div class="fnc-slide__inner">
+                    <div class="fnc-slide__mask">
+                      <div class="fnc-slide__mask-inner"></div>
+                    </div>
+                    <div class="fnc-slide__content">
+                      <h2 class="fnc-slide__heading">
+                        <div class="fnc-slide__heading-line">
+                          <span id="map-title-11"></span>
+                        </div>
+                      </h2>
+                      <button type="button" class="fnc-slide__action-btn">
+                        Ko'proq o'qish
+                        <span data-text="Ko'proq o'qish">Ko'proq o'qish</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                  <!-- slide end -->
+                  <!-- slide start -->
+                <div class="fnc-slide m--blend-blue">
+                  <div class="fnc-slide__inner">
+                    <div class="fnc-slide__mask">
+                      <div class="fnc-slide__mask-inner"></div>
+                    </div>
+                    <div class="fnc-slide__content">
+                      <h2 class="fnc-slide__heading">
+                        <div class="fnc-slide__heading-line">
+                          <span id="map-title-12"></span>
+                        </div>
+                      </h2>
+                      <button type="button" class="fnc-slide__action-btn">
+                        Ko'proq o'qish
+                        <span data-text="Ko'proq o'qish">Ko'proq o'qish</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                  <!-- slide end -->
+                  <!-- slide start -->
+                <div class="fnc-slide m--blend-blue">
+                  <div class="fnc-slide__inner">
+                    <div class="fnc-slide__mask">
+                      <div class="fnc-slide__mask-inner"></div>
+                    </div>
+                    <div class="fnc-slide__content">
+                      <h2 class="fnc-slide__heading">
+                        <div class="fnc-slide__heading-line">
+                          <span id="map-title-13"></span>
+                        </div>
+                      </h2>
+                      <button type="button" class="fnc-slide__action-btn">
+                        Ko'proq o'qish
+                        <span data-text="Ko'proq o'qish">Ko'proq o'qish</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                  <!-- slide end -->
+                  <!-- slide start -->
+                <div class="fnc-slide m--blend-blue">
+                  <div class="fnc-slide__inner">
+                    <div class="fnc-slide__mask">
+                      <div class="fnc-slide__mask-inner"></div>
+                    </div>
+                    <div class="fnc-slide__content">
+                      <h2 class="fnc-slide__heading">
+                        <div class="fnc-slide__heading-line">
+                          <span id="map-title-14"></span>
+                        </div>
+                      </h2>
+                      <button type="button" class="fnc-slide__action-btn">
+                        Ko'proq o'qish
+                        <span data-text="Ko'proq o'qish">Ko'proq o'qish</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                  <!-- slide end -->
+                  <!-- slide start -->
+                <div class="fnc-slide m--blend-blue">
+                  <div class="fnc-slide__inner">
+                    <div class="fnc-slide__mask">
+                      <div class="fnc-slide__mask-inner"></div>
+                    </div>
+                    <div class="fnc-slide__content">
+                      <h2 class="fnc-slide__heading">
+                        <div class="fnc-slide__heading-line">
+                          <span id="map-title-15"></span>
+                        </div>
+                      </h2>
+                      <button type="button" class="fnc-slide__action-btn">
+                        Ko'proq o'qish
+                        <span data-text="Ko'proq o'qish">Ko'proq o'qish</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                  <!-- slide end -->
+                  <!-- slide start -->
+                <div class="fnc-slide m--blend-blue">
+                  <div class="fnc-slide__inner">
+                    <div class="fnc-slide__mask">
+                      <div class="fnc-slide__mask-inner"></div>
+                    </div>
+                    <div class="fnc-slide__content">
+                      <h2 class="fnc-slide__heading">
+                        <div class="fnc-slide__heading-line">
+                          <span id="map-title-16"></span>
+                        </div>
+                      </h2>
+                      <button type="button" class="fnc-slide__action-btn">
+                        Ko'proq o'qish
+                        <span data-text="Ko'proq o'qish">Ko'proq o'qish</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                  <!-- slide end -->
+                  <!-- slide start -->
+                <div class="fnc-slide m--blend-blue">
+                  <div class="fnc-slide__inner">
+                    <div class="fnc-slide__mask">
+                      <div class="fnc-slide__mask-inner"></div>
+                    </div>
+                    <div class="fnc-slide__content">
+                      <h2 class="fnc-slide__heading">
+                        <div class="fnc-slide__heading-line">
+                          <span id="map-title-17"></span>
+                        </div>
+                      </h2>
+                      <button type="button" class="fnc-slide__action-btn">
+                        Ko'proq o'qish
+                        <span data-text="Ko'proq o'qish">Ko'proq o'qish</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                  <!-- slide end -->
+                  <!-- slide start -->
+                <div class="fnc-slide m--blend-blue">
+                  <div class="fnc-slide__inner">
+                    <div class="fnc-slide__mask">
+                      <div class="fnc-slide__mask-inner"></div>
+                    </div>
+                    <div class="fnc-slide__content">
+                      <h2 class="fnc-slide__heading">
+                        <div class="fnc-slide__heading-line">
+                          <span id="map-title-18"></span>
+                        </div>
+                      </h2>
+                      <button type="button" class="fnc-slide__action-btn">
+                        Ko'proq o'qish
+                        <span data-text="Ko'proq o'qish">Ko'proq o'qish</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                  <!-- slide end -->
+                  <!-- slide start -->
+                <div class="fnc-slide m--blend-blue">
+                  <div class="fnc-slide__inner">
+                    <div class="fnc-slide__mask">
+                      <div class="fnc-slide__mask-inner"></div>
+                    </div>
+                    <div class="fnc-slide__content">
+                      <h2 class="fnc-slide__heading">
+                        <div class="fnc-slide__heading-line">
+                          <span id="map-title-19"></span>
+                        </div>
+                      </h2>
+                      <button type="button" class="fnc-slide__action-btn">
+                        Ko'proq o'qish
+                        <span data-text="Ko'proq o'qish">Ko'proq o'qish</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                  <!-- slide end -->
+                  <!-- slide start -->
+                <div class="fnc-slide m--blend-blue">
+                  <div class="fnc-slide__inner">
+                    <div class="fnc-slide__mask">
+                      <div class="fnc-slide__mask-inner"></div>
+                    </div>
+                    <div class="fnc-slide__content">
+                      <h2 class="fnc-slide__heading">
+                        <div class="fnc-slide__heading-line">
+                          <span id="map-title-20"></span>
+                        </div>
+                      </h2>
+                      <button type="button" class="fnc-slide__action-btn">
+                        Ko'proq o'qish
+                        <span data-text="Ko'proq o'qish">Ko'proq o'qish</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                  <!-- slide end -->
+                  <!-- slide start -->
+                <div class="fnc-slide m--blend-blue">
+                  <div class="fnc-slide__inner">
+                    <div class="fnc-slide__mask">
+                      <div class="fnc-slide__mask-inner"></div>
+                    </div>
+                    <div class="fnc-slide__content">
+                      <h2 class="fnc-slide__heading">
+                        <div class="fnc-slide__heading-line">
+                          <span id="map-title-21"></span>
+                        </div>
+                      </h2>
+                      <button type="button" class="fnc-slide__action-btn">
+                        Ko'proq o'qish
+                        <span data-text="Ko'proq o'qish">Ko'proq o'qish</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                  <!-- slide end -->
+                  <!-- slide start -->
+                <div class="fnc-slide m--blend-blue">
+                  <div class="fnc-slide__inner">
+                    <div class="fnc-slide__mask">
+                      <div class="fnc-slide__mask-inner"></div>
+                    </div>
+                    <div class="fnc-slide__content">
+                      <h2 class="fnc-slide__heading">
+                        <div class="fnc-slide__heading-line">
+                          <span id="map-title-22"></span>
+                        </div>
+                      </h2>
+                      <button type="button" class="fnc-slide__action-btn">
+                        Ko'proq o'qish
+                        <span data-text="Ko'proq o'qish">Ko'proq o'qish</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                  <!-- slide end -->
+              </div>
+              <nav class="fnc-nav">
+                <div class="fnc-nav__bgs">
+                  <div class="fnc-nav__bg m--active-nav-bg"></div>
+                  <div class="fnc-nav__bg"></div>
+                  <div class="fnc-nav__bg"></div>
+                  <div class="fnc-nav__bg"></div>
+                  <div class="fnc-nav__bg"></div>
+                  <div class="fnc-nav__bg"></div>
+                  <div class="fnc-nav__bg"></div>
+                  <div class="fnc-nav__bg"></div>
+                  <div class="fnc-nav__bg"></div>
+                  <div class="fnc-nav__bg"></div>
+                  <div class="fnc-nav__bg"></div>
+                  <div class="fnc-nav__bg"></div>
+                  <div class="fnc-nav__bg"></div>
+                  <div class="fnc-nav__bg"></div>
+                  <div class="fnc-nav__bg"></div>
+                  <div class="fnc-nav__bg"></div>
+                  <div class="fnc-nav__bg"></div>
+                  <div class="fnc-nav__bg"></div>
+                  <div class="fnc-nav__bg"></div>
+                  <div class="fnc-nav__bg"></div>
+                  <div class="fnc-nav__bg"></div>
+                  <div class="fnc-nav__bg"></div>
+                </div>
+                <div class="fnc-nav__controls">
+                  <button class="fnc-nav__control" id="temir-one">
+                    <span class="fnc-nav__control-progress"></span>
+                  </button>
+                  <button class="fnc-nav__control" id="olti-two">
+                    <span class="fnc-nav__control-progress"></span>
+                  </button>
+                  <button class="fnc-nav__control" id="tort-three">
+                    <span class="fnc-nav__control-progress"></span>
+                  </button>
+                  <button class="fnc-nav__control" id="ikki-four">
+                    <span class="fnc-nav__control-progress"></span>
+                  </button>
+                  <button class="fnc-nav__control" id="uch-five">
+                    <span class="fnc-nav__control-progress"></span>
+                  </button>
+                  <button class="fnc-nav__control" id="yetti-six">
+                    <span class="fnc-nav__control-progress"></span>
+                  </button>
+                  <button class="fnc-nav__control" id="sakkiz-seven">
+                    <span class="fnc-nav__control-progress"></span>
+                  </button>
+                  <button class="fnc-nav__control" id="on-eight">
+                    <span class="fnc-nav__control-progress"></span>
+                  </button>
+                  <button class="fnc-nav__control">
+                    1097 - 1231
+                    <span class="fnc-nav__control-progress"></span>
+                  </button>
+                  <button class="fnc-nav__control">
+                    1097 - 1127
+                    <span class="fnc-nav__control-progress"></span>
+                  </button>
+                  <button class="fnc-nav__control">
+                    1127 - 1156
+                    <span class="fnc-nav__control-progress"></span>
+                  </button>
+                  <button class="fnc-nav__control">
+                    1156 - 1172
+                    <span class="fnc-nav__control-progress"></span>
+                  </button>
+                  <button class="fnc-nav__control">
+                    1172 - 1200
+                    <span class="fnc-nav__control-progress"></span>
+                  </button>
+                  <button class="fnc-nav__control">
+                    1200 - 1220
+                    <span class="fnc-nav__control-progress"></span>
+                  </button>
+                  <button class="fnc-nav__control" id="asr-1">
+                    <span class="fnc-nav__control-progress"></span>
+                  </button>
+                  <button class="fnc-nav__control" id="asr-2">
+                    <span class="fnc-nav__control-progress"></span>
+                  </button>
+                  <button class="fnc-nav__control" id="xiva-xon-1">
+                    <span class="fnc-nav__control-progress"></span>
+                  </button>
+                  <button class="fnc-nav__control">
+                    1873 - 1920
+                    <span class="fnc-nav__control-progress"></span>
+                  </button>
+                  <button class="fnc-nav__control" id="xiva-xon-2">
+                    <span class="fnc-nav__control-progress"></span>
+                  </button>
+                  <button class="fnc-nav__control" id="xiva-xon-3">
+                    <span class="fnc-nav__control-progress"></span>
+                  </button>
+                  <button class="fnc-nav__control">
+                    1920 - 1924
+                    <span class="fnc-nav__control-progress"></span>
+                  </button>
+                  <button class="fnc-nav__control" id="xorazm">
+                    <span class="fnc-nav__control-progress"></span>
+                  </button>
+                </div>
+              </nav>
             </div>
+              <!-- slider end -->
+            <div class="demo-cont__credits">
+              <div class="demo-cont__credits-close"></div>
+              <p class="text-justify maps-info" id="map-info"></p>
+            </div>
+          </div>
         </div>
         <br>
         <br>
@@ -591,19 +591,19 @@
         <br>
         <br>
         <div class="row">
-            <div class="col-xl-8">
-                <div class="events-single-text-box">
-                    <h2 id="interactive-ml-title" class="text-center"></h2>
-                    <p id="interactive-ml-info" class="text-justify"></p>
-                </div>
+          <div class="col-xl-8">
+            <div class="events-single-text-box">
+              <h2 id="interactive-ml-title" class="text-center"></h2>
+              <p id="interactive-ml-info" class="text-justify"></p>
             </div>
-            <div class="col-xl-4">
-                <div class="events-single-info-box p-2">
-                    <img src="@routes.Assets.versioned("./images/blog/diagramm.png")" alt="Diagram">
-                </div>
+          </div>
+          <div class="col-xl-4">
+            <div class="events-single-info-box p-2">
+              <img src="@routes.Assets.versioned("./images/blog/diagramm.png")" alt="Diagram">
             </div>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
     <script src="@routes.Assets.versioned("javascripts/index.js")"></script>
-}
+  }
