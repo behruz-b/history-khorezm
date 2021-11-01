@@ -795,7 +795,11 @@ object Main extends App {
       item =>
         dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = interactive(item)(lang)
         if (item == "more-info-map-btn") {
-          dom.document.getElementById(item).asInstanceOf[HTMLSpanElement].setAttribute("data-text", interactive(item)(lang))
+          val d = dom.document.getElementsByClassName(item)
+          for  (i  <- 0 until d.length) {
+            d(i).setAttribute("data-text", interactive(item)(lang))
+            d(i).innerText = interactive(item)(lang)
+          }
         }
     }
 
