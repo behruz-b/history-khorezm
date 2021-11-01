@@ -256,6 +256,7 @@ object Main extends App {
       "Xorazm 2700 yillik davlatchilk tarixiga ega qadimiy sivilizatsiya o'chog'i bo'lib, hududi turli davrlarda ko'p marta o'zgargan. " +
         "Mazkur xaritada miloddan avvalgi VII asrdan hozirgi kungacha bo'lgan davrda Xorazm davlatlari chegaralari ko'rsatilgan."),
     //    Map
+    "more-info-map-btn" -> Array("More Info", "Узнать больше", "To'liq ma'lumot"),
     "temir-one" -> Array("Iron Age", "Железный век", "Temir davri"),
     "olti-two" -> Array("VI-IV centuries", "VI-IV век", "VI-IV asr"),
     "tort-three" -> Array("4th-2nd centuries BC", "IV-II вв. До н.э.", "Mil.av. 4-2 asr"),
@@ -658,301 +659,161 @@ object Main extends App {
   val mon = Map {
     "mon" -> Array("Monday", "Понедельник", "Dushanba")
   }
-  navbarAndFooter.keys.foreach(
-    menu => dom.document.getElementById(menu).asInstanceOf[HTMLLinkElement].innerText = navbarAndFooter(menu)(2)
-  )
+
+  val lang = dom.document.body.lang match {
+    case "en" => 0
+    case "ru" => 1
+    case _ => 2
+  }
   if (isIndexPage != null) {
     learnMoreList.foreach(
-      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = learnMore("learnMore")(2)
+      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = learnMore("learnMore")(lang)
     )
     readMoreList.foreach(
-      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = readMore("readMore")(2)
+      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = readMore("readMore")(lang)
     )
     modernArtList.foreach(
-      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = modernArt("modernArt")(2)
+      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = modernArt("modernArt")(lang)
     )
     findMoreList.foreach(
-      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = findMore("findMore")(2)
+      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = findMore("findMore")(lang)
     )
     exhibitionList.foreach(
-      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = exhibition("exhibition")(2)
+      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = exhibition("exhibition")(lang)
     )
     monthDecList.foreach(
-      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = monthDec("month")(2)
+      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = monthDec("month")(lang)
     )
     monthNovList.foreach(
-      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = monthNov("month")(2)
+      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = monthNov("month")(lang)
     )
     weekdaySatList.foreach(
-      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = weekdaySat("weekday")(2)
+      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = weekdaySat("weekday")(lang)
     )
     eventDateList.foreach(
-      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = eventDateMap("eventDate")(2)
+      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = eventDateMap("eventDate")(lang)
     )
     eventLinkList.foreach(
-      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = eventLinkMap("eventLink")(2)
+      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = eventLinkMap("eventLink")(lang)
     )
     eventLinkEvenList.foreach(
-      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = eventLinkEvenMap("eventLink")(2)
+      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = eventLinkEvenMap("eventLink")(lang)
     )
     eventNameList.foreach(
-      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = eventNameMap("eventName")(2)
+      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = eventNameMap("eventName")(lang)
     )
     eventNameEvenList.foreach(
-      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = eventNameEvenMap("eventName")(2)
+      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = eventNameEvenMap("eventName")(lang)
     )
     elements.keys.foreach(
-      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = elements(item)(2)
+      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = elements(item)(lang)
     )
   }
   //Events Page
   if (isEventsPage != null) {
     events.keys.foreach(
-      header => dom.document.getElementById(header).asInstanceOf[HTMLLinkElement].innerText = events(header)(2)
+      header => dom.document.getElementById(header).asInstanceOf[HTMLLinkElement].innerText = events(header)(lang)
     )
     eventsPageReadMoreIdsList.foreach(
-      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = readMore("readMore")(2)
+      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = readMore("readMore")(lang)
     )
     eventsLatestNewsIdsList.foreach(
-      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = latestNews("latest-news")(2)
+      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = latestNews("latest-news")(lang)
     )
     eventsSepList.foreach(
-      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = sep("sep")(2)
+      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = sep("sep")(lang)
     )
     eventsAugList.foreach(
-      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = aug("aug")(2)
+      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = aug("aug")(lang)
     )
     eventsMayList.foreach(
-      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = may("may")(2)
+      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = may("may")(lang)
     )
-    dom.document.getElementById("nov").asInstanceOf[HTMLLinkElement].innerText = nov("nov")(2)
+    dom.document.getElementById("nov").asInstanceOf[HTMLLinkElement].innerText = nov("nov")(lang)
     eventsWedList.foreach(
-      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = wed("wed")(2)
+      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = wed("wed")(lang)
     )
     eventsTueList.foreach(
-      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = tue("tue")(2)
+      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = tue("tue")(lang)
     )
     eventsMonList.foreach(
-      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = mon("mon")(2)
+      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = mon("mon")(lang)
     )
   }
   //  Multimedia Pages
   if (isMediaPage != null) {
     multimedia.keys.foreach(
-      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = multimedia(item)(2)
+      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = multimedia(item)(lang)
     )
   }
   //  Interactive Services Pages
   if (isInteractivePage != null) {
-    interactive.keys.foreach(
-      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = interactive(item)(2)
-    )
+    interactive.keys.foreach {
+      item =>
+        dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = interactive(item)(lang)
+        if (item == "more-info-map-btn") {
+          dom.document.getElementById(item).asInstanceOf[HTMLSpanElement].setAttribute("data-text", interactive(item)(lang))
+        }
+    }
+
   }
-  //  About Khorezm
+  //    About Khorezm
   if (isAntiquePage != null) {
     antiquePageContent.keys.foreach(
-      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = antiquePageContent(item)(2)
+      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = antiquePageContent(item)(lang)
     )
   }
   if (isAncientPage != null) {
     ancientPageContent.keys.foreach(
-      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = ancientPageContent(item)(2)
+      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = ancientPageContent(item)(lang)
     )
   }
   if (isMiddleAgesPage != null) {
     middleAgesPageContent.keys.foreach(
-      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = middleAgesPageContent(item)(2)
+      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = middleAgesPageContent(item)(lang)
     )
   }
   if (isNineFifteenthCenturiesPage != null) {
     nineFifteenthCenturiesPageContent.keys.foreach(
-      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = nineFifteenthCenturiesPageContent(item)(2)
+      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = nineFifteenthCenturiesPageContent(item)(lang)
     )
   }
   if (isSixteenTwentiethCenturiesPage != null) {
     sixteenTwentiethCenturiesPageContent.keys.foreach(
-      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = sixteenTwentiethCenturiesPageContent(item)(2)
+      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = sixteenTwentiethCenturiesPageContent(item)(lang)
     )
   }
   if (isIndependencePage != null) {
     independencePageContent.keys.foreach(
-      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = independencePageContent(item)(2)
+      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = independencePageContent(item)(lang)
     )
   }
   if (isCitiesPage != null) {
     citiesPageContent.keys.foreach(
-      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = citiesPageContent(item)(2)
+      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = citiesPageContent(item)(lang)
     )
   }
   if (isMonumentsPage != null) {
     monumentsPageContent.keys.foreach(
-      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = monumentsPageContent(item)(2)
+      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = monumentsPageContent(item)(lang)
     )
   }
   if (isForumPage != null) {
     forumPageContent.keys.foreach(
-      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = forumPageContent(item)(2)
+      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = forumPageContent(item)(lang)
     )
     forumPageInputContent.keys.foreach(
-      item => dom.document.getElementById(item).asInstanceOf[HTMLInputElement].placeholder = forumPageInputContent(item)(2)
+      item => dom.document.getElementById(item).asInstanceOf[HTMLInputElement].placeholder = forumPageInputContent(item)(lang)
     )
   }
   if (isArtPage != null) {
     artPageContent.keys.foreach(
-      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = artPageContent(item)(2)
+      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = artPageContent(item)(lang)
     )
   }
-
-
-    val lang = dom.document.body.lang match {
-      case "en" => 0
-      case "ru" => 1
-      case _ => 2
-    }
-    if (isIndexPage != null) {
-      learnMoreList.foreach(
-        item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = learnMore("learnMore")(lang)
-      )
-      readMoreList.foreach(
-        item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = readMore("readMore")(lang)
-      )
-      modernArtList.foreach(
-        item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = modernArt("modernArt")(lang)
-      )
-      findMoreList.foreach(
-        item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = findMore("findMore")(lang)
-      )
-      exhibitionList.foreach(
-        item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = exhibition("exhibition")(lang)
-      )
-      monthDecList.foreach(
-        item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = monthDec("month")(lang)
-      )
-      monthNovList.foreach(
-        item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = monthNov("month")(lang)
-      )
-      weekdaySatList.foreach(
-        item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = weekdaySat("weekday")(lang)
-      )
-      eventDateList.foreach(
-        item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = eventDateMap("eventDate")(lang)
-      )
-      eventLinkList.foreach(
-        item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = eventLinkMap("eventLink")(lang)
-      )
-      eventLinkEvenList.foreach(
-        item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = eventLinkEvenMap("eventLink")(lang)
-      )
-      eventNameList.foreach(
-        item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = eventNameMap("eventName")(lang)
-      )
-      eventNameEvenList.foreach(
-        item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = eventNameEvenMap("eventName")(lang)
-      )
-      elements.keys.foreach(
-        item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = elements(item)(lang)
-      )
-    }
-    //Events Page
-    if (isEventsPage != null) {
-      events.keys.foreach(
-        header => dom.document.getElementById(header).asInstanceOf[HTMLLinkElement].innerText = events(header)(lang)
-      )
-      eventsPageReadMoreIdsList.foreach(
-        item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = readMore("readMore")(lang)
-      )
-      eventsLatestNewsIdsList.foreach(
-        item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = latestNews("latest-news")(lang)
-      )
-      eventsSepList.foreach(
-        item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = sep("sep")(lang)
-      )
-      eventsAugList.foreach(
-        item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = aug("aug")(lang)
-      )
-      eventsMayList.foreach(
-        item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = may("may")(lang)
-      )
-      dom.document.getElementById("nov").asInstanceOf[HTMLLinkElement].innerText = nov("nov")(lang)
-      eventsWedList.foreach(
-        item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = wed("wed")(lang)
-      )
-      eventsTueList.foreach(
-        item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = tue("tue")(lang)
-      )
-      eventsMonList.foreach(
-        item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = mon("mon")(lang)
-      )
-    }
-    //  Multimedia Pages
-    if (isMediaPage != null) {
-      multimedia.keys.foreach(
-        item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = multimedia(item)(lang)
-      )
-    }
-    //  Interactive Services Pages
-    if (isInteractivePage != null) {
-      interactive.keys.foreach(
-        item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = interactive(item)(lang)
-      )
-    }
-    //    About Khorezm
-    if (isAntiquePage != null) {
-      antiquePageContent.keys.foreach(
-        item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = antiquePageContent(item)(lang)
-      )
-    }
-    if (isAncientPage != null) {
-      ancientPageContent.keys.foreach(
-        item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = ancientPageContent(item)(lang)
-      )
-    }
-    if (isMiddleAgesPage != null) {
-      middleAgesPageContent.keys.foreach(
-        item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = middleAgesPageContent(item)(lang)
-      )
-    }
-    if (isNineFifteenthCenturiesPage != null) {
-      nineFifteenthCenturiesPageContent.keys.foreach(
-        item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = nineFifteenthCenturiesPageContent(item)(lang)
-      )
-    }
-    if (isSixteenTwentiethCenturiesPage != null) {
-      sixteenTwentiethCenturiesPageContent.keys.foreach(
-        item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = sixteenTwentiethCenturiesPageContent(item)(lang)
-      )
-    }
-    if (isIndependencePage != null) {
-      independencePageContent.keys.foreach(
-        item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = independencePageContent(item)(lang)
-      )
-    }
-    if (isCitiesPage != null) {
-      citiesPageContent.keys.foreach(
-        item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = citiesPageContent(item)(lang)
-      )
-    }
-    if (isMonumentsPage != null) {
-      monumentsPageContent.keys.foreach(
-        item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = monumentsPageContent(item)(lang)
-      )
-    }
-    if (isForumPage != null) {
-      forumPageContent.keys.foreach(
-        item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = forumPageContent(item)(lang)
-      )
-      forumPageInputContent.keys.foreach(
-        item => dom.document.getElementById(item).asInstanceOf[HTMLInputElement].placeholder = forumPageInputContent(item)(lang)
-      )
-    }
-    if (isArtPage != null) {
-      artPageContent.keys.foreach(
-        item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = artPageContent(item)(lang)
-      )
-    }
-    navbarAndFooter.keys.foreach(
-      menu => dom.document.getElementById(menu).asInstanceOf[HTMLLinkElement].innerText = navbarAndFooter(menu)(lang)
-    )
+  navbarAndFooter.keys.foreach(
+    menu => dom.document.getElementById(menu).asInstanceOf[HTMLLinkElement].innerText = navbarAndFooter(menu)(lang)
+  )
 
   @JSExportTopLevel("contentTranslate")
   def contentTranslate(language: String): Unit = {

@@ -7,7 +7,7 @@ GET     /media                          @controllers.HomeController.multimedia(l
 GET     /interactive-services           @controllers.HomeController.interactiveServices(l ?= "uz")
 GET     /antique-period                 @controllers.HomeController.antiquePeriod(l ?= "uz")
 GET     /ancient-period                 @controllers.HomeController.ancientPeriod(l ?= "uz")
-GET     /early-middle-ages              @controllers.HomeController.earlyMiddleAges(l)
+GET     /early-middle-ages              @controllers.HomeController.earlyMiddleAges(l ?= "uz")
 GET     /nine-fifteenth-centuries       @controllers.HomeController.nineFifteenthCenturies(l ?= "uz")
 GET     /sixteen-twentieth-centuries    @controllers.HomeController.sixteenTwentiethCenturies(l ?= "uz")
 GET     /independence                   @controllers.HomeController.independencePage(l ?= "uz")
