@@ -807,7 +807,7 @@ object Main extends App {
     val lang = dom.document.body.lang match {
       case "en" => 0
       case "ru" => 1
-      case "uz" => 2
+      case _ => 2
     }
     if (isIndexPage != null) {
       learnMoreList.foreach(

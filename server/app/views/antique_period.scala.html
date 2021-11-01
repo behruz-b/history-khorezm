@@ -14,7 +14,9 @@
               </div>
               <div class="breadcrumb-menu">
                 <ul class="clearfix">
-                  <li><a href="/" id="antik-sub-home"></a></li>
+                  <li><a href="/@{
+                    if(lang != "uz") "?l=" + lang
+                  }" id="antik-sub-home"></a></li>
                   <li class="active" id="about-khorezm-menu"></li>
                 </ul>
               </div>

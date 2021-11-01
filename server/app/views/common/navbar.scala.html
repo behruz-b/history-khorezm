@@ -127,7 +127,9 @@
       <div class="clearfix">
           <!--Logo-->
         <div class="logo float-left">
-          <a href="/" class="img-responsive"><img src="@routes.Assets.versioned("images/resources/logo.png")" alt="" title=""></a>
+          <a href="/@{
+            if(lang != "uz") "?l=" + lang
+          }" class="img-responsive"><img src="@routes.Assets.versioned("images/resources/logo.png")" alt="" title=""></a>
         </div>
           <!--Right Col-->
         <div class="right-col float-right">
@@ -135,29 +137,57 @@
           <nav class="main-menu navbar-expand-lg">
             <div class="navbar-collapse collapse clearfix">
               <ul class="navigation clearfix">
-                <li><a href="/" id="menuStickyHome"></a></li>
-                <li><a href="/events" id="menuStickyNews"></a></li>
+                <li><a href="/@{
+                  if(lang != "uz") "?l=" + lang
+                }" id="menuStickyHome"></a></li>
+                <li><a href="/events@{
+                  if(lang != "uz") "?l=" + lang
+                }" id="menuStickyNews"></a></li>
                 <li class="dropdown"><a href="#" id="menuStickyAboutKhorezm"></a>
                   <ul>
                     <li class="dropdown"><a href="#" id="subMenuStickyHistoryOfKhorezm"></a>
                       <ul>
-                        <li><a href="/sixteen-twentieth-centuries" id="dropMenuStickySixteenthTwentieth"></a></li>
-                        <li><a href="/independence" id="dropMenuStickyIndependenceTime"></a></li>
-                        <li><a href="/antique-period" id="dropMenuStickyAntiquePeriod"></a></li>
-                        <li><a href="/ancient-period" id="dropMenuStickyAncientPeriod"></a></li>
-                        <li><a href="/early-middle-ages" id="dropMenuStickyMiddleAges"></a></li>
-                        <li><a href="/nine-fifteenth-centuries" id="dropMenuStickyNinthFifteenth"></a></li>
+                        <li><a href="/sixteen-twentieth-centuries@{
+                          if(lang != "uz") "?l=" + lang
+                        }" id="dropMenuStickySixteenthTwentieth"></a></li>
+                        <li><a href="/independence@{
+                          if(lang != "uz") "?l=" + lang
+                        }" id="dropMenuStickyIndependenceTime"></a></li>
+                        <li><a href="/antique-period@{
+                          if(lang != "uz") "?l=" + lang
+                        }" id="dropMenuStickyAntiquePeriod"></a></li>
+                        <li><a href="/ancient-period@{
+                          if(lang != "uz") "?l=" + lang
+                        }" id="dropMenuStickyAncientPeriod"></a></li>
+                        <li><a href="/early-middle-ages@{
+                          if(lang != "uz") "?l=" + lang
+                        }" id="dropMenuStickyMiddleAges"></a></li>
+                        <li><a href="/nine-fifteenth-centuries@{
+                          if(lang != "uz") "?l=" + lang
+                        }" id="dropMenuStickyNinthFifteenth"></a></li>
                       </ul>
                     </li>
-                    <li><a href="/cities" id="subMenuStickyKhorezmCities"></a></li>
-                    <li><a href="/monuments" id="subMenuStickyKhorezmCultures"></a></li>
-                    <li><a href="/art" id="subMenuStickyArtOfKhorezm"></a></li>
+                    <li><a href="/cities@{
+                      if(lang != "uz") "?l=" + lang
+                    }" id="subMenuStickyKhorezmCities"></a></li>
+                    <li><a href="/monuments@{
+                      if(lang != "uz") "?l=" + lang
+                    }" id="subMenuStickyKhorezmCultures"></a></li>
+                    <li><a href="/art@{
+                      if(lang != "uz") "?l=" + lang
+                    }" id="subMenuStickyArtOfKhorezm"></a></li>
                   </ul>
                 </li>
-                <li><a href="/interactive-services" id="menuStickyInteractiveServices"></a></li>
-                <li><a href="/media" id="menuStickyMultimedia"></a></li>
+                <li><a href="/interactive-services@{
+                  if(lang != "uz") "?l=" + lang
+                }" id="menuStickyInteractiveServices"></a></li>
+                <li><a href="/media@{
+                  if(lang != "uz") "?l=" + lang
+                }" id="menuStickyMultimedia"></a></li>
                   <!--<li><a href="contact.html" id="menuStickyOpenData"></a></li>-->
-                <li><a href="/forum" id="menuStickyForum"></a></li>
+                <li><a href="/forum@{
+                  if(lang != "uz") "?l=" + lang
+                }" id="menuStickyForum"></a></li>
               </ul>
             </div>
           </nav>

@@ -15,6 +15,6 @@ GET     /monuments                      @controllers.HomeController.monumentsPag
 GET     /cities                         @controllers.HomeController.cities(l ?= "uz")
 GET     /art                            @controllers.HomeController.art(l ?= "uz")
 GET     /forum                          @controllers.HomeController.forum(l ?= "uz")
-GET     /coming-soon                    @controllers.HomeController.comingSoon()
+GET     /coming-soon                    @controllers.HomeController.comingSoon(l ?= "uz")
 
 GET     /assets/*file                   controllers.Assets.versioned(path="/public", file: Asset)

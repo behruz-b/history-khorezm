@@ -54,7 +54,7 @@ class HomeController @Inject()(val controllerComponents: ControllerComponents) e
   def forum(lang: String): Action[AnyContent] = Action {
     Ok(html.forum(lang))
   }
-  def comingSoon(): Action[AnyContent] = Action {
-    Ok(html.common.comingsoon())
+  def comingSoon(lang: String): Action[AnyContent] = Action {
+    Ok(html.common.comingsoon(lang))
   }
 }

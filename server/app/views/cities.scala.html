@@ -14,7 +14,9 @@
                             </div>
                             <div class="breadcrumb-menu">
                                 <ul class="clearfix">
-                                    <li><a href="/" id="cities-home-menu"></a></li>
+                                    <li><a href="/@{
+                                        if(lang != "uz") "?l=" + lang
+                                    }" id="cities-home-menu"></a></li>
                                     <li class="active" id="cities-sub-menu"></li>
                                 </ul>
                             </div>
