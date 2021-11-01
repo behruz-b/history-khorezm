@@ -102,7 +102,8 @@ object Main extends App {
     "ourTicketsSold" -> Array("Museum expositions", "Mузейных экспозиций", "Muzey ekspozitsiyalari"),
     "newsLetter" -> Array("News Letter Now", "Новостное письмо сейчас", "Hoziroq bog\'lanish"),
     "newsLetterInfo" -> Array("Receive e-mail updates on our exhibitions, events, and more........", "Получайте по электронной почте новости о наших выставках, мероприятиях и многом другом ........", "Bizning ko\'rgazmalarimiz, tadbirlarimiz va boshqalar haqida elektron pochta xabarlarini oling ........"),
-    "subscribe" -> Array("Subscribe", "Подписывайся", "Obuna bo\'lish")
+    "subscribe" -> Array("Subscribe", "Подписывайся", "Obuna bo\'lish"),
+    "sponsors-title" -> Array("Our Partners & Sponsers", "Наши партнеры и спонсоры", "Bizning hamkorlarimiz va homiylarimiz")
   )
   //  Index Page ids
 
