@@ -631,6 +631,13 @@ object Main extends App {
       "Biz bilan bemalol bog'laning. biz har doim yangi loyihalar, ijodiy g'oyalar yoki \ntasavvurlaringizning bir qismi bo'lish imkoniyatlarini muhokama qilish uchun ochiqmiz"),
     "forum-btn-text" -> Array("Send Message", "Отправить сообщение", "Xabar yuborish"),
   )
+  val forumPageInputContent = Map(
+    "name-placeholder" -> Array("Name", "Имя", "Ism"),
+    "email-placeholder" -> Array("Email", "Эл. адрес", "Pochta"),
+    "subject-placeholder" -> Array("Subject", "Тема", "Mavzu"),
+    "phone-placeholder" -> Array("Phone", "Телефон", "Telefon"),
+    "textarea-placeholder" -> Array("Your Message...", "Твое сообщение...", "Sizning xatingiz...")
+  )
   val aug = Map {
     "aug" -> Array("Aug", "Авг", "Avg")
   }
@@ -784,6 +791,9 @@ object Main extends App {
     forumPageContent.keys.foreach(
       item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = forumPageContent(item)(2)
     )
+    forumPageInputContent.keys.foreach(
+      item => dom.document.getElementById(item).asInstanceOf[HTMLInputElement].placeholder = forumPageInputContent(item)(2)
+    )
   }
   if (isArtPage != null) {
     artPageContent.keys.foreach(
@@ -929,6 +939,9 @@ object Main extends App {
     if (isForumPage != null) {
       forumPageContent.keys.foreach(
         item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = forumPageContent(item)(lang)
+      )
+      forumPageInputContent.keys.foreach(
+        item => dom.document.getElementById(item).asInstanceOf[HTMLInputElement].placeholder = forumPageInputContent(item)(lang)
       )
     }
     if (isArtPage != null) {
