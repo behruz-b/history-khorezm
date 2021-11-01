@@ -1,0 +1,71 @@
+@()
+
+@main() {
+
+    <!--Start breadcrumb area-->
+    <section class="breadcrumb-area" id="artPage" style="background-image: url(@routes.Assets.versioned("images/antique-period/_1.jpg"));
+        background-position: center;">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="inner-content clearfix">
+                        <div class="title">
+                            <h1 id="art-header-title"></h1>
+                        </div>
+                        <div class="breadcrumb-menu">
+                            <ul class="clearfix">
+                                <li><a href="/" id="art-home-menu"></a></li>
+                                <li class="active" id="art-sub-menu"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!--End breadcrumb area-->
+
+        <!--Start blog single area-->
+    <section class="blog-single-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                    <div class="blog-post">
+                        <div class="blog-details-content">
+                            <div class="img-holder">
+                                <img src="@routes.Assets.versioned("images/blog/blog-single-1.jpg")" alt="Awesome Image">
+                            </div>
+                            <div class="text-holder">
+                                <h2 class="blog-title" id="art-blog-title"></h2>
+                                <div class="text">
+                                    <p class="mar-bottom" id="art-blog-info-1"></p>
+                                </div>
+                            </div>
+                            <div class="bottom-image-box">
+                                <div class="row">
+                                    <div class="col-xl-6">
+                                        <div class="single-image-box">
+                                            <img src="@routes.Assets.versioned("images/370/_1.jpg")" alt="Awesome Image">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <div class="single-image-box">
+                                            <img src="@routes.Assets.versioned("images/370/_2.jpg")" alt="Awesome Image">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text text-center">
+                                    <p id="art-image-title"></p>
+                                </div>
+                            </div>
+                            <p class="bottom-text-box">
+                        <p id="art-blog-info-2"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!--End blog single area-->
+
+}

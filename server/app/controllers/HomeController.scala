@@ -48,6 +48,9 @@ class HomeController @Inject()(val controllerComponents: ControllerComponents) e
   def monumentsPage(): Action[AnyContent] = Action {
     Ok(html.monuments())
   }
+  def art(): Action[AnyContent] = Action {
+    Ok(html.art())
+  }
   def forum(): Action[AnyContent] = Action {
     Ok(html.forum())
   }
