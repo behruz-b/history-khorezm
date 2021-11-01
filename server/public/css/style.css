@@ -7317,6 +7317,7 @@ select:focus {
 }
 .blog-details-content .bottom-image-box .single-image-box img{
     width: 100%;
+    border-radius: 15px;
 }
 .blog-details-content .bottom-image-box .text {
     position: relative;
