@@ -152,14 +152,6 @@ object Main extends App {
     "sub-menu-home-for-media" -> Array("Home", "Главное", "Bosh sahifa"),
     "sub-menu-multimedia" -> Array("Multimedia", "Мультимедиа", "Multimediya"),
     "upcomingVideos" -> Array("Multimedia", "Мультимедиа", "Multimediya"),
-    "month-for-video1" -> Array("May", "Май", "May"),
-    "videoName1" -> Array("Dance Magic 2019", "Магия танца 2019", "Raqs Sehri 2019"),
-    "month-for-video2" -> Array("Feb", "Фев", "Fev"),
-    "videoName2" -> Array("\"Visit Holy Places of Khorezm\"", "«Посещение святых мест Хорезма»", "\"Xorazmning muqaddas joylariga tashrif buyuring\""),
-    "month-for-video3" -> Array("Apr", "Апр", "Apr"),
-    "videoName3" -> Array("Tourism Potential of Khorezm in number", "Туристический потенциал Хорезма в цифрах", "Xorazmning sayyohlik sayohati raqamlarda"),
-    "month-for-video4" -> Array("Apr", "Апр", "Apr"),
-    "videoName4" -> Array("Khiva", "Хива", "Xiva")
   )
   val readMoreList = List("readMore", "readMore2", "readMore3", "readMore4", "readMore5", "readMore6", "readMore7", "readMore8", "readMore9", "readMore10")
   val modernArtList = List("modernArt", "modernArt2", "modernArt3", "modernArt5", "modernArt6", "modernArt7", "modernArt8", "modernArt9", "modernArt10")
