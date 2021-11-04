@@ -24,6 +24,7 @@ object Main extends App {
   val isKhivaCitiesPage = dom.document.getElementById("khivaCitiesPage").asInstanceOf[HTMLLinkElement]
   val isKhazoraspCitiesPage = dom.document.getElementById("khazoraspCitiesPage").asInstanceOf[HTMLLinkElement]
   val isTashhovuzCitiesPage = dom.document.getElementById("tashhovuzCitiesPage").asInstanceOf[HTMLLinkElement]
+  val isTurtkolCitiesPage = dom.document.getElementById("turtkolCitiesPage").asInstanceOf[HTMLLinkElement]
   val isMonumentsPage = dom.document.getElementById("monumentsPage").asInstanceOf[HTMLLinkElement]
   val isForumPage = dom.document.getElementById("forumPage").asInstanceOf[HTMLLinkElement]
   val isArtPage = dom.document.getElementById("artPage").asInstanceOf[HTMLLinkElement]
@@ -606,6 +607,17 @@ object Main extends App {
       "TOSHHOVUZ (1999 yildan Dosho‘g‘iz) — 1681 yilda karvonsaroy sifatida asos solingan. 1815 y. Xiva xoni Muhammad Rahim I tomonidan qal’ga aylantirilgan va 1835 y. Ollaqulixon tomonidan qurib bitkazilgan Xorazm vohasidagi yirik shahar. Xorazm SSRning Turkman milliy avtonom vil. markazi bo‘lgan (1924). 1970 y. 14 dek. Turkmaniston Ryesp.  vil. markazi. Ashxaboddan — 630 km., Urganchdan 68 km. uzoqlikda. Aholisi —  280,2 ming kishi   (2018). Vil. trkibida 9 ta tum. (etrap) va 1.490 ming aholi bor. Aeroport (10 km. uzoqlikda), temir yo‘l vokzali (1996), qurilish materiallari, temir-beton, paxta tozalash z-di, avtomobil va traktor ta’m., yog‘-sut, non, pivo, polimer mahsulotlari z-d., gilamch., konditer, tikuvch. fabr., bosmaxona bor. Ruxiyat saroyi (2800 o‘rin), Turkmaniston q.-x. int. fil., ped. texn., tibbiyot bilim yurti, 15 ta umumta’lim maktabi, Nurmuhammad Andalib nom. muzikali drama teatri ishlab turibdi. Ashxobod-Dosho‘g‘iz va Chorjo‘y–Qo‘ng‘irot temir yo‘li. yirik stansiya. biri hisoblanadi. \nToshhovuzning mashhur shaxslari:  Bolliyev Askar (1922-1983) – ikk. j. ur. Qahramoni; Xo‘janov Qulmat (1921-1970) - ikk. j. ur. qatnashchisi, 3-darajali “Shuxrat” ordeni kavaleri;  Begmurodova Sulton (1924-1966) - Mehnat Qahramoni;  Ro‘zmetov Sadulla (vafoti 2011) – Turkmaniston Resp. 2-sonli Qahramoni, ishbilarmon, mesenat, dehqonchilik ilmi sohibi; Asqarov Qaqajon (01.04.1951) – yozuvchi, shoir, bastakor, xalqaro jurnalist. MDU.  YUNESKO jurn. fak. tug. Moskvada Yozuvch. uyushmasida ishlagan. \"Daho va ustun insonlar” kitobi jahonning 89 tillariga tarjima qilingan. O‘g‘li – Asqarov Sardor (09.09.1989) – Garvard un-t. imtiyozli diplom b-n tug. Turkmanistonning Malayziyadagi elchisi; Qo‘shjonov Matyoqub – (1918-2005) –O‘zR FA akademigi,  taniqli o‘zbek yozuvchisi, jamoat arbobi;  Ovezov Botir (1939) – texn. fan. dokt., Turkmanistonda xizmat ko‘rsatgan fan arbobi; Xo‘jaboyev Davletboy (1931)  – SSSR xalq artisti (1985), sirkda ot choptirgan; Kim Yuliy – mashhur rus-sovet qo‘shiqchisi, shoir, dramaturg, bastakor; Gavrilov Mixail – pedagog, basketbolchi, jamoat arbobi;   Hamdamov Bobomurod (1940) – O‘zbekiston, Turkmaniston, Koraqalpog‘iston xalq artisti; Arslon Xon-o‘g‘li (1978) – kurashchi, xalqaro bellashuvlar g‘olibi va b.  Vil. hokimi - Bayramquliyev Mammet (2017)."
     )
   )
+  val turtkolPageContent = Map(
+    "cities-home-menu" -> Array("Home", "Главное", "Bosh sahifa"),
+    "cities-sub-menu" -> Array("About Khorezm", "О Хорезме", "Xorazm haqida"),
+    "cities-header-title-1" -> Array("Khorezm cities", "Города Хорезма", "Xorazm shaharlari"),
+    "cities-blog-title-one-1" -> Array("Khorezm cities", "Города Хорезма", "Xorazm shaharlari"),
+    "cities-blog-info-one-1" -> Array(
+      "TURTKOL -  in 1873 after occupying Khiva by Russian roops on August 22, in the place called \"Ullibog\", the city named after Petro-Alexandrovsk was founded. Currently, this city is considered the Republic of Karakalpakstan’s one of main cities and distircts. From the center of city crossed Miskin-Nukus railway route. There is a railway station, an airport (closed), a cotton gin, a building materials factory, a medical school, a bank and agribusiness colleges. In 1925–40 it was the center of QQASSR.  In 1939 year the most of it was washed away by the Amudarya.",
+      "ТУРТКОЛ - в 1873 году после занятия Хивы русскими войсками 22 августа в месте под названием «Уллибог» был основан город Петро-Александровск. В настоящее время этот город считается одним из главных городов и районов Республики Каракалпакстан. Из центра города пересекалась железнодорожная магистраль Мискин-Нукус. Здесь есть железнодорожный вокзал, аэропорт (закрытый), хлопкоочистительный завод, завод стройматериалов, медицинское училище, банк и колледжи агробизнеса. В 1925–40 это был центр ККАССР. В 1939 году большая его часть была смыта Амударьей.",
+      "TO‘RTKO‘L — Xivani istilo qilgan rus qo‘shinlari tomonidan 1873 y. 22 avgustida \"Ullibog‘\" degan joyda Petro-Aleksandrovsk nomi b-n asos solingan sh.  Xozirgi kunda Qoraqalpog‘iston Resp. tum. markazi. Miskin-Nukus  temir yo‘li o‘tgan. Temir yo‘l vokzali, aeroport (bekitilgan), paxta tozalash z-d., qurilish materiallari korx., tibbiyot o‘quv yurti, bank va agrobiznes kollejlari bor. 1925–40 yy. QQASSR markazi bo‘lgan. 1939 y.  ko‘p qismini Amudaryo yuvib ketgan."
+    )
+  )
   val monumentsPageContent = Map(
     "monuments-home-menu" -> Array("Home", "Главное", "Bosh sahifa"),
     "monuments-sub-menu" -> Array("About Khorezm", "О Хорезме", "Xorazm haqida"),
@@ -884,6 +896,11 @@ object Main extends App {
   if (isTashhovuzCitiesPage != null) {
     tashhovuzPageContent.keys.foreach(
       item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = tashhovuzPageContent(item)(lang)
+    )
+  }
+  if (isTurtkolCitiesPage != null) {
+    turtkolPageContent.keys.foreach(
+      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = turtkolPageContent(item)(lang)
     )
   }
   /*-------------------------*/
