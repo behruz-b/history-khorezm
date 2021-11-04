@@ -328,7 +328,6 @@ object Main extends App {
         "toʻqay va changalzorlar ijtimoiy taraqqiyotning barcha davrlarida aholiga zarur boʻlgan koʻp narsalarni yetkazib bergan. " +
         "Ming yillar davomida vohalarda yashovchi xalqlar har ikki daryodan oqib o‘tgan ko‘chma qumlarga, suv rejimining o‘zgarishiga " +
         "qarshi qattiq kurash olib borgan. Ular choʻl va daryolarni egallab, gullab-yashnayotgan vohalar qurdilar."),
-//    "antique-image-title" -> Array("Private collection 2158. Courtesy of the artist.", "Частное собрание 2158. Предоставлено художником.", "Shaxsiy kolleksiya 2158. Rassomning izni bilan."),
     "antique-blog-info-2" -> Array(
       "Khorezm is a historical region located between Turan and Iran. Its territory in ancient times stretched from the mouths of the " +
         "Amudarya to the south to the upper reaches of the Murgab and Tajan rivers. Therefore, this ancient historical region is known " +
