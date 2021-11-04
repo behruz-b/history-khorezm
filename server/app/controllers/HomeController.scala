@@ -42,15 +42,17 @@ class HomeController @Inject()(val controllerComponents: ControllerComponents) e
   def independencePage(lang: String): Action[AnyContent] = Action {
     Ok(html.independence(lang))
   }
-  def cities(lang: String): Action[AnyContent] = Action {
-    Ok(html.cities(lang))
-  }
+//  CITiES
   def urgench(lang: String): Action[AnyContent] = Action {
     Ok(html.citiesPage.urgench(lang))
   }
   def khiva(lang: String): Action[AnyContent] = Action {
     Ok(html.citiesPage.khiva(lang))
   }
+  def khazorasp(lang: String): Action[AnyContent] = Action {
+    Ok(html.citiesPage.khazorasp(lang))
+  }
+  /*--------------*/
   def monumentsPage(lang: String): Action[AnyContent] = Action {
     Ok(html.monuments(lang))
   }
