@@ -27,6 +27,7 @@ object Main extends App {
   val isTurtkolCitiesPage = dom.document.getElementById("turtkolCitiesPage").asInstanceOf[HTMLLinkElement]
   val isKhankaCitiesPage = dom.document.getElementById("khankaCitiesPage").asInstanceOf[HTMLLinkElement]
   val isShovotCitiesPage = dom.document.getElementById("shovotCitiesPage").asInstanceOf[HTMLLinkElement]
+  val isPitnakCitiesPage = dom.document.getElementById("pitnakCitiesPage").asInstanceOf[HTMLLinkElement]
   val isMonumentsPage = dom.document.getElementById("monumentsPage").asInstanceOf[HTMLLinkElement]
   val isForumPage = dom.document.getElementById("forumPage").asInstanceOf[HTMLLinkElement]
   val isArtPage = dom.document.getElementById("artPage").asInstanceOf[HTMLLinkElement]
@@ -642,6 +643,17 @@ object Main extends App {
       "SHOVOT ― ilgari “Shohobod” qal’asi deb nomlangan va unga 1681 y. Xiva xoni Anusha Muhammad asos solgan. 1926 y. – Shovot tum. markazi. 1972 y. sh–cha. Urganch sh. 40 km., yaqin temir yo‘l bekati  Shovotdan 6 km. Aholisi 19569 kishi (2018). Ular. 15210 nafari o‘zbeklar, 260 tatarlar 110 ruslar, 160 qozoqlar, 20 ukrainlar, 17 maldovanlar, 25 qoraqalpoqlar hisoblandi.\nPaxta tozalash z-d., un komb., podshipnik z-d., “Semurg‘” ip-yigiruv  fabr., charm i.-ch., temir-beton, “Binokor”, “Istiqbol”, “O‘zbekiston” kabi korxonalar, maishiy xizmat ko‘rsatish komb., avtobaza, g‘isht z-di bor. 2017 y. loyiha qiymati 65 mln.  dollar bo‘lgan  “Uztex” komp. guruhiga kiruvchi yirik 1000 ta ishchi o‘rni bor to‘qimach. komb. ishga tushirilgan va Italiya. “Lonati” kompaniyasida ishlab chiqarilgan 528 ta, 2018 y. yana 512 ta paypoq to‘qish dastgohi harid qilindi. Ushbu dastgohlar Buyuk Britaniya. “Maritex Industrial LLP” kompaniyasi tomonidan keltirib o‘rnatilgan. 2018 y. 29 noyabrda faoliyati b-n Prezident Sh.M. Mirziyoyev tanishgan.\nShaharchada 4 ta kasb-hunar kollejlari, 6 ta umumta’lim maktabi, 9 ta bolalar bog‘chasi, 6 stadion, Komiljon Otaniyozov nom. mad. va istirohat bog‘i, markaziy kutubxona, 3 ta ashula va raqs xalq dastasi, 1 ta musiqa maktabi, 3 ta bolalar kutubxonasi, 22 ta tibbiy xizmat ko‘rsatish muassasalari (570 o‘rinlik Markaziy kasalxona, 3 polikl., 7 dorixona) ishlab turibdi, Aholiga 243 malakali vrach xizmat ko‘rsatadi."
     )
   )
+  val pitnakPageContent = Map(
+    "cities-home-menu" -> Array("Home", "Главное", "Bosh sahifa"),
+    "cities-sub-menu" -> Array("About Khorezm", "О Хорезме", "Xorazm haqida"),
+    "cities-header-title-1" -> Array("Khorezm cities", "Города Хорезма", "Xorazm shaharlari"),
+    "cities-blog-title-one-1" -> Array("Khorezm cities", "Города Хорезма", "Xorazm shaharlari"),
+    "cities-blog-info-one-1" -> Array(
+      "PITNAK (formerly Drujba) – The city in the district of Khazorasp (1992). The construction of the Tuyamoyin reservoir and hydroelectric power station was built between the village of Pitnak and the village of Shorlovuq by thr presidium of the Supreme Soviet of the Republic of Uzbekistan in 1974 June 16. According to the decision of Shorlovuq and in 1976 January 30. According to the decision of the Oliy Majlis of the Republic of Uzbekistan in 1998 the name of this city was changed.\n  Population around 18065 people (2018). \"Tuyamoyinsuvqurilish constructions , \"Foton\", \"Khorezmavto\" plant and 2 reinforced concrete plants, \"Amu-Konda\" (Uzbekistan-Russia) joint woodworking enterprise, bread and lemonade factories are main ones. There are shops, dairy, polyclinic, SENS, pharmacies, sports palace, trade outlets. It crosses the Chorjoi-Kungrad railway, the Urgench-Bukhara highway and the Tuyamoyin canal. There are vocational college, 4 secondary schools, 5 kindergartens, Gidrostroitel and a sports palace, 3 cinemas, a shopping center, and a 280-bed hospital. The heads of  the City Citizens' Council were Moldaboev, E. Ro'zmetov, R. Samandarov, B. Abulov, A. Matchonov, G. Altinbaev.",
+      "Питнак (илг. Друкба) - Хазарасп Том. в районе ш. (1992). Восстановлена связь строительства туямуинского водохранилища и гидроузели между селами Б-н Питнак и поселками Шорловук. Президиум Верховного Совета Узбекистана-n 1974 г. 16 июня. согласно указу Шорловука и 1976 г. 30 иенв. согласно решению Дружбы, Верховного Собрания Республики Узбекистан в 1998 году. Решение б-н Питнак ш. это изменилось. \nНаселение составляет 18065 человек (2018).  \"Тояма констракшн\" и др. владели 7 строительными заданиями. и помощник х. гребень., завод \"Фотон\", \"Хорезмавто\" и 2 железобетонных з-д., совместный деревообрабатывающий корпус \"Аму–конда\" (Узбекистан–Россия)., хлеб и лимонад i-ч.  Цекс, молочный з-д., поликл., Сенс, аптека, Дворец спорта, есть торговые центры. Пересечь перекресток-Кунградская железная дорога, шоссе Ургенч-Бухара и канал Туямуйн. Ш. 1 Профессиональное училище, 4 общеобразовательные школы, 5 детских садов, МАД \"гИдростроитель\". а еще здесь есть дворец спорта, 3 кинотеатра, торговый центр, больница на 280 мест. Городской совет граждан возглавили А. Булдабоев, Э. Разметов, Р. Самандаров, Б. Абулов, А. Матчонов, Г. Алтынбоев.",
+      "PITNAK (ilg. Drujba) — Hazorasp tum. hududidagi sh. (1992). Tuyamo‘yin suv ombori va gidrouzeli qurilishi munosabati b-n Pitnak qishlog‘i va Shorlovuq posyolkalari oralig‘ida barpo etilgan. O‘zb-n Oliy Soveti Rayosatining 1974 y. 16 iyun. qaroriga binoan Shorlovuq va 1976 y. 30 yanv. qaroriga asosan Drujba, O‘zb-n Respublikasi Oliy Majlisining 1998 y. 1 maydagi qaroriga b-n Pitnak sh. deb o‘zgartirilgan. \nAholisi 18065 kishi (2018).  \"Tuyamo‘yinsuvqurilish\" boshq. qarashli 7 ta qurilish tashk. va yordamchi x. komb., \"Foton\", “Xorazmavto” zavodi va 2 ta temir-beton z-d., “Amu–Konda” (O‘zbekiston–Rossiya) qo‘shma yog‘ochsozlik korx., non va limonad i-ch.  syexlari, sut z-d., polikl., SENS, apteka, sport saroyi, savdo shahobchalari bor. Chorjo‘y-Qo‘ng‘irot temir yo‘li, Urganch–Buxoro avtomagistrali va Tuyamo‘yin kanali kesib o‘tadi. Sh.  1 ta kasb-hunar kolleji, 4 ta umumta’lim maktabi, 5 ta bolalar bog‘chasi, “Gidrostroitel” mad. va sport saroyi, 3 ta kinoteatr, savdo markazi, 280 o‘rinli kasalxona ishlab turibdi. Shahar fuqarolar kengashiga A. Mo‘ldaboyev, Ye. Ro‘zmetov, R. Samandarov, B. Abulov, A. Matchonov, G. Altinboyev rahbarlik qilgan."
+    )
+  )
   val monumentsPageContent = Map(
     "monuments-home-menu" -> Array("Home", "Главное", "Bosh sahifa"),
     "monuments-sub-menu" -> Array("About Khorezm", "О Хорезме", "Xorazm haqida"),
@@ -935,6 +947,11 @@ object Main extends App {
   if (isShovotCitiesPage != null) {
     shovotPageContent.keys.foreach(
       item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = shovotPageContent(item)(lang)
+    )
+  }
+  if (isPitnakCitiesPage != null) {
+    pitnakPageContent.keys.foreach(
+      item => dom.document.getElementById(item).asInstanceOf[HTMLLinkElement].innerText = pitnakPageContent(item)(lang)
     )
   }
   /*-------------------------*/
