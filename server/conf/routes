@@ -14,6 +14,7 @@ GET     /independence                   @controllers.HomeController.independence
 GET     /monuments                      @controllers.HomeController.monumentsPage(l ?= "uz")
 GET     /cities                         @controllers.HomeController.cities(l ?= "uz")
 GET     /cities/urgench                 @controllers.HomeController.urgench(l ?= "uz")
+GET     /cities/khiva                   @controllers.HomeController.khiva(l ?= "uz")
 GET     /art                            @controllers.HomeController.art(l ?= "uz")
 GET     /forum                          @controllers.HomeController.forum(l ?= "uz")
 GET     /coming-soon                    @controllers.HomeController.comingSoon(l ?= "uz")
