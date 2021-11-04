@@ -101,9 +101,16 @@
                           }" id="khorezmCitiesPitnak"></a></li>
                         </ul>
                       </li>
-                      <li><a href="/monuments@{
-                        if(lang != "uz") "?l=" + lang
-                      }" id="subMenuKhorezmCultures"></a></li>
+                      <li class="dropdown"><a href="#" id="subMenuKhorezmCultures"></a>
+                        <ul>
+                          <li><a href="/archeologies@{
+                            if(lang != "uz") "?l=" + lang
+                          }" id="archeologyTitle"></a></li>
+                          <li><a href="/architectures@{
+                            if(lang != "uz") "?l=" + lang
+                          }" id="architectureTitle"></a></li>
+                        </ul>
+                      </li>
                       <li><a href="/art@{
                         if(lang != "uz") "?l=" + lang
                       }" id="subMenuArtOfKhorezm"></a></li>
@@ -220,9 +227,16 @@
                         }" id="khorezmCitiesStickyPitnak"></a></li>
                       </ul>
                     </li>
-                    <li><a href="/monuments@{
-                      if(lang != "uz") "?l=" + lang
-                    }" id="subMenuStickyKhorezmCultures"></a></li>
+                    <li class="dropdown"><a href="#" id="subMenuStickyKhorezmCultures"></a>
+                      <ul>
+                        <li><a href="/archeologies@{
+                          if(lang != "uz") "?l=" + lang
+                        }" id="archeologyStickyTitle"></a></li>
+                        <li><a href="/architectures@{
+                          if(lang != "uz") "?l=" + lang
+                        }" id="architectureStickyTitle"></a></li>
+                      </ul>
+                    </li>
                     <li><a href="/art@{
                       if(lang != "uz") "?l=" + lang
                     }" id="subMenuStickyArtOfKhorezm"></a></li>

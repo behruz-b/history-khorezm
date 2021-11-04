@@ -68,8 +68,11 @@ class HomeController @Inject()(val controllerComponents: ControllerComponents) e
     Ok(html.citiesPage.pitnak(lang))
   }
   /*--------------*/
-  def monumentsPage(lang: String): Action[AnyContent] = Action {
-    Ok(html.monuments(lang))
+  def archeology(lang: String): Action[AnyContent] = Action {
+    Ok(html.archeologies(lang))
+  }
+  def architecture(lang: String): Action[AnyContent] = Action {
+    Ok(html.architectures(lang))
   }
   def art(lang: String): Action[AnyContent] = Action {
     Ok(html.art(lang))
