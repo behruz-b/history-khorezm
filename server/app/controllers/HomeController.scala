@@ -58,6 +58,9 @@ class HomeController @Inject()(val controllerComponents: ControllerComponents) e
   def turtkol(lang: String): Action[AnyContent] = Action {
     Ok(html.citiesPage.turtkol(lang))
   }
+  def khanka(lang: String): Action[AnyContent] = Action {
+    Ok(html.citiesPage.khanka(lang))
+  }
   /*--------------*/
   def monumentsPage(lang: String): Action[AnyContent] = Action {
     Ok(html.monuments(lang))
