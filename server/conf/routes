@@ -13,6 +13,7 @@ GET     /sixteen-twentieth-centuries    @controllers.HomeController.sixteenTwent
 GET     /independence                   @controllers.HomeController.independencePage(l ?= "uz")
 GET     /monuments                      @controllers.HomeController.monumentsPage(l ?= "uz")
 GET     /cities                         @controllers.HomeController.cities(l ?= "uz")
+GET     /cities/urgench                 @controllers.HomeController.urgench(l ?= "uz")
 GET     /art                            @controllers.HomeController.art(l ?= "uz")
 GET     /forum                          @controllers.HomeController.forum(l ?= "uz")
 GET     /coming-soon                    @controllers.HomeController.comingSoon(l ?= "uz")

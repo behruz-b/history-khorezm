@@ -45,6 +45,9 @@ class HomeController @Inject()(val controllerComponents: ControllerComponents) e
   def cities(lang: String): Action[AnyContent] = Action {
     Ok(html.cities(lang))
   }
+  def urgench(lang: String): Action[AnyContent] = Action {
+    Ok(html.citiesPage.urgench(lang))
+  }
   def monumentsPage(lang: String): Action[AnyContent] = Action {
     Ok(html.monuments(lang))
   }
