@@ -159,7 +159,7 @@ object Main extends App {
       "Интерактивные сервисы",
       "Interaktiv xizmatlar"
     ),
-    "menuMultimedia" -> Array("Multimedia", "Мультимедиа", "Multimediya"),
+    "menuMultimedia" -> Array("Multimedia", "Мультимедиа", "Multimedia"),
     "menuForum" -> Array("Forum", "Форум", "Forum"),
     //    Sticky nav
     "menuStickyHome" -> Array("Home", "Главное", "Bosh sahifa"),
@@ -224,7 +224,7 @@ object Main extends App {
       "Интерактивные сервисы",
       "Interaktiv xizmatlar"
     ),
-    "menuStickyMultimedia" -> Array("Multimedia", "Мультимедиа", "Multimediya"),
+    "menuStickyMultimedia" -> Array("Multimedia", "Мультимедиа", "Multimedia"),
     "menuStickyForum" -> Array("Forum", "Форум", "Forum"),
     "extras" -> Array("Extras", "Дополнительно", "Qo\'shimchalar"),
     "contacts" -> Array("Contacts", "Контакты", "Kontaktlar"),
@@ -425,10 +425,10 @@ object Main extends App {
     )
   }
   val multimedia = Map(
-    "multimedia-header" -> Array("Multimedia", "Мультимедиа", "Multimediya"),
+    "multimedia-header" -> Array("Multimedia", "Мультимедиа", "Multimedia"),
     "sub-menu-home-for-media" -> Array("Home", "Главное", "Bosh sahifa"),
-    "sub-menu-multimedia" -> Array("Multimedia", "Мультимедиа", "Multimediya"),
-    "upcomingVideos" -> Array("Multimedia", "Мультимедиа", "Multimediya"),
+    "sub-menu-multimedia" -> Array("Multimedia", "Мультимедиа", "Multimedia"),
+    "upcomingVideos" -> Array("Multimedia", "Мультимедиа", "Multimedia"),
   )
   val readMoreList = List(
     "readMore",
