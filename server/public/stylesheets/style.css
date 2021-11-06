@@ -714,6 +714,3 @@ a.scrollDownArrow{
 html{
   scroll-behavior: smooth;
 }
-body {
-  transition: 0.5s;
-}
