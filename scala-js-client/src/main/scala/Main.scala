@@ -309,17 +309,6 @@ object Main extends App {
       "Предстоящие События",
       "Tarixiy tadbirlar"
     ),
-    "ourCollection" -> Array(
-      "From Our Collection",
-      "Из нашей коллекции",
-      "Bizning to'plamdan"
-    ),
-    "viewMore" -> Array("View More", "Посмотреть больше", "Ko\'proq ko\'rish"),
-    "castle" -> Array(
-      "Castle of Nurullaboy",
-      "Замок Нуруллабой",
-      "Nurullaboy qal\'asi"
-    ),
 //    "numericalCounter" -> Array(
 //      "Everything about our organization in numerical counter view.",
 //      "Все о нашей организации в виде цифрового счетчика.",
@@ -871,7 +860,19 @@ object Main extends App {
       "Khorezm region of the \nRepublic of Uzbekistan",
       "Хорезмская область \nРеспублики Узбекистан",
       "O'zbekiston Respublikasi \nXorazm viloyati"
-    )
+    ),
+
+    "ourCollection" -> Array(
+      "From Our Collection",
+      "Из нашей коллекции",
+      "Bizning to'plamdan"
+    ),
+    "viewMore" -> Array("View More", "Посмотреть больше", "Ko\'proq ko\'rish"),
+    "castle" -> Array(
+      "Castle of Nurullaboy",
+      "Замок Нуруллабой",
+      "Nurullaboy qal\'asi"
+    ),
   )
   val latestNews = Map(
     "latest-news" -> Array(
@@ -1821,20 +1822,6 @@ object Main extends App {
           .asInstanceOf[HTMLLinkElement]
           .innerText = learnMore("learnMore")(lang)
     )
-    readMoreList.foreach(
-      item =>
-        dom.document
-          .getElementById(item)
-          .asInstanceOf[HTMLLinkElement]
-          .innerText = readMore("readMore")(lang)
-    )
-    modernArtList.foreach(
-      item =>
-        dom.document
-          .getElementById(item)
-          .asInstanceOf[HTMLLinkElement]
-          .innerText = modernArt("modernArt")(lang)
-    )
     findMoreList.foreach(
       item =>
         dom.document
@@ -2006,7 +1993,20 @@ object Main extends App {
         }
       }
     }
-
+    readMoreList.foreach(
+      item =>
+        dom.document
+          .getElementById(item)
+          .asInstanceOf[HTMLLinkElement]
+          .innerText = readMore("readMore")(lang)
+    )
+    modernArtList.foreach(
+      item =>
+        dom.document
+          .getElementById(item)
+          .asInstanceOf[HTMLLinkElement]
+          .innerText = modernArt("modernArt")(lang)
+    )
   }
   //    About Khorezm
   if (isAntiquePage != null) {
