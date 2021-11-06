@@ -35,11 +35,6 @@
 @import url('https://fonts.googleapis.com/css?family=Archivo:400,400i,500,500i,600,600i,700,700i&display=swap');
 
 
-
-
-
-
-
 @import url(animate.css);
 @import url('bootstrap-select.min.css');
 @import url('icomoon.css');
@@ -63,10 +58,6 @@
 @import url(../plugins/revolution/css/navigation.css);
 /*** Language Switcher ***/
 @import url(../assets/language-switcher/polyglot-language-switcher.css);
-
-
-
-
 
 
 
@@ -123,8 +114,6 @@ a:focus {
     border: none;
 }
 
-
-
 @media (min-width: 1200px) {
     .container {
         max-width: 1200px;
@@ -144,8 +133,6 @@ img {
     transition-duration: .7s;
     transition-property: all;
 }
-
-
 
 i {
 	font-style: normal;
@@ -168,15 +155,12 @@ li{
     background: #f36727;    
 }
 
-
 .auto-container {
     position: static;
     max-width: 1200px;
     padding: 0px 15px;
     margin: 0 auto;
 }
-
-
 
 .btn-one {
     position: relative;
@@ -220,10 +204,6 @@ li{
     border: 1px solid #1f252b !important;
     outline: none;
 }
-
-
-
-
 
 .btn-two{
     position: relative;
@@ -300,23 +280,6 @@ li{
     color: #ffffff;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .parallax-bg-one {
     background-attachment: fixed;
     background-position: center top;
@@ -388,8 +351,6 @@ li{
     flex-wrap: wrap;
     align-items: center;
 }
-
-
 
 /*___ owl Nav Dot Style _____*/
 .owl-nav-style-one{}
