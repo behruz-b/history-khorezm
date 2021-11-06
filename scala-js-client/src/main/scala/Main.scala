@@ -728,141 +728,149 @@ object Main extends App {
       "Узнать больше",
       "To'liq ma'lumot"
     ),
-    "temir-one" -> Array("Iron Age", "Железный век", "Temir davri"),
-    "olti-two" -> Array("VI-IV centuries", "VI-IV век", "VI-IV asr"),
+    "temir-one" -> Array("Iron age", "Железный век", "Temir davri"),
+    "olti-two" -> Array("VI-IV centuries BC", "VI-IV вв. До н.э.", "Mil.avv. VI-IV asrlar"),
     "tort-three" -> Array(
-      "4th-2nd centuries BC",
+      "IV-II centuries BC",
       "IV-II вв. До н.э.",
-      "Mil.av. 4-2 asr"
+      "Mil.avv. IV-II asrlar"
     ),
-    "ikki-four" -> Array("2nd century AD", "2 век нашей эры", "milodiy 2 asr"),
-    "uch-five" -> Array("III - VI centuries", "III - VI век", "III - VI asr"),
-    "yetti-six" -> Array("VI - VII centuries", "VI - VII век", "VI - VII asr"),
+    "ikki-four" -> Array("II century BC II century BC", "II век до нашей эры - II век нашей эры", "Mil.avv. II- mil. II asrlar"),
+    "uch-five" -> Array("III - VI centuries", "III - VI векa", "III - VI asrlar"),
+    "yetti-six" -> Array("VI - VII centuries", "VI - VII векa", "VI - VII asrlar"),
     "sakkiz-seven" -> Array(
       "VIII - IX centuries",
-      "VIII - IX век",
-      "VIII - IX asr"
+      "VIII - IX векa",
+      "VIII - IX asrlar"
     ),
     "on-eight" -> Array("X century", "X век", "X asr"),
-    "asr-1" -> Array("XVI-XVII centuries", "XVI-XVII век", "XVI-XVII asr"),
+    "yillar-1" -> Array("1097 - 1231 - years", "1097 - 1231 гг.", "1097 - 1231-yillar"),
+    "yillar-2" -> Array("1097 - 1127 - years", "1097 - 1127 гг.", "1097 - 1127-yillar"),
+    "yillar-3" -> Array("1127 - 1156 - years", "1127 - 1156 гг.", "1127 - 1156-yillar"),
+    "yillar-4" -> Array("1156 - 1172 - years", "1156 - 1172 гг.", "1156 - 1172-yillar"),
+    "yillar-5" -> Array("1172 - 1200 - years", "1172 - 1200 гг.", "1172 - 1200-yillar"),
+    "yillar-6" -> Array("1200 - 1220 - years", "1200 - 1220 гг.", "1200 - 1220-yillar"),
+    "yillar-7" -> Array("1873 - 1920 - years", "1873 - 1920 гг.", "1873 - 1920-yillar"),
+    "yillar-8" -> Array("1920 - 1924 - years", "1920 - 1924 гг.", "1920 - 1924-yillar"),
+    "asr-1" -> Array("XVI-XVII centuries", "XVI-XVII векa", "XVI-XVII asrlar"),
     "asr-2" -> Array(
       "The end of the XVIII century",
       "Конец XVIII века",
       "XVIII asr oxiri"
     ),
     "xiva-xon-1" -> Array("Khiva khanate", "Хивинское ханство", "Xiva xonligi"),
-    "xiva-xon-2" -> Array("Khiva khanate", "Хивинское ханство", "Xiva xonligi"),
-    "xiva-xon-3" -> Array("Khiva khanate", "Хивинское ханство", "Xiva xonligi"),
+//    "xiva-xon-2" -> Array("Khiva khanate", "Хивинское ханство", "Xiva xonligi"),
+//    "xiva-xon-3" -> Array("Khiva khanate", "Хивинское ханство", "Xiva xonligi"),
     "xorazm" -> Array("Khorezm", "Хорезм", "Xorazm"),
     "map-title-1" -> Array(
-      "Early Iron\n Age Asia",
-      "Азия раннего\n железного века",
-      "Ilk Temir \ndavri Osiyo"
+      "Khorezm in the\n Early Iron age",
+      "Хорезм в раннем \nжелезном веке",
+      "Ilk Temir \ndavrida Xorazm"
     ),
     "map-title-2" -> Array(
-      "Khorezm Achaemenid \nperiod VI - IV centuries",
-      "Хорезмский период \nАхеменидов VI - IV вв.",
-      "Xorazm Ahamoniylar \ndavri VI - IV asr"
+      "Khorezm during the\n Achaemenid period",
+      "Хорезм в период \nАхеменидов",
+      "Xorazm Ahamoniylar \ndavrida"
     ),
     "map-title-3" -> Array(
-      "Khorezm 4-2 \ncenturies BC",
-      "Хорезм 4-2\n вв. До н.э.",
-      "Xorazm miloddan\n avvalgi 4-2 asr"
+      "Khorezm IV - II \ncenturies BC",
+      "Хорезм IV - II\n вв. До н.э.",
+      "Xorazm miloddan\n avvalgi IV - II asr"
     ),
     "map-title-4" -> Array(
-      "Khorezm 2- century AD\n 2nd century AD",
-      "Хорезм 2- век нашей \nэры 2 век нашей эры",
-      "Xorazm mil 2- mil 2 asr"
+      "Khorezm II century BC II century BC",
+      "Хорезм II век до нашей эры - II век нашей эры",
+      "Xorazm mil.avv. \nII-mil.II asrlar"
     ),
     "map-title-5" -> Array(
-      "The period of the \nAfricans III - VI centuries",
-      "Период Aфриканцев\n III - VI вв.",
-      "Afrig'iylar davri\n III - VI asr"
+      "Khorezm in the time of \nAfricans",
+      "Хорезм во времена \nафриканцев",
+      "Xorazm Afrig'iylar \ndavrida"
     ),
     "map-title-6" -> Array(
-      "The period of the \nAfricans VI - VII centuries",
-      "Период Aфриканцев\n VI - VII вв.",
-      "Afrig'iylar davri\n VI - VII asr"
+      "Khorezm in the time of \nAfricans",
+      "Хорезм во времена \nафриканцев",
+      "Xorazm Afrig'iylar \ndavrida"
     ),
     "map-title-7" -> Array(
-      "Khorezm \nVIII - IX centuries",
-      "Хорезм\n VIII - IX вв.",
-      "Xorazm \nVIII - IX asr"
+      "Khorezm in the VIII - IX \ncenturies",
+      "Хорезм в VIII - IX вв.",
+      "Xorazm VIII - IX asrlarda"
     ),
     "map-title-8" -> Array(
-      "X century Mamuns",
-      "Мамуны X века",
-      "X asr \nMa'muniylar"
+      "Khorezm in the period of \nMamunids X century",
+      "Хорезм в период \nМамунидов X век",
+      "Xorazm Ma`muniylar \ndavrida X asr"
     ),
     "map-title-9" -> Array(
-      "Anushtegin Khorezmshah \n(1097-1231)",
-      "Ануштегин Хорезмшах \n(1097-1231)",
-      "Anushtegin Xorazmshoh \n(1097-1231)"
+      "Anushtegin Khorezmshah period",
+      "Ануштегин Хорезмшах период",
+      "Anushtegin Xorazmshoh davri"
     ),
     "map-title-10" -> Array(
-      "Khorezmshah Qutbiddin Muhammad \n(1097-1127)",
-      "Хорезмшах Кутбиддин Мухаммад\n (1097-1127)",
-      "Xorazmshoh Qutbiddin Muhammad \n(1097-1127)"
+      "Khorezmshah Qutbiddin Muhammad period",
+      "Хорезмшах Кутбиддин Мухаммад период",
+      "Xorazmshoh Qutbiddin Muhammad davri"
     ),
     "map-title-11" -> Array(
-      "Ostir (1127-1156)",
-      "Остир (1127-1156)",
-      "Ostir (1127-1156)"
+      "Otsiz period",
+      "Отсиз период",
+      "Otsiz davri"
     ),
     "map-title-12" -> Array(
-      "El Arslon \n(1156-1172)",
-      "Эль-Арслон \n(1156–1172)",
-      "El Arslon \n(1156-1172)"
+      "El Arslon period",
+      "Эль-Арслон период",
+      "El Arslon davri"
     ),
     "map-title-13" -> Array(
-      "Alouddin Takash \n(1172-1200)",
-      "Алоуддин Такаш \n(1172-1200)",
-      "Alouddin Takash \n(1172-1200)"
+      "Alouddin Takash period",
+      "Алоуддин Такаш период",
+      "Alouddin Takash davri"
     ),
     "map-title-14" -> Array(
-      "Alouddin Muhammad \n(1200-1220)",
-      "Алоуддин Мухаммад \n(1200-1220)",
-      "Alouddin Muhammad \n(1200-1220)"
+      "Alouddin Muhammad period",
+      "Алоуддин Мухаммад период",
+      "Alouddin Muhammad davri"
     ),
     "map-title-15" -> Array(
-      "Arabian \nXVI - XVII centuries",
-      "Аравийские \nXVI - XVII вв",
-      "Arabshohiy \nXVI - XVII asr"
+      "Khiva khanate in the \nXVI-XVII centuries",
+      "Хивинское ханство в \nXVI-XVII вв.",
+      "Xiva xonligi \nXVI-XVII asrlarda"
     ),
     "map-title-16" -> Array(
       "Khiva khanate at the \nend of the XVIII century",
-      "Хивинское ханство \nв конце XVIII века",
-      "Xiva xonligi \nXVIII asr oxiri"
+      "Хивинское ханство в \nконце XVIII века",
+      "Xiva xonligi \nXVIII asr oxirida"
     ),
     "map-title-17" -> Array(
-      "Khiva khanate",
-      "Хивинское ханство",
-      "Xiva xonligi"
+      "Khiva khanate in the \nmiddle of the XIX century",
+      "Хивинское ханство в \nсередине XIX века",
+      "Xiva xonligi \nXIX asr o'rtalarida"
     ),
     "map-title-18" -> Array(
-      "Khiva khanate (1873-1920)",
-      "Хивинское ханство (1873-1920)",
-      "Xiva xonligi (1873-1920)"
+      "Khiva khanate \nin 1873-1920",
+      "Хивинское ханство \nв 1873-1920 гг.",
+      "Xiva xonligi \n1873-1920-yillarda"
     ),
-    "map-title-19" -> Array(
-      "Khiva khanate",
-      "Хивинское ханство",
-      "Xiva xonligi"
-    ),
-    "map-title-20" -> Array(
-      "Khiva khanate",
-      "Хивинское ханство",
-      "Xiva xonligi"
-    ),
+//    "map-title-19" -> Array(
+//      "Khiva khanate",
+//      "Хивинское ханство",
+//      "Xiva xonligi"
+//    ),
+//    "map-title-20" -> Array(
+//      "Khiva khanate",
+//      "Хивинское ханство",
+//      "Xiva xonligi"
+//    ),
     "map-title-21" -> Array(
       "XXSR 1920-1924",
       "XXSR 1920-1924 гг.",
       "XXSR 1920-1924 yillar"
     ),
     "map-title-22" -> Array(
-      "Khorezm region",
-      "Хорезмская обл.",
-      "Xorazm viloyati"
+      "Khorezm region of the \nRepublic of Uzbekistan",
+      "Хорезмская область \nРеспублики Узбекистан",
+      "O'zbekiston Respublikasi \nXorazm viloyati"
     )
   )
   val latestNews = Map(

@@ -257,7 +257,7 @@
   height: 50px;
   font-size: 11px;
   color: #000;
-  text-transform: capitalize;
+  /*text-transform: capitalize;*/
   background: transparent;
   border: none;
   outline: none;
