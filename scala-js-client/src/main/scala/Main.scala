@@ -320,16 +320,16 @@ object Main extends App {
       "Замок Нуруллабой",
       "Nurullaboy qal\'asi"
     ),
-    "numericalCounter" -> Array(
-      "Everything about our organization in numerical counter view.",
-      "Все о нашей организации в виде цифрового счетчика.",
-      "Bizning tashkilot haqida hamma narsa raqamli hisoblagich ko\'rinishida."
-    ),
-    "wePerfection" -> Array(
-      "We Strive for Perfection Every day",
-      "Мы стремимся к совершенству каждый день.",
-      "Biz har kuni mukammallikka intilamiz."
-    ),
+//    "numericalCounter" -> Array(
+//      "Everything about our organization in numerical counter view.",
+//      "Все о нашей организации в виде цифрового счетчика.",
+//      "Bizning tashkilot haqida hamma narsa raqamli hisoblagich ko\'rinishida."
+//    ),
+//    "wePerfection" -> Array(
+//      "We Strive for Perfection Every day",
+//      "Мы стремимся к совершенству каждый день.",
+//      "Biz har kuni mukammallikka intilamiz."
+//    ),
     "overOrganized" -> Array(
       "Archaeological monuments",
       "Археологических памятников",
@@ -364,7 +364,7 @@ object Main extends App {
     "sponsors-title" -> Array(
       "Useful resources",
       "Полезные ресурсы",
-      "Foydali manbalar"
+      "Foydali resurslar"
     )
   )
   //  Index Page ids
