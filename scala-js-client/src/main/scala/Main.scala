@@ -160,7 +160,7 @@ object Main extends App {
       "Interaktiv xizmatlar"
     ),
     "menuMultimedia" -> Array("Multimedia", "Мультимедиа", "Multimedia"),
-    "menuForum" -> Array("Forum", "Форум", "Forum"),
+    "menuForum" -> Array("Connection", "Связь", "Bog'lanish"),
     //    Sticky nav
     "menuStickyHome" -> Array("Home", "Главное", "Bosh sahifa"),
     "menuStickyNews" -> Array("News", "Новости", "Yangiliklar"),
@@ -225,7 +225,7 @@ object Main extends App {
       "Interaktiv xizmatlar"
     ),
     "menuStickyMultimedia" -> Array("Multimedia", "Мультимедиа", "Multimedia"),
-    "menuStickyForum" -> Array("Forum", "Форум", "Forum"),
+    "menuStickyForum" -> Array("Connection", "Связь", "Bog'lanish"),
     "extras" -> Array("Extras", "Дополнительно", "Qo\'shimchalar"),
     "contacts" -> Array("Contacts", "Контакты", "Kontaktlar"),
     "about-site-people" -> Array(
@@ -1757,7 +1757,7 @@ object Main extends App {
       "Biz bilan bog'lanish"
     ),
     "forum-home-menu" -> Array("Home", "Главное", "Bosh sahifa"),
-    "forum-sub-menu" -> Array("Forum", "Форум", "Forum"),
+    "forum-sub-menu" -> Array("Connection", "Связь", "Bog'lanish"),
     "forum-header" -> Array("Get in Touch", "Связаться", "Aloqa qiling"),
     "forum-header-info" -> Array(
       "Feel free to get in touch with us. we alwasy open to discussing now projects, createive ideas\n or opportunities to be part of your visions",
