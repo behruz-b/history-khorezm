@@ -410,7 +410,7 @@ object Main extends App {
     "modernArt" -> Array(
       "Exhibition of Modern Art",
       "Выставка современного искусства",
-      "Zamonaviy san\'at ko\'rgazmasi"
+      "\"Ichan qal'a\" davlat muzey qo`riqxonasi "
     )
   }
   val multimedia = Map(
@@ -863,9 +863,9 @@ object Main extends App {
     ),
 
     "ourCollection" -> Array(
-      "From Our Collection",
-      "Из нашей коллекции",
-      "Bizning to'plamdan"
+      "Museum Expositions",
+      "Экспозиции музея",
+      "Musey ekspozitsiyalari"
     ),
     "viewMore" -> Array("View More", "Посмотреть больше", "Ko\'proq ko\'rish"),
     "castle" -> Array(
