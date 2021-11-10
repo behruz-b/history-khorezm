@@ -359,12 +359,6 @@ object Main extends App {
   )
   //  Index Page ids
 
-  val eventNameMap = Map {
-    "eventName" -> Array("Central Park", "Центральный парк", "Markaziy Park")
-  }
-  val eventNameEvenMap = Map {
-    "eventName" -> Array("Reduis Maroa", "Редуис Мароа", "Reduis Maroa")
-  }
 //  val eventLinkEvenMap = Map {
 //
 //  }
@@ -428,13 +422,18 @@ object Main extends App {
   val readMore = Map {
     "readMore" -> Array("Read More", "Подробнее", "Ko\'proq o\'qish")
   }
-  val modernArt = Map {
-    "modernArt" -> Array(
-      "Exhibition of Modern Art",
-      "Выставка современного искусства",
-      "\"Ichan qal'a\" davlat muzey qo'riqxonasi "
-    )
-  }
+  val modernArt = Map(
+    "modernArt1" -> Array("Exhibition of Modern Art", "Выставка современного искусства","\"Ichan qal'a\" davlat muzey qo'riqxonasi "),
+    "modernArt2" -> Array("Exhibition of Modern Art", "Выставка современного искусства","Xorazm amaliy san'at"),
+    "modernArt3" -> Array("Exhibition of Modern Art", "Выставка современного искусства","Mahobatli me'morchilik"),
+    "modernArt4" -> Array("Exhibition of Modern Art", "Выставка современного искусства","Xudoybergan Devonov hayoti va faoliyati doimiy ko'rgazmasi"),
+    "modernArt5" -> Array("Exhibition of Modern Art", "Выставка современного искусства","Qatag'on qurbonlari muzeyi"),
+    "modernArt6" -> Array("Exhibition of Modern Art", "Выставка современного искусства","Dorul hikmat val maorif"),
+    "modernArt7" -> Array("Exhibition of Modern Art", "Выставка современного искусства","Tasviriy san'at"),
+    "modernArt8" -> Array("Exhibition of Modern Art", "Выставка современного искусства","Nurullaboy majmuasi"),
+    "modernArt9" -> Array("Exhibition of Modern Art", "Выставка современного искусства","Xorazm tarixi va madaniyati"),
+    "modernArt10" -> Array("Exhibition of Modern Art", "Выставка современного искусства","Musiqa tarixi")
+  )
   val multimedia = Map(
     "multimedia-header" -> Array("Multimedia", "Мультимедиа", "Multimedia"),
     "sub-menu-home-for-media" -> Array("Home", "Главное", "Bosh sahifa"),
@@ -454,9 +453,10 @@ object Main extends App {
     "readMore10"
   )
   val modernArtList = List(
-    "modernArt",
+    "modernArt1",
     "modernArt2",
     "modernArt3",
+    "modernArt4",
     "modernArt5",
     "modernArt6",
     "modernArt7",
@@ -932,12 +932,7 @@ object Main extends App {
       "Экспозиции музея",
       "Musey ekspozitsiyalari"
     ),
-    "viewMore" -> Array("View More", "Посмотреть больше", "Ko\'proq ko\'rish"),
-    "castle" -> Array(
-      "Castle of Nurullaboy",
-      "Замок Нуруллабой",
-      "Nurullaboy qal\'asi"
-    ),
+    "viewMore" -> Array("View More", "Посмотреть больше", "Ko\'proq ko\'rish")
   )
   val latestNews = Map(
     "latest-news" -> Array(
@@ -1458,7 +1453,7 @@ object Main extends App {
       "Xumbuztepa Janubiy Xorazm kulolchilik ishlab chiqarish markazi sifatida arxaik va antik davrning ilk bosqichlarida Xorazmning katta hududini sopol buyumlar bilan ta’minlab turgan. Kulolchilik ishlab chiqarishining uyushgan tarzda tashkil etilishi bu markazlarga davlat darajasida e’tibor berilganligini ko‘rsatadi. Yodgorlik hali to‘laligicha tadqiq qilib bo‘lingan emas.\nSo‘nggi izlanishlar natijasida Xumbuztepada qadimgi ibodatxona va O‘rta Osiyodagi eng qadimgi zardushtiylik otashgohi aniqlandi. Xumbuztepa yodgorligidagi qadimgi ibodatxona va O‘rta Osiyodagi eng qadimgi zardushtiylik otashgohini konservasiyalash va lozim topilsa ibodatxonani butunlay tiklash mumkin. Buning uchun ibodatxona maydonini to‘liq ochib o‘rganish lozim. Ibodatxona arxeologik jihatdan to‘liq tadqiq qilingandan so‘ng, uni ta’mirlash, qayta tiklash va muzeylashtirish mumkin. Yodgorlikni konservasiyalash va restavrasiya qilishda jahon tajribasida erishilgan yutuqlardan foydalangan holda qurilish sohasidagi mahalliy xususiyatlarni ham e’tiborga olish lozim. Hozirgi paytda rivojlangan mamlakatlarda yodgorliklarni saqlab qolish uchun maxsus shaffof oyna bilan qoplangan bostirmalardan foydalanish uslubi keng qo‘llanilib kelinmoqda. Bu usulda yodgorlikni yorqin holatda tomosha qilish imkoniyati bo‘ladi."
     ),
     // FORTRESS IN KHIVA
-    "#3" -> Array("FORTRESS IN KHIVA", "КРЕПОСТЬ ХИВА", "XIVA ICHAN QAL’A"),
+    "#3" -> Array("FORTRESS IN KHIVA", "КРЕПОСТЬ ХИВА", "XIVA ICHANICHAN QAL’A"),
     "monuments-blog-title-three-1" -> Array(
       "ARCHEOLOGY",
       "АРХЕОЛОГИЯ",
@@ -1939,20 +1934,6 @@ object Main extends App {
 //          .asInstanceOf[HTMLLinkElement]
 //          .innerText = eventLinkEvenMap("eventLink")(lang)
 //    )
-    eventNameList.foreach(
-      item =>
-        dom.document
-          .getElementById(item)
-          .asInstanceOf[HTMLLinkElement]
-          .innerText = eventNameMap("eventName")(lang)
-    )
-    eventNameEvenList.foreach(
-      item =>
-        dom.document
-          .getElementById(item)
-          .asInstanceOf[HTMLLinkElement]
-          .innerText = eventNameEvenMap("eventName")(lang)
-    )
     elements.keys.foreach(
       item =>
         dom.document
@@ -2066,7 +2047,7 @@ object Main extends App {
         dom.document
           .getElementById(item)
           .asInstanceOf[HTMLLinkElement]
-          .innerText = modernArt("modernArt")(lang)
+          .innerText = modernArt(item)(lang)
     )
   }
   //    About Khorezm
