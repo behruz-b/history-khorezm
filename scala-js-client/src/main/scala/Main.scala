@@ -304,11 +304,7 @@ object Main extends App {
       "Sayyid Niyoz sholikorboy masjidi va minorasi. Xiva. Deshan qal'a. XIX asr oxiri"
     ),
     "dontMiss" -> Array("DON’T MISS", "НЕ ПРОПУСТИТЕ", "O\'TKAZIB YUBORMANG"),
-    "upcomingEvents" -> Array(
-      "Upcoming Events",
-      "Предстоящие События",
-      "Tarixiy tadbirlar"
-    ),
+    "upcomingEvents" -> Array("Exhibitions", "Выставки", "Ko'rgazmalar"),
 //    "numericalCounter" -> Array(
 //      "Everything about our organization in numerical counter view.",
 //      "Все о нашей организации в виде цифрового счетчика.",
@@ -318,6 +314,11 @@ object Main extends App {
 //      "We Strive for Perfection Every day",
 //      "Мы стремимся к совершенству каждый день.",
 //      "Biz har kuni mukammallikka intilamiz."
+//    ),
+//    "link6" -> Array(
+//      "Khiva is the pearl of the East",
+//      "Хива - жемчужина востока",
+//      "Xiva - Sharq gavhari"
 //    ),
     "overOrganized" -> Array(
       "Archaeological monuments",
@@ -364,27 +365,48 @@ object Main extends App {
   val eventNameEvenMap = Map {
     "eventName" -> Array("Reduis Maroa", "Редуис Мароа", "Reduis Maroa")
   }
-  val eventLinkEvenMap = Map {
-    "eventLink" -> Array(
-      "Renaissance to Revolution",
-      "От Возрождения до революции",
-      "Inqilobning Uyg'onishi"
+//  val eventLinkEvenMap = Map {
+//
+//  }
+  val eventLinkMap = Map(
+    "eventLink1" -> Array(
+      "Khorezm: underground history",
+      "Хорезм: андерграундная история",
+      "Xorazm: yer ostidagi tarix"
+    ),
+    "eventLink2" -> Array(
+      "Akchakhan fortress is a mysterious fortress of Khorezm",
+      "Крепость Акчахан - загадочная крепость Хорезма.",
+      "Oqchaxon qal'a - Xorazmning sirli qal'asi"
+    ),
+    "eventLink3" -> Array(
+      "The double gate is 110 years old",
+      "Двойным воротам 110 лет",
+      "Qo'sha darvoza - 110 yoshda"
+    ),
+    "eventLink4" -> Array(
+      "Toproqqqala - Secrets of the Palace of Khorezmshahs",
+      "Топрокккала - Тайны дворца хорезмшахов",
+      "Tuproqqqal'a - Xorazmshohlar saroyi sirlari"
+    ),
+    "eventLink5" -> Array(
+      "Frost Castle is a defensive fortress",
+      "Морозная крепость - оборонительная крепость",
+      "Ayoz qal'a - mudofaa qo'rg'oni"
+    ),
+    "eventLink6" -> Array(
+      "Khiva is the pearl of the East",
+      "Хива - жемчужина востока",
+      "Xiva - Sharq gavhari"
     )
-  }
-  val eventLinkMap = Map {
-    "eventLink" -> Array(
-      "Buffalo Bill Museum & Grave",
-      "Музей и могила Буффало Билла",
-      "Buffalo Bill muzeyi va qabr"
-    )
-  }
-  val eventDateMap = Map {
+  )
+  /*val eventDateMap = Map {
     "eventDate" -> Array(
       "November 30, 2021 - November 28, 2020",
       "30 ноября 2021 - 28 ноября 2020",
       "30 - noyabr, 2021 yil - 28 - noyabr, 2020 - yil"
     )
-  }
+  }*/
   val weekdaySat = Map {
     "weekday" -> Array("SATURDAY", "СУББОТА", "SHANBA")
   }
@@ -410,7 +432,7 @@ object Main extends App {
     "modernArt" -> Array(
       "Exhibition of Modern Art",
       "Выставка современного искусства",
-      "\"Ichan qal'a\" davlat muzey qo`riqxonasi "
+      "\"Ichan qal'a\" davlat muzey qo'riqxonasi "
     )
   }
   val multimedia = Map(
@@ -453,29 +475,29 @@ object Main extends App {
     "learnMore8",
     "learnMore9"
   )
-  val findMoreList = List(
-    "findMore",
-    "findMore2",
-    "findMore3",
-    "findMore4",
-    "findMore5",
-    "findMore6"
-  )
+//  val findMoreList = List(
+//    "findMore",
+//    "findMore2",
+//    "findMore3",
+//    "findMore4",
+//    "findMore5",
+//    "findMore6"
+//  )
   val exhibitionList = List("exhibition", "exhibition2", "exhibition3")
   val monthDecList = List("month2", "month4", "month6")
   val monthNovList = List("month", "month3", "month5")
   val weekdaySatList =
     List("weekday", "weekday2", "weekday3", "weekday4", "weekday5", "weekday6")
-  val eventDateList = List(
-    "eventDate",
-    "eventDate2",
-    "eventDate3",
-    "eventDate4",
-    "eventDate5",
-    "eventDate6"
-  )
-  val eventLinkList = List("eventLink", "eventLink3", "eventLink5")
-  val eventLinkEvenList = List("eventLink2", "eventLink4", "eventLink6")
+//  val eventDateList = List(
+//    "eventDate",
+//    "eventDate2",
+//    "eventDate3",
+//    "eventDate4",
+//    "eventDate5",
+//    "eventDate6"
+//  )
+//  val eventLinkList = List("eventLink", "eventLink3", "eventLink5")
+//  val eventLinkEvenList = List("eventLink2", "eventLink4", "eventLink6")
   val eventNameList = List("eventName", "eventName3", "eventName5")
   val eventNameEvenList = List("eventName2", "eventName4", "eventName6")
   //  Events Page
@@ -718,29 +740,77 @@ object Main extends App {
       "To'liq ma'lumot"
     ),
     "temir-one" -> Array("Iron age", "Железный век", "Temir davri"),
-    "olti-two" -> Array("VI-IV centuries BC", "VI-IV вв. До н.э.", "Mil.avv. VI-IV asrlar"),
+    "olti-two" -> Array(
+      "VI-IV centuries BC",
+      "VI-IV вв. До н.э.",
+      "Mil.avv. VI-IV asrlar"
+    ),
     "tort-three" -> Array(
       "IV-II centuries BC",
       "IV-II вв. До н.э.",
       "Mil.avv. IV-II asrlar"
     ),
-    "ikki-four" -> Array("II century BC II century BC", "II век до нашей эры - II век нашей эры", "Mil.avv. II- mil. II asrlar"),
-    "uch-five" -> Array("III - VI centuries", "III - VI векa", "III - VI asrlar"),
-    "yetti-six" -> Array("VI - VII centuries", "VI - VII векa", "VI - VII asrlar"),
+    "ikki-four" -> Array(
+      "II century BC II century BC",
+      "II век до нашей эры - II век нашей эры",
+      "Mil.avv. II- mil. II asrlar"
+    ),
+    "uch-five" -> Array(
+      "III - VI centuries",
+      "III - VI векa",
+      "III - VI asrlar"
+    ),
+    "yetti-six" -> Array(
+      "VI - VII centuries",
+      "VI - VII векa",
+      "VI - VII asrlar"
+    ),
     "sakkiz-seven" -> Array(
       "VIII - IX centuries",
       "VIII - IX векa",
       "VIII - IX asrlar"
     ),
     "on-eight" -> Array("X century", "X век", "X asr"),
-    "yillar-1" -> Array("1097 - 1231 - years", "1097 - 1231 гг.", "1097 - 1231-yillar"),
-    "yillar-2" -> Array("1097 - 1127 - years", "1097 - 1127 гг.", "1097 - 1127-yillar"),
-    "yillar-3" -> Array("1127 - 1156 - years", "1127 - 1156 гг.", "1127 - 1156-yillar"),
-    "yillar-4" -> Array("1156 - 1172 - years", "1156 - 1172 гг.", "1156 - 1172-yillar"),
-    "yillar-5" -> Array("1172 - 1200 - years", "1172 - 1200 гг.", "1172 - 1200-yillar"),
-    "yillar-6" -> Array("1200 - 1220 - years", "1200 - 1220 гг.", "1200 - 1220-yillar"),
-    "yillar-7" -> Array("1873 - 1920 - years", "1873 - 1920 гг.", "1873 - 1920-yillar"),
-    "yillar-8" -> Array("1920 - 1924 - years", "1920 - 1924 гг.", "1920 - 1924-yillar"),
+    "yillar-1" -> Array(
+      "1097 - 1231 - years",
+      "1097 - 1231 гг.",
+      "1097 - 1231-yillar"
+    ),
+    "yillar-2" -> Array(
+      "1097 - 1127 - years",
+      "1097 - 1127 гг.",
+      "1097 - 1127-yillar"
+    ),
+    "yillar-3" -> Array(
+      "1127 - 1156 - years",
+      "1127 - 1156 гг.",
+      "1127 - 1156-yillar"
+    ),
+    "yillar-4" -> Array(
+      "1156 - 1172 - years",
+      "1156 - 1172 гг.",
+      "1156 - 1172-yillar"
+    ),
+    "yillar-5" -> Array(
+      "1172 - 1200 - years",
+      "1172 - 1200 гг.",
+      "1172 - 1200-yillar"
+    ),
+    "yillar-6" -> Array(
+      "1200 - 1220 - years",
+      "1200 - 1220 гг.",
+      "1200 - 1220-yillar"
+    ),
+    "yillar-7" -> Array(
+      "1873 - 1920 - years",
+      "1873 - 1920 гг.",
+      "1873 - 1920-yillar"
+    ),
+    "yillar-8" -> Array(
+      "1920 - 1924 - years",
+      "1920 - 1924 гг.",
+      "1920 - 1924-yillar"
+    ),
     "asr-1" -> Array("XVI-XVII centuries", "XVI-XVII векa", "XVI-XVII asrlar"),
     "asr-2" -> Array(
       "The end of the XVIII century",
@@ -801,11 +871,7 @@ object Main extends App {
       "Хорезмшах Кутбиддин Мухаммад период",
       "Xorazmshoh Qutbiddin Muhammad davri"
     ),
-    "map-title-11" -> Array(
-      "Otsiz period",
-      "Отсиз период",
-      "Otsiz davri"
-    ),
+    "map-title-11" -> Array("Otsiz period", "Отсиз период", "Otsiz davri"),
     "map-title-12" -> Array(
       "El Arslon period",
       "Эль-Арслон период",
@@ -861,7 +927,6 @@ object Main extends App {
       "Хорезмская область \nРеспублики Узбекистан",
       "O'zbekiston Respublikasi \nXorazm viloyati"
     ),
-
     "ourCollection" -> Array(
       "Museum Expositions",
       "Экспозиции музея",
@@ -1679,11 +1744,7 @@ object Main extends App {
       "JUMA MASJID\nHazoraspdagi Juma masjidi keyingi tadqiqotlarga ko‘ra, O‘rta Osiyodagi eng qadimiy masjidlardan biri hisoblanadi. Xorazm Ma’mun akademiyasi arxeolog olimlari shurf qazib aniqlashlaricha, masjidga X asrda asos solingan.\nHozirda faqat devorlari va bitta yog‘och o‘ymakori eshigi saqlanib qolgan masjid o‘z davrida Xivadagi Juma masjid kabi ko‘p ustunli (5 qator) masjid bo‘lgan. Umumiy hajmi 25x21 m. Hozirda ustun o‘rinlari va ayrim marmar taxtalar saqlanib qolgan. Masjdi devorlariga ravoq shaklida uncha chuqur bo‘lmagan tokchalar ishlangan, boshqa bezak berilmagan. Janubiy devorda mehrob o‘rni saqlanib qolgan. Masjid eshigi yog‘och o‘ymakorligining ajoyib namunalari – islmi naqshlar bilan bezatilgan.Masjid ustun va eshiklari, tom qismlari Sho‘rolar zamonida talon-taroj qilingan. Masjid devorlari ochiq holatda bo‘lgani bois yomg‘ir ta’sirida yoriqlar paydo bo‘lgan, masjidda shoshilinch ravishda ta’mirlash va tiklash ishlarini olib borish zarur. Agar masjid eski usulda yopilsa, bu yerda muzey tashkil qilish va sayyohlikni rivojlantirishda foydalanish mumkin.\n\n\nJUMA MASJID\nMasjid Ollohning uyi, namoz o‘qishga mo‘ljallangan bino. Xivaning Jome’ (Juma) masjidi o‘rta asrlarda shaharning ko‘zga ko‘ringan binolaridan biri bo‘lib, o‘ziga xos qurilishi va hajmi bilan ajralib turgan. Masjid 55x46m maydonni egallab, ko‘p ustunli qilib qurilgan. Bu bino Ichon qal’aning sharqiy va g‘arbiy darvozalarini tutashtiruvchi katta ko‘cha yoqasida joylashgan.\nX asrda Xorazmga kelgan arab sayyohi al-Maqdisiy Xivaning Juma masjidini birinchi marta tilga oladi. Ko‘hna masjid buzilib uning o‘rniga 1788 yili xuddi o‘sha reja asosida ancha kengaytirib hozirgi masjid bino qilingan. Masjid binosining tashqi ko‘rinishi juda sodda, balandligi 4,5 metr, minorasining balandligi esa 42 metrga teng. Masjid darvozasi shimolga qaratib qurilgan bo‘lib, shimoldan esgan shamol masjid o‘rtasida ochilgan ikkita kattagina tuynikdan chiqib ketgan. Tuynik pastida qadimda balxi tutlar o‘sgan, bu shu davrda masjid ichidagi havoni tozalab turishga kattagina yordam bergan, Juma masjid bir qavatli tekis tomli imorat bo‘lib, uning to‘sinli shipini 3,15x3,15 metr tartibda joylashgan 213 ustun ko‘tarib turadi.\nMasjidning mehrobi xonaning janubiy devorida joylashgan. Mehrob, odatdagidek alohida ko‘rinib turishi uchun uning yonlariga baland tokchalar ishlangan bo‘lib, shifti esa balandroq qilib qurilgan. Mehrob qubbasidagi sodda ganchkorlik bezaklar va shu bezak yaqinidagi devorga ishlangan rang-barang ochilgan gulsafsar va na’matakni tasvir etuvchi naqshlar XVIII asr oxiri va XX asrlarda ishlangan. Mehrobning ikki yonidagi devorlariga o‘rnatilgan marmar toshlarga o‘ymakor xatlar bitilgan, xatlarning biri hijriy sana 1203 (1788-89) masjid mulki va mablag‘ hadya etilishi munosabati bilan tuzilgan vaqfnoma bitilgan. Unda aytilishicha, vazir Abdurahmon amri bilan 1203 hijriy yilda Kuyuktom (Go‘ktom- hozirgi Qo‘shko‘pir tumanidagi qishloq) va Bekobod qishloqlarida masjidga vaqf yerlari ajratilganligi va daromadni xayr-ehsonga hamda masjid zaruriyatiga sarf qilish haqidagi ma’lumotlar mavjud. Ikkinchi marmar taxta bir oz kichik bo‘lib, unga 1080 yil hijriy (1666)ni ko‘rsatuvchi tarix yozilgan.\nJanubiy fasaddagi o‘ymakor eshikka bitilgan xatda 1788-89 yillarda Abdurahmon Mehtar ismli shaxs boshchiligida masjid ta’mirlandi deyilgan. Masjid ichkarisida qadimgi naqshinkor ustunlardan 15 tasi saqlanib qolgan. Eng qadimgi ustunlarda ko‘zagi (ustun tagi) shapaloq barglarga ega, tanasining yuqori qismi muntazam raxli, o‘rtasiga esa gir aylantirib xatti kufiy yozuvi yozilgan, shakllar chuqur o‘yib ishlangan. XIV asr ustunlarida esa naqshlar ko‘p bo‘lib, yozuvlar xatti nasxda berilgan. \nBu nodir yodgorlik 1979-1983 va 1996-1997 yillarda qayta ta’mirlangan. Hozirda me’moriy ob’yekt sifatida sayyohlarga xizmat qilmoqda.\n\n\nYoRMUHAMMAD DEVON (SAYYID OTA) MASJIDI\nYormuhammad Devon masjidi Sayyid ota masjidi nomi bilan ham yuritiladi, buning sababi masjid Sayyid A’lovuddin maqbarasi yonida joylashganligidan, shu ulug‘ insonning xotirasi uchun nomlangan. Masjid Sharqiy tomondan Abdurasulboy madrasasi bilan tutashgan.\nMunis va Ogahiyning “Firdavs ul iqbol” asarida Yor Muhammad devonbegining faoliyati haqida ko‘p ma’lumotlar keltirilib, jumladan shunday deyiladi “mahrami asrori sohibqironiy (xonning o‘z sir-asrorlariga sherik qiladigan eng yaqin kishisi) Yormuhammad devonbegi”. Devonbegi sayyidlar xonadonidan bo‘lgan va bu haqda masjidning mehrobi ustida saqlanib qolgan yozuvlar ma’lumot beradi: “Masjidki binokard hamon baxsh valiyat avlodi Muhammad...”.\nMasjid o‘sha davrda kichikroq mahallaga mo‘ljallab qurilgan bo‘lib, uzoq yillar davomida bu masjidda mahallada yashovchi fuqarolar juma namozlarini ado etib kelganlar.\n\n\nTOSHMASJID\nToshmasjid XVIII asr oxirida qurilgan mahalla masjididir. Bino shu qurilgan davr me’morchiligi an’analarida barpo qilingan. Toshmasjidni o‘rgangan arxeologlar uning o‘rnida u qurilgunga qadar ham aholining ommaviy tadbirlar o‘tkazadigan joyi bo‘lganligini aniqlashdi. Haqiqatdan ham hozirgi kungacha Toshmasjidda ommaviy udumlar va tadbirlar o‘tkazilib kelinmoqda.\nBino davr o‘tishi bilan turli maqsadlarda foydala-nish uchun qayta jihozlangan va ta’mirlangan. 1997 yili Xivaning 2500 yilligi yubileyi munosabati bilan bino ilmiy asosda ishlangan loyiha asosida tubdan mukammal ta’mir-lanib, asl holiga keltirildi.\nBinodan oqilona foydalanish maqsadini ko‘zlagan holda uni mahalla fuqarolar faollarini iltimosi va tashabbussini e’tiborga olib, Soyot mahallasiga saqlash asosida berildi.\n\n\nHASAN MUROD QUSHBEGI MASJIDI\nHasan Murod qushbegi masjidi XVIII asr oxiri XIX boshlarida Bog‘cha darvoza yaqinida qurilgan. Mazkur masjid aka-ukalar Xasan Murod qushbegi va birgalikda Niyoz otaliq tomonidan mahalla ichida bunyod qilingan.\nMasjidda bir ustunli yozgi ayvon va gumbaz bilan bostirilgan qishqi masjid bor. Masjid turar joy imoratlaridan uncha tafovut etmaydi. Eshiklari islimiy naqshlar bilan bezatilgan.\nHasan Murod qushbegi masjidining asosiy minorasi saqlanmagan. Hozirda fakat fasad kismidagi kirish eshigining chap tomonida joylashgan kichik xajmdagi minora saklanib qolgan.\nHozirda masjidda yog‘och o‘ymakorligi ustaxonasi joylashgan.\n\n\nBOGʻBONLI MASJIDI\nBog‘bonli masjidi Ichon qal’aning janubi-sharqida joylashgan. Bu mahalla masjidi 1809 yilda Pahlavon Quli tomonidan qurilgan bo‘lib, o‘zining ko‘rkamligi bilan ajralib turadi.\nMasjid o‘rnida avval xom g‘ishtli nigirik (cho‘bkori) usulida qurilgan Zubaydaxonim masjidi bo‘lgan ekan. Masjidning qayta qurilganiga ikki yuz yildan oshdi-ki, mahalliy aholi unga g‘arbiy tomondan yopishtirib qurilgan mozorni “Malika xonim mozori” deb hisoblaydilar. Bu qabr Zubaydaxonimning qabridir.\nKatta bir gumbazli bu masjid ko‘rinishdan XIV-XV asrlar yodgorligini eslatadi, bunga sabab uning ichki bezaklari, ayvonidagi ikkita ustunining o‘yma naqshlari, ularga yozilgan hadislar shu davrga xosligidir.\nMasjid kirish eshigining tepasidagi devorga o‘rnatilgan marmar taxtachadagi yozuv, fors tili, nasta’liq xatida bo‘lib, uning tarjimasi quyidagcha:\nYaxshi xislatli usta Pahlavonquli,\nAllohning lutfidan madad oldi.\nO‘zining jufti haloli uchun,\nQudrat egasining (Alloh) rizosiga.\nBir ajoyib oliy masjid bino qildi,\nU o‘z chiroy va tozaligini jannatdan oldi.\nXuddi ziynatlangan tilla tangadek naqshlanib,\nBarcha qubba va shiftlari dilni quvontiradi.\nUning dil qasri va dinini obod qil,\nHam do‘zax o‘tidan tanini ozod qil.\nBir ming ikki yuz yigirma to‘rt edi, \nUning ajoyib tarixi ey hushyor.\n\n\nOTAMUROD (MATRIZO) QUSHBEGI MASJIDI\nOtamurod (Matrizo) qushbegi masjidi 1816 yilda Otamurod qushbegi tomonidan mahalla masjidi sifatida Ichon qal’ada barpo etilgan. Masjidning yozgi ayvonidagi marmar ustunda hijriy 1232 sanasi saqlangan. Masjid minorasi saqlanmagan. Masjidda ko‘p ustunli yozgi ayvon va kvadrat shaklida qurilgan qishki masjid ham bor.\nOtamurod qushbegi masjidi yozgi ayvonining to‘rida, qibla tomonida mehrob joylashgan, mehrobning o‘ng tomonida va’zxonlik uchun minbar, chap tomonida esa qishki masjidga kirish eshigi va qur’on o‘kiladigan maxsus joylar ajratilgan. Mehrob arkasimon qilib, stalaktidalari ganch bilan bezatilgan.\nMasjidning yozgi ayvoni o‘ymakor ustunlari bilan diqqatga sazovordir. Yozgi ayvonning 6 ta ustuni qurilish texnikasi bo‘yicha 4 ta ravoqdan va 2 ta qadamdan iborat qilib, juda mukammal holda me’moriy kompozisiyaga xos ravishda ishlangan.\nMasjid qurilishida hajmi 26,0x 26,0x4,5sm bo‘lgan pishgan g‘ishtdan foydalanilgan. Masjidning shimoli– sharqiy qismida tahoratxona joylashgan.\n\n\nOQMASJID\nMasjidning tashqi ko‘rinishi, uch tarafdan o‘rab olingan soya-salqin ayvoni, bir gumbazli binosining uchta eshigi masjidning jamoat yig‘ilish joyi ekanligidan darak beradi. Uning qadimgi qismi (poydevori) Anushaxon hammomi bilan bir vaqtda qurilgan. Lekin o‘ymakor eshiklardagi yozuvlar binoning 1838-1842 yillarda qurilganini ko‘rsatadi. Xuddi shu vaqtga kelib maydon atrofidagi hamma binolar asosan qurilgan bo‘lib, endi ustalar qolgan kichik bir sahnda bino qurishlari kerak edi. Bu binoni me’morchiligi maydonning mahobatini ifoda etishi, qo‘shni uy-joy imoratlaridan uncha tafovut etmaydigan bo‘lishi lozim edi, xivalik ustalar bu vazifani a’lo darjada ado etganlar.\nMasjid gumbazi xona va ayvondan iborat, markaziy gumbaz chorsi (6,35 x 6,35) xonaga o‘rnatilgan. Xona ravoqlar yordamida kengaytirilgan. Ayvon tuzilishi va yon devorlar masjidning fasad kompozisiyasini aniq belgilab turadi. Yassi tom ustidan baland ko‘tarilgan gumbaz kvadrat asosi bilan birgalikda uzoqdan zinapoyasimon ko‘rinish baxsh etadi. Masjidning qulay joylashganligi mehrobni janubiy devorga joylashtirish imkonini bergan. Bu esa xonada va ayvonda baravar namoz o‘qish imkonini beradi. Ustalar masjidni qurganlarida va bezak berganlarida sodda uslubda qurib, sodda bezaklar berish bilan cheklanganlar. Yog‘och ustunlarda o‘yma naqshlar deyarli yo‘q, faqat ustun tepasi xakamkoriy-pilaklardan terib yasalgan, yog‘och o‘ymakorligi san’atini ustalaridan Odina Qalandar o‘g‘li Nurmuhammad va Sayidmuhammad o‘g‘li Qalandarlar uchta eshik bezagida o‘z mahoratlarini namoyish etganlar. Eshiklarning islimiy naqshlari va jimjimasi bir xil uslubda ishlangan.\nHozirda masjidda hunarmandchilik ustaxonasi faoliyat yuritmoqda.\n\n\nSHAYX KABIR MASJIDI\nShayx Kabir masjidi – Pahlavon Mahmud maqbarasining atrofidagi qabriston hududida, ya’ni majmuaning shimoliy kismida qurilgan. Shayx Kabir masjidi Muhammad Raximxon II hukmronligi davrida bunyod etilgan\nShayx Kabir masjidining hajmiy kompozisiyasi shimol – janub yo‘nalishida bo‘lib, masjidda katta bir xonako – gumbaz joylashgan. Masjid rejasi oddiy bo‘lib, yog‘och o‘ymakori eshik, katta gumbazi, gumbazning burchaklaridagi muqarnaslari va alohida qurilgan masjid ayvoni o‘ziga xoslik kasb etadi. Ayvonning kibla devoriga ishlangan mehrob va tokchalari hamda ayvonga o‘rnatilgan chiroyli yog‘och ustun va xarilari masjidga alohida ko‘rk bag‘ishlaydi.\nShayx Kabir masjidining rejasi bo‘yicha umumiy o‘lchami – 10,20 x 10,0 metr bo‘lib, masjid peshtoqining balandligi - 4,50 metrni tashkil qiladi. Masjid gumbazining balandligi esa – 11,55 metr.\nHozirda Shayx Kabir masjidi juda chiroyli qilib ta’mirlangan"
     ),
     //  MAUSOLEUMS
-    "#9" -> Array(
-      "MAUSOLEUMS",
-      "МИНАРЕТЫ",
-      "MINORALAR"
-    ),
+    "#9" -> Array("MAUSOLEUMS", "МИНАРЕТЫ", "MINORALAR"),
     "monuments-blog-title-eight-1" -> Array(
       "ARCHITECTURE",
       "АРХИТЕКТУРА",
@@ -1822,13 +1883,13 @@ object Main extends App {
           .asInstanceOf[HTMLLinkElement]
           .innerText = learnMore("learnMore")(lang)
     )
-    findMoreList.foreach(
-      item =>
-        dom.document
-          .getElementById(item)
-          .asInstanceOf[HTMLLinkElement]
-          .innerText = findMore("findMore")(lang)
-    )
+//    findMoreList.foreach(
+//      item =>
+//        dom.document
+//          .getElementById(item)
+//          .asInstanceOf[HTMLLinkElement]
+//          .innerText = findMore("findMore")(lang)
+//    )
     exhibitionList.foreach(
       item =>
         dom.document
@@ -1857,27 +1918,27 @@ object Main extends App {
           .asInstanceOf[HTMLLinkElement]
           .innerText = weekdaySat("weekday")(lang)
     )
-    eventDateList.foreach(
+//    eventDateList.foreach(
+//      item =>
+//        dom.document
+//          .getElementById(item)
+//          .asInstanceOf[HTMLLinkElement]
+//          .innerText = eventDateMap("eventDate")(lang)
+//    )
+    eventLinkMap.keys.foreach(
       item =>
         dom.document
           .getElementById(item)
           .asInstanceOf[HTMLLinkElement]
-          .innerText = eventDateMap("eventDate")(lang)
+          .innerText = eventLinkMap(item)(lang)
     )
-    eventLinkList.foreach(
-      item =>
-        dom.document
-          .getElementById(item)
-          .asInstanceOf[HTMLLinkElement]
-          .innerText = eventLinkMap("eventLink")(lang)
-    )
-    eventLinkEvenList.foreach(
-      item =>
-        dom.document
-          .getElementById(item)
-          .asInstanceOf[HTMLLinkElement]
-          .innerText = eventLinkEvenMap("eventLink")(lang)
-    )
+//    eventLinkEvenList.foreach(
+//      item =>
+//        dom.document
+//          .getElementById(item)
+//          .asInstanceOf[HTMLLinkElement]
+//          .innerText = eventLinkEvenMap("eventLink")(lang)
+//    )
     eventNameList.foreach(
       item =>
         dom.document
