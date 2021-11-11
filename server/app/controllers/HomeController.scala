@@ -80,6 +80,36 @@ class HomeController @Inject()(val controllerComponents: ControllerComponents) e
   def forum(lang: String): Action[AnyContent] = Action {
     Ok(html.forum(lang))
   }
+  def dorul(lang: String): Action[AnyContent] = Action {
+    Ok(html.exhibitions.dorul_hikmat(lang))
+  }
+  def qatagon(lang: String): Action[AnyContent] = Action {
+    Ok(html.exhibitions.qatagon(lang))
+  }
+  def khorezm(lang: String): Action[AnyContent] = Action {
+    Ok(html.exhibitions.khorezm(lang))
+  }
+  def music(lang: String): Action[AnyContent] = Action {
+    Ok(html.exhibitions.music(lang))
+  }
+  def tasviriy(lang: String): Action[AnyContent] = Action {
+    Ok(html.exhibitions.tasviriy(lang))
+  }
+  def department(lang: String): Action[AnyContent] = Action {
+    Ok(html.exhibitions.department(lang))
+  }
+  def amaliy(lang: String): Action[AnyContent] = Action {
+    Ok(html.exhibitions.amaliy(lang))
+  }
+  def ichanqala(lang: String): Action[AnyContent] = Action {
+    Ok(html.exhibitions.ichanQala(lang))
+  }
+  def devonov(lang: String): Action[AnyContent] = Action {
+    Ok(html.exhibitions.devonov(lang))
+  }
+  def nurullaboy(lang: String): Action[AnyContent] = Action {
+    Ok(html.exhibitions.nurullaboy(lang))
+  }
   def comingSoon(lang: String): Action[AnyContent] = Action {
     Ok(html.common.comingsoon(lang))
   }
