@@ -66,6 +66,26 @@ object Main extends App {
     dom.document.getElementById("forumPage").asInstanceOf[HTMLLinkElement]
   val isArtPage =
     dom.document.getElementById("artPage").asInstanceOf[HTMLLinkElement]
+  val isIchanQalaPage =
+    dom.document.getElementById("ichanQalaPage").asInstanceOf[HTMLLinkElement]
+  val isDorulPage =
+    dom.document.getElementById("dorulHikmatPage").asInstanceOf[HTMLLinkElement]
+  val isQatagonPage =
+    dom.document.getElementById("qatagonPage").asInstanceOf[HTMLLinkElement]
+  val isKhorezmPage =
+    dom.document.getElementById("historyPage").asInstanceOf[HTMLLinkElement]
+  val isDevonovPage =
+    dom.document.getElementById("devonovPage").asInstanceOf[HTMLLinkElement]
+  val isMusicPage =
+    dom.document.getElementById("musicPage").asInstanceOf[HTMLLinkElement]
+  val isArtExhibitionPage =
+    dom.document.getElementById("tasviriyPage").asInstanceOf[HTMLLinkElement]
+  val isDepartmentPage =
+    dom.document.getElementById("departmentPage").asInstanceOf[HTMLLinkElement]
+  val isAmaliyPage =
+    dom.document.getElementById("amaliyPage").asInstanceOf[HTMLLinkElement]
+  val isNurullaboyPage =
+    dom.document.getElementById("nurullaboyPage").asInstanceOf[HTMLLinkElement]
 
   val navbarAndFooter = Map(
     "siteTitle" -> Array(
@@ -358,7 +378,6 @@ object Main extends App {
     )
   )
   //  Index Page ids
-
 //  val eventLinkEvenMap = Map {
 //
 //  }
@@ -934,6 +953,141 @@ object Main extends App {
     ),
     "viewMore" -> Array("View More", "Посмотреть больше", "Ko\'proq ko\'rish")
   )
+  val exhibitionsContentBreadCups = Map(
+    "interactive-header" -> Array(
+      "Interactive services",
+      "Сервисы",
+      "Interaktiv xizmatlar"
+    ),
+    "sub-menu-for-interactive-home" -> Array("Home", "Главное", "Bosh sahifa"),
+    "sub-menu-for-interactive" -> Array(
+      "Interactive services",
+      "Сервисы",
+      "Interaktiv xizmatlar"
+    ),
+    "sub-menu-for-interactive" -> Array(
+      "Interactive services",
+      "Сервисы",
+      "Interaktiv xizmatlar"
+    )
+  )
+//  exhibition 1
+  val exhibition1 = Map(
+    "exibition-content-title" -> Array(
+      "ICHAN KALA STATE MUSEUM RESERVE",
+      "ГОСУДАРСТВЕННЫЙ МУЗЕЙ-ЗАПОВЕДНИК ИЧАН КАЛА",
+      "“ICHAN QAL’A” DAVLAT MUZEY QO‘RIQXONASI"),
+    "exibition-content" -> Array(
+      "The first museum in Khorezm was established in 1920. In 1967, the Ichan Kala State Museum-Reserve received the official status of the Open-Air Museum. Known for its unique historical and architectural monuments, Khiva is the 100th city on the globe to be included in the list of world cultural monuments. The 28th session of UNESCO in Paris highlighted the role and importance of Khiva in the development of world culture. On October 20, 1997, the 2,500th anniversary of the city of Khiva was celebrated internationally.\nThe museum-reserve is located in the \"Ichan Kala\" part of Khiva, surrounded by a high cotton wall, with four gates - Ota Gate, Polvon Gate, Stone Gate and Garden Gate. The circumference of the wall is about 2200 meters, the height is 7-8 meters, and the thickness of the foundation is 5-6 meters. Ichan Fortress is built in the form of a rectangle, 650 meters long and 400 meters wide, covering an area of \u200B\u200B26 hectares.\nKhiva Ichan Qala State Museum-Reserve has 19 permanent expositions located in various madrassas and other historical buildings. They are:\n1.Department of Ancient Khorezm History (Old Ark Palace)\n2.Department of History of Khorezmshahs (Old Ark Palace)\n3.Department of History of Khorezm khans (Muhammad Rahimkhan II madrasah)\n4.Museum of Fine Arts (Kutlug Murad Inoq Madrassah)\n5.History of music (Kozikalon madrasah)\n6.Khorezm Department of Applied Arts (Islamic Khoja Madrasah)\n7.Khorezm Department of Public Education (Russian School)\n8.Calligraphy department (Matpanoboy madrasah)\n9.Khorezm Department of Nature (Abdullahan Madrassah)\n10.Department of Monumental Architecture (Stone Palace)\n11.Pottery Exhibition (Stone Palace)\n12.History of German Mennonites (Polvon Qori Trading House)\n13.Permanent exhibition of life and activity of Khudoibergan Devonov (Russian school)\n14.Dorul Hikmat val Maorif (Muhammad Amin Inaq Madrasa)\nThere are also Al-Khwarizmi (Al-Khwarizmi Street in Urgench) and Al-Beruni Museums (Al-Khwarizmi Street in Urgench) and the Khiva Ichon Qala State Museum-Reserve Fund (Arab Muhammadkhan Madrasah). There are 52 000 unique exhibits in the fund of the Khiva State Museum-Reserve \"Ichon Qala\" .",
+      "Первый музей в Хорезме был основан в 1920 году. В 1967 году Государственный музей-заповедник «Ичон-Кала» получил официальный статус музея под открытым небом. Хива, известная своими уникальными историческими и архитектурными памятниками, является 100-м городом на земном шаре, включенным в список мировых памятников культуры. На 28-й сессии ЮНЕСКО в Париже была подчеркнута роль и значение Хивы в развитии мировой культуры. 20 октября 1997 года в международном масштабе отмечалось 2500-летие Хивы.\nМузей-заповедник расположен в части Хивы «Ичон Кала», окруженной высокой хлопковой стеной, с четырьмя воротами - воротами Ота, воротами Полвон, каменными воротами и воротами сада. Окружность стены около 2200 метров, высота 7-8 метров, толщина фундамента 5-6 метров. Крепость Ичан построена в форме прямоугольника, длиной 650 метров и шириной 400 метров, площадью 26 гектаров.\nХивинский государственный музей-заповедник Ичон-Кала насчитывает 19 постоянных экспозиций, расположенных в различных медресе и других исторических зданиях. Они есть:\n1. Отдел истории Древнего Хорезма (Дворец Старый Арк).\n2. Отдел истории хорезмшахов (Старый Аркский дворец)\n3. Отдел истории хорезмских ханов (медресе Мухаммад Рахимхана II)\n4. Музей изящных искусств (медресе Кутлуг Мурад инок)\n5. История музыки (медресе Козикалон).\n6. Хорезмское управление прикладного искусства (исламское медресе Ходжа).\n7. Хорезмское управление народного образования (русская школа).\n8. Отдел каллиграфии (медресе Матпанобой).\n9. Хорезмское управление природы (медресе Абдуллахана).\n10. Кафедра монументальной архитектуры (Каменный дворец).\n11. Выставка керамики (Каменный дворец).\n12. История немецких меннонитов (Торговый дом «Полвон Кори»).\n13. Постоянная выставка жизни и деятельности Худойбергана Девонова (Русская школа).\n14. Дорул Хикмат вал Маориф (медресе Мухаммад Амин Инак)\nЕсть также музеи Аль-Хорезми (улица Аль-Хорезми в Ургенче) и Аль-Беруни (улица Аль-Хорезми в Ургенче) и Государственный музей-заповедник Хива Ичон-Кала (медресе Арабского Мухаммадхана). В фонде Хивинского государственного музея-заповедника «Ичон Кала» 52000 уникальных экспонатов.",
+      "Xorazmda dastlabki muzey 1920 yilda tashkil etilgan. “Ichon qal’a” Davlat muzey qo‘riqxonasi 1967 yilda “Ochiq osmon ostidagi muzey” degan rasmiy statusni oldi. O‘zining noyob tarixiy va me’morchilik yodgorliklari bilan tanilgan Xiva yer kurrasidagi 100-shahar bo‘lib jahon madaniy yodgorliklari ro‘yxatiga kiritilgan. YUNESKOning Parij shahrida o‘tkazilgan 28-sessiyasida Xivaning jahon madaniyatini rivojlantirishdagi roli va ahamiyati alohida takidlangan. 1997 yil 20 oktyabrda Xiva shahrining 2500 yillik yubileyi xalqaro miqyosda nishonlandi.\nMuzey-qo‘riqxona Xiva shahrining “Ichon qal’a” qismida joylashgan bo‘lib, baland paxsa devor bilan o‘ralgan, to‘rtta darvozasi - Ota darvoza, Polvon darvoza, Tosh darvoza va Bog‘cha darvoza to‘rt tomonga qaratib qurilgan. Devor aylanasining uzunligi qariyib 2200 metrgacha, balandligi 7–8 metrga, poydevorining qalinligi esa 5–6 metrga teng. Ichon qal’a to‘g‘ri to‘rtburchak shaklida qurilgan bo‘lib, uzunligi 650 metr, eni 400 metr, ya’ni 26 gektar maydonni egallaydi.\nXiva “Ichon qal’a” Davlat muzey-qo‘riqxonasi turli madrasa va boshqa tarixiy binolarda joylashgan 19 ta doimiy ekspozisiyasiga ega. Ular quyidagilar:\n1.Qadimgi Xorazm tarixi bo‘limi (Qo‘hna Ark saroyi)\n2.Xorazmshohlar tarixi bo‘limi (Qo‘hna Ark saroyi)\n3.Xorazm xonlari tarixi bo‘limi (Muhammad Rahimxon II madrasasi)\n4.Tasviriy san’at muzeyi (Qutlug‘ Murod inoq madrasasi)\n5.Musiqa tarixi (Qozikalon madrasasi)\n6.Xorazm amaliy san’ati bo‘limi (Islom xo‘ja madrasasi)\n7.Xorazm xalq ta’limi bo‘limi (Rus tuzem maktabi)\n8.Xattotlik bo‘limi (Matpanoboy madrasasi)\n9.Xorazm tabiati bo‘limi (Abdullaxon madrasasi)\n10.Mahobatli me’morchilik bo‘limi (Toshhovli saroyi)\n11.Kulolchilik ko‘rgazmasi (Toshhovli saroyi)\n12.Nemis mennonitlari tarixi (Polvon Qori savdo uyi)\n13.Xudoybergan Devonov hayoti va faoliyati doimiy ko‘rgazmasi (Rus tuzem maktabi)\n14.Dorul hikmat val maorif (Muhammad Amin inoq madrasasi)\nShuningdek, Al-Xorazmiy (Urganch shahri Al-Xorazmiy ko‘chasi) va Al-Beruniy muzeylari (Urganch shahri Al-Xorazmiy ko‘chasi) hamda Xiva “Ichon qal’a” Davlat muzey-qo‘riqxonasi fondi (Arab Muhammadxon madrasasi) mavjud. Xiva “Ichon qal’a” Davlat muzey-qo‘riqxonasi fondida 52000 ta noyob eksponatlar saqlanadi."
+    ),
+  )
+//  exhibition 2
+  val exhibition2 = Map(
+    "exibition-content-title" -> Array(
+      "APPLIED ART",
+      "ПРИКЛАДНЫХ ИСКУССТВО",
+      "XORAZM AMALIY SAN’ATI BO‘LIMI"),
+    "exibition-content" -> Array(
+      "The Department of Applied Arts is located in the Islam Khoja Madrasa. The exhibition was organized in 1983 on the occasion of the 1200th anniversary of Al Khorezmi. The exposition is 420 sq.m. occupied the place.\nThe museum has the richest and most unique exhibits (387). The exhibition covers all the developed areas of Khorezm applied art - wood carving, ceramics, carving, jewelry, marble carving, pottery, carpet weaving, weaving and floral printing, leather goods.\nKhorezm products are completely different from other regions in terms of their originality and decoration. In the museum rooms you can see the original items of wood carving, such as doors, arches (columns), bars, eyebrows, ceramics such as bodhi, bowl, hum, chintavax, jewelry takyaduzi, brooch, osmaduzi, tung, tuncha, kumon.\nThe museum also covers the life and work of masters. In particular, master Allakora, master Yusup potter, R.Matchonov, O.Palvonov, S.Bogibekov, A.Boltaev and others.",
+      "Экспозиция прикладного искусства находится в медресе Ислам Ходжа. Выставка была организована в 1983 году по случаю 1200-летия Аль-Хорезми. Экспозиция 420 кв.м. занял место.\nВ музее собраны самые богатые и уникальные экспонаты (387). Выставка охватывает все развитые направления прикладного искусства Хорезма - резьбу по дереву, гончарное дело, резьбу, ювелирные изделия, резьбу по мрамору, керамику, ковроткачество, ткачество и цветочную печать, дубление.\nПродукция Хорезма совершенно не похожа на другие регионы своей оригинальностью и украшением. В залах музея можно увидеть оригинальные предметы резьбы по дереву, такие как двери, арки (колонны), решетки, брови, керамику типа бодхи, чашу, хум, чинтавакс, украшения такядузи, броши, осмадузи, тунг, тунча, кумон.\nВ музее также рассказывается о жизни и творчестве мастеров. В частности, мастер Аллакора, мастер Юсуп-гончар, Р. Матчонов, О. Палвонов, С.Богибеков, А. Болтаев и другие.",
+      "Xorazm amaliy san’ati bo‘limi Islom xo‘ja madrasasida joylashgan. Ekspozisiya 1983 yilda Al Xorazmiyning 1200 yillik yubileyi munosabati bilan tashkil etilgan. Ekspozisiya 420 kv.m. joyni egallagan.\nMuzey eng boy va noyob eksponatlarni (387 ta) o‘zida jamlagan. Ko‘rgazmadan Xorazm amaliy san’atining barcha rivojlangan sohalari – yog‘och o‘ymakorligi, kulolchilik, kandakorlik, zargarlik, marmar o‘ymakorligi, ganchkorlik, gilamdo‘zlik, mato to‘qish va chitga gul bosish, ko‘nchilik bo‘yicha buyumlar joy olgan.\nXorazm buyumlari o‘zining originalligi, bezalishi jihatidan boshqa hududlardan butunlay farq qiladi. Muzey xonalarida yog‘och o‘ymakorligining eshik, o‘ra (ustun), panjara, qosh kabi, kulolchilikning bodiya, chanoq, xum, chintavax kabi, zargarlikning taxyaduzi, jig‘a, osmaduzi kabi kandakorlikning tung, tuncha, qum’on kabi original buyumlarni ko‘rish mumkin.\nShuningdek, muzeyda mohir ustalarning hayoti va faoliyati ham yoritilgan. Jumladan, usto Allakora, usto Yusup kulol, R.Matchonov, O.Palvonov, S.Bog‘ibekov, A.Boltayev va boshqalar. "
+    ),
+  )
+//  exhibition 3
+  val exhibition3 = Map(
+    "exibition-content-title" -> Array(
+      "DEPARTMENT OF GREAT ARCHITECTURE",
+      "ОТДЕЛЕНИЕ МОНУМЕНТАЛНОЕ АРХИТЕКТУРЫ",
+      "MAHOBATLI ME’MORCHILIK BO‘LIMI"),
+    "exibition-content" -> Array(
+      "The majestic architectural department is the Toshhovli Palace (1832-1838). The highest examples of Khorezmian architecture are used here. The palace is richly decorated with paintings, plaster, marble and wood carvings, tiles. In particular, the lobby and the mosque are delicately decorated. The palace consists of three large courtyards with a view, a hotel and a harem, and has 163 rooms. The five large porches of the harem are decorated with incredibly beautiful tile coverings. The palace tiles were made by the master master Abdullah. Doors and columns are among the highest examples of Khiva wood carving art. The most perfect art of Khiva masters is reflected in the silent carvings on the marble columns and iron bars. The stone palace was built by Nurmuhammad Taji and master Qalandar Khivakiy. The Stone Palace was completely renovated in 1996-1997 on the occasion of the 2500th anniversary of Khiva. About 100 samples of wood and marble carvings are on display in Tashkent.",
+      "Большой архитектурный комплекс - дворец Тошовли (1832-1838). Здесь использованы самые высокие образцы хорезмской архитектуры. Дворец богато украшен картинами, гипсом, резьбой по мрамору и дереву, изразцами. В частности, изящно декорированы вестибюль и мечеть. Дворец состоит из трех больших дворов с прекрасным видом, гостиницы и гарема и имеет 163 комнаты. Пять больших крыльцов гарема украшены невероятно красивыми кафельными покрытиями. Изразцы дворца были изготовлены мастером-мастером Абдуллой. Двери и колонны - одни из высших образцов хивинской резьбы по дереву. Совершенное искусство хивинских мастеров отражено в бесшумной резьбе на мраморных колоннах и железных прутьях. Каменный дворец построили Нурмухаммад Таджи и мастер Каландар Хивакий. Каменный дворец был полностью отремонтирован в 1996-1997 годах по случаю 2500-летия Хивы. В Ташкенте выставлено около 100 образцов резьбы по дереву и мрамору.",
+      "Mahobatli me’morchilik bo‘limi Toshhovli saroyi (1832-1838) hisoblanadi. Bu yerda Xorazm me’morchiligining eng yuksak namunalari qo‘llanilgan. Saroyda naqqoshlik, ganch, marmar va yog‘och o‘ymakorligi, koshinpazlik namunalari a’lo darajada ishlangan. Ayniqsa, qabulxona va masjid nozik ziynatlangan. Saroy uchta katta hovli ko‘rinishxona, mehmonxona va haramdan iborat bo‘lib, 163 xonasi bor. Haramning beshta katta ayvoni nihoyatda chiroyli koshin qoplamalar bilan bezatilgan. Saroy koshinlarini mohir usta Abudlla jin bajargan. Eshik va ustunlar Xiva yog‘och o‘ymakorlik san’atining yuksak namunalaridan sanaladi. Marmar ustun toshlardagi, temir panjalardagi jimjima o‘yma naqshlarda Xiva ustalarining eng mukammal san’ati o‘z ifodasini topgan. Toshhovli saroyi Nurmuhammad Toji va usta Qalandar Xivaqiylar tomonidan barpo etilgan. Toshhovli saroyi 1996-1997 yillarda Xivaning 2500 yilligi munosabati bilan to‘liq ta’mirlangan. Toshhovlida yog‘och va marmar o‘ymakorligining 100 ga yaqin namunalari namoyish etilmoqda."
+    ),
+  )
+//  exhibition 4
+  val exhibition4 = Map(
+    "exibition-content-title" -> Array(
+      "LIFE AND ACTIVITY OF KHUDOYBERGAN DEVONOV\nPERMANENT EXHIBITION",
+      "ЖИЗНЬ И ДЕЯТЕЛЬНОСТЬ ХУДОЙБЕРГАНА ДЕВОНОВА\nПОСТОЯННАЯ ВЫСТАВКА",
+      "XUDOYBERGAN DEVONOV HAYOTI VA FAOLIYATI\nDOIMIY KO‘RGAZMASI"),
+    "exibition-content" -> Array(
+      "A permanent exhibition of the life and work of Khudoybergan Devonov was organized in 2002 at the Russian school in front of the Islamic Khoja Madrasa. The exposition was created by the chief keeper of the museum O.Karimov. The exhibition includes about 200 exhibits depicting the life and work of the first Uzbek photographer and cinematographer H. Devonov, as well as his own photographs. The museum was re-exhibited in 2009. The exposition is 36 sq.m. located in the area.",
+      "Постоянная выставка жизни и творчества Худойбергана Девонова была организована в 2002 году в русской школе перед исламским медресе Ходжа. Экспозицию создал главный хранитель музея О.Каримов. На выставке представлено около 200 экспонатов, отражающих жизнь и творчество первого узбекского фотографа и кинематографиста Х. Девонова, а также его собственные фотографии. Музей был повторно выставлен в 2009 году. Экспозиция 36 кв.м. расположен в районе.",
+      "Xudoybergan Devonov hayoti va faoliyati doimiy ko‘rgazmasi 2002 yilda Islom xo‘ja madrasasi qarshisidagi Rus tuzem maktabida tashkil etilgan. Ekspozisiyani muzeyning bosh saqlovchisi O.Karimov yaratgan. Ko‘rgazmada birinchi o‘zbek fotografi va kinomatografi X.Devonovning hayoti va faoliyatini aks ettiruvchi, shuningdek, o‘zi suratga olgan 200 ga yaqin eksponatlar o‘rin olgan. Muzey 2009 yilda reekspozisiya qilingan. Ekspozisiya 36 kv.m. maydonda joylashgan."
+    ),
+  )
+//  exhibition 5
+  val exhibition5 = Map(
+    "exibition-content-title" -> Array(
+      "MUSEUM OF MEMORY OF VICTIMS OF REPRESENTATIVES IN URGENCH STATE UNIVERSITY",
+      "МУЗЕЙ ПАМЯТИ ЖЕРТВ ПРЕДСТАВИТЕЛЕЙ УРГЕНЧСКОГО ГОСУДАРСТВЕННОГО УНИВЕРСИТЕТА",
+      "URGANCH DAVLAT UNIVERSITETI TUZILMASIDAGI QATAGʻON QURBONLARI XOTIRASI MUZEYI"),
+    "exibition-content" -> Array(
+      "The house-monument of Kasimjon Salimjanov consists of two parts: the house of K.Salimjanov and the trade office. The monument is located on the northwest side of the city of Urgench, on the west side of the city hall. Construction work was carried out in 1910-1912. Russian brick was used in the construction. The windows and doors are designed in a new style.\nK. Salimjanov's trading house was reconstructed in 1992 and a museum of local lore was established. In 2013, the facade and roof of the building were renovated on the basis of a new construction.\nThe museum was inaugurated on August 31, 2018 - the Day of Remembrance of the Victims of Repression. The museum was highly praised by the general public.\nThe museum presents \"The occupation of the Khiva Khanate by Tsarist Russia, the struggle of the local people for freedom and liberty (1868-1900)\", \"The national awakening movement in the Khiva Khanate, its practical directions and representatives (1901-1917)\", \"The end of the Khorezm People's Republic and the region the establishment of Bolshevik rule (1917-1929) ”,“ The beginning of the repressive policy of the Soviet state (1929-1936) ”,“ The Great Massacre of 1937-1938 ”,“ Political Repressions of 1940-1950 ”,“ Repression of the 1980s. The \"Cotton Campaign\" consists of sections \"Restoration of historical justice during the years of independence, perpetuation of the memory of the victims of repressions, historical work on the preservation and development of national values \u200B\u200B(post-1991 period).\"",
+      "Дом-памятник Касымжона Салимджанова состоит из двух частей: дома К.Салимжанова и торгового офиса. Памятник расположен на северо-западной стороне города Ургенча, на западной стороне ратуши. Строительные работы велись в 1910-1912 годах. При строительстве использовался русский кирпич. Окна и двери выполнены в новом стиле.\nВ 1992 году была проведена реконструкция торгового дома К. Салимджанова и создан краеведческий музей. В 2013 году был произведен ремонт фасада и крыши здания на базе новой конструкции.\nОткрытие музея состоялось 31 августа 2018 года - в День памяти жертв репрессий. Музей получил высокую оценку публики.\nВ музее представлены «Оккупация Хивинского ханства царской Россией, борьба местного населения за свободу и свободу (1868-1900)», «Национальное пробуждающее движение в Хивинском ханстве, его практические направления и представители (1901-1917). ) »,« Конец Хорезмской Народной Республики и региона установление большевистской власти (1917-1929 гг.) »,« Начало репрессивной политики Советского государства (1929-1936 гг.) »,« Великая резня 1937 г. -1938 »,« Политические репрессии 1940-1950 годов »,« Репрессии 80-х годов. «Хлопковая кампания» состоит из разделов «Восстановление исторической справедливости за годы независимости, увековечение памяти жертв репрессий, историческая работа по сохранению и развитию национальных ценностей (период после 1991 года)».",
+      "Qosimjon Salimjonov uy-yodgorligi ikki qismdan Q.Salimjonovning uyi va savdo idorasidan iborat. Yodgorlik Urganch shahrining shimoliy-g‘arbiy tomonida, shahar xokimligi binosining g‘arbiy qismida joylashgan. Qurilish ishlari 1910-1912 yillarda amalga oshirilgan. Qurilishda rus g‘ishtidan foydalanilgan. Deraza va eshiklari yangi uslubida ishlangan.\nQ.Salimjonov savdo uyi 1992 yili qayta ta’mirlanib, o‘lkashunoslik muzeyi tashkil etilgan. 2013 yilda binoning fasadi va tomi yangi konstruksiya asosida qayta ta’mirlandi.\nMazkur muzey 2018 yil 31 avgust – Qatag‘on qurbonlarini yod etish kunida muzeyning ochilish marosimi o‘tkazildi. Muzey keng jamoatchilik tomonidan yuqori baholandi. \nMuzey “Xiva xonligining Chor Rossiyasi tomonidan bosib olinishi, mahalliy xalqning erk va hurriyat uchun kurashi (1868-1900)”, “Xiva xonligidagi milliy uyg‘onish harakati, uning amaliy yo‘nalishlari va namoyandalari (1901-1917)”, “Xorazm Xalq Respublikasining tugatilishi va viloyatda bolsheviklar hokimiyatining o‘rnatilishi (1917-1929)”, “Sovet davlati qatag‘on siyosatining boshlanishi (1929-1936)”, “1937-1938 yillardagi “Katta qirg‘in”, “1940-1950 yillardagi siyosiy qatag‘onlar”, “1980-yillardagi qatag‘on. “Paxta ishi” kampaniyasi”, “Mustaqillik yillarida tarixiy adolatning tiklanishi, qatag‘on qurbonlari xotirasining abadiylashtirilishi, milliy qadriyatlarni asrab-avaylash va rivojlantirish yo‘lida amalga oshirilgan tarixiy ishlar (1991 yildan keyingi davr)” bo‘limlaridan iborat."
+    ),
+  )
+//  exhibition 6
+  val exhibition6 = Map(
+    "exibition-content-title" -> Array("\"DORUL HIKMAT VAL MAORIF\"", "\"ДОРУЛ ХИКМАТ ВАЛ МАОРИФ\"", "“DORUL HIKMAT VAL MAORIF”"),
+    "exibition-content" -> Array(
+      "The museum exposition was organized in the building of Muhammad Amin Inoq madrasah of Ichan-kala complex in Khiva. A distinctive feature of the interior solution by the designers is related to the area of \u200B\u200Bthe main hall, which in the plan is 173 square meters octagon. The hall is equipped with an artistic digital panel where hologram images of 7 key scientists, members of the Mamun Academy, appear and basic information is provided. These are scholars such as Abu Rayhan al-Biruni, Abu Ali ibn Sina, Abu Nasr ibn Iraq, Abu Sahl al-Masihi, Abu Mansur al-Saalibi, Abul-Khair al-Hammar, and Ibn Miskawayh, who worked in various fields of science. These scientists are recognized worldwide for their unparalleled work in mathematics, astronomy, history, medicine, poetry, philosophy and other fields.\nNew technologies have been used in the museum: the figures of great scientists appear on a thin mesh surface of a panel made of a special coating in 3D format. Their images were accompanied by visual images in mepping (mapping technique), and their drama and content were also prepared by the authors.\nIn the main hall there is a display of various equipment invented by scientists \"Dorul Hikmat val Maorif\" and used in their work. In particular, copies of instruments such as globe, quadrant, sextant, usturlob, medical equipment were made on the basis of drawings in manuscripts, photos in foreign museums. The exhibition includes facsimiles of 10 manuscripts of scholars working at the Mamun Academy.\nAt the entrance to the main hall, on the right, there is a mosque, and on the left, the interior of the library \"Dorul Hikmat val Maorif\". The altar, which shows the qibla in the mosque, is represented by a traditional tablet for the Qur'an, a prayer mat, a turban, and so on. In the center of the interior of the library there are wax statues of young scientists Beruni and Ibn Sina, who worked in \"Darul Hikmat val Maorif\". The plot of their conversation is based on a composition by a famous artist Ch. Akhmarov. In the composition, Ibn Sina explains to Beruni his new instrument drawing. On the walls of the library there are video materials about the activities of these scientists and virtual exhibits reflecting the environment of that period.\nAlong the perimeter of the main hall are small rooms - rooms, each of which reflects the activities of great scientists - members of the Mamun Academy. Each small room is decorated with compositions that reflect the specific features of the activities of a particular scientist, as well as household items, interesting information about the activities of members of the Mamun Academy - scientists.",
+      "Экспозиция музея была организована в здании медресе Мухаммад Амин Инок комплекса Ичан-кала в Хиве. Отличительная особенность интерьерного решения дизайнерами связана с площадью главного зала, которая в плане составляет 173 квадратных метра восьмиугольника. Зал оборудован художественной цифровой панелью, на которой появляются голограммы 7 ведущих ученых, членов Академии Мамуна, и предоставляется основная информация. Это такие ученые, как Абу Райхан Беруни, Абу Али ибн Сина, Абу Наср ибн Ирак, Абу Сахл аль-Масихи, Абу Мансур аль-Салиби, Абул-Хайр аль-Хаммар, Ибн Мискавейх, которые работали в различных областях науки. Эти ученые признаны во всем мире за их беспрецедентные работы в математике, астрономии, истории, медицине, поэзии, философии и других областях.\nВ музее применены новые технологии: фигуры великих ученых появляются на тонкой сетчатой \u200B\u200Bповерхности панно из специального покрытия в формате 3D. Их образы были представлены вместе с визуальными образами в мэппинге (техника картирования), их драматургия и содержание также были подготовлены авторами.\nВ главном зале выставлено различное оборудование, изобретенное учеными «Дорул Хикмат вал Маориф» и использованное в своей работе. В частности, копии таких инструментов, как глобус, квадрант, секстант, устурлоб, медицинское оборудование были изготовлены по рисункам в рукописях, фотографиям в зарубежных музеях. На выставке представлены факсимиле 10 рукописей ученых, работающих в Академии Мамуна.\nПри входе в главный зал справа находится мечеть, а слева интерьер библиотеки «Дорул Хикмат вал Маориф». Алтарь, который представляет собой киблу в мечети, представлен традиционной табличкой для Корана, молитвенным ковриком, тюрбаном и т. Д. В центре интерьера библиотеки - восковые статуи молодых ученых Беруни и Ибн Сины, работавших в «Дарул Хикмат вал Маориф». Сюжет их разговора основан на произведении известного художника Ч. Ахмарова. В композиции Ибн Сина объясняет Беруни свой новый рисунок инструмента. На стенах библиотеки размещены видеоматериалы о деятельности этих ученых и виртуальные экспонаты, отражающие окружающую среду того периода.\nПо периметру главного зала расположены небольшие комнаты - комнаты, каждая из которых отражает деятельность великих ученых - членов Академии Мамуна. Каждая небольшая комната украшена композициями, отражающими специфику деятельности конкретного ученого, а также предметами быта, интересными сведениями о деятельности членов Академии Мамуна - ученых.",
+      "Muzey ekspozisiyasi Xiva shahri Ichan qal’a majmuasining Muhammad Amin Inoq madrasasi binosida tashkil etildi. Dizaynerlar tomonidan ichki yechimning o‘ziga xos xususiyati asosiy zalning maydoni bilan bog‘liq bo‘lib, u rejada 173 kvadrat metr sakkizburchakni tashkil etadi. Zalda Ma’mun akademiyasi a’zolari bo‘lgan 7 nafar asosiy olimlarning gologramma tasvirlari paydo bo‘ladigan va asosiy ma’lumotlar keltiriladigan badiiy raqamli panel o‘rnatilgan. Bular ilm-fanning turli sohalarida faoliyat yuritgan Abu Rayhon Beruniy, Abu Ali ibn Sino, Abu Nasr ibn Iroq, Abu Sahl al-Masihiy, Abu Mansur al-Saolibiy, Abul-Xayr al-Hammor, Ibn Miskavayh kabi olimlardir. Mazkur olimlar matematika, astronomiya, tarix, tibbiyot, she’riyat, falsafa va boshqa sohalardagi tengsiz asarlari tufayli dunyo miqyosida tan olingan. \nMuzeyda yangi texnologiyalar qo‘llanildi: buyuk olimlarning raqamlari 3D formatdagi maxsus qoplamadan yasalgan panelning ingichka to‘r yuzasida paydo bo‘ladi. Ularning tasvirlari mepping (xaritada tasvirlash texnikasi)da vizual rasmlar bilan birga keltirilgan bo‘lib, ularning dramasi va mazmuni ham mualliflar tomonidan tayyorlandi.\nAsosiy zalda “Dorul hikmat val maorif” allomalari kashf etgan va o‘z faoliyatlarida qo‘llagan turli asbob-uskunalar namoyishga qo‘yilgan. Jumladan, globus, kvadrant, sekstant, usturlob, tibbiyot jihozlari kabi asboblarning qo‘lyozmalardagi chizmalari, xorijiy muzeylardagi suratlari asosida nusxalari tayyorlangan. Ekspozisiyaga Ma’mun akademiyasida faoliyat yuritgan allomalarning 10 ta qo‘lyozma asarlarining faksimile nusxalari qo‘yilgan.\nAsosiy zalga kiraverishda, o‘ng tomonida masjid, chap tomonda esa “Dorul hikmat val maorif” kutubxona interyerlari joylashgan. Masjidda qiblani ko‘rsatuvchi mehrob, Qur’on uchun an’anaviy lavh, joynamoz, salla va boshqalar bilan ifodalangan. Kutubxona interyeri markazida yosh olimlar Beruniy va Ibn Sinoning “Dorul hikmat val maorif”da ishlagan davri mum haykallari o‘rin olgan. Ularning suhbati syujeti mashhur rassom Ch.Ahmarov chizgan surati kompozisiyasiga asoslangan. Kompazisiyada Ibn Sino Beruniyga o‘z yaratgan yangi asbob chizmasini tushuntirib bermoqda. Kutubxona devorlarida ushbu olimlarning faoliyati to‘g‘risida hikoya qiluvchi video materiallar va o‘sha davr muhitini aks ettiruvchi virtual eksponatlar mavjud.\nAsosiy zalning perimetri bo‘ylab kichik hujralar - xonalar joylashgan bo‘lib, ularning har biri buyuk olimlar - Ma’mun akademiyasi a’zolari faoliyatini aks ettiradi. Har bir kichik xonada ma’lum bir olimning faoliyatini o‘ziga xos xususiyatlarini aks ettiruvchi kompozisiyalar bilan devorlarni bezash va shu bilan birga uy-ro‘zg‘or buyumlari, Ma’mun akademiyasi a’zolari - olimlar faoliyati to‘g‘risidagi qiziqarli ma’lumotlar berilgan."
+    ),
+  )
+//  exhibition 7
+  val exhibition7 = Map(
+    "exibition-content-title" -> Array(
+      "MUSEUM OF FINE ARTS",
+      "МУЗЕЙ ИЗОБРАЗИТЕЛЬНЫХ ИСКУССТВ",
+      "TASVIRIY SAN’AT MUZEYI"),
+    "exibition-content" -> Array(
+      "The Museum of Fine Arts is located in Kutlug Murad Inak Madrasa. \nThe madrasa was built in 1804-1812 . The museum has been collecting works of fine art since the 1920s. Different exhibitions have been organized in different years. The exhibition was launched in 2008. The museum has 52 historical paintings, including the Battle of Massagets, diplomatic relations with Russia, the Mamun Academy, and the years of repression. There are also portraits of famous Khorezmian historical figures in the exhibition. The exposition is 140 sq.m. occupied the place.",
+      "Музей изобразительных искусств находится в медресе Кутлуг Мурад Инак. Медресе было построено в 1804-1812 годах. В музее собраны произведения изобразительного искусства с 1920-х годов. В разные годы проводились разные выставки. Выставка открылась в 2008 году. В музее хранятся 52 исторические картины, в том числе битва при Массагете, дипломатические отношения с Россией, Мамунская академия и годы репрессий. Также на выставке представлены портреты известных хорезмийских исторических деятелей. Экспозиция 140 кв.м. занял место.",
+      "Tasviriy san’at muzeyi Qutlug‘ Murod inoq madrasasida joylashgan. \nMadrasa 1804-1812 yillarda qurilgan. Muzeyda tasviriy san’at asarlari 1920 yildan yig‘ila boshlangan. Turli yillarda turli ko‘rgazmalar tashkil etilgan. 2008 yildan mazkur ko‘rgazma ish boshlagan. Muzeyda Massagetlar jangi, Rossiya bilan diplomatik aloqalar, Ma’mun akademiyasi, Qatog‘onlik yillarida kabi 52 ta tarixiy suratlar mavjud. Shuningdek, mashhur xorazmlik tarixiy shaxslarning portretlari ko‘rgazmadan joy olgan. Ekspozisiya 140 kv.m. joyni egallagan."
+    )
+  )
+//  exhibition 8
+  val exhibition8 = Map(
+    "exibition-content-title" -> Array(
+      "Nurullaboy complex",
+      "Комплекс Нуруллабой",
+      "Nurullaboy majmuasi"),
+    "exibition-content" -> Array(
+      "Asfandiyarkhan (1910-1918), who came to the throne after the death of Muhammad Rahimkhan Feruz (1910), built a new style of Nurullaboy palace for himself and put an end to the construction in this garden. The newly built reception was built to receive foreign (Russian) guests. Ruzmat Arbob Masharipov, Nurmat Usta, Khudoibergan Haji, Quryoz Bobojonov and others carved the plaster on the walls and ceiling. The walls, painted with plaster, were painted with oil paints under the direction of Vaisyoz Matkarimov. European-style paintings of flowers and angels on the ceilings were made by Russian artists. The second room of the hotel is reserved for the reception and measures 8 x 14 m, height 6 m, the fourth room is the reception of the khan, where various contracts are signed. Called an octagonal round hall, this room measures 10 meters and is seven meters high. During the khan's reign, a 1.5 x 3 meter mirror was placed in each corner of this room. The ceiling of this room is made of wood, with exquisite craftsmanship made of elegant geometric shapes, and given a golden glow. Khiva masters Bobojon Kalandar, Masharip Qalandar, Vaisyoz Matkarimov and others showed mastery in decorating the ceiling. The ceiling of the seventh room of the hotel is beautifully decorated with peacock patty flowers and set with precious stones of different colors. The ganch carving pattern on the walls is very elegantly painted and painted in bronze. Seven porcelain stoves were brought from Russia to heat the khan's palace in winter. These stoves are made of individual tiles and were built by Russian masters. The building houses the government house, the governing bodies after the revolution. In later periods it was used as an Education House and a museum building.\nReconstruction and restoration of the historical complex \"Nurullaboy\" in Khorezm region on May 19, 2017 on the basis of the \"Program of integrated development of tourism potential of Khorezm region and the city of Khiva for 2017-2021\" No. PP-2953 of May 5, 2017 of the President of the Republic of Uzbekistan Shavkat Mirziyoyev The National Bank for Foreign Economic Activity of the Republic of Uzbekistan will repair the Nurullaboy complex, restore it to its original appearance, turn it into a tourist center. Great work has been done on the opening of exhibitions, artisan workshops, shops.\nAt present, the complex has a photo gallery depicting the work of Khudaibergan Devonov, \"Folk Traditional Crafts\", a gallery showcasing the creative work of Uzbek and Khorezm artists. These galleries display more than 160 museum exhibits.",
+      "Асфандиярхан (1910-1918), вступивший на престол после смерти Мухаммада Рахимхана Феруза (1910), построил для себя дворец Нуруллабой нового стиля и положил конец строительству в этом саду. Недавно построенная рецепция была построена для приема иностранных (российских) гостей. Гипсовые резьбы на стенах и потолке выполнены Рузматом Арбобом Машариповым, Нурматом Уста, Худойберганом Хаджи, Курёзом Бободжоновым и другими. Стены, расписанные штукатуркой, расписаны масляными красками под руководством Вайсёза Маткаримова. Европейские росписи цветов и ангелов на потолках выполнены русскими художниками. Вторая комната гостиницы отведена под приемную и имеет размеры 8 х 14 м, высоту 6 м, четвертая комната - приемная хана, где подписываются различные договоры. Этот зал, называемый восьмиугольным круглым залом, имеет размеры 10 метров и высоту семи метров. Во время правления хана в каждом углу этой комнаты ставили зеркало размером 1,5 х 3 метра. Потолок в этой комнате сделан из дерева с изысканным мастерством, с использованием элегантных геометрических форм и имеет золотистый блеск. Хивинские мастера Бободжон Каландар, Машарип Каландар, Вайсёз Маткаримов и другие проявили мастерство в декоре потолка. Потолок седьмого номера отеля красиво декорирован цветами павлиньих пирожков и инкрустирован драгоценными камнями разных цветов. Рисунок резьбы по ганчу на стенах очень изящно расписан и расписан под бронзу. Семь фарфоровых печей были привезены из России для обогрева ханского дворца зимой. Эти печи изготовлены из индивидуальной плитки и построены русскими мастерами. В здании располагается Дом правительства, органы управления после революции. В более поздние периоды он использовался как Дом просвещения и здание музея.\nРеконструкция и реставрация исторического комплекса «Нуруллабой» в Хорезмской области 19 мая 2017 года на основании «Программы комплексного развития туристического потенциала Хорезмской области и города Хивы на 2017-2021 годы» Национальный банк внешнеэкономической деятельности Деятельность Республики Узбекистан отремонтирует комплекс Нуруллабой, вернет его в первозданный вид, превратит в туристический центр, проделана большая работа по открытию выставок, мастерских, магазинов.\nВ настоящее время в комплексе работает фотогалерея, посвященная творчеству Худайбергана Девонова, «Традиционные народные промыслы», галерея, демонстрирующая творчество художников Узбекистана и Хорезма. В этих галереях выставлено более 160 музейных экспонатов.",
+      "Muhammad Rahimxon Feruz vafoti (1910)dan so‘ng taxtga chiqqan Asfandiyorxon (1910-1918) o‘zi uchun yangi uslubdagi Nurullaboy saroyini qurdirib, bu bog‘dagi qurilishlarga nuqta qo‘yadi. Yangi qurilgan qabulxona chet ellik (rossiyalik) mehmonlarni qabul qilish maqsadida qurilgan. Devor va shiftdagi ganch o‘yma ishlarini Ro‘zmat arbob Masharipov, Nurmat usta, Xudoybergan Hoji, Quryoz Bobojonov va boshqalar bajarishgan. Ganchdan naqsh o‘yilgan devorlarga Vaisyoz Matkarimov boshchiligida moy bo‘yoqlar bilan rang berilgan. Shiftlardagi Yevropa usulida yasalgan gullar va farishtalar rasmini rus rassomlari yasashgan. Mehmonxonaning ikkinchi xonasi ziyofat uchun ajratilgan bo‘lib o‘lchamlari 8 x 14 m, balandligi 6 m, to‘rtinchi xonada xonning qabulxonasi  joylashgan bo‘lib, bu yerda har xil shartnomalar imzolangan. Sakkiz burchakli yumalok zal deb yuritilgan bu xonaning o‘lchamlari 10 m, balandligi yetti metrdir. Xon davrida bu xonaning har burchagida bittadan 1,5 x 3 metrli ko‘zgu qo‘yilgan. Bu xonaning shifti yog‘ochdan ishlangan bo‘lib, nihoyatda ustalik bilan nafis geometrik shakllar yasalgan va oltin suvi berib ishlangan. Shiftni bezashda xivalik ustalardan Bobojon Qalandar, Masharip Qalandar, Vaisyoz Matkarimov va boshqalar mahorat ko‘rsatishgan. Mehmonxonaning yettinchi xonasi shiftiga tovus patining gullari chiroyli qilib yasalgan va har xil rangdagi qimmatbaho toshlar o‘rnatilgan. Devorlaridagi ganch o‘yma naqshi juda nafis qilib ishlangan va bronza  rang bilan bo‘yalgan. Xon saroyini qish kunlarida qizdirilishi uchun Rossiyadan yettita chinni (fayans) pechka keltirilgan. Bu pechkalar yakka plitkalardan iborat bo‘lib, ularni  rus ustalari qurib berganlar. Binoda inqilobdan keyin hukumat uyi, boshqaruv organlari joylashgan. Keyingi davrlarda Maorif uyi va muzey binosi sifatida foydalanilgan.\nO‘zbekiston Respublikasi Prezditenti Shavkat Mirziyoyevning 2017 yil 5-maydagi PQ-2953-sonli “2017-2021 yillarda Xorazm viloyati va Xiva shahrining turizm saloxiyatini kompleks rivojlantirish dasturi”  asosda Vazirlar Mahkamasining 2017 yil 19 maydagi “Xorazm viloyatidagi “Nurullaboy” tarixiy majmuasini rekonstruksiya va restavrasiya qilish to‘g‘risida” gi qarori, Yurtboshimizning tarixiy merosni asrab avaylash, uni bus-butun va mukammal ko‘rinishda kelgusi avlodlarga yetkazish haqidagi ko‘rsatmalar hayotga tatbiq qilish uchun O‘zbekiston Respublikasi Tashqi Iqtisodiy faoliyat Milliy Banki tomonidan Nurullaboy majmuasini ta’mirlash, qadim ko‘rinishiga qaytarish, uni turizm markazga aylantirish, katta xovli ichida ko‘rgazmalar, hunarmandlarning ustaxonalari, do‘konlarni ochish borasida ulkan ishlar amalga oshirildi.\nHozirgi kunda ushbu majmuada “Xalq an’anaviy hunarmandchilik”, Xudaybergan Devonov faoliyatini tasvirlovchi fotogalereya, O‘zbekiston va xorazmlik rassomlarning ijodiy ishlari namoyish qilinayotgan galereyalar faoliyat yuritmoqda. Ushbu galereyalarda 160 dan ortiq muzey ekpozisiyalari namoyish qilinmoqda."
+    )
+  )
+//  exhibition 9
+  val exhibition9 = Map(
+    "exibition-content-title" -> Array(
+      "Khorezm Mamun Academy\nPERMANENT EXPOSITION OF HISTORY AND CULTURE OF KHOREZM",
+      "ПРИ ХОРЕЗМСКОЙ АКАДЕМИИ МАМУН\nПОСТОЯННАЯ ЭКСПОЗИЦИЯ ИСТОРИИ И КУЛЬТУРЫ ХОРЕЗМА",
+      "XORAZM MA’MUN AKADEMIYASI QOSHIDAGI\nXORAZM TARIXI VA MADANIYATI DOIMIY EKSPOZISIYASI"),
+    "exibition-content" -> Array(
+      "The Museum of the History of Science was established in 2006 at the Khorezm Mamun Academy on the occasion of the 1000th anniversary of the academy. The museum consists of 3 sections - the science of antiquity, the science of the Middle Ages and the successors of the Mamun Academy. The museum shows the emergence of the first observatory, writing, fine arts in Central Asia, the activities of \"Bay ul-Hikma\", \"Dorul hikma val maorif\", the development of science in Uzbekistan today.\nThe museum is located in the building of the Khorezm Mamun Academy and contains unique archeological finds, rare manuscripts and other historical exhibits. The total number of exhibits is 421, including 111 unique archeological and ethnographic exhibits, 20 manuscripts and lithographs. The exhibits and manuscripts exhibited in the museum are used as a source for the study of Khorezm statehood, history, literature, art and culture, to promote our cultural heritage to the younger generation and to raise patriotic children. The museum's activities are widely promoted through the organization of excursions.\nArchaeological and ethnographic expeditions are being carried out to enrich the museum of the Khorezm Mamun Academy with exhibits. There is a booklet and an electronic version of the museum exhibits.\nThe museum is visited annually by more than 2,000 schoolchildren, students and other science-interested guests. The interest of foreign tourists in the museum is growing.",
+      "Музей истории науки был создан в 2006 году при Хорезмской академии Мамуна по случаю 1000-летия академии. Музей состоит из 3-х разделов - науки в древности, науки в средние века и наследников Мамунской академии. Музей показывает появление первой обсерватории письменности, изобразительного искусства в Средней Азии, деятельность «Бай уль-Хикма», «Дорул хикма вал маориф», развитие науки в Узбекистане сегодня.\nМузей расположен в здании Хорезмской академии Мамуна и содержит уникальные археологические находки, редкие рукописи и другие исторические экспонаты. Общее количество экспонатов - 421, в том числе 111 уникальных археологических и этнографических экспонатов, 20 рукописей и литографий. Экспонаты и рукописи, представленные в музее, используются как источник для изучения хорезмской государственности, истории, литературы, искусства и культуры, популяризации нашего культурного наследия среди подрастающего поколения и воспитания детей, верных Родине. Деятельность музея широко пропагандируется организацией экскурсий.\nПроводятся археологические и этнографические экспедиции, чтобы пополнить музей Хорезмской академии Мамуна экспонатами. Есть буклет и электронная версия музейных экспонатов.\nЕжегодно музей посещают более 2000 школьников, студентов и других интересующихся наукой гостей. Интерес иностранных туристов к музею растет.",
+      "Xorazm Ma’mun akademiyasida akademiyaning 1000 yillik yubileyi munosabati bilan 2006 yilda ilm-fan tarixi muzeyi tashkil qilingan. Muzey 3 ta - qadimgi davrda ilm-fan, o‘rta asrlarda ilm-fan va Ma’mun akademiyasining vorislari bo‘limdan iborat. Muzeyda O‘rta Osiyodagi ilk, rasadxona, yozuv, tasviry san’atning vujudga kelishi, “Bay ul-hikma”, “Dorul hikma val maorif”ning faoliyati, hozirgi kunda O‘zbekistonda ilm-fanning rivojlanishi ko‘rsatib berilgan.\nMuzey Xorazm Ma’mun akademiyasi binosida joylashgan bo‘lib, noyob arxeologik topilmalar, nodir qo‘lyozma asarlar va boshqa tarixiy eksponatlar mavjud. Jami eksponatlar soni 421 ta, jumladan 111 ta noyob arxeologik, etnografik eksponatlar, 20 ta qo‘lyozma va toshbosma kitoblardan iborat. Muzeyga qo‘yilgan esponat va qo‘lyozma asarlardan Xorazm davlatchiligi, tarixi, adabiyoti, san’ati va madaniyatini tadqiq qilishda manba sifatida foydalanish, yosh avlodga madaniy merosimizni targ‘ib qilishda va vatanga sadoqatli farzandlarni tarbiyalashda foydalanilmoqda. Muzey faoliyati ekskursiyalar tashkil etish orqali keng targ‘ib qilinmoqda.\nXorazm Ma’mun akademiyasi muzeyini eksponatlar bilan boyitish maqsadida arxeologik va etnografik ekspedisiyalar amalga oshirilib kelinmoqda. Muzey eksponatlari bukleti va elektron versiyasi mavjud.\nMuzeyga har yili 2000 dan ortiq o‘quvchi, talaba va boshqa ilm-fanga qiziquvchi mehmonlar tashrif buyuradilar. Muzeyga xorijiy sayyohlarning qiziqishi tabora ortib bormoqda."
+    ),
+  )
+//  exhibition 10
+  val exhibition10 = Map(
+    "exibition-content-title" -> Array(
+      "MUSEUM OF HISTORY OF MUSIC",
+      "МУЗЕЙ ИСТОРИИ МУЗЫКИ",
+      "MUSIQA TARIXI MUZEYI"),
+    "exibition-content" -> Array(
+      "The Museum of Music History is located in the Kozikalon Madrasah. The madrasah was built in 1905 by Salim Axun, the chief judge of the Khiva khanate. Of the area 32,5x23,4 m etr. \nThe museum displays Khorezmian music, Khorezmian musical instruments, personal belongings of famous musicians.",
+      "Музей истории музыки расположен в медресе Козикалон. Медресе было построено в 1905 году главным судьей Хивинского ханства Салимом Аксуном. Площадь музея 32,5х23,4 метра.\nВ музее представлена \u200B\u200Bхорезмская музыка, хорезмские музыкальные инструменты, личные вещи известных музыкантов.",
+      "Musiqa tarixi muzeyi Qozikalon madrasasida joylashgan. Madrasa 1905 yilda Xiva xonining bosh qozisi Salim Oxun tomonidan qurilgan. Muzeyning maydoni 32,5x23,4 myetr.\nMuzeyda Xorazm nota chizig‘i, Xorazm cholg‘u asboblari, mashhur musiqachilarning shaxsiy buyumlari namoyish etilmoqda."
+    ),
+  )
   val latestNews = Map(
     "latest-news" -> Array(
       "Latest news",
@@ -1453,7 +1607,7 @@ object Main extends App {
       "Xumbuztepa Janubiy Xorazm kulolchilik ishlab chiqarish markazi sifatida arxaik va antik davrning ilk bosqichlarida Xorazmning katta hududini sopol buyumlar bilan ta’minlab turgan. Kulolchilik ishlab chiqarishining uyushgan tarzda tashkil etilishi bu markazlarga davlat darajasida e’tibor berilganligini ko‘rsatadi. Yodgorlik hali to‘laligicha tadqiq qilib bo‘lingan emas.\nSo‘nggi izlanishlar natijasida Xumbuztepada qadimgi ibodatxona va O‘rta Osiyodagi eng qadimgi zardushtiylik otashgohi aniqlandi. Xumbuztepa yodgorligidagi qadimgi ibodatxona va O‘rta Osiyodagi eng qadimgi zardushtiylik otashgohini konservasiyalash va lozim topilsa ibodatxonani butunlay tiklash mumkin. Buning uchun ibodatxona maydonini to‘liq ochib o‘rganish lozim. Ibodatxona arxeologik jihatdan to‘liq tadqiq qilingandan so‘ng, uni ta’mirlash, qayta tiklash va muzeylashtirish mumkin. Yodgorlikni konservasiyalash va restavrasiya qilishda jahon tajribasida erishilgan yutuqlardan foydalangan holda qurilish sohasidagi mahalliy xususiyatlarni ham e’tiborga olish lozim. Hozirgi paytda rivojlangan mamlakatlarda yodgorliklarni saqlab qolish uchun maxsus shaffof oyna bilan qoplangan bostirmalardan foydalanish uslubi keng qo‘llanilib kelinmoqda. Bu usulda yodgorlikni yorqin holatda tomosha qilish imkoniyati bo‘ladi."
     ),
     // FORTRESS IN KHIVA
-    "#3" -> Array("FORTRESS IN KHIVA", "КРЕПОСТЬ ХИВА", "XIVA ICHANICHAN QAL’A"),
+    "#3" -> Array("FORTRESS IN KHIVA", "КРЕПОСТЬ ХИВА", "XIVA ICHAN QAL’A"),
     "monuments-blog-title-three-1" -> Array(
       "ARCHEOLOGY",
       "АРХЕОЛОГИЯ",
@@ -2220,6 +2374,107 @@ object Main extends App {
           .getElementById(item)
           .asInstanceOf[HTMLLinkElement]
           .innerText = artPageContent(item)(lang)
+    )
+  }
+  if (isDorulPage != null || isQatagonPage != null || isKhorezmPage != null || isMusicPage != null
+    || isArtExhibitionPage != null || isDepartmentPage != null || isAmaliyPage != null || isIchanQalaPage != null
+    || isDevonovPage != null || isNurullaboyPage != null) {
+    exhibitionsContentBreadCups.keys.foreach(
+      item =>
+        dom.document
+          .getElementById(item)
+          .asInstanceOf[HTMLLinkElement]
+          .innerText = exhibitionsContentBreadCups(item)(lang)
+    )
+  }
+  if (isIchanQalaPage != null) {
+    exhibition1.keys.foreach(
+      item =>
+        dom.document
+          .getElementById(item)
+          .asInstanceOf[HTMLLinkElement]
+          .innerText = exhibition1(item)(lang)
+    )
+  }
+  if (isAmaliyPage != null) {
+    exhibition2.keys.foreach(
+      item =>
+        dom.document
+          .getElementById(item)
+          .asInstanceOf[HTMLLinkElement]
+          .innerText = exhibition2(item)(lang)
+    )
+  }
+  if (isDepartmentPage != null) {
+    exhibition3.keys.foreach(
+      item =>
+        dom.document
+          .getElementById(item)
+          .asInstanceOf[HTMLLinkElement]
+          .innerText = exhibition3(item)(lang)
+    )
+  }
+  if (isDevonovPage != null) {
+    exhibition4.keys.foreach(
+      item =>
+        dom.document
+          .getElementById(item)
+          .asInstanceOf[HTMLLinkElement]
+          .innerText = exhibition4(item)(lang)
+    )
+  }
+  if (isQatagonPage != null) {
+    exhibition5.keys.foreach(
+      item =>
+        dom.document
+          .getElementById(item)
+          .asInstanceOf[HTMLLinkElement]
+          .innerText = exhibition5(item)(lang)
+    )
+  }
+  if (isDorulPage != null) {
+    exhibition6.keys.foreach(
+      item =>
+        dom.document
+          .getElementById(item)
+          .asInstanceOf[HTMLLinkElement]
+          .innerText = exhibition6(item)(lang)
+    )
+  }
+  if (isArtExhibitionPage != null) {
+    exhibition7.keys.foreach(
+      item =>
+        dom.document
+          .getElementById(item)
+          .asInstanceOf[HTMLLinkElement]
+          .innerText = exhibition7(item)(lang)
+    )
+  }
+  if (isKhorezmPage != null) {
+    exhibition9.keys.foreach(
+      item =>
+        dom.document
+          .getElementById(item)
+          .asInstanceOf[HTMLLinkElement]
+          .innerText = exhibition9(item)(lang)
+    )
+  }
+  if (isMusicPage != null) {
+    exhibition10.keys.foreach(
+      item =>
+        dom.document
+          .getElementById(item)
+          .asInstanceOf[HTMLLinkElement]
+          .innerText = exhibition10(item)(lang)
+    )
+  }
+  if (isNurullaboyPage != null) {
+    exhibition8.keys.foreach(
+      item =>
+        dom.document
+          .getElementById(item)
+          .asInstanceOf[HTMLLinkElement]
+          .innerText = exhibition8(item)(lang)
     )
   }
   navbarAndFooter.keys.foreach(
