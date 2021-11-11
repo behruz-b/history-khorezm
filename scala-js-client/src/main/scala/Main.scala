@@ -378,13 +378,6 @@ object Main extends App {
     )
   )
   //  Index Page ids
-
-  val eventNameMap = Map {
-    "eventName" -> Array("Central Park", "Центральный парк", "Markaziy Park")
-  }
-  val eventNameEvenMap = Map {
-    "eventName" -> Array("Reduis Maroa", "Редуис Мароа", "Reduis Maroa")
-  }
 //  val eventLinkEvenMap = Map {
 //
 //  }
@@ -448,13 +441,18 @@ object Main extends App {
   val readMore = Map {
     "readMore" -> Array("Read More", "Подробнее", "Ko\'proq o\'qish")
   }
-  val modernArt = Map {
-    "modernArt" -> Array(
-      "Exhibition of Modern Art",
-      "Выставка современного искусства",
-      "\"Ichan qal'a\" davlat muzey qo'riqxonasi "
-    )
-  }
+  val modernArt = Map(
+    "modernArt1" -> Array("Exhibition of Modern Art", "Выставка современного искусства","\"Ichan qal'a\" davlat muzey qo'riqxonasi "),
+    "modernArt2" -> Array("Exhibition of Modern Art", "Выставка современного искусства","Xorazm amaliy san'at"),
+    "modernArt3" -> Array("Exhibition of Modern Art", "Выставка современного искусства","Mahobatli me'morchilik"),
+    "modernArt4" -> Array("Exhibition of Modern Art", "Выставка современного искусства","Xudoybergan Devonov hayoti va faoliyati doimiy ko'rgazmasi"),
+    "modernArt5" -> Array("Exhibition of Modern Art", "Выставка современного искусства","Qatag'on qurbonlari muzeyi"),
+    "modernArt6" -> Array("Exhibition of Modern Art", "Выставка современного искусства","Dorul hikmat val maorif"),
+    "modernArt7" -> Array("Exhibition of Modern Art", "Выставка современного искусства","Tasviriy san'at"),
+    "modernArt8" -> Array("Exhibition of Modern Art", "Выставка современного искусства","Nurullaboy majmuasi"),
+    "modernArt9" -> Array("Exhibition of Modern Art", "Выставка современного искусства","Xorazm tarixi va madaniyati"),
+    "modernArt10" -> Array("Exhibition of Modern Art", "Выставка современного искусства","Musiqa tarixi")
+  )
   val multimedia = Map(
     "multimedia-header" -> Array("Multimedia", "Мультимедиа", "Multimedia"),
     "sub-menu-home-for-media" -> Array("Home", "Главное", "Bosh sahifa"),
@@ -474,9 +472,10 @@ object Main extends App {
     "readMore10"
   )
   val modernArtList = List(
-    "modernArt",
+    "modernArt1",
     "modernArt2",
     "modernArt3",
+    "modernArt4",
     "modernArt5",
     "modernArt6",
     "modernArt7",
@@ -952,12 +951,7 @@ object Main extends App {
       "Экспозиции музея",
       "Musey ekspozitsiyalari"
     ),
-    "viewMore" -> Array("View More", "Посмотреть больше", "Ko\'proq ko\'rish"),
-    "castle" -> Array(
-      "KHUDOYBERGAN DEVONOV",
-      "ХУДОЙБЕРГАН ДЕВОНОВ",
-      "XUDOYBERGAN DEVONOV"
-    ),
+    "viewMore" -> Array("View More", "Посмотреть больше", "Ko\'proq ko\'rish")
   )
   val exhibitionsContentBreadCups = Map(
     "interactive-header" -> Array(
@@ -2094,20 +2088,6 @@ object Main extends App {
 //          .asInstanceOf[HTMLLinkElement]
 //          .innerText = eventLinkEvenMap("eventLink")(lang)
 //    )
-    eventNameList.foreach(
-      item =>
-        dom.document
-          .getElementById(item)
-          .asInstanceOf[HTMLLinkElement]
-          .innerText = eventNameMap("eventName")(lang)
-    )
-    eventNameEvenList.foreach(
-      item =>
-        dom.document
-          .getElementById(item)
-          .asInstanceOf[HTMLLinkElement]
-          .innerText = eventNameEvenMap("eventName")(lang)
-    )
     elements.keys.foreach(
       item =>
         dom.document
@@ -2221,7 +2201,7 @@ object Main extends App {
         dom.document
           .getElementById(item)
           .asInstanceOf[HTMLLinkElement]
-          .innerText = modernArt("modernArt")(lang)
+          .innerText = modernArt(item)(lang)
     )
   }
   //    About Khorezm
