@@ -395,14 +395,14 @@ object Main extends App {
   //  }
   val eventLinkMap = Map(
     "eventLink1" -> Array(
-      "Khorezm: underground history",
-      "Хорезм: андерграундная история",
-      "Xorazm: yer ostidagi tarix"
-    ),
-    "eventLink2" -> Array(
       "Akchakhan fortress is a mysterious fortress of Khorezm",
       "Крепость Акчахан - загадочная крепость Хорезма.",
       "Oqchaxon qal'a - Xorazmning sirli qal'asi"
+    ),
+    "eventLink2" -> Array(
+      "Khiva is the pearl of the East",
+      "Хива - жемчужина востока",
+      "Xiva - Sharq gavhari"
     ),
     "eventLink3" -> Array(
       "The double gate is 110 years old",
@@ -410,19 +410,19 @@ object Main extends App {
       "Qo'sha darvoza - 110 yoshda"
     ),
     "eventLink4" -> Array(
-      "Toproqqqala - Secrets of the Palace of Khorezmshahs",
-      "Топрокккала - Тайны дворца хорезмшахов",
-      "Tuproqqqal'a - Xorazmshohlar saroyi sirlari"
-    ),
-    "eventLink5" -> Array(
       "Frost Castle is a defensive fortress",
       "Морозная крепость - оборонительная крепость",
       "Ayoz qal'a - mudofaa qo'rg'oni"
     ),
+    "eventLink5" -> Array(
+      "Toproqqqala - Secrets of the Palace of Khorezmshahs",
+      "Топрокккала - Тайны дворца хорезмшахов",
+      "Tuproqqqal'a - Xorazmshohlar saroyi sirlari"
+    ),
     "eventLink6" -> Array(
-      "Khiva is the pearl of the East",
-      "Хива - жемчужина востока",
-      "Xiva - Sharq gavhari"
+      "Khorezm: underground history",
+      "Хорезм: андерграундная история",
+      "Xorazm: yer ostidagi tarix"
     )
   )
   /*val eventDateMap = Map {
