@@ -110,6 +110,24 @@ class HomeController @Inject()(val controllerComponents: ControllerComponents) e
   def nurullaboy(lang: String): Action[AnyContent] = Action {
     Ok(html.exhibitions.nurullaboy(lang))
   }
+  def qoshaDarvoza(lang: String): Action[AnyContent] = Action {
+    Ok(html.mainPageExhibitions.qosha_darvoza(lang))
+  }
+  def aminxon(lang: String): Action[AnyContent] = Action {
+    Ok(html.mainPageExhibitions.aminxon(lang))
+  }
+  def aminxon2(lang: String): Action[AnyContent] = Action {
+    Ok(html.mainPageExhibitions.aminxon2(lang))
+  }
+  def niqob(lang: String): Action[AnyContent] = Action {
+    Ok(html.mainPageExhibitions.niqob(lang))
+  }
+  def islomxoja(lang: String): Action[AnyContent] = Action {
+    Ok(html.mainPageExhibitions.islomxoja(lang))
+  }
+  def sayyid(lang: String): Action[AnyContent] = Action {
+    Ok(html.mainPageExhibitions.sayyid(lang))
+  }
   def comingSoon(lang: String): Action[AnyContent] = Action {
     Ok(html.common.comingsoon(lang))
   }

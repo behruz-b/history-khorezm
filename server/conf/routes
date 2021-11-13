@@ -33,6 +33,12 @@ GET     /amaliy                         @controllers.HomeController.amaliy(l ?= 
 GET     /ichan-qala                     @controllers.HomeController.ichanqala(l ?= "uz")
 GET     /devonov                        @controllers.HomeController.devonov(l ?= "uz")
 GET     /nurullaboy                     @controllers.HomeController.nurullaboy(l ?= "uz")
+GET     /qosha-darvoza                  @controllers.HomeController.qoshaDarvoza(l ?= "uz")
+GET     /aminxon                        @controllers.HomeController.aminxon(l ?= "uz")
+GET     /aminxon2                       @controllers.HomeController.aminxon2(l ?= "uz")
+GET     /niqob                          @controllers.HomeController.niqob(l ?= "uz")
+GET     /islomxoja                      @controllers.HomeController.islomxoja(l ?= "uz")
+GET     /sayyid                         @controllers.HomeController.sayyid(l ?= "uz")
 GET     /coming-soon                    @controllers.HomeController.comingSoon(l ?= "uz")
 
 GET     /assets/*file                   controllers.Assets.versioned(path="/public", file: Asset)

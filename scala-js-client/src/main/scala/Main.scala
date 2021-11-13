@@ -8,6 +8,18 @@ object Main extends App {
   //  check Pages
   val isIndexPage =
     dom.document.getElementById("indexPage").asInstanceOf[HTMLLinkElement]
+  val isQoshaDarvozaPage =
+    dom.document.getElementById("qoshaDarvozaPage").asInstanceOf[HTMLLinkElement]
+  val isAminxonPage =
+    dom.document.getElementById("aminxonPage").asInstanceOf[HTMLLinkElement]
+  val isNiqobPage =
+    dom.document.getElementById("niqobPage").asInstanceOf[HTMLLinkElement]
+  val isIslomkhojaPage =
+    dom.document.getElementById("islomxojaPage").asInstanceOf[HTMLLinkElement]
+  val isSayyidPage =
+    dom.document.getElementById("sayyidPage").asInstanceOf[HTMLLinkElement]
+  val isAminxon2Page =
+    dom.document.getElementById("aminxon2Page").asInstanceOf[HTMLLinkElement]
   val isEventsPage =
     dom.document.getElementById("eventsPage").asInstanceOf[HTMLLinkElement]
   val isMediaPage =
@@ -30,7 +42,7 @@ object Main extends App {
   val isIndependencePage = dom.document
     .getElementById("independencePage")
     .asInstanceOf[HTMLLinkElement]
-//  Cities
+  //  Cities
   val isCitiesPage = dom.document
     .getElementById("khorezmCitiesPage")
     .asInstanceOf[HTMLLinkElement]
@@ -275,7 +287,7 @@ object Main extends App {
   )
   val elements = Map(
     //    Index page
-    "smallIntro" -> Array(
+    /*"smallIntro" -> Array(
       "Small Intro",
       "Небольшое вступление",
       "Kichik kirish"
@@ -284,12 +296,12 @@ object Main extends App {
       "The Khorezm region, one of the first centers of world civilization, is distinguished by its unique cultural traditions, which have their ancient roots. The Khorezm oasis, located in the confluence of the Amu Darya and the Aral Sea, one of the lifebloods of Central Asia, has been the cradle of life for our ancestors since ancient times.",
       "Хорезмская область, один из первых центров мировой цивилизации, отличается уникальными культурными традициями, имеющими свои древние корни. Хорезмский оазис, расположенный в месте слияния Амударьи и Аральского моря, одного из источников жизненной силы Центральной Азии, издревле был колыбелью жизни наших предков.",
       "Jahon sivilizatsiyasining birinchi markazlaridan biri bo'lgan Xorazm viloyati o'zining qadimiy ildizlariga ega bo'lgan o'ziga xos madaniy an'analari bilan ajralib turadi. Markaziy Osiyoning qon tomirlaridan biri Amudaryo va Orol dengizining qo'shilish joyida joylashgan Xorazm vohasi qadim zamonlardan buyon ajdodlarimiz uchun hayot beshigi bo'lgan."
-    ),
-    "moreExplore" -> Array(
-      "More Explore",
-      "Больше Исследовать",
-      "Ko'proq o'rganish"
-    ),
+    ),*/
+    //    "moreExplore" -> Array(
+    //      "More Explore",
+    //      "Больше Исследовать",
+    //      "Ko'proq o'rganish"
+    //    ),
     "aboutExhibition" -> Array(
       "Double gate. Khiva. Deshan Castle. Early XX century",
       "Двойные ворота. Хива. Замок Дешан. Начало XX века",
@@ -325,21 +337,21 @@ object Main extends App {
     ),
     "dontMiss" -> Array("DON’T MISS", "НЕ ПРОПУСТИТЕ", "O\'TKAZIB YUBORMANG"),
     "upcomingEvents" -> Array("Exhibitions", "Выставки", "Ko'rgazmalar"),
-//    "numericalCounter" -> Array(
-//      "Everything about our organization in numerical counter view.",
-//      "Все о нашей организации в виде цифрового счетчика.",
-//      "Bizning tashkilot haqida hamma narsa raqamli hisoblagich ko\'rinishida."
-//    ),
-//    "wePerfection" -> Array(
-//      "We Strive for Perfection Every day",
-//      "Мы стремимся к совершенству каждый день.",
-//      "Biz har kuni mukammallikka intilamiz."
-//    ),
-//    "link6" -> Array(
-//      "Khiva is the pearl of the East",
-//      "Хива - жемчужина востока",
-//      "Xiva - Sharq gavhari"
-//    ),
+    //    "numericalCounter" -> Array(
+    //      "Everything about our organization in numerical counter view.",
+    //      "Все о нашей организации в виде цифрового счетчика.",
+    //      "Bizning tashkilot haqida hamma narsa raqamli hisoblagich ko\'rinishida."
+    //    ),
+    //    "wePerfection" -> Array(
+    //      "We Strive for Perfection Every day",
+    //      "Мы стремимся к совершенству каждый день.",
+    //      "Biz har kuni mukammallikka intilamiz."
+    //    ),
+    //    "link6" -> Array(
+    //      "Khiva is the pearl of the East",
+    //      "Хива - жемчужина востока",
+    //      "Xiva - Sharq gavhari"
+    //    ),
     "overOrganized" -> Array(
       "Archaeological monuments",
       "Археологических памятников",
@@ -378,9 +390,9 @@ object Main extends App {
     )
   )
   //  Index Page ids
-//  val eventLinkEvenMap = Map {
-//
-//  }
+  //  val eventLinkEvenMap = Map {
+  //
+  //  }
   val eventLinkMap = Map(
     "eventLink1" -> Array(
       "Khorezm: underground history",
@@ -442,16 +454,16 @@ object Main extends App {
     "readMore" -> Array("Read More", "Подробнее", "Ko\'proq o\'qish")
   }
   val modernArt = Map(
-    "modernArt1" -> Array("Exhibition of Modern Art", "Выставка современного искусства","\"Ichan qal'a\" davlat muzey qo'riqxonasi "),
-    "modernArt2" -> Array("Exhibition of Modern Art", "Выставка современного искусства","Xorazm amaliy san'at"),
-    "modernArt3" -> Array("Exhibition of Modern Art", "Выставка современного искусства","Mahobatli me'morchilik"),
-    "modernArt4" -> Array("Exhibition of Modern Art", "Выставка современного искусства","Xudoybergan Devonov hayoti va faoliyati doimiy ko'rgazmasi"),
-    "modernArt5" -> Array("Exhibition of Modern Art", "Выставка современного искусства","Qatag'on qurbonlari muzeyi"),
-    "modernArt6" -> Array("Exhibition of Modern Art", "Выставка современного искусства","Dorul hikmat val maorif"),
-    "modernArt7" -> Array("Exhibition of Modern Art", "Выставка современного искусства","Tasviriy san'at"),
-    "modernArt8" -> Array("Exhibition of Modern Art", "Выставка современного искусства","Nurullaboy majmuasi"),
-    "modernArt9" -> Array("Exhibition of Modern Art", "Выставка современного искусства","Xorazm tarixi va madaniyati"),
-    "modernArt10" -> Array("Exhibition of Modern Art", "Выставка современного искусства","Musiqa tarixi")
+    "modernArt1" -> Array("Exhibition of Modern Art", "Выставка современного искусства", "\"Ichan qal'a\" davlat muzey qo'riqxonasi "),
+    "modernArt2" -> Array("Exhibition of Modern Art", "Выставка современного искусства", "Xorazm amaliy san'at"),
+    "modernArt3" -> Array("Exhibition of Modern Art", "Выставка современного искусства", "Mahobatli me'morchilik"),
+    "modernArt4" -> Array("Exhibition of Modern Art", "Выставка современного искусства", "Xudoybergan Devonov hayoti va faoliyati doimiy ko'rgazmasi"),
+    "modernArt5" -> Array("Exhibition of Modern Art", "Выставка современного искусства", "Qatag'on qurbonlari muzeyi"),
+    "modernArt6" -> Array("Exhibition of Modern Art", "Выставка современного искусства", "Dorul hikmat val maorif"),
+    "modernArt7" -> Array("Exhibition of Modern Art", "Выставка современного искусства", "Tasviriy san'at"),
+    "modernArt8" -> Array("Exhibition of Modern Art", "Выставка современного искусства", "Nurullaboy majmuasi"),
+    "modernArt9" -> Array("Exhibition of Modern Art", "Выставка современного искусства", "Xorazm tarixi va madaniyati"),
+    "modernArt10" -> Array("Exhibition of Modern Art", "Выставка современного искусства", "Musiqa tarixi")
   )
   val multimedia = Map(
     "multimedia-header" -> Array("Multimedia", "Мультимедиа", "Multimedia"),
@@ -494,29 +506,29 @@ object Main extends App {
     "learnMore8",
     "learnMore9"
   )
-//  val findMoreList = List(
-//    "findMore",
-//    "findMore2",
-//    "findMore3",
-//    "findMore4",
-//    "findMore5",
-//    "findMore6"
-//  )
+  //  val findMoreList = List(
+  //    "findMore",
+  //    "findMore2",
+  //    "findMore3",
+  //    "findMore4",
+  //    "findMore5",
+  //    "findMore6"
+  //  )
   val exhibitionList = List("exhibition", "exhibition2", "exhibition3")
   val monthDecList = List("month2", "month4", "month6")
   val monthNovList = List("month", "month3", "month5")
   val weekdaySatList =
     List("weekday", "weekday2", "weekday3", "weekday4", "weekday5", "weekday6")
-//  val eventDateList = List(
-//    "eventDate",
-//    "eventDate2",
-//    "eventDate3",
-//    "eventDate4",
-//    "eventDate5",
-//    "eventDate6"
-//  )
-//  val eventLinkList = List("eventLink", "eventLink3", "eventLink5")
-//  val eventLinkEvenList = List("eventLink2", "eventLink4", "eventLink6")
+  //  val eventDateList = List(
+  //    "eventDate",
+  //    "eventDate2",
+  //    "eventDate3",
+  //    "eventDate4",
+  //    "eventDate5",
+  //    "eventDate6"
+  //  )
+  //  val eventLinkList = List("eventLink", "eventLink3", "eventLink5")
+  //  val eventLinkEvenList = List("eventLink2", "eventLink4", "eventLink6")
   val eventNameList = List("eventName", "eventName3", "eventName5")
   val eventNameEvenList = List("eventName2", "eventName4", "eventName6")
   //  Events Page
@@ -837,8 +849,8 @@ object Main extends App {
       "XVIII asr oxiri"
     ),
     "xiva-xon-1" -> Array("Khiva khanate", "Хивинское ханство", "Xiva xonligi"),
-//    "xiva-xon-2" -> Array("Khiva khanate", "Хивинское ханство", "Xiva xonligi"),
-//    "xiva-xon-3" -> Array("Khiva khanate", "Хивинское ханство", "Xiva xonligi"),
+    //    "xiva-xon-2" -> Array("Khiva khanate", "Хивинское ханство", "Xiva xonligi"),
+    //    "xiva-xon-3" -> Array("Khiva khanate", "Хивинское ханство", "Xiva xonligi"),
     "xorazm" -> Array("Khorezm", "Хорезм", "Xorazm"),
     "map-title-1" -> Array(
       "Khorezm in the\n Early Iron age",
@@ -926,16 +938,16 @@ object Main extends App {
       "Хивинское ханство \nв 1873-1920 гг.",
       "Xiva xonligi \n1873-1920-yillarda"
     ),
-//    "map-title-19" -> Array(
-//      "Khiva khanate",
-//      "Хивинское ханство",
-//      "Xiva xonligi"
-//    ),
-//    "map-title-20" -> Array(
-//      "Khiva khanate",
-//      "Хивинское ханство",
-//      "Xiva xonligi"
-//    ),
+    //    "map-title-19" -> Array(
+    //      "Khiva khanate",
+    //      "Хивинское ханство",
+    //      "Xiva xonligi"
+    //    ),
+    //    "map-title-20" -> Array(
+    //      "Khiva khanate",
+    //      "Хивинское ханство",
+    //      "Xiva xonligi"
+    //    ),
     "map-title-21" -> Array(
       "XXSR 1920-1924",
       "XXSR 1920-1924 гг.",
@@ -971,7 +983,7 @@ object Main extends App {
       "Interaktiv xizmatlar"
     )
   )
-//  exhibition 1
+  //  exhibition 1
   val exhibition1 = Map(
     "exibition-content-title" -> Array(
       "ICHAN KALA STATE MUSEUM RESERVE",
@@ -983,7 +995,7 @@ object Main extends App {
       "Xorazmda dastlabki muzey 1920 yilda tashkil etilgan. “Ichon qal’a” Davlat muzey qo‘riqxonasi 1967 yilda “Ochiq osmon ostidagi muzey” degan rasmiy statusni oldi. O‘zining noyob tarixiy va me’morchilik yodgorliklari bilan tanilgan Xiva yer kurrasidagi 100-shahar bo‘lib jahon madaniy yodgorliklari ro‘yxatiga kiritilgan. YUNESKOning Parij shahrida o‘tkazilgan 28-sessiyasida Xivaning jahon madaniyatini rivojlantirishdagi roli va ahamiyati alohida takidlangan. 1997 yil 20 oktyabrda Xiva shahrining 2500 yillik yubileyi xalqaro miqyosda nishonlandi.\nMuzey-qo‘riqxona Xiva shahrining “Ichon qal’a” qismida joylashgan bo‘lib, baland paxsa devor bilan o‘ralgan, to‘rtta darvozasi - Ota darvoza, Polvon darvoza, Tosh darvoza va Bog‘cha darvoza to‘rt tomonga qaratib qurilgan. Devor aylanasining uzunligi qariyib 2200 metrgacha, balandligi 7–8 metrga, poydevorining qalinligi esa 5–6 metrga teng. Ichon qal’a to‘g‘ri to‘rtburchak shaklida qurilgan bo‘lib, uzunligi 650 metr, eni 400 metr, ya’ni 26 gektar maydonni egallaydi.\nXiva “Ichon qal’a” Davlat muzey-qo‘riqxonasi turli madrasa va boshqa tarixiy binolarda joylashgan 19 ta doimiy ekspozisiyasiga ega. Ular quyidagilar:\n1.Qadimgi Xorazm tarixi bo‘limi (Qo‘hna Ark saroyi)\n2.Xorazmshohlar tarixi bo‘limi (Qo‘hna Ark saroyi)\n3.Xorazm xonlari tarixi bo‘limi (Muhammad Rahimxon II madrasasi)\n4.Tasviriy san’at muzeyi (Qutlug‘ Murod inoq madrasasi)\n5.Musiqa tarixi (Qozikalon madrasasi)\n6.Xorazm amaliy san’ati bo‘limi (Islom xo‘ja madrasasi)\n7.Xorazm xalq ta’limi bo‘limi (Rus tuzem maktabi)\n8.Xattotlik bo‘limi (Matpanoboy madrasasi)\n9.Xorazm tabiati bo‘limi (Abdullaxon madrasasi)\n10.Mahobatli me’morchilik bo‘limi (Toshhovli saroyi)\n11.Kulolchilik ko‘rgazmasi (Toshhovli saroyi)\n12.Nemis mennonitlari tarixi (Polvon Qori savdo uyi)\n13.Xudoybergan Devonov hayoti va faoliyati doimiy ko‘rgazmasi (Rus tuzem maktabi)\n14.Dorul hikmat val maorif (Muhammad Amin inoq madrasasi)\nShuningdek, Al-Xorazmiy (Urganch shahri Al-Xorazmiy ko‘chasi) va Al-Beruniy muzeylari (Urganch shahri Al-Xorazmiy ko‘chasi) hamda Xiva “Ichon qal’a” Davlat muzey-qo‘riqxonasi fondi (Arab Muhammadxon madrasasi) mavjud. Xiva “Ichon qal’a” Davlat muzey-qo‘riqxonasi fondida 52000 ta noyob eksponatlar saqlanadi."
     ),
   )
-//  exhibition 2
+  //  exhibition 2
   val exhibition2 = Map(
     "exibition-content-title" -> Array(
       "APPLIED ART",
@@ -995,7 +1007,7 @@ object Main extends App {
       "Xorazm amaliy san’ati bo‘limi Islom xo‘ja madrasasida joylashgan. Ekspozisiya 1983 yilda Al Xorazmiyning 1200 yillik yubileyi munosabati bilan tashkil etilgan. Ekspozisiya 420 kv.m. joyni egallagan.\nMuzey eng boy va noyob eksponatlarni (387 ta) o‘zida jamlagan. Ko‘rgazmadan Xorazm amaliy san’atining barcha rivojlangan sohalari – yog‘och o‘ymakorligi, kulolchilik, kandakorlik, zargarlik, marmar o‘ymakorligi, ganchkorlik, gilamdo‘zlik, mato to‘qish va chitga gul bosish, ko‘nchilik bo‘yicha buyumlar joy olgan.\nXorazm buyumlari o‘zining originalligi, bezalishi jihatidan boshqa hududlardan butunlay farq qiladi. Muzey xonalarida yog‘och o‘ymakorligining eshik, o‘ra (ustun), panjara, qosh kabi, kulolchilikning bodiya, chanoq, xum, chintavax kabi, zargarlikning taxyaduzi, jig‘a, osmaduzi kabi kandakorlikning tung, tuncha, qum’on kabi original buyumlarni ko‘rish mumkin.\nShuningdek, muzeyda mohir ustalarning hayoti va faoliyati ham yoritilgan. Jumladan, usto Allakora, usto Yusup kulol, R.Matchonov, O.Palvonov, S.Bog‘ibekov, A.Boltayev va boshqalar. "
     ),
   )
-//  exhibition 3
+  //  exhibition 3
   val exhibition3 = Map(
     "exibition-content-title" -> Array(
       "DEPARTMENT OF GREAT ARCHITECTURE",
@@ -1007,7 +1019,7 @@ object Main extends App {
       "Mahobatli me’morchilik bo‘limi Toshhovli saroyi (1832-1838) hisoblanadi. Bu yerda Xorazm me’morchiligining eng yuksak namunalari qo‘llanilgan. Saroyda naqqoshlik, ganch, marmar va yog‘och o‘ymakorligi, koshinpazlik namunalari a’lo darajada ishlangan. Ayniqsa, qabulxona va masjid nozik ziynatlangan. Saroy uchta katta hovli ko‘rinishxona, mehmonxona va haramdan iborat bo‘lib, 163 xonasi bor. Haramning beshta katta ayvoni nihoyatda chiroyli koshin qoplamalar bilan bezatilgan. Saroy koshinlarini mohir usta Abudlla jin bajargan. Eshik va ustunlar Xiva yog‘och o‘ymakorlik san’atining yuksak namunalaridan sanaladi. Marmar ustun toshlardagi, temir panjalardagi jimjima o‘yma naqshlarda Xiva ustalarining eng mukammal san’ati o‘z ifodasini topgan. Toshhovli saroyi Nurmuhammad Toji va usta Qalandar Xivaqiylar tomonidan barpo etilgan. Toshhovli saroyi 1996-1997 yillarda Xivaning 2500 yilligi munosabati bilan to‘liq ta’mirlangan. Toshhovlida yog‘och va marmar o‘ymakorligining 100 ga yaqin namunalari namoyish etilmoqda."
     ),
   )
-//  exhibition 4
+  //  exhibition 4
   val exhibition4 = Map(
     "exibition-content-title" -> Array(
       "LIFE AND ACTIVITY OF KHUDOYBERGAN DEVONOV\nPERMANENT EXHIBITION",
@@ -1019,7 +1031,7 @@ object Main extends App {
       "Xudoybergan Devonov hayoti va faoliyati doimiy ko‘rgazmasi 2002 yilda Islom xo‘ja madrasasi qarshisidagi Rus tuzem maktabida tashkil etilgan. Ekspozisiyani muzeyning bosh saqlovchisi O.Karimov yaratgan. Ko‘rgazmada birinchi o‘zbek fotografi va kinomatografi X.Devonovning hayoti va faoliyatini aks ettiruvchi, shuningdek, o‘zi suratga olgan 200 ga yaqin eksponatlar o‘rin olgan. Muzey 2009 yilda reekspozisiya qilingan. Ekspozisiya 36 kv.m. maydonda joylashgan."
     ),
   )
-//  exhibition 5
+  //  exhibition 5
   val exhibition5 = Map(
     "exibition-content-title" -> Array(
       "MUSEUM OF MEMORY OF VICTIMS OF REPRESENTATIVES IN URGENCH STATE UNIVERSITY",
@@ -1031,7 +1043,7 @@ object Main extends App {
       "Qosimjon Salimjonov uy-yodgorligi ikki qismdan Q.Salimjonovning uyi va savdo idorasidan iborat. Yodgorlik Urganch shahrining shimoliy-g‘arbiy tomonida, shahar xokimligi binosining g‘arbiy qismida joylashgan. Qurilish ishlari 1910-1912 yillarda amalga oshirilgan. Qurilishda rus g‘ishtidan foydalanilgan. Deraza va eshiklari yangi uslubida ishlangan.\nQ.Salimjonov savdo uyi 1992 yili qayta ta’mirlanib, o‘lkashunoslik muzeyi tashkil etilgan. 2013 yilda binoning fasadi va tomi yangi konstruksiya asosida qayta ta’mirlandi.\nMazkur muzey 2018 yil 31 avgust – Qatag‘on qurbonlarini yod etish kunida muzeyning ochilish marosimi o‘tkazildi. Muzey keng jamoatchilik tomonidan yuqori baholandi. \nMuzey “Xiva xonligining Chor Rossiyasi tomonidan bosib olinishi, mahalliy xalqning erk va hurriyat uchun kurashi (1868-1900)”, “Xiva xonligidagi milliy uyg‘onish harakati, uning amaliy yo‘nalishlari va namoyandalari (1901-1917)”, “Xorazm Xalq Respublikasining tugatilishi va viloyatda bolsheviklar hokimiyatining o‘rnatilishi (1917-1929)”, “Sovet davlati qatag‘on siyosatining boshlanishi (1929-1936)”, “1937-1938 yillardagi “Katta qirg‘in”, “1940-1950 yillardagi siyosiy qatag‘onlar”, “1980-yillardagi qatag‘on. “Paxta ishi” kampaniyasi”, “Mustaqillik yillarida tarixiy adolatning tiklanishi, qatag‘on qurbonlari xotirasining abadiylashtirilishi, milliy qadriyatlarni asrab-avaylash va rivojlantirish yo‘lida amalga oshirilgan tarixiy ishlar (1991 yildan keyingi davr)” bo‘limlaridan iborat."
     ),
   )
-//  exhibition 6
+  //  exhibition 6
   val exhibition6 = Map(
     "exibition-content-title" -> Array("\"DORUL HIKMAT VAL MAORIF\"", "\"ДОРУЛ ХИКМАТ ВАЛ МАОРИФ\"", "“DORUL HIKMAT VAL MAORIF”"),
     "exibition-content" -> Array(
@@ -1040,7 +1052,7 @@ object Main extends App {
       "Muzey ekspozisiyasi Xiva shahri Ichan qal’a majmuasining Muhammad Amin Inoq madrasasi binosida tashkil etildi. Dizaynerlar tomonidan ichki yechimning o‘ziga xos xususiyati asosiy zalning maydoni bilan bog‘liq bo‘lib, u rejada 173 kvadrat metr sakkizburchakni tashkil etadi. Zalda Ma’mun akademiyasi a’zolari bo‘lgan 7 nafar asosiy olimlarning gologramma tasvirlari paydo bo‘ladigan va asosiy ma’lumotlar keltiriladigan badiiy raqamli panel o‘rnatilgan. Bular ilm-fanning turli sohalarida faoliyat yuritgan Abu Rayhon Beruniy, Abu Ali ibn Sino, Abu Nasr ibn Iroq, Abu Sahl al-Masihiy, Abu Mansur al-Saolibiy, Abul-Xayr al-Hammor, Ibn Miskavayh kabi olimlardir. Mazkur olimlar matematika, astronomiya, tarix, tibbiyot, she’riyat, falsafa va boshqa sohalardagi tengsiz asarlari tufayli dunyo miqyosida tan olingan. \nMuzeyda yangi texnologiyalar qo‘llanildi: buyuk olimlarning raqamlari 3D formatdagi maxsus qoplamadan yasalgan panelning ingichka to‘r yuzasida paydo bo‘ladi. Ularning tasvirlari mepping (xaritada tasvirlash texnikasi)da vizual rasmlar bilan birga keltirilgan bo‘lib, ularning dramasi va mazmuni ham mualliflar tomonidan tayyorlandi.\nAsosiy zalda “Dorul hikmat val maorif” allomalari kashf etgan va o‘z faoliyatlarida qo‘llagan turli asbob-uskunalar namoyishga qo‘yilgan. Jumladan, globus, kvadrant, sekstant, usturlob, tibbiyot jihozlari kabi asboblarning qo‘lyozmalardagi chizmalari, xorijiy muzeylardagi suratlari asosida nusxalari tayyorlangan. Ekspozisiyaga Ma’mun akademiyasida faoliyat yuritgan allomalarning 10 ta qo‘lyozma asarlarining faksimile nusxalari qo‘yilgan.\nAsosiy zalga kiraverishda, o‘ng tomonida masjid, chap tomonda esa “Dorul hikmat val maorif” kutubxona interyerlari joylashgan. Masjidda qiblani ko‘rsatuvchi mehrob, Qur’on uchun an’anaviy lavh, joynamoz, salla va boshqalar bilan ifodalangan. Kutubxona interyeri markazida yosh olimlar Beruniy va Ibn Sinoning “Dorul hikmat val maorif”da ishlagan davri mum haykallari o‘rin olgan. Ularning suhbati syujeti mashhur rassom Ch.Ahmarov chizgan surati kompozisiyasiga asoslangan. Kompazisiyada Ibn Sino Beruniyga o‘z yaratgan yangi asbob chizmasini tushuntirib bermoqda. Kutubxona devorlarida ushbu olimlarning faoliyati to‘g‘risida hikoya qiluvchi video materiallar va o‘sha davr muhitini aks ettiruvchi virtual eksponatlar mavjud.\nAsosiy zalning perimetri bo‘ylab kichik hujralar - xonalar joylashgan bo‘lib, ularning har biri buyuk olimlar - Ma’mun akademiyasi a’zolari faoliyatini aks ettiradi. Har bir kichik xonada ma’lum bir olimning faoliyatini o‘ziga xos xususiyatlarini aks ettiruvchi kompozisiyalar bilan devorlarni bezash va shu bilan birga uy-ro‘zg‘or buyumlari, Ma’mun akademiyasi a’zolari - olimlar faoliyati to‘g‘risidagi qiziqarli ma’lumotlar berilgan."
     ),
   )
-//  exhibition 7
+  //  exhibition 7
   val exhibition7 = Map(
     "exibition-content-title" -> Array(
       "MUSEUM OF FINE ARTS",
@@ -1052,7 +1064,7 @@ object Main extends App {
       "Tasviriy san’at muzeyi Qutlug‘ Murod inoq madrasasida joylashgan. \nMadrasa 1804-1812 yillarda qurilgan. Muzeyda tasviriy san’at asarlari 1920 yildan yig‘ila boshlangan. Turli yillarda turli ko‘rgazmalar tashkil etilgan. 2008 yildan mazkur ko‘rgazma ish boshlagan. Muzeyda Massagetlar jangi, Rossiya bilan diplomatik aloqalar, Ma’mun akademiyasi, Qatog‘onlik yillarida kabi 52 ta tarixiy suratlar mavjud. Shuningdek, mashhur xorazmlik tarixiy shaxslarning portretlari ko‘rgazmadan joy olgan. Ekspozisiya 140 kv.m. joyni egallagan."
     )
   )
-//  exhibition 8
+  //  exhibition 8
   val exhibition8 = Map(
     "exibition-content-title" -> Array(
       "Nurullaboy complex",
@@ -1064,7 +1076,7 @@ object Main extends App {
       "Muhammad Rahimxon Feruz vafoti (1910)dan so‘ng taxtga chiqqan Asfandiyorxon (1910-1918) o‘zi uchun yangi uslubdagi Nurullaboy saroyini qurdirib, bu bog‘dagi qurilishlarga nuqta qo‘yadi. Yangi qurilgan qabulxona chet ellik (rossiyalik) mehmonlarni qabul qilish maqsadida qurilgan. Devor va shiftdagi ganch o‘yma ishlarini Ro‘zmat arbob Masharipov, Nurmat usta, Xudoybergan Hoji, Quryoz Bobojonov va boshqalar bajarishgan. Ganchdan naqsh o‘yilgan devorlarga Vaisyoz Matkarimov boshchiligida moy bo‘yoqlar bilan rang berilgan. Shiftlardagi Yevropa usulida yasalgan gullar va farishtalar rasmini rus rassomlari yasashgan. Mehmonxonaning ikkinchi xonasi ziyofat uchun ajratilgan bo‘lib o‘lchamlari 8 x 14 m, balandligi 6 m, to‘rtinchi xonada xonning qabulxonasi  joylashgan bo‘lib, bu yerda har xil shartnomalar imzolangan. Sakkiz burchakli yumalok zal deb yuritilgan bu xonaning o‘lchamlari 10 m, balandligi yetti metrdir. Xon davrida bu xonaning har burchagida bittadan 1,5 x 3 metrli ko‘zgu qo‘yilgan. Bu xonaning shifti yog‘ochdan ishlangan bo‘lib, nihoyatda ustalik bilan nafis geometrik shakllar yasalgan va oltin suvi berib ishlangan. Shiftni bezashda xivalik ustalardan Bobojon Qalandar, Masharip Qalandar, Vaisyoz Matkarimov va boshqalar mahorat ko‘rsatishgan. Mehmonxonaning yettinchi xonasi shiftiga tovus patining gullari chiroyli qilib yasalgan va har xil rangdagi qimmatbaho toshlar o‘rnatilgan. Devorlaridagi ganch o‘yma naqshi juda nafis qilib ishlangan va bronza  rang bilan bo‘yalgan. Xon saroyini qish kunlarida qizdirilishi uchun Rossiyadan yettita chinni (fayans) pechka keltirilgan. Bu pechkalar yakka plitkalardan iborat bo‘lib, ularni  rus ustalari qurib berganlar. Binoda inqilobdan keyin hukumat uyi, boshqaruv organlari joylashgan. Keyingi davrlarda Maorif uyi va muzey binosi sifatida foydalanilgan.\nO‘zbekiston Respublikasi Prezditenti Shavkat Mirziyoyevning 2017 yil 5-maydagi PQ-2953-sonli “2017-2021 yillarda Xorazm viloyati va Xiva shahrining turizm saloxiyatini kompleks rivojlantirish dasturi”  asosda Vazirlar Mahkamasining 2017 yil 19 maydagi “Xorazm viloyatidagi “Nurullaboy” tarixiy majmuasini rekonstruksiya va restavrasiya qilish to‘g‘risida” gi qarori, Yurtboshimizning tarixiy merosni asrab avaylash, uni bus-butun va mukammal ko‘rinishda kelgusi avlodlarga yetkazish haqidagi ko‘rsatmalar hayotga tatbiq qilish uchun O‘zbekiston Respublikasi Tashqi Iqtisodiy faoliyat Milliy Banki tomonidan Nurullaboy majmuasini ta’mirlash, qadim ko‘rinishiga qaytarish, uni turizm markazga aylantirish, katta xovli ichida ko‘rgazmalar, hunarmandlarning ustaxonalari, do‘konlarni ochish borasida ulkan ishlar amalga oshirildi.\nHozirgi kunda ushbu majmuada “Xalq an’anaviy hunarmandchilik”, Xudaybergan Devonov faoliyatini tasvirlovchi fotogalereya, O‘zbekiston va xorazmlik rassomlarning ijodiy ishlari namoyish qilinayotgan galereyalar faoliyat yuritmoqda. Ushbu galereyalarda 160 dan ortiq muzey ekpozisiyalari namoyish qilinmoqda."
     )
   )
-//  exhibition 9
+  //  exhibition 9
   val exhibition9 = Map(
     "exibition-content-title" -> Array(
       "Khorezm Mamun Academy\nPERMANENT EXPOSITION OF HISTORY AND CULTURE OF KHOREZM",
@@ -1076,7 +1088,7 @@ object Main extends App {
       "Xorazm Ma’mun akademiyasida akademiyaning 1000 yillik yubileyi munosabati bilan 2006 yilda ilm-fan tarixi muzeyi tashkil qilingan. Muzey 3 ta - qadimgi davrda ilm-fan, o‘rta asrlarda ilm-fan va Ma’mun akademiyasining vorislari bo‘limdan iborat. Muzeyda O‘rta Osiyodagi ilk, rasadxona, yozuv, tasviry san’atning vujudga kelishi, “Bay ul-hikma”, “Dorul hikma val maorif”ning faoliyati, hozirgi kunda O‘zbekistonda ilm-fanning rivojlanishi ko‘rsatib berilgan.\nMuzey Xorazm Ma’mun akademiyasi binosida joylashgan bo‘lib, noyob arxeologik topilmalar, nodir qo‘lyozma asarlar va boshqa tarixiy eksponatlar mavjud. Jami eksponatlar soni 421 ta, jumladan 111 ta noyob arxeologik, etnografik eksponatlar, 20 ta qo‘lyozma va toshbosma kitoblardan iborat. Muzeyga qo‘yilgan esponat va qo‘lyozma asarlardan Xorazm davlatchiligi, tarixi, adabiyoti, san’ati va madaniyatini tadqiq qilishda manba sifatida foydalanish, yosh avlodga madaniy merosimizni targ‘ib qilishda va vatanga sadoqatli farzandlarni tarbiyalashda foydalanilmoqda. Muzey faoliyati ekskursiyalar tashkil etish orqali keng targ‘ib qilinmoqda.\nXorazm Ma’mun akademiyasi muzeyini eksponatlar bilan boyitish maqsadida arxeologik va etnografik ekspedisiyalar amalga oshirilib kelinmoqda. Muzey eksponatlari bukleti va elektron versiyasi mavjud.\nMuzeyga har yili 2000 dan ortiq o‘quvchi, talaba va boshqa ilm-fanga qiziquvchi mehmonlar tashrif buyuradilar. Muzeyga xorijiy sayyohlarning qiziqishi tabora ortib bormoqda."
     ),
   )
-//  exhibition 10
+  //  exhibition 10
   val exhibition10 = Map(
     "exibition-content-title" -> Array(
       "MUSEUM OF HISTORY OF MUSIC",
@@ -1088,6 +1100,78 @@ object Main extends App {
       "Musiqa tarixi muzeyi Qozikalon madrasasida joylashgan. Madrasa 1905 yilda Xiva xonining bosh qozisi Salim Oxun tomonidan qurilgan. Muzeyning maydoni 32,5x23,4 myetr.\nMuzeyda Xorazm nota chizig‘i, Xorazm cholg‘u asboblari, mashhur musiqachilarning shaxsiy buyumlari namoyish etilmoqda."
     ),
   )
+  //  Index page exhibition1
+  val mainExhibition1 = Map(
+    "main-exhibition-header" -> Array("Exhibitions", "Выставки", "Ko'rgazmalar"),
+    "sub-menu-main-exhibition-home" -> Array("Home", "Главное", "Bosh sahifa"),
+    "sub-menu-main-exhibition" -> Array("Exhibitions", "Выставки", "Ko'rgazmalar"),
+    "exibition-content-title" -> Array(
+      "QOSHA DARVAZA (DOUBLE GATE)",
+      "Ворота КOША ДАРВОЗА",
+      "QO‘SHA DARVOZA"),
+    "exibition-content" -> Array(
+      "The Deshon Qala, which connects the Khiva Khanate with Urgench, was built in 1842 by Khiva Khan Allakulikhan for use mainly in military and emergency situations. Originally, the gate was made of straw, and the gates were made of ordinary boards. Khiva Khan Isfandiyarkhan rebuilt the Urgench Gate into a two-lane due to the rapid growth of economic relations with Russia and the acceleration of water traffic on the Amudarya. After that, the Urgench Gate was called the Double Gate in the vernacular. Deshon Qala has 10 gates, two of which are Khazarasp and Qosha gates.\n   The walls of the gate are made of baked bricks. The gate plan is built in two steps along two corridors, with rooms accessed by doors on either side of the corridor.",
+      "Они были построены хивинским ханом Олакулихоном в 1842 году в основном для использования во время военных и чрезвычайных ситуаций на крепости Дишан кала, которая соединяет Хивинское ханство с Ургенчом. Первоначально ворота были построены из пахсы, а створки ворот были сделаны из простых досок. Хивинский хан Исфандиярхон в связи с быстрым ростом экономических отношений с Россией и ускорением водного пути по Амударье Ургенчские ворота были перестроены в виде двух проходов. После этого Ургенчские ворота на народном языке стали называться Куша дарвоза, т.е. двустворчатыми воротами. В Дишан кале насчитывается 10 ворот, из которых сохранились два – Хазорасп дарвоза и Куша дарвоза.\nСтены ворот сложены из жженного кирпича. План ворот построен в два шага вдоль двух коридоров, вокруг коридора есть комнаты, в которые можно попасть через двери с обеих сторон.",
+      "Xiva xonligini Urganch bilan bog‘lovchi Deshon kal’a devoriga 1842 yilda Xiva xoni Ollaqulixon tomonidan asosan harbiy va favqulodda vaziyatlar paytida foyda-lanish uchun qurilgan. Dastlab darvoza paxsadan qurilgan bo‘lib, darvoza eshiklari oddiy taxtalardan ishlangan. Xiva xoni Isfandiyorxon Rossiya bilan iqtisodiy aloqalarning tez sur’atlar bilan oshib borishi munosabati bilan va Amudaryodagi suv yo‘li qatnovining jadallash-ganligi tufayli Urganch darvozasi ikki yo‘lakli qilib qayta qurilgan. Shundan keyin Urganch darvozasi xalq tilida Qo‘sha darvoza deb nom olgan. Deshon kal’aning 10 ta darvozasi bo‘lib, shundan ikkitasi – Hazorasp va Qo‘sha darvozalar saqlanib qolgan.\nDarvozaning devorlari pishiq g‘ishtdan qurilgan. Darvoza plani ikkita yo‘lak bo‘ylab ikki qadamli tarzda qurilgan, yo‘lak atrofida har ikki tarafida eshiklar orqali kiriladigan xonalar mavjud."
+    ),
+  )
+  val mainExhibition2 = Map(
+    "main-exhibition-header" -> Array("Exhibitions", "Выставки", "Ko'rgazmalar"),
+    "sub-menu-main-exhibition-home" -> Array("Home", "Главное", "Bosh sahifa"),
+    "sub-menu-main-exhibition" -> Array("Exhibitions", "Выставки", "Ko'rgazmalar"),
+    "exibition-content-title" -> Array(
+      "MUHAMMAD AMINKHAN MADRASAH",
+      "МЕДРЕСЕ МУХАММАДА  АМИНХАНА",
+      "MUHAMMAD AMINXON MADRASASI"),
+    "exibition-content" -> Array(
+      "The western part of the Madrasa Ichan Qala is on the right, at the entrance to the Ota Gate. The madrasa is a two-story brick building with 130 rooms. According to historical data, 260 students studied there at the same time.\n   Historians describe the construction of the madrasa and the minaret as follows: “In the fourth year of the Madamin Khanate, he began the construction of a madrasa and a minaret on the qibla side of the Ark. Bekniyaz ordered its construction to the devon. Bekniyaz devonbegi started construction and Muhammad Karim put devon on it. Muhammad Karim found the famous masters of Khorezm and went to work. By the order of the khan, the construction of a courtyard and a garden at the foot of the sand in Angarik was started, and it was headed by Ismail devon ibn Odina devon by Abdullah Qushbegi. In 1851, a tender was announced for the construction of the Muhammad Aminkhan Madrasah, and the khan was pleased with a project designed by his master, Abdullah Jinn. The madrasa ended three years later. The khan was delighted and prepared a big wedding and a royal banquet for Bekniyaz devonbegi. The khan's brothers and relatives, who came to the wedding, were dressed in drums and presented with horses. Everyone who attended the wedding received a gift. The poets of the time told stories about the building of the madrasa and received gifts from the khan.\n  The construction of a minaret in front of the madrasa had begun, and the poets described the unfinished minaret as \"like a pillar on the porch of the firmament.\" The roof of the madrasa is decorated with beautiful tiles and inscribed with Nasta'liq letters.\n  The madrasa is symmetrical, rectangular in shape, with a courtyard. There are traditional flower-towers on both sides of the roof. The main style is a five-domed palace, a mosque, a classroom and additional rooms. There are small roofs on either side of the courtyard. The rooms on the first floor serve as bedrooms and utility rooms, while the arched porch on the second floor adds interest to the building. There are also four small roofs in the inner courtyard, with tiles and ornaments inscribed with the word \"suls\". The windows are made of plaster. At the bottom there is a layer of waterproofing between the wall and the beard (waterproofing) - the height of the stone belt is 68 cm.\n  The Muhammad Aminkhan Madrasa was converted into a hotel in 1979 and serves tourists.",
+      "Западная часть медресе Ичан-калы находится у входа в Отцовские ворота, справа.  Медресе построено из двух ярусов жженого кирпича и состоит из 130 комнат.  По историческим данным, здесь одновременно обучались 260 студентов.\n Историки описывают строительство медресе и минарета следующим образом: «На четвертом году Мадаминского ханства он начал строительство медресе и минарета на стороне киблы от Ковчега.  Бекнияз приказал построить его девону.  Бекнияз девонбеги начал строительство, и Мухаммад Карим поместил на него девон.  Мухаммад Карим нашел известных мастеров Хорезма и приступил к работе.  По приказу хана было начато строительство двора и сада у подножия песков в Ангарике, которое возглавил Исмаил девон ибн Одина девон Абдулла Кушбеги.  В 1851 году был объявлен тендер на строительство медресе Мухаммад Аминхана, и хану понравился проект, который расписал его хозяин Абдулла Джинн.  Медресе закончилось спустя три года.  Хан с радостью подготовил для Бекнияза девонбега пышную свадьбу и царский пир.  Брат хана и родственники, пришедшие на свадьбу, были одеты в барабаны и преподнесены лошадям.  Не все, кто присутствовал на свадьбе, остались без подарка.  Поэты того времени рассказывали истории о строительстве медресе и получали подарки от хана.\n Начато строительство минарета на крыше медресе, а недостроенный минарет описывается поэтами как «подобный столбу на крыльце небосвода».  На крыше медресе была выложена красивая черепица с надписью насталик.\n Медресе построено симметрично, с прямоугольным двором.  По обе стороны крыши - традиционные цветочные башни.  Основной стиль - пятиглавый дворец, мечеть, учебный класс и дополнительные помещения.  По обе стороны двора есть небольшие крыши.  Помещения на первом этаже служат спальнями и подсобными помещениями, а арочная веранда на втором этаже добавляет интерес к зданию.  Во внутреннем дворе также есть четыре небольшие крыши, на которых также есть черепица и украшения с надписью «сульс».  Окна - штукатурка.  Внизу слой гидроизоляции (гидроизоляции) между стеной и цоколем - высота каменного пояса установлена \u200B\u200Bна 68 см.\n Медресе Мухаммада Аминхана было преобразовано в отель в 1979 году и обслуживает туристов.",
+      "Madrasa Ichon qal’aning g‘arbiy qismi, Ota darvozadan kirishda, o‘ng tomonda joylashgan. Madrasa pishiq g‘ishtdan 2 qavatli qilib qurilgan bo‘lib, 130 hujradan iborat. Tarixiy ma’lumotlarga asosan unda bir vaqtning o‘zida 260 nafar talaba tahsil olgan.\nMadrasa va minora qurilishini tarixchilar quyidagicha yoritadilar: “Madaminxon xonligining to‘rtinchi yilida Arkning qibla tomonida bir madrasa va minora qurilishini boshlatdi. Uning qurilishini Bekniyoz devonga buyurdi. Bekniyoz devonbegi qurilishni boshlab, uning ustida Muhammad Karim devonni qo‘ydi. Muhammad Karim Xorazmning mashhur ustalarini topib, ishga mashg‘ul bo‘ldi. Xonning amri bilan Angarikda qum etagida bir hovli va bog‘ qurilishi ham boshlab yuborildi va unga Abdulla Qushbegi tomonidan Ismoil devon ibn Odina devon bosh qilib qo‘yildi. 1851 yilda Muhammad Aminxon madrasasini qurish uchun tanlov e’lon qilindi va ustaboshi Abdulla “jin” chizgan loyiha xonga manzur bo‘ldi. Madrasa uch yildan keyin bitdi. Xon xushhol bo‘lib Bekniyoz devonbegiga katta to‘y va shohona ziyofat anjomini tayyorlatdi. To‘yga kelgan xonning og‘a-ini va yaqinlariga zarbof to‘nlar kiygizildi, bedov otlar hadya qilindi. To‘yda ishtirok qilgan hamma in’om olmasdan qolmadilar. Madrasaning binosiga zamon shoirlari tarixlar aytib, xondan in’omlar oldilar”.\nMadrasa peshtog‘ida bir minora qurilishi boshlangan ediki, hali bitmagan minorani shoirlar “Falak ayvoniga qo‘yilgan ustundek” deb tarifladilar. Madrasaning peshtoqiga chiroyli koshin taxtalar o‘rnatildi va ularga nasta’liq xatida yozuv bitilgan.\nMadrasa simmetrik tarzda, tarhi to‘g‘ri burchakli, hovlili qilib qurilgan. Peshtoqning ikki yoniga an’anaviy guldasta-minoralar ishlangan. Bosh tarzini besh gumbazli miyonsaroy, masjid, darsxona va qo‘shimcha xonalar egallagan. Hovlining ikki yonida kichik peshtoqlar bor. Birinchi qavatdagi hujralar yotoqxona va yordamchi xonalar sifatida xizmat qiladi, ikkinchi qavatdagi ravoqli peshayvon binoga fayz bag‘ishlagan. Ichkari hovlida to‘rtta kichik peshtoqlar ham mavjud bo‘lib, ularda “suls” xatida bitilgan koshinlar, bezaklar ham mavjud. Derazalarda ganchdan panjaralar ishlangan. Pastida devor va sokol orasiga nam o‘tkazmaydigan qatlam (gidroizolyasiya) - tosh belbog‘ning balandligi 68 sm qilib qo‘yilgan.\nMuhammad Aminxon madrasasi 1979 yilda mehmonxonaga aylantirildi va sayyohlarga xizmat qilmokda."
+    ),
+  )
+  val mainExhibition4 = Map(
+    "main-exhibition-header" -> Array("Exhibitions", "Выставки", "Ko'rgazmalar"),
+    "sub-menu-main-exhibition-home" -> Array("Home", "Главное", "Bosh sahifa"),
+    "sub-menu-main-exhibition" -> Array("Exhibitions", "Выставки", "Ko'rgazmalar"),
+    "exibition-content-title" -> Array(
+      "Koykirlangan Qala",
+      "Койкирланган-кала",
+      "Qo‘yqirilganqal’a"),
+    "exibition-content" -> Array(
+      "Koykirlangan Qala is located 22 km northeast of Turtkul. Planned in the form of a circle, surrounded by a wall, the total size of 90 m. In the central part of the monument there is a two-storeyed building with a circle, size 44.5 m, its upper part is 42 m, lower part is 44 m, at a distance of 14.5 m from the building there is a two-row defensive wall, which in turn has nine towers. In front of the gate there is a \"Labyrinth\" with a right-angled elbow, the growth of which on the right side is 18 m, the two sides are reinforced with semicircular towers, the total area of \u200B\u200Bwhich is 0.3 ha. The castle was surrounded by a moat in ancient times, 15 m wide and 3 m deep. The first floor of the central building consists of 8 rooms with a height of 8.5 m. The outer wall was first made of straw, then of square raw brick, 7.2 m thick. Depending on the artifacts obtained, the construction of the monument dates back to two historical periods, the first floor of which dates back to mil. IV-III, middle and upper parts of the I-IV centuries BC.",
+      "Койкирланган-кала находится в 22 км к северо-востоку от Турткула. Планируется в виде круга, обнесенного стеной, общей площадью 90 м. Кв. В центральной части памятника расположено двухэтажное здание с кругом размером 44,5 м, его верхняя часть - 42 м, нижняя часть - 44 м, на расстоянии 14,5 м от здания - двухэтажная. рядная оборонительная стена, которая в свою очередь имеет девять башен. Перед воротами расположен «Лабиринт» с прямоугольным изгибом, рост которого с правой стороны 18 м, две стороны усилены полукруглыми башнями, общая площадь которых составляет 0,3 га. В древности замок был окружен траншеей шириной 15 м и глубиной 3 м. Первый этаж центрального корпуса состоит из 8 комнат высотой 8,5 м. Наружная стена была сделана сначала из соломы, затем из квадратного сырцового кирпича толщиной 7,2 м. В зависимости от добытых артефактов строительство памятника относится к двум историческим периодам, первый этаж из которых датируется мил. IV-III, средний и верхний века до нашей эры-I-IV века до нашей эры.",
+      "Qo‘yqirilganqal’a – To‘rtko‘l shahridan 22 km shimoli-sharqda joylashgan. Rejalashtirilishi aylana shaklda, devor bilan o‘rab olingan, umumiy hajmi-90 m. Yodgorlikning markaziy qismida aylana holda ikki qavatli inshoat qurilgan, hajmi 44,5 m, uning yuqori qismi 42 m, pastki qismi 44 m, inshoatdan 14,5 m uzoqlikda ikki qatorli mudofaa devor qurilib, u o‘z navbatida to‘qqizta burjga ega. Darvoza oldida to‘g‘ri burchakli bir tirsakka ega bo‘lgan “Labirint” mavjud bo‘lib, uning to‘g‘ri tomoniga o‘sib chiqishi 18 m, ikki yon tomoni  yarim aylanali burjlar bilan kuchaytirilib, uning umumiy hajmi 0,3 ga.  Qal’a qadimda xandak bilan o‘rab olinib, uning kengligi 15 m, chuqurligi 3 m. Markaziy inshoatning birinchi qavati 8 xonadan iborat bo‘lib, uning balandligi 8,5 m. Tashqi devor avval paxsadan, keyin kvadrat xom g‘ishtdan tiklangan, qalinligi 7,2 m. Olingan ashyolarga qarab, yodgorlikning qurilishi iki tarixiy davrga oid bo‘lib, uning birinchi qavati mil. avv IV-III, o‘rta va yuqori qismi milodning  I- IV asrlarga mansubligi  aniqlangan."
+    ),
+  )
+  val mainExhibition5 = Map(
+    "main-exhibition-header" -> Array("Exhibitions", "Выставки", "Ko'rgazmalar"),
+    "sub-menu-main-exhibition-home" -> Array("Home", "Главное", "Bosh sahifa"),
+    "sub-menu-main-exhibition" -> Array("Exhibitions", "Выставки", "Ko'rgazmalar"),
+    "exibition-content-title" -> Array(
+      "ISLAM KHOJA MADRASAH",
+      "МЕДРЕСЕ ИСЛОМА ХОДЖА",
+      "ISLOM XO‘JA MADRASASI"),
+    "exibition-content" -> Array(
+      "The Islamic Khoja Madrasa and Minaret were built in 1908-1910 near the mausoleum of Pahlavon Mahmud. The madrasah was built by master Khudoiberganhoji, and the tiles of the madrasah and the minaret were designed by Eshmuhammad Khudayberdiev and worked by Bolta Vaisov and Madaminov, masters from the village of Madir in Khanka. The madrasa consists of 42 rooms and has 50 students, the front of which is built on two floors. There is also a special mosque on the right side of the entrance. The exterior structure and decoration of the madrasa, which is connected to the minaret by its main façade, does not differ from other madrasas. The side wings of the roof consist of a row of double arches and corner bouquets. The top of the arches is beautifully decorated with some frames and vinegar tiles. The small courtyard is surrounded by one-story rooms. There are no decorations on the walls. At the back of the roof, above the rooms, is a simple wooden-column awning. The largest room of the madrasa is a large domed mosque. The mosque covers the entire south-western part of the madrasa, and the interior of the mosque is closed in the form of a large domed room typical of Khiva masters. Under the dome in the corner on the south side of the mosque and in the altar, a beautiful landscape was created with the use of vinegar and ganchkori ornaments. As a foundation for the madrasah, Islam Khoja allocated 14,451 tanobs of land. At present, the Khorezm Museum of Applied Arts operates in the madrasa.\n   The minaret was built at the same time as the madrasa and is 50.6 meters high and 9 meters in diameter. The upper part of the tower is very narrow, and the top is finished with a beautiful cornice and a domed lantern. The surface of the lantern is framed by ceramic bricks of various shapes, and between them is filled with colorful vinegar tiles. The lantern and cornice are covered with green-blue, lojuvard (blue) and white vinegar bricks. That is why the upper part of the tower stands out. The ornate frames of the vinegar turn the conical body of the tower into a circular circle in several places. With this in mind, the elders say, \"The Khoja's minaret has four seasons and twelve months' decoration.\" These dates are engraved in marble by the master Khudaibergan Devonov and placed on the door of the madrasa, ten meters above the ground. The 2.5-meter dome on top of the tower is made of a metal called patal (a mixture of bronze, brass and copper). This metal dome shone like gold for a while. The dome of the tower was renovated on the eve of the 2,500th anniversary of the city of Khiva and covered with a layer of gold.",
+      "Медресе и минарет Ислама Ходжи были построены в 1908-1910 годах недалеко от мавзолея Пахлавона Махмуда. Медресе было построено мастером Худойберганходжи, а изразцовые украшения медресе и минарета выполнены мастерами из Мадирского села Ханки Болта Вайсовым и Мадаминовым по узорам Эшмухаммада Худайбердиева. Медресе состоит из 42 комнат и рассчитано на 50 учеников, фасадная часть которых построена на 2 этажа. Справа от входа находится особая мечеть. Внешний облик и узоры медресе, соединенного с минаретом и главным фасадом, не отличаются от других медресе. Боковые крылья крыши состоят из ряда двойных арок и угловых букетов. Верх арок красиво украшен рамами и резьбами. Малый двор окружен одноэтажными комнатами. На стенах нет декора. В задней части крыши над комнатами находится простой навес на деревянных столбах. Самое большое помещение медресе – большая купольная мечеть. Мечеть занимает всю юго-западную сторону медресе, а внутренний облик мечети выполнен в виде большого купольного помещения, типичного для хивинских мастеров. Под куполом в углу с южной стороны мечети и в алтаре с использованием орнаментов ганчкари был создан красивый пейзаж. Ислам Ходжа выделил в качестве вакфа для медресе 14 451 танобский участок со своей земли. В настоящее время в медресе действует «Хорезмский музей прикладного искусства».\nОдновременно с медресе был построен минарет высотой 50,6 метра и диаметром в нижней части 9 метров. Верхняя часть башни очень узкая, а вершина завершается красивым карнизом и куполообразным фонарем. Поверхность фонаря обрамлена керамическими кирпичами разной формы, а между ними выложена разноцветная плитка. Фонарь и карниз облицованы зелено-синим, синим и белым плиточным кирпичом. Именно поэтому верхняя часть башни выделяется. Изысканные рамки из плиток превращают коническое тело башни в круг в нескольких местах. Помня об этом, старейшины говорят: «В минарете Хаджи присутствуют четыре времени года и двенадцать месяцев». В связи со строительством минарета поэт Ниязи написал 48-строчную поэтическую историю, точно такая же 47-строчная поэтическая история была написана в честь строительства медресе. Эти истории высечены на мраморе мастером Худайберганом Девоном и установлены на двери медресе, на высоте десяти метров над землей минарета. Купол высотой 2,5 метра, установленный на вершине минарета, изготовлен из металла, называемого паталом (смесь бронзы, латуни и меди). Купол, сделанный из этого металла, какое-то время сиял как золото. Купол минарета был отреставрирован накануне 2500-летия Хивы и покрыт слоем золота.",
+      "Islom xo‘ja madrasasi va minorasi 1908-1910 yillarda Pahlavon Mahmud maqbarasi yaqinida qurilgan. Madrasani usta Xudoyberganhoji qurgan, madrasa va minoraning koshin bezaklarini Eshmuhammad Xudayberdiyev ishlagan naqshlar asosida Xonqaning Madir qishlog‘idagi ustalardan Bolta Vaisov va Madaminovlar ishlaganlar. Madrasa 42 ta hujradan iborat bo‘lib, 50 ta talaba o‘qigan, uning oldingi qismi 2 qavat qilib qurilgan. Kiraverishda o‘ng tomonda maxsus masjid ham qurilgan. Bosh fasadi bilan minoraga bog‘liq bo‘lgan madrasa tashqi tuzilishi va bezaklari boshqa madrasalardan farq qilmaydi. Peshtoqining yon qanotlari ikki qavatli ravoqlar qatori va burchak guldastalaridan iborat. Ravoqlar tepasi ayrim hoshiyalar va sirkor koshinlar bilan chiroyli qilib bezatilgan. Kichik hovli bir qavatli hujralar bilan o‘ralgan. Devorlarida hech qanday bezak yo‘q. Peshtoqning orqa tomonida, hujralarning ustida oddiy yog‘och ustunli ayvon qurilgan. Madrasaning eng yirik xonasi katta gumbazli masjiddir. Masjid madrasaning butun janubi-g‘arbiy tomonini egallagan, masjidning ichki ko‘rinishi Xiva ustalari ijodiga xos katta gumbazli xona tipida yopilgan. Masjidning janubiy tomonida joylashgan burchakdagi gumbaz ostida va mehrobda sirkor hamda ganchkori bezaklar ishlatib chiroyli manzara yaratilgan, madrasa uchun vaqf sifatida Islom Xo‘ja o‘z yeridan 14 ming 451 tanob yer ajratgan. Madrasada hozirgi vaqtda “Xorazm Amaliy san’ati” muzeyi faoliyat ko‘rsatmoqda.\nMinora ham madrasa bilan bir vaqtda qurilgan bo‘lib, balandligi 50,6 metr, pastki qismining diametri 9 metr. Minoraning yuqori qismi juda ingichkalashib, tepasi bejirim karniz va qubbali fonus bilan tugallangan. Fonus yuzasi turli shakldagi sopol-g‘ishtchalar bilan hoshiyalangan, ularning orasi esa rang- barang sirkor koshinlar bilan to‘ldirilgan. Fonus va karniz yashil-zangori, lojuvard (moviy) va oq rangdagi sirkor g‘ishtchalar bilan qoplangan. Shuning uchun ham minoraning yuqori qismi alohida bo‘lib ajralib turadi. Sirkor bezakli hoshiyalar minoraning konus shaklidagi tanasini bir necha joyidan halqasimon doira qilib aylangan. Mana shularni hisobga olgan qariyalar “Xo‘jani minorasida to‘rt faslni va o‘n ikki oyning bezagi bor” –deb aytadilar.Minoraning qurilishi munosabati bilan shoir Niyoziy 48-misralik she’riy tarix bitgan, xuddi shunday 47misralik she’riy tarix madrasa qurilishi uchun ham bitilgan. Bu tarixlar marmarga usta Xudaybergan Devon tomonidan uyib yozilgan va madrasa eshigi ustiga, minoraning yerdan o‘n metr baland joyiga o‘rnatilgan. Minoraning tepasiga o‘rnatilgan 2,5 metrlik qubba patal (bronza, latun va mis aralashmasi) degan metalldan ishlangan. Bu metalldan ishlangan qubba ma’lum bir vaqtgacha tilladek yaltirab turgan. Minora qubbasi Xiva shahrining 2500 yillik to‘yi arafasida qayta ta’mirlanib, tilla qatlam bilan qoplandi."
+    ),
+  )
+  val mainExhibition6 = Map(
+    "main-exhibition-header" -> Array("Exhibitions", "Выставки", "Ko'rgazmalar"),
+    "sub-menu-main-exhibition-home" -> Array("Home", "Главное", "Bosh sahifa"),
+    "sub-menu-main-exhibition" -> Array("Exhibitions", "Выставки", "Ko'rgazmalar"),
+    "exibition-content-title" -> Array(
+      "SAYYID SHOLIKORBOY TOWER",
+      "КОМПЛЕКС САЙИД НИЯЗ ШОЛИКОРБОЯ",
+      "SAYYID SHOLIKORBOY MINORASI"),
+    "exibition-content" -> Array(
+      "The Sayyid Sholikorboy tower, built in 1835, stands out in the Deshon Qala of Khiva. It is located in the courtyard of the mosque of the same name on Polvon Qori Street. The tower is made of baked bricks in the form of a vertical cone, the height is 24 meters, the diameter of the base is 4.5 meters. The tower narrows from the bottom to the top. The narrowing of the tower made it stronger. The top of the tower is reached by 62 stairs. The top of the tower is finished with a glass hole and very skillfully designed rafters. The mezana is decorated under the cornice in honor of the top. At the top of the tower there are 4 large arches, built to the west.\n   It is noteworthy that no tiles were used at all from the bottom to the top of the tower. Our great architects skillfully decorated the bricks with great skill in the construction of the tower. However, today the tower is tilted 1.07 meters to the south-west. This is due to the rise of groundwater in the area (70 cm - 1 meter below ground level), the failure of traffic and drainage systems. At present, the researchers of the Khorezm Mamun Academy are Ph.D. Under the scientific guidance of G. Durdiyeva, they are conducting research on the restoration of the Sayyid Sholikorboy tower. Even today, Khiva residents use the Sayyid Sholikorboy complex for Friday prayers.\n   There is a rumor among the people that only one master worked on the construction of this mosque. Each child was given one nut for each brick they brought. Every day, children rushed to the mosque to get more nuts. A mosque was built and worshipers began to pray. On the day of Eid, the khan went to the mosque outside the Ichan Qala to perform the Eid prayer with his relatives. Sayyid Niyaz wondered, \"Why did the khan say that?\" He then began construction of a madrassa on the east side of the mosque so that the khan's words would not remain in the air. \" There are three doors on three sides of the mosque and the entrance to the mosque is through a porch from the main entrance on the north side. There are three columns on the porch. They reflect the best traditions of wood carving. The walls of the porch are decorated with figured panels.",
+      "О строительстве этой мечети в народе ходят легенды. Один из них говорит, что Сайидбой нашел в резине большое количество золотых монет и, не зная, что с ними делать, пошел к хану и попросил разрешения построить мечеть. Аллакулихон дал Сайидбою участок земли перед городскими воротами и приказал ему построить мечеть на пути Бога. Во время строительства Сайидбой оказывал финансовую поддержку соседям через своих детей. То есть тот, кто дал детям кирпич мастеру, дал ему по цене орех. Дети, играющие на улице, натолкнулись на орехи. Поэтому строительство мечети было завершено быстро. Проходя перед мечетью, хан поздравил Сайидбоя и сказал: «Да будет благословение медресе». Сайидбой также построил медресе, чтобы слово короля не осталось на земле. В комнате на восточной стороне мечети есть две могилы, где были похоронены Шодмон момо и Сайидбой после их смерти. На вершине двухэтажного медресе перед мечетью и на крыльце крыльца мечети дата написана на персидском языке таликским письмом, а дата - 1835–36 гг. Мечеть действовала в советское время и до сих пор служит прихожанам.",
+      "Xiva shahrining Deshon qal`a qismida 1835-yilda qurilgan Sayyid Sholikorboy minorasi alohida ajralib turadi. Polvon qori ko`chasida shu nomdagi masjid hovlisida joylashgan. Pishiq g`ishtdan tik konus shaklida qurilgan bu minoraning balandligi 24 metr, asosining diametri 4,5 metrni tashkil etadi. Minora pastdan yuqoriga tomon ingichkalashib, ya`ni torayib boradi. Minoraning torayib borishi uni yanada mustahkam bo`lishini ta’minlagan. Minora tepasiga 62 ta zinapoya orqali chiqiladi. Minora tepasi oynavand tuynuk va o`ta mahorat bilan ishlangan rahlar bilan tugallangan. Tepasiga karniz sharafasining ostiga mezana ishlangan. Minoraning yuqori qismida 4 ta katta ravoq bo`lib, g`arb tomonga qarab qurilgan.\nDiqqatga sazovor tomoni shundaki, minoraning pastki qismidan to yuqori qismigacha umuman koshin ishlatilmagan. Buyuk memor quruvchi ustalarimiz, minora qurilishida yuksak mahorat bilan g`ishtni aynan o`ziga bezak berishgan. Lekin hozirgi kunda minora janubi-g`arbiy tomonga 1,07 metrga og`gan. Bunga sabab bu hududda yer osti suvlarining ko`tarilishi (tuproq sathidan 70 sm - 1 metr pastda), transport qatnovi va suv oqava tizmlarining nosozligidir. Hozirda Xorazm Ma`mun akademiyasining ilmiy xodimlari tex.f.n. G.Durdiyeva ilmiy rahbarligida Sayyid Sholikorboy minorasi asl holiga qaytaish ustida tadqiqotlar olib borishmoqda. Hozirgi kunda ham xivaliklar Sayyid Sholikorboy majmuasidan juma namozi o`qishda foydalanishadi.\nBu masjid qurilishda faqat bitta usta ishlab qolgan ishlarni bolalar qilgan, degan gaplar bor xalq orasida. Har bir bolaga bitta olib kelgan g’ishti uchun bitta yong’oq berilgan. Har kuni ko’proq yong’oq olish uchun bolalar yugurib-elib masjid qurilishini tezlashtirganlar. Masjid qurilib nomozxonlar namoz o’qiy boshlaganlar. Iyd bayrami kuni xon yaqinlari bilan iyd namozini o’qish uchun Ichon qal’adan tashqaridagi namozgohga borayotib masjid oldida ta’zim qilib turgan Sayid Niyoz Sholikorga “Madrasa muborak” deb o’tib ketibdi. Sayid Niyoz, “xon nima uchun bunday dedilar” deb taajjubda qoladi. So’ngra xonni aytgan so’zi havoda qolmasin deb masjidning sharq tamonida madrasa qurilishini boshlab yuboradi”. Masjidning uch tomonida uchta eshik bo’lib masjidga shimol tomondagi asosiy eshikdan ayvon orqali kiriladi. Ayvonda uchta ustun bor. Ularda yog’och o’ymakorligining eng yaxshi an’analari aks ettirilgan. Ayvon devorlariga ganch o’yma usulida figurali pannolar ishlangan."
+    ),
+  )
+
   val latestNews = Map(
     "latest-news" -> Array(
       "Latest news",
@@ -2022,7 +2106,7 @@ object Main extends App {
   val lang = dom.document.body.lang match {
     case "en" => 0
     case "ru" => 1
-    case _    => 2
+    case _ => 2
   }
   if (isIndexPage != null) {
     learnMoreList.foreach(
@@ -2032,13 +2116,13 @@ object Main extends App {
           .asInstanceOf[HTMLLinkElement]
           .innerText = learnMore("learnMore")(lang)
     )
-//    findMoreList.foreach(
-//      item =>
-//        dom.document
-//          .getElementById(item)
-//          .asInstanceOf[HTMLLinkElement]
-//          .innerText = findMore("findMore")(lang)
-//    )
+    //    findMoreList.foreach(
+    //      item =>
+    //        dom.document
+    //          .getElementById(item)
+    //          .asInstanceOf[HTMLLinkElement]
+    //          .innerText = findMore("findMore")(lang)
+    //    )
     exhibitionList.foreach(
       item =>
         dom.document
@@ -2067,13 +2151,13 @@ object Main extends App {
           .asInstanceOf[HTMLLinkElement]
           .innerText = weekdaySat("weekday")(lang)
     )
-//    eventDateList.foreach(
-//      item =>
-//        dom.document
-//          .getElementById(item)
-//          .asInstanceOf[HTMLLinkElement]
-//          .innerText = eventDateMap("eventDate")(lang)
-//    )
+    //    eventDateList.foreach(
+    //      item =>
+    //        dom.document
+    //          .getElementById(item)
+    //          .asInstanceOf[HTMLLinkElement]
+    //          .innerText = eventDateMap("eventDate")(lang)
+    //    )
     eventLinkMap.keys.foreach(
       item =>
         dom.document
@@ -2081,13 +2165,13 @@ object Main extends App {
           .asInstanceOf[HTMLLinkElement]
           .innerText = eventLinkMap(item)(lang)
     )
-//    eventLinkEvenList.foreach(
-//      item =>
-//        dom.document
-//          .getElementById(item)
-//          .asInstanceOf[HTMLLinkElement]
-//          .innerText = eventLinkEvenMap("eventLink")(lang)
-//    )
+    //    eventLinkEvenList.foreach(
+    //      item =>
+    //        dom.document
+    //          .getElementById(item)
+    //          .asInstanceOf[HTMLLinkElement]
+    //          .innerText = eventLinkEvenMap("eventLink")(lang)
+    //    )
     elements.keys.foreach(
       item =>
         dom.document
@@ -2259,7 +2343,7 @@ object Main extends App {
           .innerText = independencePageContent(item)(lang)
     )
   }
-//  CITIES
+  //  CITIES
   if (isUrgenchCitiesPage != null) {
     urgenchPageContent.keys.foreach(
       item =>
@@ -2475,6 +2559,51 @@ object Main extends App {
           .getElementById(item)
           .asInstanceOf[HTMLLinkElement]
           .innerText = exhibition8(item)(lang)
+    )
+  }
+  if (isQoshaDarvozaPage != null) {
+    mainExhibition1.keys.foreach(
+      item =>
+        dom.document
+          .getElementById(item)
+          .asInstanceOf[HTMLLinkElement]
+          .innerText = mainExhibition1(item)(lang)
+    )
+  }
+  if (isAminxonPage != null || isAminxon2Page != null) {
+    mainExhibition2.keys.foreach(
+      item =>
+        dom.document
+          .getElementById(item)
+          .asInstanceOf[HTMLLinkElement]
+          .innerText = mainExhibition2(item)(lang)
+    )
+  }
+  if (isNiqobPage != null) {
+    mainExhibition4.keys.foreach(
+      item =>
+        dom.document
+          .getElementById(item)
+          .asInstanceOf[HTMLLinkElement]
+          .innerText = mainExhibition4(item)(lang)
+    )
+  }
+  if (isIslomkhojaPage != null) {
+    mainExhibition5.keys.foreach(
+      item =>
+        dom.document
+          .getElementById(item)
+          .asInstanceOf[HTMLLinkElement]
+          .innerText = mainExhibition5(item)(lang)
+    )
+  }
+  if (isSayyidPage != null) {
+    mainExhibition6.keys.foreach(
+      item =>
+        dom.document
+          .getElementById(item)
+          .asInstanceOf[HTMLLinkElement]
+          .innerText = mainExhibition6(item)(lang)
     )
   }
   navbarAndFooter.keys.foreach(
