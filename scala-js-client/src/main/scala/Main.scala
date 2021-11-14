@@ -568,6 +568,20 @@ object Main extends App {
   val eventsWedList = List("wed1", "wed2", "wed3", "wed4", "wed5")
   val eventsTueList = List("tue1", "tue2", "tue3")
   val eventsMonList = List("mon1", "mon2", "mon3", "mon4", "mon5")
+  val mapInfos =Map(
+   "map-info1" -> Array("Khorezm is an ancient civilization with a history of 2700 years of statehood, the territory of which has changed many times in different" +
+      " periods. This map shows the borders of the Khorezm states from the VII century BC to the present day.",
+    "Хорезм - древняя цивилизация с 2700-летней историей государственности, территория которой многократно менялась в разные периоды. " +
+      "На этой карте показаны границы хорезмских государств с VII века до нашей эры до наших дней.",
+    "Xorazm 2800 yillik davlatchilk tarixiga ega qadimiy sivilizatsiya o'chog'i bo'lib, hududi turli davrlarda ko'p marta o'zgargan. " +
+      "Mazkur xaritada miloddan avvalgi VII asrdan hozirgi kungacha bo'lgan davrda Xorazm davlatlari chegaralari ko'rsatilgan."
+  ),"map-info2" -> Array("Khorezm is an ancient civilization with a history of 2700 years of statehood, the territory of which has changed many times in different" +
+      " periods. This map shows the borders of the Khorezm states from the VII century BC to the present day.",
+      "Хорезм - древняя цивилизация с 2700-летней историей государственности, территория которой многократно менялась в разные периоды. " +
+        "На этой карте показаны границы хорезмских государств с VII века до нашей эры до наших дней.",
+      "Xorazm 2900 yillik davlatchilk tarixiga ega qadimiy sivilizatsiya o'chog'i bo'lib, hududi turli davrlarda ko'p marta o'zgargan. " +
+        "Mazkur xaritada miloddan avvalgi VII asrdan hozirgi kungacha bo'lgan davrda Xorazm davlatlari chegaralari ko'rsatilgan."
+    ))
   val events = Map(
     "news-header" -> Array("News", "Новости", "Yangiliklar"),
     "sub-menu-home" -> Array("Home", "Главное", "Bosh sahifa"),
@@ -756,14 +770,7 @@ object Main extends App {
         "istagan odam, oldin uni rasmini ko'radi keyin borishni istaydi, va rasmlarni saqlab qo'yadi. Endi bu tizim orqali turislarni ko'proq " +
         "jalb qilishga, Xorazm tarixini yanada qiziqarli qilib o'rgatishga erishiladi"
     ),
-    "map-info" -> Array(
-      "Khorezm is an ancient civilization with a history of 2700 years of statehood, the territory of which has changed many times in different" +
-        " periods. This map shows the borders of the Khorezm states from the VII century BC to the present day.",
-      "Хорезм - древняя цивилизация с 2700-летней историей государственности, территория которой многократно менялась в разные периоды. " +
-        "На этой карте показаны границы хорезмских государств с VII века до нашей эры до наших дней.",
-      "Xorazm 2700 yillik davlatchilk tarixiga ega qadimiy sivilizatsiya o'chog'i bo'lib, hududi turli davrlarda ko'p marta o'zgargan. " +
-        "Mazkur xaritada miloddan avvalgi VII asrdan hozirgi kungacha bo'lgan davrda Xorazm davlatlari chegaralari ko'rsatilgan."
-    ),
+
     //    Map
     "more-info-map-btn" -> Array(
       "More Info",
@@ -2288,6 +2295,7 @@ object Main extends App {
           .innerText = modernArt(item)(lang)
     )
   }
+
   //    About Khorezm
   if (isAntiquePage != null) {
     antiquePageContent.keys.foreach(
@@ -2619,5 +2627,12 @@ object Main extends App {
     val origin = window.location.origin
     val path = window.location.pathname
     window.location.href = origin + path + "?l=" + language
+  }
+  @JSExportTopLevel("showMapInfo")
+  def showMapInfo(btnId: String): Unit = {
+    dom.document
+       .getElementById(btnId)
+       .asInstanceOf[HTMLLinkElement]
+       .innerText = mapInfos(btnId)(lang)
   }
 }
