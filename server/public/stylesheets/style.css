@@ -685,8 +685,7 @@
   transform: rotate(-45deg) scaleX(0) translateZ(0);
 }
 .maps-info {
-  margin-top: 70%;
-  vertical-align: middle;
-  font-size: 25px;
+  font-style: italic;
+  font-size: 20px;
   line-height: 1.5;
 }
