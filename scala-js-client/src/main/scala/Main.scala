@@ -1055,7 +1055,7 @@ object Main extends App {
     "ourCollection" -> Array(
       "Museum Expositions",
       "Экспозиции музея",
-      "Musey ekspozitsiyalari"
+      "Muzey ekspozitsiyalari"
     ),
     "viewMore" -> Array("View More", "Посмотреть больше", "Ko\'proq ko\'rish")
   )
